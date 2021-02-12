@@ -1,0 +1,1722 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#"><head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>
+Vente Projet neuf   Israel  | immobilier.co.il</title>
+<meta property="og:title" content="Vente Projet neuf   Israel  | immobilier.co.il" />
+<meta property="og:type" content="siteweb" />
+<!--<meta property="og:url" content="http://www.immobilier.co.il/" />-->
+<meta property="og:image" content="http://www.immobilier.co.il/images/logo.png" />
+<!--<link rel="canonical" href="http://www.immobilier.co.il/" />-->
+<meta name="description" content="Tout l'immobilier en Isra&euml;l - Appartements en vente et location &agrave; Tel Aviv, Jerusalem, Ashdod, Raanana, Herzliya, Netanya, Eilat, Hadera, Ashkelon"/>
+<meta name="keywords" content="Immobilier Isra&euml;l,immobilier,israel,Vente, Location, Gestion de biens, Jerusalem, Ashdod, Eilat, Herzliya Pituach, Herzliya, Tel-Aviv, Raanana,ashdod,ashkelon,real estate, retraite, herzlya pitouah, eilat,natanya,netanya,haifa,alya,investissement,juif, juive,villa,villas,annonces,nouveaux projets,biens immobiliers,proprietes,maisons,jardins, terrasse, piscine"/>
+<meta name="Classification" content="Immobilier en Isra&euml;l"/>
+<meta name="robots" content="all"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<meta name="Reply-to" content="admin@immobilier.co.il"/>
+<meta name="verify-v1" content="hYSNj1ABshppxVrZ3PR9hRDS/KYrGd2yeqTDme+vt24="/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="apple-touch-icon" href="images/apple-icon.png" />
+
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<!-- CSS
+  ================================================== -->
+<link href="css/new-07-2019.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-06-2019.css" rel="stylesheet" type="text/css">
+<link href="css/style-06-2019.css" rel="stylesheet" type="text/css">
+<link href="plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="plugins/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="plugins/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+<!-- Color Style -->
+<link href="css/color-06-2019.css" rel="stylesheet" type="text/css">
+<!-- Select2 -->
+<link href="js/select2/css/select2.min.css" rel="stylesheet" />
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/jquery/QapTcha.jquery.css" type="text/css" />
+<!--	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-formhelpers.css" rel="stylesheet" media="screen">-->
+<link href="css/bootstrap-formhelpers.min.css" rel="stylesheet" media="screen">
+	
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<!-- SCRIPTS================================================== -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript">var languageSite = '1';</script>
+<script type="text/javascript" src="js/app2.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-415400-1']);
+  _gaq.push(['_setDomainName', 'immobilier.co.il']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+	  <!-- Start: GPT mapping -->
+	  var leaderboard_mapping = googletag.sizeMapping().
+  addSize([1024,768],[728,90]). // ORDI BUREAU
+  addSize([960,600],[468,60]). // TABLETTE
+  addSize([640,480],[300,75]). // SMARTPHONE
+  addSize([0, 0], [[300,75], [1, 1]]). //other
+  build();
+    googletag.defineSlot
+	('/16839535/IMMO.CO.IL/IMMO-728-90-TOP', [[728, 90], [468, 60], [300, 75]], 'div-leaderboard').
+	defineSizeMapping(leaderboard_mapping).
+	addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/16839535/IMMO.CO.IL/IMMO-970-90-TOP', [[970, 90], [320, 50], [728, 90]], 'div-gpt-ad-1564386609559-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/16839535/IMMO.CO.IL/IMMO-300-250', [300, 250], 'div-gpt-ad-1486912881005-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/16839535/IMMO.CO.IL/IMMO-300-250', [300, 250], 'div-gpt-ad-1486972057802-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/16839535/IMMO.CO.IL/IMMO-300-600', [[300, 600], [300, 250]], 'div-gpt-ad-1564386878170-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/16839535/IMMO.CO.IL/IMMO-300-250', [300, 250], 'div-gpt-ad-1500791621768-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+	<script>
+  googletag.cmd.push(function() {
+	  <!-- Start: GPT mapping -->
+	  var popup_mapping = googletag.sizeMapping().
+  addSize([1024,768],[800,630]). // ORDI BUREAU
+  addSize([960,600],[600,480]). // TABLETTE
+  addSize([640,480],[300,250]). // SMARTPHONE
+  addSize([0, 0], [[300,250], [1, 1]]). //other
+  build();
+    googletag.defineSlot
+	('/16839535/IMMO.CO.IL/IMMO-POPUP', [[800, 630], [600, 480], [300, 250]], 'div-popup').
+	defineSizeMapping(popup_mapping).
+	addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+		
+	<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("form2").submit();
+       }
+     </script>-->
+	
+	
+<script type="text/javascript" data-cfasync="false" src="//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js" data-shr-siteid="7e58b035a64b4f31072f14a24e82419e" async="async"></script>
+	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f4c32d0ca3d185a1f7ae647e1/86657220b093d75f0bff67bbb.js");</script>
+	
+	<!--<script>
+nl_pos = "bl";
+</script>
+    <script src="http://www.immobilier.co.il/plugins/nagishli_v2.3/nagishli.js?v=2.3" charset="utf-8" defer></script>-->
+	<script src="https://cdn.enable.co.il/licenses/enable-L5856zehry3uwa1-0620-13814/init.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8311511.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+</head>
+
+<body class="french">
+<div id="fb-root"></div>
+<script> (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=190280492941&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="body">
+<header class="site-header">
+    <div class="middle-header"> 
+    <!-- BanniÃ¨res -->
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 col-xs-12 text-align-center">
+			  
+				 <!-- /16839535/IMMO.CO.IL/IMMO-970-90-TOP -->
+<div id='div-gpt-ad-1564386609559-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1564386609559-0'); });
+  </script>
+</div>
+			  
+			  <div class="sticky-logo"> <a href="index.php"><img src="./images/logo-leportail-2019.png" alt="immobilier.co.il"/></a> </div>
+		  	  <a href="#" class="visible-sm visible-xs menu-toggle" style="display: none;"><i class="fa fa-bars"></i></a>
+			 <a href="immobilier-israel.php?module=particulier/espace-selection" class="visible-sm visible-xs star-toggle"><i class="fa fa-star"></i>
+			  			<span id="nb_favoris" class="badge-selection">0</span></a>
+		  </div>
+        
+        </div>
+    </div>
+  </div>
+  <div class="main-menu-wrapper"> 
+    <!-- Menu -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navigation">
+            <ul class="sf-menu">
+				<li class="logo"> <a href="index.php"><img src="images/logo-leportail-blanc.png" alt="immobilier.co.il"></a></li>
+              <li><a href="recherche.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">Acheter</a></li>
+				<li><a href="recherche.php?currency=1&tip%5B%5D=1&tip%5B%5D=3&region=-1&Submit=Rechercher&bienra=">Louer</a></li>
+				<li><a href="recherche.php?currency=1&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">Neuf</a></li>
+				
+				<!-- <li><a href="http://blog.immobilier.co.il/" target="_blank">  Actualit&eacute;s</a></li>-->
+              <li style=""><a href="immobilier-israel.php?module=particulier/account"><i class="fa fa-user-circle-o" aria-hidden="true"></i> <strong> Mon espace Perso</strong></a>
+				   
+                <ul class="dropdown">
+                  <li ><a href="immobilier-israel.php?module=particulier/explications">  Comment &ccedil;a marche? </a></li>
+                                    <li><a  href="mandat.php">D&eacute;poser un mandat</a></li>
+                 <!-- <li><a  href="immobilier-israel.php?module=particulier/credit"> Calculez votre cr&eacute;dit immobilier</a></li>-->
+                  <li><a  href="immobilier-israel.php?module=particulier/surfaceprice"> Prix des biens au m2</a> </li>
+					
+										<li><a href="immobilier-israel.php?module=particulier/creation-compte">Se connecter </a></li>
+					
+										
+                </ul>
+              </li>
+				 <li style=""><a href="#">  Services</a>
+				<ul class="dropdown">
+                  <li><a href="metiers.php?module=partenaires/credit-immobilier-france/accueil"> Votre CrÃ©dit en FRANCE </a></li>
+					  <li><a href="metiers.php?module=partenaires/credit-immobilier-israel/accueil"> Votre CrÃ©dit en ISRAEL </a></li>
+					  <!--<li><a href="metiers.php?module=partenaires/avocat-israel/accueil"> Droits immobiliers </a></li>-->
+					</ul>
+				</li>
+         <li><a href="immobilier-israel.php?module=recherche-par-agence-top" class="btn btn-primary">Trouver une agence</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Site Header -->									
+<div class="main" role="main" id="recherche">
+	<div class="page-recherche">
+		<div class="site-search-module" id="affiner">
+<div class="container">
+<div class="row"> 
+              <div class="col-md-12 col-xs-12">          
+     
+    
+<form method="get" class="cols" action="recherche.php" target="_self" name="searchForm" id="searchForm">
+      
+       <script type="text/javascript">
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
+ 
+  $(".js-example-basic-multiple").select2();
+  
+  $(".js-example-placeholder1-multiple").select2({
+  placeholder: "Quartier"
+});
+ $(".js-example-placeholder2-multiple").select2({
+  placeholder: "Type de bien "
+});
+});
+</script> 
+
+ 
+        <input type="hidden" name="currency" id="currency" value="1" />
+
+<div style="display:none">
+<fieldset class="w25"><div class="rowElem"><input name="tip[]" type="checkbox" id="tip[]" value="0" checked="checked" /><label>Vente</label></div></fieldset>
+<fieldset class="w25"><div class="rowElem"><input name="tip[]" type="checkbox" id="tip[]" value="1"  /><label>Location</label></div></fieldset>
+<fieldset class="w25"><div class="rowElem"><input name="tip[]" type="checkbox" id="tip[]" value="2" checked="checked" /><label>Projets Neuf</label></div></fieldset>
+<fieldset class="w25"><div class="rowElem"><input name="tip[]" type="checkbox" id="tip[]" value="3"  /><label>vacances</label></div></fieldset>
+</div>
+
+
+   
+	
+	   
+	
+	<div class="col-md-2 col-sm-6">
+                  	<div class="formBlock select-m">
+                    <select name="region" id="region" onchange="javascript:AddName('region');document.getElementById('searchForm').submit();" class="select">
+                        <option value="-1" selected="selected">
+                                Toutes les villes                                </option>
+                                <option value='Ashdod'>Ashdod</option><option value='Ashkelon'>Ashkelon</option><option value='Bat yam'>Bat yam</option><option value='Beer Sheva'>Beer Sheva</option><option value='Cesaree'>Cesaree</option><option value='Efrat'>Efrat</option><option value='Eilat'>Eilat</option><option value='Even-Yehuda'>Even-Yehuda</option><option value='Gan Yavne'>Gan Yavne</option><option value='Givataim'>Givataim</option><option value='Hadera'>Hadera</option><option value='Haifa'>Haifa</option><option value='Herzliya'>Herzliya</option><option value='Holon'>Holon</option><option value='Jerusalem'>Jerusalem</option><option value='Kfar Saba'>Kfar Saba</option><option value='Kfar Shmaryahu'>Kfar Shmaryahu</option><option value='Kfar Yona'>Kfar Yona</option><option value='Kiryat Bialik'>Kiryat Bialik</option><option value='Kiryat Malakhi'>Kiryat Malakhi</option><option value='Maale Adoumim'>Maale Adoumim</option><option value='Mevaseret tsion'>Mevaseret tsion</option><option value='Mochav olech'>Mochav olech</option><option value='Netanya'>Netanya</option><option value='Netivot'>Netivot</option><option value='Raanana'>Raanana</option><option value='Ramat Gan'>Ramat Gan</option><option value='Rishon Le Tzion'>Rishon Le Tzion</option><option value='Tel Aviv'>Tel Aviv</option><option value='Tiberiade'>Tiberiade</option>                    </select>
+                 
+                     <script language="JavaScript" type="text/javascript">
+
+function Choix(form) {
+i = form.region.selectedIndex;
+var textHTML=' <div class="clearfix"><input onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="1" type="checkbox" name="1" id="1">1</div>';
+if (i == 0) {
+ document.getElementById("quartier_div").innerHTML = ' <div class="clearfix"><input onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tout" type="checkbox" name="Tout" id="Tout">Tout </div>';
+  return;
+  }
+form.quartier.selectedIndex = 0;
+switch (i) {
+case 1 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Alef" type="checkbox" name="Alef" id="Alef">Alef <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Autres" type="checkbox" name="Autres" id="Autres">Autres <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Bet" type="checkbox" name="Bet" id="Bet">Bet <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Bord de mer" type="checkbox" name="Bord de mer" id="Bord de mer">Bord de mer <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="City" type="checkbox" name="City" id="City">City <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Dalet" type="checkbox" name="Dalet" id="Dalet">Dalet <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="He" type="checkbox" name="He" id="He">He <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Het" type="checkbox" name="Het" id="Het">Het <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mar" type="checkbox" name="Mar" id="Mar">Mar <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Marina" type="checkbox" name="Marina" id="Marina">Marina <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Taasia nord" type="checkbox" name="Taasia nord" id="Taasia nord">Taasia nord <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tet" type="checkbox" name="Tet" id="Tet">Tet <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tet vav" type="checkbox" name="Tet vav" id="Tet vav">Tet vav <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tet Zain" type="checkbox" name="Tet Zain" id="Tet Zain">Tet Zain <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Youd" type="checkbox" name="Youd" id="Youd">Youd <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Youd Alef" type="checkbox" name="Youd Alef" id="Youd Alef">Youd Alef <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Youd bet" type="checkbox" name="Youd bet" id="Youd bet">Youd bet <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Youd Guimel" type="checkbox" name="Youd Guimel" id="Youd Guimel">Youd Guimel <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Youd zain" type="checkbox" name="Youd zain" id="Youd zain">Youd zain <div class="clearfix"></div>'; break; 
+case 2 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Afridar" type="checkbox" name="Afridar" id="Afridar">Afridar <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Agamim" type="checkbox" name="Agamim" id="Agamim">Agamim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ashkelon" type="checkbox" name="Ashkelon" id="Ashkelon">Ashkelon <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Barnea" type="checkbox" name="Barnea" id="Barnea">Barnea <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="City" type="checkbox" name="City" id="City">City <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Gan Avradim" type="checkbox" name="Gan Avradim" id="Gan Avradim">Gan Avradim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Givat Haprahim" type="checkbox" name="Givat Haprahim" id="Givat Haprahim">Givat Haprahim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Marina" type="checkbox" name="Marina" id="Marina">Marina <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Adarim" type="checkbox" name="Neve Adarim" id="Neve Adarim">Neve Adarim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Dkalim" type="checkbox" name="Neve Dkalim" id="Neve Dkalim">Neve Dkalim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Ilan" type="checkbox" name="Neve Ilan" id="Neve Ilan">Neve Ilan <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Yam" type="checkbox" name="Neve Yam" id="Neve Yam">Neve Yam <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat kramim" type="checkbox" name="Ramat kramim" id="Ramat kramim">Ramat kramim <div class="clearfix"></div>'; break; 
+case 3 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Bat yam" type="checkbox" name="Bat yam" id="Bat yam">Bat yam <div class="clearfix"></div>'; break; 
+case 4 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Autres" type="checkbox" name="Autres" id="Autres">Autres <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Guimel" type="checkbox" name="Guimel" id="Guimel">Guimel <div class="clearfix"></div>'; break; 
+case 5 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Cesaree" type="checkbox" name="Cesaree" id="Cesaree">Cesaree <div class="clearfix"></div>'; break; 
+case 6 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Efrat" type="checkbox" name="Efrat" id="Efrat">Efrat <div class="clearfix"></div>'; break; 
+case 7 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Amdar" type="checkbox" name="Amdar" id="Amdar">Amdar <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Aquarelle" type="checkbox" name="Aquarelle" id="Aquarelle">Aquarelle <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Eilat" type="checkbox" name="Eilat" id="Eilat">Eilat <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ganim aleph" type="checkbox" name="Ganim aleph" id="Ganim aleph">Ganim aleph <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ganim beth" type="checkbox" name="Ganim beth" id="Ganim beth">Ganim beth <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Quartier Hotels" type="checkbox" name="Quartier Hotels" id="Quartier Hotels">Quartier Hotels <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shachamon 4" type="checkbox" name="Shachamon 4" id="Shachamon 4">Shachamon 4 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shachamon 6" type="checkbox" name="Shachamon 6" id="Shachamon 6">Shachamon 6 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shachamon 9" type="checkbox" name="Shachamon 9" id="Shachamon 9">Shachamon 9 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shahamon 5" type="checkbox" name="Shahamon 5" id="Shahamon 5">Shahamon 5 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shahamon 8" type="checkbox" name="Shahamon 8" id="Shahamon 8">Shahamon 8 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shashamon 10" type="checkbox" name="Shashamon 10" id="Shashamon 10">Shashamon 10 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Sheish Ayamim" type="checkbox" name="Sheish Ayamim" id="Sheish Ayamim">Sheish Ayamim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tsofit Elit" type="checkbox" name="Tsofit Elit" id="Tsofit Elit">Tsofit Elit <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tsofit Tahtit" type="checkbox" name="Tsofit Tahtit" id="Tsofit Tahtit">Tsofit Tahtit <div class="clearfix"></div>'; break; 
+case 8 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Even-Yehuda" type="checkbox" name="Even-Yehuda" id="Even-Yehuda">Even-Yehuda <div class="clearfix"></div>'; break; 
+case 9 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Gan Yavne" type="checkbox" name="Gan Yavne" id="Gan Yavne">Gan Yavne <div class="clearfix"></div>'; break; 
+case 10 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Borohov" type="checkbox" name="Borohov" id="Borohov">Borohov <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Harlozorov" type="checkbox" name="Harlozorov" id="Harlozorov">Harlozorov <div class="clearfix"></div>'; break; 
+case 11 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="bialik" type="checkbox" name="bialik" id="bialik">bialik <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Centre ville" type="checkbox" name="Centre ville" id="Centre ville">Centre ville <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ein a Yam" type="checkbox" name="Ein a Yam" id="Ein a Yam">Ein a Yam <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Givat olga" type="checkbox" name="Givat olga" id="Givat olga">Givat olga <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Hadera" type="checkbox" name="Hadera" id="Hadera">Hadera <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Hadera" type="checkbox" name="Hadera" id="Hadera">Hadera <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Quartier du Park" type="checkbox" name="Quartier du Park" id="Quartier du Park">Quartier du Park <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="weitzman" type="checkbox" name="weitzman" id="weitzman">weitzman <div class="clearfix"></div>'; break; 
+case 12 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="centre carmel" type="checkbox" name="centre carmel" id="centre carmel">centre carmel <div class="clearfix"></div>'; break; 
+case 13 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Centre Ville" type="checkbox" name="Centre Ville" id="Centre Ville">Centre Ville <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Herzliya" type="checkbox" name="Herzliya" id="Herzliya">Herzliya <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Herzliya Pitouah" type="checkbox" name="Herzliya Pitouah" id="Herzliya Pitouah">Herzliya Pitouah <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Amirim" type="checkbox" name="Neve Amirim" id="Neve Amirim">Neve Amirim <div class="clearfix"></div>'; break; 
+case 14 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Holon" type="checkbox" name="Holon" id="Holon">Holon <div class="clearfix"></div>'; break; 
+case 15 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Abu Tor" type="checkbox" name="Abu Tor" id="Abu Tor">Abu Tor <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Arnona" type="checkbox" name="Arnona" id="Arnona">Arnona <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Baka" type="checkbox" name="Baka" id="Baka">Baka <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Beit Vagan" type="checkbox" name="Beit Vagan" id="Beit Vagan">Beit Vagan <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Centre Ville" type="checkbox" name="Centre Ville" id="Centre Ville">Centre Ville <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Chaare Hessed" type="checkbox" name="Chaare Hessed" id="Chaare Hessed">Chaare Hessed <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Gilo" type="checkbox" name="Gilo" id="Gilo">Gilo <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Givat Mordehai" type="checkbox" name="Givat Mordehai" id="Givat Mordehai">Givat Mordehai <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Givat Shaoul" type="checkbox" name="Givat Shaoul" id="Givat Shaoul">Givat Shaoul <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Har Homa" type="checkbox" name="Har Homa" id="Har Homa">Har Homa <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Holyland" type="checkbox" name="Holyland" id="Holyland">Holyland <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Jerusalem" type="checkbox" name="Jerusalem" id="Jerusalem">Jerusalem <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Katamon" type="checkbox" name="Katamon" id="Katamon">Katamon <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Katamon hayeshana" type="checkbox" name="Katamon hayeshana" id="Katamon hayeshana">Katamon hayeshana <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Katamonim" type="checkbox" name="Katamonim" id="Katamonim">Katamonim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat haleum" type="checkbox" name="Kiryat haleum" id="Kiryat haleum">Kiryat haleum <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Moshe" type="checkbox" name="Kiryat Moshe" id="Kiryat Moshe">Kiryat Moshe <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Yovel" type="checkbox" name="Kiryat Yovel" id="Kiryat Yovel">Kiryat Yovel <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Makor Haim" type="checkbox" name="Makor Haim" id="Makor Haim">Makor Haim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Malha" type="checkbox" name="Malha" id="Malha">Malha <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mamila" type="checkbox" name="Mamila" id="Mamila">Mamila <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mochava Germanit" type="checkbox" name="Mochava Germanit" id="Mochava Germanit">Mochava Germanit <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Moshava Yevanit" type="checkbox" name="Moshava Yevanit" id="Moshava Yevanit">Moshava Yevanit <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Musrara" type="checkbox" name="Musrara" id="Musrara">Musrara <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Nahlaot" type="checkbox" name="Nahlaot" id="Nahlaot">Nahlaot <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Denia" type="checkbox" name="Ramat Denia" id="Ramat Denia">Ramat Denia <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Sharet" type="checkbox" name="Ramat Sharet" id="Ramat Sharet">Ramat Sharet <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramot" type="checkbox" name="Ramot" id="Ramot">Ramot <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Rasko" type="checkbox" name="Rasko" id="Rasko">Rasko <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Rehavia" type="checkbox" name="Rehavia" id="Rehavia">Rehavia <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Saint Simon" type="checkbox" name="Saint Simon" id="Saint Simon">Saint Simon <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Talbieh" type="checkbox" name="Talbieh" id="Talbieh">Talbieh <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Talpiot" type="checkbox" name="Talpiot" id="Talpiot">Talpiot <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Vieille ville" type="checkbox" name="Vieille ville" id="Vieille ville">Vieille ville <div class="clearfix"></div>'; break; 
+case 16 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Bne Beitar" type="checkbox" name="Bne Beitar" id="Bne Beitar">Bne Beitar <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Centre Nord" type="checkbox" name="Centre Nord" id="Centre Nord">Centre Nord <div class="clearfix"></div>'; break; 
+case 17 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Quartier Rasco" type="checkbox" name="Quartier Rasco" id="Quartier Rasco">Quartier Rasco <div class="clearfix"></div>'; break; 
+case 18 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kfar Yona" type="checkbox" name="Kfar Yona" id="Kfar Yona">Kfar Yona <div class="clearfix"></div>'; break; 
+case 19 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Bialik" type="checkbox" name="Kiryat Bialik" id="Kiryat Bialik">Kiryat Bialik <div class="clearfix"></div>'; break; 
+case 20 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Malakhi" type="checkbox" name="Kiryat Malakhi" id="Kiryat Malakhi">Kiryat Malakhi <div class="clearfix"></div>'; break; 
+case 21 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="03" type="checkbox" name="03" id="03">03 <div class="clearfix"></div>'; break; 
+case 22 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mevaseret tsion" type="checkbox" name="Mevaseret tsion" id="Mevaseret tsion">Mevaseret tsion <div class="clearfix"></div>'; break; 
+case 23 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mochav olech" type="checkbox" name="Mochav olech" id="Mochav olech">Mochav olech <div class="clearfix"></div>'; break; 
+case 24 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Agamim" type="checkbox" name="Agamim" id="Agamim">Agamim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Centre Ville" type="checkbox" name="Centre Ville" id="Centre Ville">Centre Ville <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="drom netanya" type="checkbox" name="drom netanya" id="drom netanya">drom netanya <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="E. T. Sapir" type="checkbox" name="E. T. Sapir" id="E. T. Sapir">E. T. Sapir <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ein Hatechelet" type="checkbox" name="Ein Hatechelet" id="Ein Hatechelet">Ein Hatechelet <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Habrigat Ayehudit" type="checkbox" name="Habrigat Ayehudit" id="Habrigat Ayehudit">Habrigat Ayehudit <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ir Yamim" type="checkbox" name="Ir Yamim" id="Ir Yamim">Ir Yamim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kikar" type="checkbox" name="Kikar" id="Kikar">Kikar <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiriat Hasharon" type="checkbox" name="Kiriat Hasharon" id="Kiriat Hasharon">Kiriat Hasharon <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mer" type="checkbox" name="Mer" id="Mer">Mer <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Nat600" type="checkbox" name="Nat600" id="Nat600">Nat600 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neot Chaked" type="checkbox" name="Neot Chaked" id="Neot Chaked">Neot Chaked <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Netanya" type="checkbox" name="Netanya" id="Netanya">Netanya <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Itamar" type="checkbox" name="Neve Itamar" id="Neve Itamar">Neve Itamar <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Oz" type="checkbox" name="Neve Oz" id="Neve Oz">Neve Oz <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Pardes Hagdoud" type="checkbox" name="Pardes Hagdoud" id="Pardes Hagdoud">Pardes Hagdoud <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Efrayim" type="checkbox" name="Ramat Efrayim" id="Ramat Efrayim">Ramat Efrayim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Hen" type="checkbox" name="Ramat Hen" id="Ramat Hen">Ramat Hen <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Poleg" type="checkbox" name="Ramat Poleg" id="Ramat Poleg">Ramat Poleg <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="safon netanya" type="checkbox" name="safon netanya" id="safon netanya">safon netanya <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="sderot nitsa" type="checkbox" name="sderot nitsa" id="sderot nitsa">sderot nitsa <div class="clearfix"></div>'; break; 
+case 25 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Baba Saley" type="checkbox" name="Baba Saley" id="Baba Saley">Baba Saley <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Haroresh" type="checkbox" name="Haroresh" id="Haroresh">Haroresh <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Menahem" type="checkbox" name="Kiryat Menahem" id="Kiryat Menahem">Kiryat Menahem <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Maarav" type="checkbox" name="Maarav" id="Maarav">Maarav <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve sharon" type="checkbox" name="Neve sharon" id="Neve sharon">Neve sharon <div class="clearfix"></div>'; break; 
+case 26 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="2003" type="checkbox" name="2003" id="2003">2003 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="2005" type="checkbox" name="2005" id="2005">2005 <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Est" type="checkbox" name="Est" id="Est">Est <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Hanessiim" type="checkbox" name="Hanessiim" id="Hanessiim">Hanessiim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat David Remez" type="checkbox" name="Kiryat David Remez" id="Kiryat David Remez">Kiryat David Remez <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Eliyahu Golomb" type="checkbox" name="Kiryat Eliyahu Golomb" id="Kiryat Eliyahu Golomb">Kiryat Eliyahu Golomb <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Ganim" type="checkbox" name="Kiryat Ganim" id="Kiryat Ganim">Kiryat Ganim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="ouest" type="checkbox" name="ouest" id="ouest">ouest <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="PrÃ¨s de Hanessiim" type="checkbox" name="PrÃ¨s de Hanessiim" id="PrÃ¨s de Hanessiim">PrÃ¨s de Hanessiim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Pres de la mairie" type="checkbox" name="Pres de la mairie" id="Pres de la mairie">Pres de la mairie <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Pres de la mairie" type="checkbox" name="Pres de la mairie" id="Pres de la mairie">Pres de la mairie <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="PrÃ¨s de Yad Labanim" type="checkbox" name="PrÃ¨s de Yad Labanim" id="PrÃ¨s de Yad Labanim">PrÃ¨s de Yad Labanim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="PrÃ¨s de Yad Labanim" type="checkbox" name="PrÃ¨s de Yad Labanim" id="PrÃ¨s de Yad Labanim">PrÃ¨s de Yad Labanim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Pres du centre" type="checkbox" name="Pres du centre" id="Pres du centre">Pres du centre <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Proche Ariel" type="checkbox" name="Proche Ariel" id="Proche Ariel">Proche Ariel <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Proche Bilou" type="checkbox" name="Proche Bilou" id="Proche Bilou">Proche Bilou <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Raanana" type="checkbox" name="Raanana" id="Raanana">Raanana <div class="clearfix"></div>'; break; 
+case 27 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Yehochoua" type="checkbox" name="Neve Yehochoua" id="Neve Yehochoua">Neve Yehochoua <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat gan" type="checkbox" name="Ramat gan" id="Ramat gan">Ramat gan <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Rue Jabotinski" type="checkbox" name="Rue Jabotinski" id="Rue Jabotinski">Rue Jabotinski <div class="clearfix"></div>'; break; 
+case 28 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Mer" type="checkbox" name="Mer" id="Mer">Mer <div class="clearfix"></div>'; break; 
+case 29 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="1ere ligne mer" type="checkbox" name="1ere ligne mer" id="1ere ligne mer">1ere ligne mer <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Afeka" type="checkbox" name="Afeka" id="Afeka">Afeka <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Bavli" type="checkbox" name="Bavli" id="Bavli">Bavli <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Bazel" type="checkbox" name="Bazel" id="Bazel">Bazel <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ben-Yehuda" type="checkbox" name="Ben-Yehuda" id="Ben-Yehuda">Ben-Yehuda <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Centre Ville" type="checkbox" name="Centre Ville" id="Centre Ville">Centre Ville <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Dizengof" type="checkbox" name="Dizengof" id="Dizengof">Dizengof <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ezorei Hen" type="checkbox" name="Ezorei Hen" id="Ezorei Hen">Ezorei Hen <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Florentine" type="checkbox" name="Florentine" id="Florentine">Florentine <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Glilot" type="checkbox" name="Glilot" id="Glilot">Glilot <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Haargazim" type="checkbox" name="Haargazim" id="Haargazim">Haargazim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Habima" type="checkbox" name="Habima" id="Habima">Habima <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Hadar Yossef" type="checkbox" name="Hadar Yossef" id="Hadar Yossef">Hadar Yossef <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Hamashtela" type="checkbox" name="Hamashtela" id="Hamashtela">Hamashtela <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Hatsafon hayachan" type="checkbox" name="Hatsafon hayachan" id="Hatsafon hayachan">Hatsafon hayachan <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kerem Hatemanim" type="checkbox" name="Kerem Hatemanim" id="Kerem Hatemanim">Kerem Hatemanim <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kikar Hamedina" type="checkbox" name="Kikar Hamedina" id="Kikar Hamedina">Kikar Hamedina <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kiryat Shalom" type="checkbox" name="Kiryat Shalom" id="Kiryat Shalom">Kiryat Shalom <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Kohav Hazafon" type="checkbox" name="Kohav Hazafon" id="Kohav Hazafon">Kohav Hazafon <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Lev Tel-Aviv" type="checkbox" name="Lev Tel-Aviv" id="Lev Tel-Aviv">Lev Tel-Aviv <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Levontin" type="checkbox" name="Levontin" id="Levontin">Levontin <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Montifiory" type="checkbox" name="Montifiory" id="Montifiory">Montifiory <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Nahalat binyamin" type="checkbox" name="Nahalat binyamin" id="Nahalat binyamin">Nahalat binyamin <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Nahalat Itshak" type="checkbox" name="Nahalat Itshak" id="Nahalat Itshak">Nahalat Itshak <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Ofer" type="checkbox" name="Neve Ofer" id="Neve Ofer">Neve Ofer <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Neve Tsedek" type="checkbox" name="Neve Tsedek" id="Neve Tsedek">Neve Tsedek <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Noga" type="checkbox" name="Noga" id="Noga">Noga <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Nordau" type="checkbox" name="Nordau" id="Nordau">Nordau <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Park Tzameret" type="checkbox" name="Park Tzameret" id="Park Tzameret">Park Tzameret <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="quart de la mer" type="checkbox" name="quart de la mer" id="quart de la mer">quart de la mer <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Quart de mer Nord" type="checkbox" name="Quart de mer Nord" id="Quart de mer Nord">Quart de mer Nord <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Quart de mer Sud" type="checkbox" name="Quart de mer Sud" id="Quart de mer Sud">Quart de mer Sud <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Aviv" type="checkbox" name="Ramat Aviv" id="Ramat Aviv">Ramat Aviv <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Ramat Aviv Gimel" type="checkbox" name="Ramat Aviv Gimel" id="Ramat Aviv Gimel">Ramat Aviv Gimel <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Rothshild" type="checkbox" name="Rothshild" id="Rothshild">Rothshild <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Sarona" type="checkbox" name="Sarona" id="Sarona">Sarona <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Shenkin" type="checkbox" name="Shenkin" id="Shenkin">Shenkin <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Sokolov" type="checkbox" name="Sokolov" id="Sokolov">Sokolov <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="tel aviv" type="checkbox" name="tel aviv" id="tel aviv">tel aviv <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="tel aviv north" type="checkbox" name="tel aviv north" id="tel aviv north">tel aviv north <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tel aviv sud" type="checkbox" name="Tel aviv sud" id="Tel aviv sud">Tel aviv sud <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tel barouch" type="checkbox" name="Tel barouch" id="Tel barouch">Tel barouch <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Yad Eliyahou" type="checkbox" name="Yad Eliyahou" id="Yad Eliyahou">Yad Eliyahou <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Yaffo" type="checkbox" name="Yaffo" id="Yaffo">Yaffo <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Yaffo vieille ville" type="checkbox" name="Yaffo vieille ville" id="Yaffo vieille ville">Yaffo vieille ville <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Yehouda hamakaby" type="checkbox" name="Yehouda hamakaby" id="Yehouda hamakaby">Yehouda hamakaby <div class="clearfix"></div><input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Yermiyahu" type="checkbox" name="Yermiyahu" id="Yermiyahu">Yermiyahu <div class="clearfix"></div>'; break; 
+case 30 : var txt = '<input  onchange="javascript:AddName2(\'quartier_div\',\'quartier\');" myname="Tiberiade" type="checkbox" name="Tiberiade" id="Tiberiade">Tiberiade <div class="clearfix"></div>'; break; 
+}
+switch (i) {
+}
+	if(txt.length){
+
+  $("#quartier_div").html(txt).removeClass('jqtransformdone').jqTransform();
+    }
+
+}
+
+                              </script>
+                  </div>
+ 
+ 
+</div> 
+
+	
+	<div class="col-md-2 col-sm-6">
+ <div id="bienra_div"> 
+              <input type="hidden" id="bienra" name="bienra" value=""/> 
+              
+             <select class="js-example-placeholder2-multiple js-states" multiple="multiple" onchange="javascript:AddName('bienra_div','bienra');document.getElementById('searchForm').submit();">
+              
+                                   <option value="Villa" name="Villa" id="Villa" >  Villa </option>
+                                                     <option value="Appartement" name="Appartement" id="Appartement" >  Appartement </option>
+                                                     <option value="Duplex" name="Duplex" id="Duplex" >  Duplex </option>
+                                                     <option value="Penthouse" name="Penthouse" id="Penthouse" >  Penthouse </option>
+                                                     <option value="Rez de jardin" name="Rez de jardin" id="Rez de jardin" >  Rez de jardin </option>
+                                                     <option value="Cottage" name="Cottage" id="Cottage" >  Cottage </option>
+                                                     <option value="Loft" name="Loft" id="Loft" >  Loft </option>
+                                                     <option value="Bureaux" name="Bureaux" id="Bureaux" >  Bureaux </option>
+                                                     <option value="Terrains" name="Terrains" id="Terrains" >  Terrains </option>
+                                                     <option value="Entreprises" name="Entreprises" id="Entreprises" >  Entreprises </option>
+                                                     <option value="Immeuble" name="Immeuble" id="Immeuble" >  Immeuble </option>
+                                                     <option value="Magasin" name="Magasin" id="Magasin" >  Magasin </option>
+                                                     <option value="Locaux commerciaux" name="Locaux commerciaux" id="Locaux commerciaux" >  Locaux commerciaux </option>
+                                                     <option value="Duplex-Penthouse" name="Duplex-Penthouse" id="Duplex-Penthouse" >  Duplex-Penthouse </option>
+                                                     <option value="Parking" name="Parking" id="Parking" >  Parking </option>
+                                                     <option value="Mini-Penthouse" name="Mini-Penthouse" id="Mini-Penthouse" >  Mini-Penthouse </option>
+                                   
+                
+                 
+</select>                       
+ </div>       
+                                    
+                    
+	</div>                 
+
+      
+      <div class="col-md-2 col-sm-4">
+                      
+                      <!--  <input type="hidden" id="rooms" name="rooms" value="" />-->
+                    
+		  <div onmouseout="HideCat('room')" onmouseover="ShowCat('room');">
+                        <input onmouseout="HideCat('room')" onmouseover="ShowCat('room');" type="text" readonly="readonly" id="rooms" name="rooms" value=""  placeholder="Nombre de pi&egrave;ces "/>
+                      
+                        <div onmouseout="HideCat('room')" onmouseover="ShowCat('room');" id="room" class="inside">
+                                                   <input  onchange="javascript:AddName2('room','rooms');document.getElementById('searchForm').submit();" myname="1" type="checkbox" name="1" id="1"  />  1<br>
+                         <input  onchange="javascript:AddName2('room','rooms');document.getElementById('searchForm').submit();" myname="2" type="checkbox" name="2" id="2"   /> 2<br>
+                          <input  onchange="javascript:AddName2('room','rooms');document.getElementById('searchForm').submit();" myname="3" type="checkbox" name="3" id="3"   /> 3 <br>
+                          <input  onchange="javascript:AddName2('room','rooms');document.getElementById('searchForm').submit();" myname="4" type="checkbox" name="4" id="4"   /> 4 <br>
+                          <input  onchange="javascript:AddName2('room','rooms');document.getElementById('searchForm').submit();" myname="5" type="checkbox" name="5" id="5"   /> 5+
+                      </div>
+                      </div>
+                      
+                      
+                      </div>
+	
+<div class="col-md-2 col-sm-4">
+<input name="superficie" type="text" id="superficie" placeholder="Surface  min "  onchange="javascript:AddName('superficie');document.getElementById('searchForm').submit();" />
+	</div>
+	
+	                        
+ <div class="col-md-2 col-sm-4">                     
+<input name="maxi" type="text" id="maxi" placeholder="Budget max  (&#8362;)"  onchange="javascript:AddName('maxi');document.getElementById('searchForm').submit();" />						
+                               
+	 </div>
+	
+	
+<input type="hidden" name="currency" id="currency" value="1" />
+<input name="Submit" type="hidden" id="Submit" value="Rechercher" />
+<a class="pull-right" data-toggle="collapse" href="#desc_div">Plus de critÃ¨res <i class="fa fa-plus-circle fa-2" aria-hidden="true"></i></a> 
+                          
+	
+	<input name="desc" type="hidden" id="desc" /> 
+                             <div class="row accordion-body collapse col-md-12" id="desc_div"><!--row accordion-body collapse-->
+                              <div class="row">
+                                                              <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Vue d&eacute;gag&eacute;e" type="checkbox" id="Vue d&eacute;gag&eacute;e" value="1" >  Vue d&eacute;gag&eacute;e                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Terrasse" type="checkbox" id="Terrasse" value="1" >  Terrasse                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Jardin" type="checkbox" id="Jardin" value="1" >  Jardin                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Cour" type="checkbox" id="Cour" value="1" >  Cour                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Bord de mer" type="checkbox" id="Bord de mer" value="1" >  Bord de mer                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Entr&eacute;e ind&eacute;pendante " type="checkbox" id="Entr&eacute;e ind&eacute;pendante " value="1" >  Entr&eacute;e ind&eacute;pendante                                        	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Parking" type="checkbox" id="Parking" value="1" >  Parking                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Garage" type="checkbox" id="Garage" value="1" >  Garage                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Cave" type="checkbox" id="Cave" value="1" >  Cave                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Ascenseur" type="checkbox" id="Ascenseur" value="1" >  Ascenseur                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="R&eacute;nov&eacute;" type="checkbox" id="R&eacute;nov&eacute;" value="1" >  R&eacute;nov&eacute;                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="&Agrave; r&eacute;nover" type="checkbox" id="&Agrave; r&eacute;nover" value="1" >  &Agrave; r&eacute;nover                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Meubl&eacute;" type="checkbox" id="Meubl&eacute;" value="1" >  Meubl&eacute;                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Air conditionn&eacute;" type="checkbox" id="Air conditionn&eacute;" value="1" >  Air conditionn&eacute;                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Piscine" type="checkbox" id="Piscine" value="1" >  Piscine                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Chauffage eau solaire" type="checkbox" id="Chauffage eau solaire" value="1" >  Chauffage eau solaire                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Chauffage collectif" type="checkbox" id="Chauffage collectif" value="1" >  Chauffage collectif                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Chauffage ind&eacute;pendant" type="checkbox" id="Chauffage ind&eacute;pendant" value="1" >  Chauffage ind&eacute;pendant                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="2 wc" type="checkbox" id="2 wc" value="1" >  2 wc                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="2 salles de bains" type="checkbox" id="2 salles de bains" value="1" >  2 salles de bains                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Quartier religieux" type="checkbox" id="Quartier religieux" value="1" >  Quartier religieux                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Quartier traditionnaliste" type="checkbox" id="Quartier traditionnaliste" value="1" >  Quartier traditionnaliste                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Quartier non religieux" type="checkbox" id="Quartier non religieux" value="1" >  Quartier non religieux                                       	</label> 	
+                                  </div>
+                                  
+                                         <div class="col-md-2 col-sm-2 col-xs-6">
+                                     	<label>
+                                  <input onchange="javascript:AddName2('desc_div','desc');document.getElementById('searchForm').submit();" name="Souccah" type="checkbox" id="Souccah" value="1" >  Souccah                                       	</label> 	
+                                  </div>
+                                  
+                                            </div>
+								 </div>
+
+  </form>
+	</div>
+	</div>
+	</div>
+</div>
+
+
+	</div>
+		<div id="content" class="content full padding-tb25">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 margin-20">
+						
+										<!-- Nombre de resultats -->
+					<span class="h3">
+						4005						Annonces					</span>
+					<!-- Description recherche -->
+										<h1>
+						Vente,Projet neuf,Projet neuf																														en Isra&euml;l																							</h1>
+
+					<div class="row">
+						<!-- Boutons Grid/List -->
+						<div class="col-md-6 hidden-xs">
+							<div class="toggle-view">
+								<a href="recherche.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=" class="active">Liste <i class="fa fa-th-list"></i></a>
+								<a href="recherche-grid.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=" class=" two">Galerie <i class="fa fa-th-large"></i></a>
+							</div>
+						</div>
+						<!-- Trier par -->
+						<div class="col-md-6">
+							<form style="margin:0;padding:0" action="recherche.php?" method="get" name="classement" id="classement">
+								<input name="page" type="hidden" value="0" />
+								<input name="type" type="hidden" value="" />
+								<input name="pi1" type="hidden" id="pi1" value="" />
+								<input name="pi2" type="hidden" id="pi2" value="" />
+								<input name="pi3" type="hidden" id="pi3" value="" />
+								<input name="pi4" type="hidden" id="pi4" value="" />
+								<input name="pi5" type="hidden" id="pi5" value="" />
+								<input name="ida" type="hidden" id="ida" value="" />
+								<input name="rooms" type="hidden" id="rooms" value="" />
+								<input name="superficie" type="hidden" id="superficie" size="3" value="" />
+								<input name="superficiemax" type="hidden" id="superficie-max" size="3" value="" />
+								<input name="mini" type="hidden" id="mini" size="7" value="" />
+								<input name="maxi" type="hidden" id="maxi" size="7" value="" />
+								<input name="currency" type="hidden" value="1" />
+								<input name="bienra" id="bienra" type="hidden" value="" /> 
+								<input name="desc" id="desc" type="hidden" value="" />
+								<input name="region" id="region" type="hidden" value="-1" />
+								<input name="quartier" id="select" type="hidden" value="" />
+								<input name="Photos" type="hidden" id="Photos" value="" />
+								<input name="Submit" type="hidden" id="Submit" value="Rechercher" />
+								<select name="order" id="order" onchange="javascript:classement.submit();" class="pull-right">
+									<option value="">Trier par... </option>
+									<option value="piece" >Nombre de pi&egrave;ces </option>
+									<option value="date" >Date d'entr&eacute;e</option>
+									<option value="prixcroissant" >Prix  croissant</option>
+									<option value="prix" >Prix  d&eacute;croissant</option>
+									<option value="surface" >Superficie  </option>
+								</select>
+								<input type="hidden" name="percent" id="percent" value="100">
+																	<input name="tip[]" type="hidden" id="tip[]" value="0">
+																	<input name="tip[]" type="hidden" id="tip[]" value="2">
+															</form>
+							<!-- Bouton alerte email -->
+							<a class="btn btn-primary2 btn-sm pull-right" href="immobilier-israel.php?module=particulier/mysearch2&amp;id=1613135874" title="Cliquez ici pour recevoir les nouvelles annonces correspondant Ã  vos critÃ¨res." target="_blank" data-toggle="tooltip" data-placement="bottom">
+								Alerte Email Gratuite							</a>
+						</div>
+					</div>
+							
+				</div>
+				
+				<div class="col-md-8-index">
+					<!--begin content -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="property-listing">
+								<ul >
+								
+										<!-- 5 Annonces a la une -->		
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="ala-une">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Projet neuf Rez de jardin Netanya" class="property-featured-image" href="immobilier-projet-neuf-rez-de-jardin-netanya-avec-terrasse-au-centre-endroit-calme-permis-de-29-507.html"><img src="./photos/507/29_1_m.jpg" class="recherche"  alt="Projet neuf Rez de jardin Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-rez-de-jardin-netanya-avec-terrasse-au-centre-endroit-calme-permis-de-29-507.html" target="_blank" class="property-featured-image" title="Projet neuf Rez de jardin Netanya">
+																																		<img src="./photos/507/29_2_m.jpg" class="recherche" alt="Projet neuf Rez de jardin Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-rez-de-jardin-netanya-avec-terrasse-au-centre-endroit-calme-permis-de-29-507.html" target="_blank" class="property-featured-image" title="Projet neuf Rez de jardin Netanya">
+																																		<img src="./photos/507/29_3_m.jpg" class="recherche" alt="Projet neuf Rez de jardin Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+												<div class="ala-une">&Agrave; la Une</div>												<!-- reference -->
+											<span class="images-count">Rez de jardin <strong>3</strong> pi&egrave;ces <strong>188</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-29-507"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>N/C</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-rez-de-jardin-netanya-avec terrasse,Au centre,Endroit calme,Permis de-29-507.html" target="_blank"> Centre Ville </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 08/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Avec terrasse, au centre, endroit calme,&hellip;</strong>
+																												Nouveaux projet en plein centre ville proche mer&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=507' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/507.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-29-507" class="cachedinfo telephone" rel="0543585088"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-29-507" class="cachedinfo url" rel="www.ms-israel.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-avec-terrasse-au-centre-endroit-calme-permis-de-29-507.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+										<!-- 5 Annonces a la une -->		
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="ala-une">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Vente Appartement Netanya" class="property-featured-image" href="immobilier-vente-appartement-netanya-avec-terrasse-1192-316.html"><img src="./photos/316/1192_1_m.jpg" class="recherche"  alt="Vente Appartement Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-appartement-netanya-avec-terrasse-1192-316.html" target="_blank" class="property-featured-image" title="Vente Appartement Netanya">
+																																		<img src="./photos/316/1192_2_m.jpg" class="recherche" alt="Vente Appartement Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-appartement-netanya-avec-terrasse-1192-316.html" target="_blank" class="property-featured-image" title="Vente Appartement Netanya">
+																																		<img src="./photos/316/1192_3_m.jpg" class="recherche" alt="Vente Appartement Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+												<div class="ala-une">&Agrave; la Une</div>												<!-- reference -->
+											<span class="images-count">Appartement <strong>5</strong> pi&egrave;ces <strong>138</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-1192-316"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>2.850.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-vente-appartement-netanya-avec terrasse-1192-316.html" target="_blank"> Ir Yamim </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 01/02/2021 <i class="fa fa-home"></i>Vente</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Avec terrasse</strong>
+																												Appartement a netanya dans le quartier de ir&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=316' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/316.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-1192-316" class="cachedinfo telephone" rel="IL-0546555814"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-1192-316" class="cachedinfo url" rel="www.joelle-israel.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-avec-terrasse-1192-316.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+										<!-- 5 Annonces a la une -->		
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="ala-une">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Projet neuf Appartement Tel Aviv" class="property-featured-image" href="immobilier-projet-neuf-appartement-tel-aviv-appartement-avec-terrasse-au-centre-haut-5168-342.html"><img src="./photos/342/5168_1_m.jpg" class="recherche"  alt="Projet neuf Appartement Tel Aviv"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-appartement-tel-aviv-appartement-avec-terrasse-au-centre-haut-5168-342.html" target="_blank" class="property-featured-image" title="Projet neuf Appartement Tel Aviv">
+																																		<img src="./photos/342/5168_2_m.jpg" class="recherche" alt="Projet neuf Appartement Tel Aviv">
+																</a>
+															</li>
+																																									</ul>
+												</div>
+												<div class="ala-une">&Agrave; la Une</div>												<!-- reference -->
+											<span class="images-count">Appartement <strong>4</strong> pi&egrave;ces <strong>121</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-5168-342"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>6.858.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-appartement-tel-aviv-Appartement avec terrasse,Au centre,Haut-5168-342.html" target="_blank"> Dizengof </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Tel Aviv <i class="fa fa-calendar"></i> 04/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Appartement avec terrasse, au centre,&hellip;</strong>
+																												RÃ©fÃ©rence: tl 1937 quartier: dizengof. tama 38.&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=342' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/342.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-5168-342" class="cachedinfo telephone" rel="0546902735"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-5168-342" class="cachedinfo url" rel="comacom.co.il/"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-tel-aviv-appartement-avec-terrasse-au-centre-haut-5168-342.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+										<!-- 5 Annonces a la une -->		
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="ala-une">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Vente Penthouse Netanya" class="property-featured-image" href="immobilier-vente-penthouse-netanya-avec-terrasse-etage-haut-avec-vue-dans-un-immeuble-neuf-1312-316.html"><img src="./photos/316/1312_1_m.jpg" class="recherche"  alt="Vente Penthouse Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-penthouse-netanya-avec-terrasse-etage-haut-avec-vue-dans-un-immeuble-neuf-1312-316.html" target="_blank" class="property-featured-image" title="Vente Penthouse Netanya">
+																																		<img src="./photos/316/1312_2_m.jpg" class="recherche" alt="Vente Penthouse Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-penthouse-netanya-avec-terrasse-etage-haut-avec-vue-dans-un-immeuble-neuf-1312-316.html" target="_blank" class="property-featured-image" title="Vente Penthouse Netanya">
+																																		<img src="./photos/316/1312_3_m.jpg" class="recherche" alt="Vente Penthouse Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+												<div class="ala-une">&Agrave; la Une</div>												<!-- reference -->
+											<span class="images-count">Penthouse <strong>5</strong> pi&egrave;ces <strong>200</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-1312-316"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>4.400.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-vente-penthouse-netanya-avec terrasse,Etage haut avec vue,dans un immeuble neuf-1312-316.html" target="_blank"> Centre Ville </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 27/01/2021 <i class="fa fa-home"></i>Vente</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Avec terrasse, etage haut avec vue, dans&hellip;</strong>
+																												Pentouse  centre ville tres spacieux, avec&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=316' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/316.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-1312-316" class="cachedinfo telephone" rel="IL-0546555814"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-1312-316" class="cachedinfo url" rel="www.joelle-israel.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-avec-terrasse-etage-haut-avec-vue-dans-un-immeuble-neuf-1312-316.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+										<!-- 5 Annonces a la une -->		
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="ala-une">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Vente Villa Ramat Gan" class="property-featured-image" href="immobilier-vente-villa-ramat-gan-a-renover-avec-terrasse-calme-au-centre-bon-emplacement-dans-2795-175.html"><img src="./photos/175/2795_1_m.jpg" class="recherche"  alt="Vente Villa Ramat Gan"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-villa-ramat-gan-a-renover-avec-terrasse-calme-au-centre-bon-emplacement-dans-2795-175.html" target="_blank" class="property-featured-image" title="Vente Villa Ramat Gan">
+																																		<img src="./photos/175/2795_2_m.jpg" class="recherche" alt="Vente Villa Ramat Gan">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-villa-ramat-gan-a-renover-avec-terrasse-calme-au-centre-bon-emplacement-dans-2795-175.html" target="_blank" class="property-featured-image" title="Vente Villa Ramat Gan">
+																																		<img src="./photos/175/2795_3_m.jpg" class="recherche" alt="Vente Villa Ramat Gan">
+																</a>
+															</li>
+																											</ul>
+												</div>
+												<div class="ala-une">&Agrave; la Une</div>												<!-- reference -->
+											<span class="images-count">Villa <strong>7</strong> pi&egrave;ces <strong>300</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-2795-175"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>5.950.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-vente-villa-ramat-gan-A rÃ©nover,avec terrasse,calme,Au centre,Bon emplacement,Dans-2795-175.html" target="_blank"> Ramat Gan </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Ramat Gan <i class="fa fa-calendar"></i> 07/02/2021 <i class="fa fa-home"></i>Vente</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>A rÃ©nover, avec terrasse, calme, au&hellip;</strong>
+																												Villa a renover dans jolie rue calme arboree,&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=175' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/175.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-2795-175" class="cachedinfo telephone" rel="054 6 885 446"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-2795-175" class="cachedinfo url" rel="www.lappart-israel.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-ramat-gan-a-renover-avec-terrasse-calme-au-centre-bon-emplacement-dans-2795-175.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																											
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Vente Penthouse Netanya" class="property-featured-image" href="immobilier-vente-penthouse-netanya-penthouse-haut-standing-proche-de-la-mer-magnifique-2-509.html"><img src="./photos/509/2_1_m.jpg" class="recherche"  alt="Vente Penthouse Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-penthouse-netanya-penthouse-haut-standing-proche-de-la-mer-magnifique-2-509.html" target="_blank" class="property-featured-image" title="Vente Penthouse Netanya">
+																																		<img src="./photos/509/2_2_m.jpg" class="recherche" alt="Vente Penthouse Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-penthouse-netanya-penthouse-haut-standing-proche-de-la-mer-magnifique-2-509.html" target="_blank" class="property-featured-image" title="Vente Penthouse Netanya">
+																																		<img src="./photos/509/2_3_m.jpg" class="recherche" alt="Vente Penthouse Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Penthouse <strong>6</strong> pi&egrave;ces <strong>260</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-2-509"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>5.990.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-vente-penthouse-netanya-Penthouse Haut standing,Proche de la mer,Magnifique-2-509.html" target="_blank"> Centre Ville </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Vente</span>
+													<!-- Description -->
+													<p>
+																												
+																																											<span class="label label-info">EXCLUSIVIT&Eacute;</span>  
+																												 
+														  <strong>Penthouse haut standing, proche de la&hellip;</strong>
+																												Ã vendre splendide penthouse netanya city centre&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='recherche.php?&ida=509' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/509.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-2-509" class="cachedinfo telephone" rel="0584399118"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-2-509" class="cachedinfo url" rel="www.homeforsaleil.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-penthouse-haut-standing-proche-de-la-mer-magnifique-2-509.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides recommande">
+														<li class="item">
+															<div class="recommandeText">Annonce recommand&eacute;e par l'agence</div>																														<a target="_blank" title="Projet neuf Penthouse Jerusalem" class="property-featured-image" href="immobilier-projet-neuf-penthouse-jerusalem-bonne-occasion-142-472.html"><img src="./photos/472/142_1_m.jpg" class="recherche"  alt="Projet neuf Penthouse Jerusalem"></a>																													</li>
+																																									</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Penthouse <strong>4</strong> pi&egrave;ces <strong>152</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-142-472"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>4.300.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-penthouse-jerusalem-Bonne occasion-142-472.html" target="_blank"> Givat Mordehai </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Jerusalem <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Bonne occasion</strong>
+																												Votre appartement dans un complexe en cour de&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='recherche.php?&ida=472' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/472.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-142-472" class="cachedinfo telephone" rel="054.700.7326"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-142-472" class="cachedinfo url" rel="www.adarim-israel.com/"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-jerusalem-bonne-occasion-142-472.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides recommande">
+														<li class="item">
+															<div class="recommandeText">Annonce recommand&eacute;e par l'agence</div>																														<a target="_blank" title="Projet neuf Appartement Jerusalem" class="property-featured-image" href="immobilier-projet-neuf-appartement-jerusalem-bonne-occasion-143-472.html"><img src="./photos/472/143_1_m.jpg" class="recherche"  alt="Projet neuf Appartement Jerusalem"></a>																													</li>
+																																									</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Appartement <strong>3</strong> pi&egrave;ces <strong>75</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-143-472"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>2.080.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-appartement-jerusalem-Bonne occasion-143-472.html" target="_blank"> Givat Mordehai </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Jerusalem <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Bonne occasion</strong>
+																												Votre appartement dans un complexe en cour de&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='recherche.php?&ida=472' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/472.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-143-472" class="cachedinfo telephone" rel="054.700.7326"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-143-472" class="cachedinfo url" rel="www.adarim-israel.com/"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-jerusalem-bonne-occasion-143-472.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Vente Appartement Netanya" class="property-featured-image" href="immobilier-vente-appartement-netanya-magnifique-appartement-de-5-pieces-tres-spacieux-vue-splendide-102-507.html"><img src="./photos/507/102_1_m.jpg" class="recherche"  alt="Vente Appartement Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-appartement-netanya-magnifique-appartement-de-5-pieces-tres-spacieux-vue-splendide-102-507.html" target="_blank" class="property-featured-image" title="Vente Appartement Netanya">
+																																		<img src="./photos/507/102_2_m.jpg" class="recherche" alt="Vente Appartement Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-vente-appartement-netanya-magnifique-appartement-de-5-pieces-tres-spacieux-vue-splendide-102-507.html" target="_blank" class="property-featured-image" title="Vente Appartement Netanya">
+																																		<img src="./photos/507/102_3_m.jpg" class="recherche" alt="Vente Appartement Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Appartement <strong>5</strong> pi&egrave;ces <strong>160</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-102-507"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>3.770.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-vente-appartement-netanya-magnifique appartement de 5 piÃ¨ces trÃ¨s spacieux vue splendide-102-507.html" target="_blank"> Nat600 </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Vente</span>
+													<!-- Description -->
+													<p>
+																												
+																																										 
+														  <strong>Magnifique appartement de 5 piÃ¨ces&hellip;</strong>
+																												Magnifique appartement de 5 piÃ¨ces trÃ¨s spacieux&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=507' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/507.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-102-507" class="cachedinfo telephone" rel="0543585088"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-102-507" class="cachedinfo url" rel="www.ms-israel.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-magnifique-appartement-de-5-pieces-tres-spacieux-vue-splendide-102-507.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Projet neuf Appartement Netanya" class="property-featured-image" href="immobilier-projet-neuf-appartement-netanya-luxueux-proche-de-la-mer-dans-un-immeuble-neuf-26-513.html"><img src="./photos/513/26_1_m.jpg" class="recherche"  alt="Projet neuf Appartement Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-appartement-netanya-luxueux-proche-de-la-mer-dans-un-immeuble-neuf-26-513.html" target="_blank" class="property-featured-image" title="Projet neuf Appartement Netanya">
+																																		<img src="./photos/513/26_2_m.jpg" class="recherche" alt="Projet neuf Appartement Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-appartement-netanya-luxueux-proche-de-la-mer-dans-un-immeuble-neuf-26-513.html" target="_blank" class="property-featured-image" title="Projet neuf Appartement Netanya">
+																																		<img src="./photos/513/26_3_m.jpg" class="recherche" alt="Projet neuf Appartement Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Appartement <strong>5</strong> pi&egrave;ces <strong>146</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-26-513"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>2.980.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-appartement-netanya-Luxueux,Proche de la mer,dans un immeuble neuf-26-513.html" target="_blank"> Neve Oz </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																													<span class="label">VIDEO</span> 
+																																										 
+														  <strong>Luxueux, proche de la mer, dans un&hellip;</strong>
+																												Immeuble de haut standing rÃ©alisÃ©e par un des&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=513' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/513.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-26-513" class="cachedinfo telephone" rel="0523362121"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-26-513" class="cachedinfo url" rel="www.maisonneuveenisrael.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-luxueux-proche-de-la-mer-dans-un-immeuble-neuf-26-513.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Projet neuf Appartement Netanya" class="property-featured-image" href="immobilier-projet-neuf-appartement-netanya-proche-de-la-mer-dans-un-immeuble-neuf-24-513.html"><img src="./photos/513/24_1_m.jpg" class="recherche"  alt="Projet neuf Appartement Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-appartement-netanya-proche-de-la-mer-dans-un-immeuble-neuf-24-513.html" target="_blank" class="property-featured-image" title="Projet neuf Appartement Netanya">
+																																		<img src="./photos/513/24_2_m.jpg" class="recherche" alt="Projet neuf Appartement Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-appartement-netanya-proche-de-la-mer-dans-un-immeuble-neuf-24-513.html" target="_blank" class="property-featured-image" title="Projet neuf Appartement Netanya">
+																																		<img src="./photos/513/24_3_m.jpg" class="recherche" alt="Projet neuf Appartement Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Appartement <strong>4</strong> pi&egrave;ces <strong>116</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-24-513"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>2.540.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-appartement-netanya-Proche de la mer,dans un immeuble neuf-24-513.html" target="_blank"> Kikar </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																													<span class="label">VIDEO</span> 
+																																										 
+														  <strong>Proche de la mer, dans un immeuble neuf</strong>
+																												Situation du projet 
+Maison neuve en israÃ«l vous&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=513' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/513.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-24-513" class="cachedinfo telephone" rel="0523362121"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-24-513" class="cachedinfo url" rel="www.maisonneuveenisrael.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-proche-de-la-mer-dans-un-immeuble-neuf-24-513.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																			
+												
+																				
+																														<!-- Affichage par liste -->
+										<li class="col-md-12" id="">
+											<!-- Photo -->
+											<div class="col-md-4">
+												<div class="flexslider" data-autoplay="no" data-pagination="no" data-arrows="yes" data-style="slide" data-pause="yes">
+													<ul class="slides">
+														<li class="item">
+																																													<a target="_blank" title="Projet neuf Penthouse Netanya" class="property-featured-image" href="immobilier-projet-neuf-penthouse-netanya-proche-de-la-mer-dans-un-immeuble-neuf-25-513.html"><img src="./photos/513/25_1_m.jpg" class="recherche"  alt="Projet neuf Penthouse Netanya"></a>																													</li>
+																													<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-penthouse-netanya-proche-de-la-mer-dans-un-immeuble-neuf-25-513.html" target="_blank" class="property-featured-image" title="Projet neuf Penthouse Netanya">
+																																		<img src="./photos/513/25_2_m.jpg" class="recherche" alt="Projet neuf Penthouse Netanya">
+																</a>
+															</li>
+																																											<li class="item">
+																<a href="http://www.immobilier.co.il/immobilier-projet-neuf-penthouse-netanya-proche-de-la-mer-dans-un-immeuble-neuf-25-513.html" target="_blank" class="property-featured-image" title="Projet neuf Penthouse Netanya">
+																																		<img src="./photos/513/25_3_m.jpg" class="recherche" alt="Projet neuf Penthouse Netanya">
+																</a>
+															</li>
+																											</ul>
+												</div>
+																								<!-- reference -->
+											<span class="images-count">Penthouse <strong>5</strong> pi&egrave;ces <strong>160</strong> m&sup2;</span>
+												<!-- Garder la selection -->
+												<!--<span class="badges-star"><a target="_blank" class="fav btn btn-default" href="#" data-toggle="tooltip" data-original-title="Ajouter &agrave; mes s&eacute;lections." data-placement="bottom" id="star-25-513"> <i class="fa fa-star"></i></a></span>-->
+											</div>
+											<!-- fin Photo -->
+											
+											<div class="col-md-5">
+												<div class="property-info">
+													<!--Prix -->
+													<div class="price">
+														<strong>&#8362;</strong>
+														<span>4.040.000</span>
+													</div>
+													<!-- Quartier -->
+													<h3>
+																													<a href="immobilier-programmes-neufs-penthouse-netanya-Proche de la mer,dans un immeuble neuf-25-513.html" target="_blank"> Kikar </a>																											</h3>
+													<!-- Ville, date -->
+													<span class="location">  <i class="fa fa-map-marker2"></i> Netanya <i class="fa fa-calendar"></i> 12/02/2021 <i class="fa fa-home"></i>Projet neuf</span>
+													<!-- Description -->
+													<p>
+																												
+																													<span class="label">VIDEO</span> 
+																																										 
+														  <strong>Proche de la mer, dans un immeuble neuf</strong>
+																												Situation du projet 
+Maison neuve en israÃ«l vous&hellip;																											</p>
+												</div>
+											</div>
+											
+											<div class="col-md-3">
+												<div class="alert">
+													<a href='immobilier-israel.php?module=page-agence&ida=513' title='Voir tous nos biens' target='_blank' data-toggle='tooltip' data-placement='top'><img class='img-thumbnail' src='./agences/logo/513.jpg' alt=''></a>													<ul class="row">
+														<li> <a href="#" id="telephone-25-513" class="cachedinfo telephone" rel="0523362121"><i class="fa fa-phone"></i> T&eacute;l&eacute;phone </a> </li>																												<li>  <a href="#" id="url-25-513" class="cachedinfo url" rel="www.maisonneuveenisrael.com"><i class="fa fa-link"></i> Site internet</a> </li>														<li><a href="http://www.immobilier.co.il/immobilier-netanya-proche-de-la-mer-dans-un-immeuble-neuf-25-513.html" target="_blank"><i class="fa fa-envelope"></i> Plus de d&eacute;tails</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+																																			</ul>
+								 <ul class="pagination"><li><a href="recherche.php?page=1&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra="class="active" >1</a></li><li><a href="recherche.php?page=2&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">2</a></li><li><a href="recherche.php?page=3&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">3</a></li><li><a href="recherche.php?page=4&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">4</a></li><li><a href="recherche.php?page=5&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">5</a></li><li><a href="recherche.php?page=6&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">6</a></li><li><a href="recherche.php?page=7&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">7</a></li><li><a href="recherche.php?page=8&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">8</a></li><li><a href="recherche.php?page=9&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">9</a></li><li><a href="recherche.php?page=10&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">10</a></li> <li><a href="recherche.php?page=310&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">310</a></li><li><a href="recherche.php?page=311&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=">311</a></li><li><a class="nextpostslink" href="recherche.php?page=2&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra="><i class="fa fa-angle-right"></i></a></li><li><a class="last" href="recherche.php?page=311&currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra="> <i class="fa fa-angle-double-right"></i></a></li></ul>							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Start Sidebar -->
+				<div class="modal fade" id="cafpi" tabindex="-1" role="dialog" aria-labelledby="mymodalLabel" style="">
+              <div class="modal-dialog">
+                <div class="modal-content">
+					 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã</button>
+                    <h4 class="modal-title" id="mymodalLabel">Demande de renseignement </h4>
+					<h5 class="text-align-center"> Achetez un bien en IsraÃ«l et Faites votre <strong>crÃ©dit en France</strong>.</h5>
+                  </div>
+                  <iframe name="form" src="http://kaspi.fr/form-view/2" style="width:100%; min-height:580px;"></iframe> 
+                </div>
+              </div>
+            </div>
+			
+			<div class="modal fade" id="avivm" tabindex="-1" role="dialog" aria-labelledby="mymodalLabel" style="">
+              <div class="modal-dialog">
+                <div class="modal-content">
+					 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã</button>
+                    <h4 class="modal-title" id="mymodalLabel">Demande de renseignement </h4>
+					<h5 class="text-align-center"> Pour obtenir <strong>le prÃªt le plus rentable</strong> auprÃ¨s des banques <strong>en IsraÃ«l</strong>.</h5>
+                  </div>
+                  <iframe name="form" src="http://kaspi.fr/form-view/3" style="width:100%; min-height:580px;"></iframe> 
+                </div>
+              </div>
+            </div>
+			
+			<!--<div class="modal fade" id="elihaddad" tabindex="-1" role="dialog" aria-labelledby="mymodalLabel" style="">
+              <div class="modal-dialog">
+                <div class="modal-content">
+					 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Ã</button>
+                    <h4 class="modal-title" id="mymodalLabel">Demande de renseignement</h4>
+					<h5 class="text-align-center"> Plus qu'un avocat. <strong>Votre conseiller privÃ©</strong>, depuis plus de 20 ans.</h5>
+                  </div>
+                  <iframe name="form" src="http://www.immobilier.co.il/partenaires/avocat-israel/avocat-form.php" style="width:100%; min-height:680px;"></iframe> 
+                </div>
+              </div>
+            </div>-->
+
+<div class="sidebar right-sidebar col-md-4-index">
+ <div class="media-box text-align-center">
+<!-- /16839535/IMMO.CO.IL/IMMO-300-250 -->
+<div id='div-gpt-ad-1486972057802-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1486972057802-0'); });
+  </script>
+</div>
+		</div>
+	<div class="spacer-10"></div>
+	
+ <!-- Partenaires -->	
+	<div class="partenaire" id="cafpi" style="">
+	<ul class="nav nav-tabs">
+		<li class="mandats"> <a href="metiers.php?module=partenaires/credit-immobilier-france/accueil" target="_blank"> </i>Votre CrÃ©dit en FRANCE </a> </li>
+	</ul>
+	<div class="widget full-search-form">
+	 <h4>	<a href="metiers.php?module=partenaires/credit-immobilier-france/accueil" target="_blank"><img src="partenaires/credit-immobilier-france/images/cafpi-prets-immobiliers.jpg" alt="Votre CrÃ©dit en FRANCE" style="width:70px;" class="img-thumbnail3">
+		by Cafpi</a></h4>
+		<p> <a href="metiers.php?module=partenaires/credit-immobilier-france/accueil" target="_blank">Achetez un bien en IsraÃ«l et Faites votre <strong>crÃ©dit en France</strong>.</a>
+		</p>
+		 <button class="btn btn-details btn-sm" data-toggle="modal" data-target="#cafpi" style="margin-right: 10px;">Contactez-nous</button>
+		 <a href="metiers.php?module=partenaires/credit-immobilier-france/accueil" class="btn btn-default btn-sm" target="_blank">Lire plus</a>
+		</div>
+	</div>
+
+	<div class="partenaire" id="avivm" style="">
+	<ul class="nav nav-tabs">
+		<li class="mandats"> <a href="metiers.php?module=partenaires/credit-immobilier-israel/accueil" target="_blank"> </i>Votre CrÃ©dit en ISRAEL </a> </li>
+	</ul>
+	<div class="widget full-search-form">
+	 <h4>	<a href="metiers.php?module=partenaires/credit-immobilier-israel/accueil" target="_blank"><img src="partenaires/credit-immobilier-israel/images/avivm-prets-immobiliers.jpg" alt="Votre CrÃ©dit en ISRAEL" style="width:70px;" class="img-thumbnail3">
+		by AvivM</a></h4>
+		<p> <a href="metiers.php?module=partenaires/credit-immobilier-israel/accueil" target="_blank">Pour obtenir <strong>le prÃªt le plus rentable</strong> auprÃ¨s des banques <strong>en IsraÃ«l</strong>.</a>
+		</p>
+		 <button class="btn btn-details btn-sm" data-toggle="modal" data-target="#avivm" style="margin-right: 10px;">Contactez-nous</button>
+		 <a href="metiers.php?module=partenaires/credit-immobilier-israel/accueil" class="btn btn-default btn-sm" target="_blank">Lire plus</a>
+		</div>
+	</div>
+<!--
+<div class="partenaire" id="elihaddad" style="">
+	<ul class="nav nav-tabs">
+		<li class="mandats"> <a href="metiers.php?module=partenaires/avocat-israel/accueil" target="_blank"> Droits immobiliers </a> </li>
+	</ul>
+	<div class="widget full-search-form">
+	 <h4>	<a href="metiers.php?module=partenaires/avocat-israel/accueil" target="_blank"><img src="partenaires/avocat-israel/images/avocat-israel.jpg" alt="Droits immobiliers" style="width:70px;" class="img-thumbnail3">
+		by Eli Haddad</a></h4>
+		<p>	<a href="metiers.php?module=partenaires/avocat-israel/accueil" target="_blank"> Plus qu'un avocat. <strong>Votre conseiller privÃ©</strong>, depuis plus de 20 ans.</a>
+		</p>
+		 <button class="btn btn-details btn-sm" data-toggle="modal" data-target="#elihaddad" style="margin-right: 10px;">Contactez-nous</button>
+		 <a href="metiers.php?module=partenaires/avocat-israel/accueil" class="btn btn-default btn-sm" target="_blank">Lire plus</a>
+		</div>
+	</div>-->
+
+
+					  		
+	
+	<!-- Mandats -->
+<div class="block news">
+		<h3>  <i class="fa fa-thumbs-up"></i> Gagnez du temps ! </h3>
+<h5><font style="font-weight: normal!important">Confiez votre bien ou votre recherche Ã  un agent immobilier.</font> </h5>
+		
+	<a href="http://www.immobilier.co.il/mandat.php" class="btn btn-primary">
+               D&eacute;poser un mandat  </a>
+	</div>
+<!-- Bannieres 330/80 
+	<div class="widget">
+
+		<div class="media-box">
+			<div class="flexslider" data-autoplay="yes" data-pagination="no" data-arrows="no" data-style="slide" data-pause="yes" data-speed="10000" data-randomize="yes" data-direction="horizontal">
+				<ul class="slides">
+					<li class="item"><a href="http://www.lappart-israel.com/" target="_blank"><img src="images/banner/lappart.jpg" alt="Lappart"></a></li>
+					<li class="item"><a href="http://elihaddad.com/" target="_blank"><img src="images/banner/eli-haddad.jpg" alt="Eli Haddad"></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div class="spacer-10"></div>-->
+   
+
+<div class="media-box text-align-center">
+<!-- /16839535/IMMO.CO.IL/IMMO-300-600 -->
+<div id='div-gpt-ad-1564386878170-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1564386878170-0'); });
+  </script>
+</div>
+		</div>
+
+
+</div>			</div>
+		</div>
+	</div>
+	
+		<!-- Annonces coups de coeur -->
+
+		
+	<!--<div class="site-showcase">
+		<div class="slider-mask overlay-transparent"></div>
+		
+		<div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-wrap="true">
+			    <div class="carousel-inner" role="listbox"> 
+        
+		  <div class="item active" id="panorama"> 
+          <a href="http://www.immobilier.co.il/mailing/panorama/projet-ashkelon-slider2.php" target="_blank"><img src="mailing/panorama/images/slider-ashkelon3.jpg" alt="Marina View Ashkelon by Panorama"  class="slide-image"/>
+          <div class="bs-slider-overlay"></div>
+          </a> 
+         
+          <div class="slide-text slide_style_center"> 
+            <h2 data-animation="animated flipInX"> Exclu Panorama > Ã  partir de 897.000 nis<br>
+<span>Marina View surfaces commerciales</span> </h2>
+           <h3 data-animation="animated lightSpeedIn">Entre 6.5% Ã  10% de rentabilitÃ©  </h3>
+			  <a href="http://www.immobilier.co.il/mailing/panorama/projet-ashkelon-slider2.php" class="slider-button" data-animation="animated fadeInLeft">En savoir plus</a>  
+          </div>
+        </div>
+		  
+       <div class="item" id="panorama"> 
+          <a href="http://www.immobilier.co.il/mailing/panorama/projet-investissement-slider.php" target="_blank"><img src="images/banner/bg-panorama.jpg" alt="Projet investissement by Panorama"  class="slide-image"/>
+          <div class="bs-slider-overlay"></div>
+          </a> 
+         
+          <div class="slide-text slide_style_center"> 
+            <h2 data-animation="animated flipInX"> DU JAMAIS VU en Isra&euml;l<br>
+<span>Campus Sapir, une rÃ©sidence estudiantine luxueuse</span> </h2>
+           <h3 data-animation="animated lightSpeedIn">Jusqu'Ã  11.5 % de RentabilitÃ©  </h3>
+			  <a href="http://www.immobilier.co.il/mailing/panorama/projet-investissement-slider.php" class="slider-button" data-animation="animated fadeInLeft">En savoir plus</a>  
+          </div>
+        </div>
+	
+          
+        </div>
+			
+			<a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			
+			<a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>-->
+
+</div>
+
+<div class="btn-mobile">
+<a id="btn-contact-detail" style="display: inline;" href="recherche-detaille.php">Nouvelle Recherche</a></div>
+
+<div class="bg-full" id="logos_footer">
+<div class="container"> 	
+	<h3 class="text-align-center">Immobilier.co.il c'est aussi</h3>
+	 <ul class="owl-carousel clearfix" data-columns="4" data-autoplay="yes" data-pagination="yes" data-arrows="no" data-single-item="no" data-items-desktop="4" data-items-desktop-small="4" data-items-mobile="2" data-items-tablet="4">
+	     <li class="item"> <a href="http://www.immobilier.co.il/" target="_blank"><img src="images/logo-leportail.png" alt="Immobilier ISRAEL"></a> </li>
+	     <li class="item"> <a href="http://neuf.immobilier.co.il/" target="_blank"><img src="images/logo-neuf.png" alt="Immobilier Neuf"></a> </li>
+	 	 <li class="item"> <a href="http://location.immobilier.co.il/" target="_blank"><img src="images/logo-location.png" alt="Immobilier Location"></a> </li>
+	 	<!-- <li class="item"> <a href="http://lemag.co.il/" target="_blank"><img src="images/logo-lemag.png" alt="LeMag'"></a> </li>-->
+	 	 <li class="item"> <a href="http://vacances.immobilier.co.il/" target="_blank"><img src="images/logo-vacances.png" alt="Immobilier Vacances"></a> </li>
+	 	 <li class="item"> <a href="http://luxe.immobilier.co.il/" target="_blank"><img src="images/logo-luxe.png" alt="Immobilier LUXE"></a> </li>
+	 	 <li class="item"> <a href="http://blog.immobilier.co.il/" target="_blank"><img src="images/logo-leblog.png" alt="Immobilier BLOG"></a> </li>
+	 	<!-- <li class="item"> <a href="http://pap.immobilier.co.il/" target="_blank"><img src="images/logo-pap.png" alt="Immobilier PAP"></a> </li>-->
+	</ul>
+	</div>	
+</div>
+ 
+ 
+ 
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-3 col-sm-6 footer-widget widget">
+        <h3>  Annonces immobili&egrave;res</h3>
+        <div id="amenities">
+            <div class="additional-amenities">
+                            <span class="available"> <a href="appartement-ashdod.html" style="font-size:129.81927710843%" title="189 Appartements Ashdod">
+              Ashdod              </a></span>
+				<!--<span class="available"> <a href="appartement-ashdod.html" style="font-size:129.81927710843%" title="189 Appartements Ashdod">
+              Ashdod              </a></span>-->
+                            <span class="available"> <a href="appartement-ashkelon.html" style="font-size:138.56927710843%" title="272 Appartements Ashkelon">
+              Ashkelon              </a></span>
+				<!--<span class="available"> <a href="appartement-ashkelon.html" style="font-size:138.56927710843%" title="272 Appartements Ashkelon">
+              Ashkelon              </a></span>-->
+                            <span class="available"> <a href="appartement-bat yam.html" style="font-size:116.85240963855%" title="66 Appartements Bat yam">
+              Bat yam              </a></span>
+				<!--<span class="available"> <a href="appartement-bat yam.html" style="font-size:116.85240963855%" title="66 Appartements Bat yam">
+              Bat yam              </a></span>-->
+                            <span class="available"> <a href="appartement-eilat.html" style="font-size:130.24096385542%" title="193 Appartements Eilat">
+              Eilat              </a></span>
+				<!--<span class="available"> <a href="appartement-eilat.html" style="font-size:130.24096385542%" title="193 Appartements Eilat">
+              Eilat              </a></span>-->
+                            <span class="available"> <a href="appartement-givataim.html" style="font-size:110.94879518072%" title="10 Appartements Givataim">
+              Givataim              </a></span>
+				<!--<span class="available"> <a href="appartement-givataim.html" style="font-size:110.94879518072%" title="10 Appartements Givataim">
+              Givataim              </a></span>-->
+                            <span class="available"> <a href="appartement-hadera.html" style="font-size:118.53915662651%" title="82 Appartements Hadera">
+              Hadera              </a></span>
+				<!--<span class="available"> <a href="appartement-hadera.html" style="font-size:118.53915662651%" title="82 Appartements Hadera">
+              Hadera              </a></span>-->
+                            <span class="available"> <a href="appartement-herzliya.html" style="font-size:111.68674698795%" title="17 Appartements Herzliya">
+              Herzliya              </a></span>
+				<!--<span class="available"> <a href="appartement-herzliya.html" style="font-size:111.68674698795%" title="17 Appartements Herzliya">
+              Herzliya              </a></span>-->
+                            <span class="available"> <a href="appartement-jerusalem.html" style="font-size:153.85542168675%" title="417 Appartements Jerusalem">
+              Jerusalem              </a></span>
+				<!--<span class="available"> <a href="appartement-jerusalem.html" style="font-size:153.85542168675%" title="417 Appartements Jerusalem">
+              Jerusalem              </a></span>-->
+                            <span class="available"> <a href="appartement-kfar yona.html" style="font-size:111.26506024096%" title="13 Appartements Kfar Yona">
+              Kfar Yona              </a></span>
+				<!--<span class="available"> <a href="appartement-kfar yona.html" style="font-size:111.26506024096%" title="13 Appartements Kfar Yona">
+              Kfar Yona              </a></span>-->
+                            <span class="available"> <a href="appartement-netanya.html" style="font-size:167.45481927711%" title="546 Appartements Netanya">
+              Netanya              </a></span>
+				<!--<span class="available"> <a href="appartement-netanya.html" style="font-size:167.45481927711%" title="546 Appartements Netanya">
+              Netanya              </a></span>-->
+                            <span class="available"> <a href="appartement-netivot.html" style="font-size:110.63253012048%" title="7 Appartements Netivot">
+              Netivot              </a></span>
+				<!--<span class="available"> <a href="appartement-netivot.html" style="font-size:110.63253012048%" title="7 Appartements Netivot">
+              Netivot              </a></span>-->
+                            <span class="available"> <a href="appartement-raanana.html" style="font-size:131.0843373494%" title="201 Appartements Raanana">
+              Raanana              </a></span>
+				<!--<span class="available"> <a href="appartement-raanana.html" style="font-size:131.0843373494%" title="201 Appartements Raanana">
+              Raanana              </a></span>-->
+                            <span class="available"> <a href="appartement-ramat gan.html" style="font-size:120.43674698795%" title="100 Appartements Ramat Gan">
+              Ramat Gan              </a></span>
+				<!--<span class="available"> <a href="appartement-ramat gan.html" style="font-size:120.43674698795%" title="100 Appartements Ramat Gan">
+              Ramat Gan              </a></span>-->
+                            <span class="available"> <a href="appartement-tel aviv.html" style="font-size:250%" title="1329 Appartements Tel Aviv">
+              Tel Aviv              </a></span>
+				<!--<span class="available"> <a href="appartement-tel aviv.html" style="font-size:250%" title="1329 Appartements Tel Aviv">
+              Tel Aviv              </a></span>-->
+                          </div>
+          </div>
+		  
+		  
+      </div>
+		<div class="col-md-3 col-sm-6 footer-widget widget" style="">
+			 <!-- Tags villes -->
+        <h3>
+          Nos sites          par ville        </h3>
+        <p class="villes"><span class="label label-primary">Ashdod</span> <a  href="http://www.immobilier-ashdod.com/" target="_blank">immobilier-ashdod.com</a><br />
+                   
+					<span class="label label-primary">Ashkelon</span> <a href="http://www.immobilier-ashkelon.com/" target="_blank">immobilier-ashkelon.com</a><br />
+					
+					<span class="label label-primary">Bat Yam</span> <a href="http://www.immobilier-batyam.com/" target="_blank">immobilier-batyam.com</a><br />
+					
+                    <span class="label label-primary">Eilat</span> <a href="http://www.immobilier-eilat.com/" target="_blank">immobilier-eilat.com</a><br />
+					
+					<span class="label label-primary">Hadera</span> <a href="http://www.immobilier-hadera.com/" target="_blank">immobilier-hadera.com</a><br />
+					
+					<span class="label label-primary">Hertzelia</span> <a href="http://www.immobilier-herzliya.com/" target="_blank">immobilier-herzliya.com</a><br />
+				
+					<span class="label label-primary">Jerusalem</span> <a href="http://www.immobilier-jerusalem.com/" target="_blank">immobilier-jerusalem.com</a><br />
+					
+					<span class="label label-primary">Netanya</span> <a href="http://www.immobilier-netanya.com/" target="_blank">immobilier-netanya.com</a><br />
+				
+					<span class="label label-primary">Raanana</span> <a href="http://www.immobilier-raanana.com/" target="_blank">immobilier-raanana.com</a><br />
+					
+					<span class="label label-primary">Ramat Gan</span> <a href="http://www.immobilier-ramatgan.com/" target="_blank">immobilier-ramatgan.com</a><br />
+					
+                    <span class="label label-primary">Tel aviv</span> <a href="http://www.immobilier-telaviv.com/" target="_blank">immobilier-telaviv.com</a></p>
+					
+							</div>
+      <div class="col-md-3 col-sm-5 footer-widget widget">
+        <h3>
+          Newsletter        </h3>
+        <p>
+          
+Inscrivez-vous et recevez en temps rÃ©el les derniers biens de la <strong>ville de votre choix</strong> dans votre boite mail.          </p>
+        <a href="immobilier-israel.php?module=inscription-newsletter" class="button-1 btn-block btn-hover-1">
+        Inscription        </a>
+        <h3 class="margin-tb-20" style="">
+          Histoire          d'Isra&euml;l        </h3>
+        <p style="">
+          
+<a href="jerusalem.html" title="Jerusalem">Jerusalem</a>
+<a href="tel-aviv.html" title="Tel Aviv">Tel Aviv - Yaffo</a>
+<a href="raanana.html" title="Raanana">Raanana</a>
+<a href="herzliya.html" title="Herzliya">Herzliya</a>
+<a href="ashdod.html" title="Ashdod">Ashdod</a>
+<a href="natanya.html" title="Netanya">Netanya</a>
+<a href="cesaree.html" title="Cesaree">Cesaree</a>
+<a href="eilat.html" title="Eilat">Eilat</a>
+<a href="modiin.html" title="Modiin">Modiin</a>        </p>
+      </div>
+		<div class="col-md-3 col-sm-5 footer-widget widget">
+		<ul>
+			 <li><a class="btn btn-primary btn-sm margin-30" href="espace-pro/index.php"  target="_blank">Espace Agences <i class="fa fa-chevron-right"></i></a></li>
+			<!--<li><a href="immobilier-israel.php?module=contact"> Contact</a></li>-->
+			<li><a href="immobilier-israel.php?module=inscription-pro"> Devenir Partenaire</a></li>
+			 <li><a href="immobilier-israel.php?module=nous-recrutons"> Nous recrutons</a></li>
+			</ul>
+		
+			 <h3 class="margin-tb-20" style="">Financement immobilier</h3>
+    <a style="" class="btn cafpi" href="metiers.php?module=partenaires/credit-immobilier-france/accueil" target="_blank">Votre crÃ©dit en<br>FRANCE</a>
+    <a style="" class="btn avivm" href="metiers.php?module=partenaires/credit-immobilier-israel/accueil" target="_blank">Votre crÃ©dit en<br>ISRAEL</a>
+		</div>
+    </div>
+	 <!-- <div class="row">
+	  <div class="col-md-12 col-sm-12 footer-widget widget"> 
+		  <ul class="list-inline pull-right">
+			<li><a href="immobilier-israel.php?module=contact"> Contact</a></li>
+			<li><a href="immobilier-israel.php?module=inscription-pro"> Devenir Partenaire</a></li>
+			 <li><a href="immobilier-israel.php?module=annonceur"> Nous recrutons</a></li>
+			 <li><a class="btn btn-primary btn-sm" href="espace-pro/index.php"  target="_blank">Espace Agences <i class="fa fa-chevron-right"></i></a></li>
+		</ul>
+       
+      </div></div>-->
+  </div>
+</footer>
+
+<footer class="site-footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="copyrights-col-left col-md-10 col-sm-10">
+		  <p>&copy; 2004 / 2020 - Powered by <a href="http://www.vdedesign.com" target="_blank">VDEDesign</a> - Marketing digital by <a href="http://www.publicite.co.il" target="_blank">Publicite.co.il</a> - All Rights Reserved - Immobilier.co.il,  1er portail de l'immobilier en Isra&euml;l<br>
+          <em>
+          Immobilier.co.il dÃ©cline toute responsabilitÃ© quant aux contenus textuels et photographiques des annonces. Celles-ci nâengagent que les agences partenaires.          </em></p>
+      </div>
+      <div class="copyrights-col-right col-md-2 col-sm-2">
+
+        <div class="social-icons"> <a href="https://www.facebook.com/pages/Immobiliercoil/262755070421596" target="_blank"><i class="fa fa-facebook"></i></a> <a href="http://www.twitter.com/immobilieril" target="_blank"><i class="fa fa-twitter"></i></a> <a href="http://www.youtube.com/Immobiliercoil" target="_blank"><i class="fa fa-youtube"></i></a> <a href="https://plus.google.com/113286046916841536433?hl=fr" target="_blank"><i class="fa fa-google-plus"></i></a></div>
+        <ul class="horiz-nav2">
+          <!--<li><a class="flag-french" href="/recherche.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=" title="FR" data-toggle="tooltip" data-original-title="FR" data-placement="bottom"></a></li>
+          <li><a class="flag-english" href="/recherche.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=&language=2" title="EN" data-toggle="tooltip" data-original-title="EN" data-placement="bottom"></a></li>
+          <li><a class="flag-hebrew" href="/recherche.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=&language=3" title="HE" data-toggle="tooltip" data-original-title="HE" data-placement="bottom"></a></li>-->
+			<li><a class="flag-french" href="index.php?language=1" title="FR" data-toggle="tooltip" data-original-title="FR" data-placement="bottom"></a></li>
+          <li><a class="flag-english" href="index.php?language=2" title="EN" data-toggle="tooltip" data-original-title="EN" data-placement="bottom"></a></li>
+          <li><a class="flag-hebrew" href="index.php?language=3" title="HE" data-toggle="tooltip" data-original-title="HE" data-placement="bottom"></a></li>
+		<li><a class="flag-italian" href="index.php?language=4" title="IT" data-toggle="tooltip" data-original-title="IT" data-placement="bottom"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Site Footer --> 
+<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+</div>
+<!--! end of #body --> 
+<!--js--> 
+<script type="text/javascript" src="js/Includer.js"></script> 
+<script type="text/javascript" src="./js/mylibs/script.js"></script> 
+<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call --> 
+<script src="plugins/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin --> 
+<script src="plugins/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel --> 
+<script src="plugins/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider --> 
+<script src="js/helper-plugins.js"></script> <!-- Plugins --> 
+<script src="js/bootstrap.js"></script> <!-- UI --> 
+<script src="js/waypoints.js"></script> <!-- Waypoints --> 
+<script src="js/init.js"></script> <!-- All Scripts --> 
+<script  type="text/javascript" src="js/select2/js/select2.min.js"></script> 
+<script  type="text/javascript" src="js/animations.js"></script> 
+
+
+<!-- map recherche --> 
+
+ 
+<!--End  map recherche -->
+</body></html>
