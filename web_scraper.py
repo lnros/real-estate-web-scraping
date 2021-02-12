@@ -4,9 +4,11 @@ import sys
 import requests
 from bs4 import BeautifulSoup as bs
 
+# for CL interface
 NUM_ARGS_NO_ARGS = 1
 NUM_ARGS_HELP = 2
 # urls for this project only
+# every page has around 12 properties, how to keep going to the next page?
 URLS = {
     # 'onmap': 'https://www.onmap.co.il/en/homes/buy/c_31.943030,34.796780/t_32.178710,35.250310/z_10',
     'buy': 'http://www.immobilier.co.il/recherche.php?currency=1&tip%5B%5D=0&tip%5B%5D=2&region=-1&Submit=Rechercher&bienra=',
