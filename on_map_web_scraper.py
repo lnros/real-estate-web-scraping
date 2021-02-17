@@ -1,13 +1,12 @@
 import argparse
 import json
+import os
 import re
 
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
 from dateutil import parser
-
-# TODO Exception handling
 
 URL = 'https://www.onmap.co.il/en'
 COLUMNS = ['Date', 'City_name', 'Street_name', 'House_number', 'Bathrooms', 'Rooms', 'Floor', 'Area[m^2]',
@@ -27,14 +26,15 @@ def define_parser():
         type=str)
     arg_parser.add_argument('--limit', '-l', help="limit to n number of properties per region", metavar="n", type=int,
                             required=False)
-    arg_parser.add_argument("--todir", help="save the scraped information into a csv file in the given directory", metavar="filepath",
+    arg_parser.add_argument("--todir", help="save the scraped information into a csv file in the given directory",
+                            metavar="path",
                             type=str, required=False)
     return arg_parser.parse_args()
 
 
 def get_region_url_list(main_url, rent_or_sale):
     """
-    # TODO Docstrings
+    Given the main website url and the listing type (buy or rent), returns a list of urls of different regions.
     """
     r = requests.get(main_url)
     soup = bs(r.content, 'lxml')
@@ -52,7 +52,8 @@ def get_region_url_list(main_url, rent_or_sale):
 
 def get_data_from_region(region_url_list, rent_or_sale):
     """
-    # TODO Docstrings
+    Given a list of urls of different regions and the listing type (rent or buy), returns a list of urls with all
+    the properties for this specific listing type, each url for a particular region.
     """
     regional_data = []
     for url in region_url_list:
@@ -65,17 +66,18 @@ def get_data_from_region(region_url_list, rent_or_sale):
 
 def transform_to_df(regional_data, limit=None):
     """
-    # TODO Docstrings
+    Given a list of urls, each url for a different region, returns a pd.DataFrame with the compiled data from the list.
+    The limit, if given, limits the number of properties per region listed in the dataframe.
     """
     df = pd.DataFrame(columns=COLUMNS)
     for region in regional_data:
         r = requests.get(region)
-        # time.sleep(2)
         soup = bs(r.content, 'lxml')
         property_dict_list = json.loads(soup.p.get_text())['data']
-        ff = 0
+        # num_of_properties counted to limit it if a limit is given
+        num_of_properties = 0
         for apartment_dict in property_dict_list:
-            ff += 1
+            num_of_properties += 1
             df_row = {'Date': [parser.parse(apartment_dict['created_at']).date()],
                       'City_name': [apartment_dict['address']['en']['city_name']],
                       'Street_name': [apartment_dict['address']['en']['street_name']],
@@ -93,14 +95,17 @@ def transform_to_df(regional_data, limit=None):
                       }
             df = pd.concat([df, pd.DataFrame(df_row)])
             if limit is not None:
-                if ff == limit:
+                if num_of_properties == limit:
                     break
+    # House number and parking spots columns with None and none
+    df = df.replace('none', 0)
+    df = df.fillna(value=0)
     return df
 
 
 def save_to_csv(df, filepath):
     """
-    # TODO Docstrings
+    Given a pd.DataFrame and the directory filepath as string, saves the dataframe as a csv file in the filepath given.
     """
     with open(filepath, 'w') as f:
         df.to_csv(f, header=df.columns, index=False, line_terminator='\n')
@@ -108,7 +113,8 @@ def save_to_csv(df, filepath):
 
 def main():
     """
-    # TODO Docstrings
+    Given the user input, either print or save to a csv file buy and/or rent real estate
+    scraped data from the OnMap website
     """
     args = define_parser()
     listing_type = {
@@ -116,10 +122,15 @@ def main():
         'rent': ['rent'],
         'all': ['buy', 'rent']
     }
+
     if args.property_listing_type not in PROPERTY_LISTING_TYPE:
         print(f'You should choose of one the following: {PROPERTY_LISTING_TYPE},'
               f' but you provided {args.property_listing_type}')
         return
+    if not os.path.isdir(args.todir.split('.')[0]) and args.todir:
+        print('The path provided is not a directory.')
+        return
+
     if args.limit:
         limit = args.limit
     else:
@@ -130,9 +141,10 @@ def main():
         region_data = get_data_from_region(region_url_list, rent_or_sale)
         listing_df = transform_to_df(region_data, limit)
         if args.todir:
-            filepath = args.todir.split('.')[0] + f'_{rent_or_sale}' + '.csv'
+            filepath = args.todir.split('.')[0] + f'{rent_or_sale}' + '.csv'
             save_to_csv(listing_df, filepath)
         else:
+            print(20 * '#' + f' {rent_or_sale.upper()} ' + 20 * '#')
             print(listing_df)
 
 
