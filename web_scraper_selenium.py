@@ -86,6 +86,9 @@ def main():
     for url in tqdm(urls.values()):
         scrap_url(driver, url, to_print=True, verbose=True)
 
+
+if __name__ == '__main__':
+    main()
     # prev_len = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")
     # prices = []
     # prop_types = []
