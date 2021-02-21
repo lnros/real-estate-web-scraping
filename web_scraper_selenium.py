@@ -1,6 +1,7 @@
 import argparse
 import os
 import time
+
 import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -19,7 +20,7 @@ FLOOR_IDX = 1
 SIZE_IDX = 2
 PARKING_SPACES_IDX = 3
 SCROLL_PAUSE_TIME = 2
-COLUMNS = ['Price[NIS]','Property_type', 'Address', 'Rooms', 'Floor', 'Area[m^2]', 'Parking_spots']
+COLUMNS = ['Price[NIS]', 'Property_type', 'Address', 'Rooms', 'Floor', 'Area[m^2]', 'Parking_spots']
 
 
 def define_parser():
@@ -68,7 +69,6 @@ def scroll(driver, verbose=False):
             scroll_num += 1
         else:
             break
-
 
 
 def scrap_url(driver, url, to_print=True, save=False, verbose=False):
