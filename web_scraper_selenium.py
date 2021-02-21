@@ -1,22 +1,48 @@
+import argparse
 import os
 import time
-
 import pandas as pd
 from selenium import webdriver
-from tqdm import tqdm
+from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 
-URL = 'https://www.onmap.co.il/en'
+PROPERTY_LISTING_TYPE = ('buy', 'rent', 'commercial', 'new homes', 'all')
+MAIN_URL = 'https://www.onmap.co.il/en'
+# TODO implement commercial and new homes (their html is different)
+URLS = {'buy': MAIN_URL + '/homes/buy',
+        'rent': MAIN_URL + '/homes/rent',
+        'commercial': MAIN_URL + '/commercial/rent/',
+        'new homes': MAIN_URL + '/projects/'}
 PROPERTY_TYPE_IDX = 1
 NUM_OF_ROOMS_IDX = 0
 FLOOR_IDX = 1
 SIZE_IDX = 2
 PARKING_SPACES_IDX = 3
 SCROLL_PAUSE_TIME = 2
-COLUMNS = ['Property_type', 'Address', 'Price[NIS]', 'Rooms', 'Floor', 'Area[m^2]', 'Parking_spots']
+COLUMNS = ['Price[NIS]','Property_type', 'Address', 'Rooms', 'Floor', 'Area[m^2]', 'Parking_spots']
+
+
+def define_parser():
+    """
+    Creates the command line arguments
+    """
+    arg_parser = argparse.ArgumentParser(description="Scraping OnMap website | Checkout https://www.onmap.co.il/en/")
+    arg_parser.add_argument(
+        "property_listing_type",
+        choices=PROPERTY_LISTING_TYPE,
+        help="'buy' or 'rent' or 'all'",
+        type=str)
+    arg_parser.add_argument("--print", '-p', help="print the results to the screen", action="store_true")
+    arg_parser.add_argument("--save", '-s', help="save the scraped information into a csv file in the same directory",
+                            action="store_true")
+    arg_parser.add_argument("--verbose", '-v', help="prints messages during the scraper execution", action="store_true")
+    return arg_parser.parse_args()
 
 
 def create_driver():
+    """
+    Creates a driver that runs in Google Chrome without the user seeing an open browser window
+    """
     # silent web_driver log
     os.environ['WDM_LOG_LEVEL'] = '0'
     opts = webdriver.ChromeOptions()
@@ -25,28 +51,36 @@ def create_driver():
 
 
 def scroll(driver, verbose=False):
-    prev_len = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")
+    """
+    Scrolls down the url to load all the information available
+    """
     scroll_num = 1
     while True:
         ele_to_scroll = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")[-1]
         driver.execute_script("arguments[0].scrollIntoView();", ele_to_scroll)
         if verbose:
-            print(f"Scroll nº {scroll_num}\n")
+            print(f"Scroll nº {scroll_num}")
         time.sleep(SCROLL_PAUSE_TIME)
-        new_len = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")
-        if prev_len == new_len:
+        try:
+            # Finds the bottom
+            driver.find_element_by_xpath("//div[@class='G3BoaHW05R4rguvqgn-Oo']")
+        except NoSuchElementException:
+            scroll_num += 1
+        else:
             break
-        prev_len = new_len
-        scroll_num += 1
+
 
 
 def scrap_url(driver, url, to_print=True, save=False, verbose=False):
+    """
+    Scraps properties' information given the url and either prints it to the screen and/or save it to a csv file
+    """
     if verbose:
         print(f'Accessing {url}')
     driver.get(url)
     if verbose:
         print(f"Scrolling down {url}")
-    scroll(driver)
+    scroll(driver, verbose=verbose)
     if verbose:
         print(f"Scraping {url}")
     prices = (price.text for price in driver.find_elements_by_xpath("//span[@class='cWr2cxa0k3zKePxbqpw3L']"))
@@ -61,84 +95,46 @@ def scrap_url(driver, url, to_print=True, save=False, verbose=False):
              driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
     parking_spaces = (parking.text.split()[PARKING_SPACES_IDX] if len(parking.text.split()) > PARKING_SPACES_IDX else 0
                       for parking in driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
+    zipped = zip(prices, prop_types, addresses, nums_rooms, floors, sizes, parking_spaces)
     if to_print:
-        zipped = zip(prices, prop_types, addresses, nums_rooms, floors, sizes, parking_spaces)
         for price, prop_type, address, num_rooms, floor, size, parking in zipped:
             print(f"Price: {price}, Type: {prop_type}, Address: {address}, "
-                  f"Nº Rooms: {num_rooms}, Floor: {floor}, Size {size}, Parking: {parking_spaces}")
+                  f"Nº Rooms: {num_rooms}, Floor: {floor}, Size {size}, Parking: {parking}")
 
     if save:
         filename = f"{url.split('/')[-1]}.csv"
         if verbose:
             print(f'Saving {filename}')
-        df = pd.DataFrame(data=[prop_types, addresses, prices, nums_rooms, floors, sizes, parking_spaces],
-                          columns=COLUMNS)
+        df = pd.DataFrame(zipped, columns=COLUMNS)
         df.to_csv(filename)
 
 
 def main():
-    urls = {'buy': URL + '/homes/buy',
-            'rent': URL + '/homes/rent'}
-    # html arranged differently
-    # 'commercial': URL + '/commercial/rent/',
-    # 'new homes': URL + '/projects/'}
+    """
+    Prints to the screen or save it to a csv file buy and/or rent real estate scraped data from the OnMap website
+    """
+
+    args = define_parser()
+    listing_type = {
+        'buy': ['buy'],
+        'rent': ['rent'],
+        'commercial': ['commercial'],
+        'new homes': ['new homes'],
+        'all': ['buy', 'rent', 'commercial', 'new homes']
+    }
+
+    if args.property_listing_type not in PROPERTY_LISTING_TYPE:
+        print(f'You should choose of one the following: {PROPERTY_LISTING_TYPE},'
+              f' but you provided {args.property_listing_type}')
+        return
+
+    urls = [URLS[key] for key in listing_type[args.property_listing_type]]
     driver = create_driver()
-    for url in tqdm(urls.values()):
-        scrap_url(driver, url, to_print=True, verbose=True)
+    for url in urls:
+        scrap_url(driver, url, to_print=args.print, save=args.save, verbose=args.verbose)
+    driver.quit()
+    print('Done!')
 
 
 if __name__ == '__main__':
     main()
-    # prev_len = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")
-    # prices = []
-    # prop_types = []
-    # addresses = []
-    # nums_rooms = []
-    # floors = []
-    # sizes = []
-    # parking_spaces = []
-    # scroll = 1
-    # while True:
-    #     print(scroll)
-    #     ele_to_scroll = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")[-1]
-    #     driver.execute_script("arguments[0].scrollIntoView();", ele_to_scroll)
-    #     time.sleep(SCROLL_PAUSE_TIME)
-    #     append_list_as_elements(prices, (price.text for price in
-    #                                      driver.find_elements_by_xpath("//span[@class='cWr2cxa0k3zKePxbqpw3L']")))
-    #     append_list_as_elements(prop_types, (prop_type.text.split('\n')[PROPERTY_TYPE_IDX] for prop_type in
-    #                                          driver.find_elements_by_xpath("//div[@class='_1bluUEiq7lEDSV1yeF9mjl']")))
-    #     append_list_as_elements(addresses, (address.text for address in
-    #                                         driver.find_elements_by_xpath("//div[@property='address']")))
-    #     append_list_as_elements(nums_rooms, (num_rooms.text.split()[NUM_OF_ROOMS_IDX] for num_rooms in
-    #                                          driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']")))
-    #     append_list_as_elements(floors, (floor.text.split()[FLOOR_IDX] for floor in
-    #                                      driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']")))
-    #     append_list_as_elements(sizes, (size.text.split()[SIZE_IDX] for size in
-    #                                     driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']")))
-    #     append_list_as_elements(parking_spaces,
-    #                             (parking.text.split()[PARKING_SPACES_IDX] if len(
-    #                                 parking.text.split()) > PARKING_SPACES_IDX else 0 for parking in
-    #                              driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']")))
-    #     new_len = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")
-    #     if prev_len == new_len:
-    #         break
-    #     prev_len = new_len
-    #     scroll += 1
-    # for i in range(len(prices)):
-    #     print(f"{i + 1}. Price: {prices[i]}, Type: {prop_types[i]}, Address: {addresses[i]}, "
-    #           f"Nº Rooms: {nums_rooms[i]}, Floor: {floors[i]}, Size {sizes[i]}, Parking: {parking_spaces[i]}")
-#     # Get scroll height
-#     last_height = driver.execute_script("return document.body.scrollHeight")
-
-#     while True:
-#         # Scroll down to bottom
-#         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-#         # Wait to load page
-#         time.sleep(SCROLL_PAUSE_TIME)
-
-#         # Calculate new scroll height and compare with last scroll height
-#         new_height = driver.execute_script("return document.body.scrollHeight")
-#         if new_height == last_height:
-#             break
-#         last_height = new_height
