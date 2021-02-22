@@ -16,8 +16,8 @@ MAIN_URL = 'https://www.onmap.co.il/en'
 # TODO implement commercial and new homes (their html is different)
 URLS = {'buy': MAIN_URL + '/homes/buy',
         'rent': MAIN_URL + '/homes/rent',
-        'commercial': MAIN_URL + '/commercial/rent/',
-        'new homes': MAIN_URL + '/projects/'}
+        'commercial': MAIN_URL + '/commercial/rent',
+        'new homes': MAIN_URL + '/projects'}
 PRICE_IDX = -1
 CITY_IDX = -1
 ADDRESS_IDX = -2
@@ -28,7 +28,7 @@ SIZE_IDX = 2
 PARKING_SPACES_IDX = 3
 SCROLL_PAUSE_TIME = 1
 COLUMNS = ['Price[NIS]', 'Property_type', 'City', 'Address', 'Rooms', 'Floor', 'Area[m^2]', 'Parking_spots']
-
+SINGLE_ATR_ITEM = 1
 
 def define_parser():
     """
@@ -100,11 +100,11 @@ def scrap_url(driver, url, to_print=True, save=False, verbose=False):
               driver.find_elements_by_xpath("//div[@property='address']"))
     addresses = (address.text.split('\n')[ADDRESS_IDX] for address in
                  driver.find_elements_by_xpath("//div[@property='address']"))
-    nums_rooms = (num_rooms.text.split()[NUM_OF_ROOMS_IDX] for num_rooms in
+    nums_rooms = (num_rooms.text.split()[NUM_OF_ROOMS_IDX] if (len(num_rooms.text.split()) != SINGLE_ATR_ITEM) else 0 for num_rooms in
                   driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
-    floors = (floor.text.split()[FLOOR_IDX] for floor in
+    floors = (floor.text.split()[FLOOR_IDX] if len(floor.text.split()) > FLOOR_IDX and len(floor.text.split()) > 1 else 0 for floor in
               driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
-    sizes = (size.text.split()[SIZE_IDX] for size in
+    sizes = (size.text.split()[SIZE_IDX] if (len(size.text.split()) > SIZE_IDX) else size.text.split()[0] if (len(size.text.split()) == SINGLE_ATR_ITEM) else 0 for size in
              driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
     parking_spaces = (parking.text.split()[PARKING_SPACES_IDX] if len(parking.text.split()) > PARKING_SPACES_IDX else 0
                       for parking in driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
@@ -122,7 +122,12 @@ def scrap_url(driver, url, to_print=True, save=False, verbose=False):
         print(f'\nScraped total of {num_items} items\n')
 
     if save:
-        filename = f"{url.split('/')[-1]}.csv"
+        if 'commercial' in url:
+            filename = "commercial.csv"
+        elif 'projects' in url:
+            filename = "new_homes.csv"
+        else:
+            filename = f"{url.split('/')[-1]}.csv"
         if verbose:
             print(f'\nSaving {filename}\n')
             print(df)
