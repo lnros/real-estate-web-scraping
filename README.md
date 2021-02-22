@@ -27,10 +27,12 @@ With both versions it is possible to either print the results to the screen or t
 This version accesses each webpage we want to scrap information from and, with
 [Selenium](https://www.selenium.dev/selenium/docs/api/py/index.html#).
 
+New homes not implemented yet.
+
 Web scraper script name: web_scraper_selenium.py
 
 Usage: web_scraper_selenium.py [-h] [--print] [--save] [--verbose]
-                               {buy,rent,all}
+                               {buy,rent,commercial,new_homes,all}
 
 positional arguments: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   {buy,rent,commercial,new_homes,all}
