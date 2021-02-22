@@ -1,4 +1,5 @@
 # Web scraping OnMap
+https://github.com/lnros/real-estate-web-scraping
 
 This web scraper get the data from properties for sale and rent from  the Israeli [OnMap](https://www.onmap.co.il/en/)  website.
 
@@ -17,17 +18,37 @@ Commercial properties for rent
 #### New homes:
 Properties that are on planning or construction phase
 
-For now, we only scrap buy and rent properties and on the next implementation phase: commercial properties and new homes tabs
 
 ## Two web scraper versions
 
 With both versions it is possible to either print the results to the screen or to save them in csv files.
 
+### The slow (but 100% scraping)
+This version accesses each webpage we want to scrap information from and, with
+[Selenium](https://www.selenium.dev/selenium/docs/api/py/index.html#).
+
+Web scraper script name: web_scraper_selenium.py
+
+Usage: web_scraper_selenium.py [-h] [--print] [--save] [--verbose]
+                               {buy,rent,all}
+
+positional arguments: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   {buy,rent,commercial,new_homes,all}
+                       choose which type of properties you would like to scrape
+
+optional arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   -h, --help            show this help message and exit<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   --print, -p           print the results to the screen<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   --save, -s            save the scraped information into a csv file in the
+                        same directory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   --verbose, -v         prints messages during the scraper execution<br>
+
+
 ### The fast and efficient (but less scraping)
 This version accesses directly the website database server and collects the information stored in JSON format.
 Uses [requests](https://requests.readthedocs.io) and 
 [BeautifulSoup](https://readthedocs.org/projects/beautiful-soup-4/)
-mostly to get the job done.
+mostly to get the job done. This version only scraps buy and rent properties.
 
 Web scraper script name: on_map_web_scaper.py
 
@@ -43,26 +64,6 @@ optional arguments: <br>
   &nbsp;&nbsp;&nbsp;&nbsp;  --limit n, -l n  limit to n number of properties per region <br>
   &nbsp;&nbsp;&nbsp;&nbsp;  --todir path     save the scraped information into a csv file in the given
 directory <br>
-
-### The slow (but 100% scraping)
-This version accesses each webpage we want to scrap information from and, with
-[Selenium](https://www.selenium.dev/selenium/docs/api/py/index.html#).
-
-Web scraper script name: web_scraper_selenium.py
-
-Usage: web_scraper_selenium.py [-h] [--print] [--save] [--verbose]
-                               {buy,rent,all}
-
-positional arguments: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   {buy,rent,commercial,new homes,all}
-                        'buy' or 'rent' or 'all'
-
-optional arguments:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;   -h, --help            show this help message and exit<br>
-&nbsp;&nbsp;&nbsp;&nbsp;   --print, -p           print the results to the screen<br>
-&nbsp;&nbsp;&nbsp;&nbsp;   --save, -s            save the scraped information into a csv file in the
-                        same directory<br>
-&nbsp;&nbsp;&nbsp;&nbsp;   --verbose, -v         prints messages during the scraper execution<br>
 
 
 #### Authors
