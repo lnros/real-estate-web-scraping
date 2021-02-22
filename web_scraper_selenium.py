@@ -1,14 +1,16 @@
 import argparse
 import os
 import time
-import sys
 import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 import string
-PRINTABLE = set(string.printable)
 
+PRINTABLE = set(string.printable)
+SILENCE_DRIVER_LOG = '0'
+CHROME_WIDTH = 1919
+CHROME_HEIGHT = 1079
 PROPERTY_LISTING_TYPE = ('buy', 'rent', 'commercial', 'new_homes', 'all')
 MAIN_URL = 'https://www.onmap.co.il/en'
 # TODO implement commercial and new homes (their html is different)
@@ -36,7 +38,7 @@ def define_parser():
     arg_parser.add_argument(
         "property_listing_type",
         choices=PROPERTY_LISTING_TYPE,
-        help="'buy' or 'rent' or 'all'",
+        help="choose which type of properties you would like to scrape",
         type=str)
     arg_parser.add_argument("--print", '-p', help="print the results to the screen", action="store_true")
     arg_parser.add_argument("--save", '-s', help="save the scraped information into a csv file in the same directory",
@@ -49,6 +51,7 @@ def create_driver():
     """
     Creates a driver that runs in Google Chrome.
     """
+    os.environ['WDM_LOG_LEVEL'] = SILENCE_DRIVER_LOG
     return webdriver.Chrome(ChromeDriverManager().install())
 
 
@@ -57,6 +60,8 @@ def scroll(driver, verbose=False):
     Scrolls down the url to load all the information available
     """
     scroll_num = 1
+    # maximizing the window makes fewer scrolls necessary
+    driver.set_window_size(CHROME_WIDTH, CHROME_HEIGHT)
     while True:
         ele_to_scroll = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")[-1]
         driver.execute_script("arguments[0].scrollIntoView();", ele_to_scroll)
@@ -64,12 +69,11 @@ def scroll(driver, verbose=False):
             print(f"Scroll nº {scroll_num}")
         time.sleep(SCROLL_PAUSE_TIME)
         try:
-            # Finds the bottom
-            driver.find_element_by_xpath("//div[@class='G3BoaHW05R4rguvqgn-Oo']")
+            # Finds the bottom of the page
+            bot_ele = driver.find_element_by_xpath("//div[@class='G3BoaHW05R4rguvqgn-Oo']")
         except NoSuchElementException:
             scroll_num += 1
         else:
-            bot_ele = driver.find_element_by_xpath("//div[@class='G3BoaHW05R4rguvqgn-Oo']")
             time.sleep(SCROLL_PAUSE_TIME)
             driver.execute_script("arguments[0].scrollIntoView();", bot_ele)
             break
