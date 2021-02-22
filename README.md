@@ -45,7 +45,8 @@ optional arguments:<br>
                         same directory<br>
 &nbsp;&nbsp;&nbsp;&nbsp;   --verbose, -v         prints messages during the scraper execution<br>
 
-
+##### Known issues:
+When scraping properties for sale (in buy), there are new homes as well inside. There is less information about them, which causes an asymmetry and potential mismatch in the information scraped.
 ### The fast and efficient (but less scraping)
 This version accesses directly the website database server and collects the information stored in JSON format.
 Uses [requests](https://requests.readthedocs.io) and 

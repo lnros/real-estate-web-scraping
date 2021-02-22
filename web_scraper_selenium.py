@@ -13,7 +13,7 @@ CHROME_WIDTH = 1919
 CHROME_HEIGHT = 1079
 PROPERTY_LISTING_TYPE = ('buy', 'rent', 'commercial', 'new_homes', 'all')
 MAIN_URL = 'https://www.onmap.co.il/en'
-# TODO implement commercial and new homes (their html is different)
+# TODO implement new homes (their html is different)
 URLS = {'buy': MAIN_URL + '/homes/buy',
         'rent': MAIN_URL + '/homes/rent',
         'commercial': MAIN_URL + '/commercial/rent',
@@ -91,7 +91,7 @@ def scrap_url(driver, url, to_print=True, save=False, verbose=False):
     scroll(driver=driver, verbose=verbose)
     if verbose:
         print(f"\nScraping {url}\n")
-
+    # TODO handle new homes inside buy, because it causes asymmetry when zipping
     prices = (price.text.split()[PRICE_IDX] for price in
               driver.find_elements_by_xpath("//span[@class='cWr2cxa0k3zKePxbqpw3L']"))
     prop_types = (prop_type.text.split('\n')[PROPERTY_TYPE_IDX] for prop_type in
