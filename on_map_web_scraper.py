@@ -132,7 +132,7 @@ def main():
         print(f'You should choose of one the following: {PROPERTY_LISTING_TYPE},'
               f' but you provided {args.property_listing_type}')
         return None
-    if not os.path.isdir(args.todir.split('.')[NOT_SELENIUM_PARSING_FILE_IDX]) and args.todir:
+    if args.todir and not os.path.isdir(args.todir.split(NOT_SELENIUM_SEPARATOR)[NOT_SELENIUM_PARSING_FILE_IDX]):
         print('The path provided is not a directory.')
         return None
 
