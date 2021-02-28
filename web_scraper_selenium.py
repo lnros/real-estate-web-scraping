@@ -1,34 +1,15 @@
 import argparse
 import os
 import time
+
 import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
-import string
 
-PRINTABLE = set(string.printable)
-SILENCE_DRIVER_LOG = '0'
-CHROME_WIDTH = 1919
-CHROME_HEIGHT = 1079
-PROPERTY_LISTING_TYPE = ('buy', 'rent', 'commercial', 'new_homes', 'all')
-MAIN_URL = 'https://www.onmap.co.il/en'
-# TODO implement new homes (their html is different)
-URLS = {'buy': MAIN_URL + '/homes/buy',
-        'rent': MAIN_URL + '/homes/rent',
-        'commercial': MAIN_URL + '/commercial/rent',
-        'new homes': MAIN_URL + '/projects'}
-PRICE_IDX = -1
-CITY_IDX = -1
-ADDRESS_IDX = -2
-PROPERTY_TYPE_IDX = 1
-NUM_OF_ROOMS_IDX = 0
-FLOOR_IDX = 1
-SIZE_IDX = 2
-PARKING_SPACES_IDX = 3
-SCROLL_PAUSE_TIME = 1
-COLUMNS = ['Price[NIS]', 'Property_type', 'City', 'Address', 'Rooms', 'Floor', 'Area[m^2]', 'Parking_spots']
-SINGLE_ATR_ITEM = 1
+from config import *
+from utils import *
+
 
 def define_parser():
     """
@@ -63,75 +44,72 @@ def scroll(driver, verbose=False):
     # maximizing the window makes fewer scrolls necessary
     driver.set_window_size(CHROME_WIDTH, CHROME_HEIGHT)
     while True:
-        ele_to_scroll = driver.find_elements_by_xpath("//*[@id='propertiesList']/div[2]/div")[-1]
-        driver.execute_script("arguments[0].scrollIntoView();", ele_to_scroll)
-        if verbose:
-            print(f"Scroll nº {scroll_num}")
+        ele_to_scroll = driver.find_elements_by_xpath(PROPERTIES_XPATH)[ELEM_TO_SCROLL_IDX]
+        driver.execute_script(SCROLL_COMMAND, ele_to_scroll)
+        print_scroll_num(scroll_num, verbose)
         time.sleep(SCROLL_PAUSE_TIME)
         try:
             # Finds the bottom of the page
-            bot_ele = driver.find_element_by_xpath("//div[@class='G3BoaHW05R4rguvqgn-Oo']")
+            bot_ele = driver.find_element_by_xpath(BOTTOM_PAGE_XPATH)
         except NoSuchElementException:
             scroll_num += 1
         else:
             time.sleep(SCROLL_PAUSE_TIME)
-            driver.execute_script("arguments[0].scrollIntoView();", bot_ele)
+            driver.execute_script(SCROLL_COMMAND, bot_ele)
             break
 
 
-def scrap_url(driver, url, to_print=True, save=False, verbose=False):
-    """
-    Scraps properties' information given the url and either prints it to the screen and/or save it to a csv file
-    """
-    if verbose:
-        print(f'\nAccessing {url}\n')
-    driver.get(url)
-    if verbose:
-        print(f"\nScrolling down {url}\n")
-    scroll(driver=driver, verbose=verbose)
-    if verbose:
-        print(f"\nScraping {url}\n")
-    # TODO handle new homes inside buy, because it causes asymmetry when zipping
-    prices = (price.text.split()[PRICE_IDX] for price in
-              driver.find_elements_by_xpath("//span[@class='cWr2cxa0k3zKePxbqpw3L']"))
-    prop_types = (prop_type.text.split('\n')[PROPERTY_TYPE_IDX] for prop_type in
-                  driver.find_elements_by_xpath("//div[@class='_1bluUEiq7lEDSV1yeF9mjl']"))
-    cities = (address.text.split('\n')[CITY_IDX] for address in
-              driver.find_elements_by_xpath("//div[@property='address']"))
-    addresses = (address.text.split('\n')[ADDRESS_IDX] for address in
-                 driver.find_elements_by_xpath("//div[@property='address']"))
-    nums_rooms = (num_rooms.text.split()[NUM_OF_ROOMS_IDX] if (len(num_rooms.text.split()) != SINGLE_ATR_ITEM) else 0 for num_rooms in
-                  driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
-    floors = (floor.text.split()[FLOOR_IDX] if len(floor.text.split()) > FLOOR_IDX and len(floor.text.split()) > 1 else 0 for floor in
-              driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
-    sizes = (size.text.split()[SIZE_IDX] if (len(size.text.split()) > SIZE_IDX) else size.text.split()[0] if (len(size.text.split()) == SINGLE_ATR_ITEM) else 0 for size in
-             driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
-    parking_spaces = (parking.text.split()[PARKING_SPACES_IDX] if len(parking.text.split()) > PARKING_SPACES_IDX else 0
-                      for parking in driver.find_elements_by_xpath("//div[@class='yHLZr2apXqwIyhsOGyagJ']"))
-    zipped = zip(prices, prop_types, cities, addresses, nums_rooms, floors, sizes, parking_spaces)
-    df = pd.DataFrame(zipped, columns=COLUMNS)
-
-    if to_print:
-        for index, row in df.iterrows():
-            print(
-                f"Price: {row['Price[NIS]']}, Type: {row['Property_type']}, City: {row['City']}, Address: {row['Address']}, "
-                f"Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area[m^2]']}, Parking: {row['Parking_spots']}")
-
-    if verbose:
-        num_items = len(df)
-        print(f'\nScraped total of {num_items} items\n')
-
+def save_to_csv(df, url, save=True, verbose=True):
     if save:
         if 'commercial' in url:
             filename = "commercial.csv"
         elif 'projects' in url:
             filename = "new_homes.csv"
         else:
-            filename = f"{url.split('/')[-1]}.csv"
+            filename = f"{url.split(URL_SPLIT_SEPARATOR)[FILENAME_IDX]}.csv"
         if verbose:
             print(f'\nSaving {filename}\n')
             print(df)
         df.to_csv(filename)
+
+
+def scrap_url(driver, url, to_print=True, save=False, verbose=False):
+    """
+    Scraps properties' information given the url and either prints it to the screen and/or save it to a csv file
+    """
+
+    print_access(url, verbose)
+    driver.get(url)
+    print_scrolling(url, verbose)
+    scroll(driver=driver, verbose=verbose)
+    print_scraping(url, verbose)
+    # TODO handle new homes inside buy, because it causes asymmetry when zipping
+    prices = (price.text.split()[PRICE_IDX] for price in
+              driver.find_elements_by_xpath(PRICE_XPATH))
+    prop_types = (prop_type.text.split('\n')[PROPERTY_TYPE_IDX] for prop_type in
+                  driver.find_elements_by_xpath(PROP_TYPE_XPATH))
+    cities = (address.text.split('\n')[CITY_IDX] for address in
+              driver.find_elements_by_xpath(CITY_XPATH))
+    addresses = (address.text.split('\n')[ADDRESS_IDX] for address in
+                 driver.find_elements_by_xpath(ADDRESS_XPATH))
+    nums_rooms = (num_rooms.text.split()[NUM_OF_ROOMS_IDX]
+                  if (len(num_rooms.text.split()) != SINGLE_ATR_ITEM) else TRIVIAL_NUMBER
+                  for num_rooms in driver.find_elements_by_xpath(NUM_ROOMS_XPATH))
+    floors = (floor.text.split()[FLOOR_IDX]
+              if len(floor.text.split()) > FLOOR_IDX and len(floor.text.split()) > INVALID_FLOOR_TEXT_SIZE
+              else TRIVIAL_NUMBER for floor in driver.find_elements_by_xpath(FLOOR_XPATH))
+    sizes = (size.text.split()[SIZE_IDX] if (len(size.text.split()) > SIZE_IDX)
+             else size.text.split()[SIZE_TEXT_IDX] if (len(size.text.split()) == SINGLE_ATR_ITEM) else TRIVIAL_NUMBER
+             for size in driver.find_elements_by_xpath(SIZE_XPATH))
+    parking_spaces = (parking.text.split()[PARKING_SPACES_IDX] if len(parking.text.split()) > PARKING_SPACES_IDX
+                      else TRIVIAL_NUMBER
+                      for parking in driver.find_elements_by_xpath(PARKING_XPATH))
+    zipped = zip(prices, prop_types, cities, addresses, nums_rooms, floors, sizes, parking_spaces)
+    df = pd.DataFrame(zipped, columns=COLUMNS)
+
+    print_row(df, to_print=to_print)
+    print_total_items(df, verbose=verbose)
+    save_to_csv(df, url, save=save, verbose=verbose)
 
 
 def main():
@@ -146,16 +124,19 @@ def main():
         'new_homes': ['new homes'],
         'all': ['buy', 'rent', 'commercial', 'new homes']
     }
-
-    urls = [URLS[key] for key in listing_type[args.property_listing_type]]
+    configs = Configuration(property_listing_type=args.property_listing_type,
+                            to_print=args.print,
+                            save=args.save,
+                            verbose=args.verbose)
+    urls = [URLS[key] for key in listing_type[configs.property_listing_type]]
 
     driver = create_driver()
 
     for url in urls:
-        scrap_url(driver, url, to_print=args.print, save=args.save, verbose=args.verbose)
+        scrap_url(driver, url, to_print=configs.print, save=configs.save, verbose=configs.verbose)
         driver.close()
     driver.quit()
-    print('\nDone!\n')
+    print_when_program_finishes()
 
 
 if __name__ == '__main__':

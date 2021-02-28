@@ -8,10 +8,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 from dateutil import parser
 
-URL = 'https://www.onmap.co.il/en'
-COLUMNS = ['Date', 'City_name', 'Street_name', 'House_number', 'Bathrooms', 'Rooms', 'Floor', 'Area[m^2]',
-           'Parking_spots_aboveground', 'Parking_spots_underground', 'Price[NIS]', 'Property_type']
-PROPERTY_LISTING_TYPE = ('buy', 'rent', 'all')
+from config import *
 
 
 def define_parser():
@@ -69,7 +66,7 @@ def transform_to_df(regional_data, limit=None):
     Given a list of urls, each url for a different region, returns a pd.DataFrame with the compiled data from the list.
     The limit, if given, limits the number of properties per region listed in the dataframe.
     """
-    df = pd.DataFrame(columns=COLUMNS)
+    df = pd.DataFrame(columns=COLUMNS_NOT_SELENIUM)
     for region in regional_data:
         r = requests.get(region)
         soup = bs(r.content, 'lxml')
@@ -98,8 +95,8 @@ def transform_to_df(regional_data, limit=None):
                 if num_of_properties == limit:
                     break
     # House number and parking spots columns with None and none
-    df = df.replace('none', 0)
-    df = df.fillna(value=0)
+    df = df.replace('none', TRIVIAL_NUMBER)
+    df = df.fillna(value=TRIVIAL_NUMBER)
     return df
 
 
@@ -127,7 +124,7 @@ def main():
         print(f'You should choose of one the following: {PROPERTY_LISTING_TYPE},'
               f' but you provided {args.property_listing_type}')
         return
-    if not os.path.isdir(args.todir.split('.')[0]) and args.todir:
+    if not os.path.isdir(args.todir.split('.')[NOT_SELENIUM_PARSING_FILE_IDX]) and args.todir:
         print('The path provided is not a directory.')
         return
 
@@ -137,14 +134,16 @@ def main():
         limit = None
 
     for rent_or_sale in listing_type[args.property_listing_type]:
-        region_url_list = get_region_url_list(URL, rent_or_sale)
+        region_url_list = get_region_url_list(MAIN_URL, rent_or_sale)
         region_data = get_data_from_region(region_url_list, rent_or_sale)
         listing_df = transform_to_df(region_data, limit)
         if args.todir:
-            filepath = args.todir.split('.')[0] + f'{rent_or_sale}' + '.csv'
+            filepath = args.todir.split('.')[NOT_SELENIUM_PARSING_FILE_IDX] + f'{rent_or_sale}' + '.csv'
             save_to_csv(listing_df, filepath)
         else:
-            print(20 * '#' + f' {rent_or_sale.upper()} ' + 20 * '#')
+            print(NOT_SELENIUM_PRINTING_HASH_CONSTANT * '#' +
+                  f' {rent_or_sale.upper()} ' +
+                  NOT_SELENIUM_PRINTING_HASH_CONSTANT * '#')
             print(listing_df)
 
 
