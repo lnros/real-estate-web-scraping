@@ -73,6 +73,17 @@ def save_to_csv(df, url, save=True, verbose=True):
         df.to_csv(filename)
 
 
+def print_save_df(zipped, url, to_print, verbose, save):
+    """
+    Given a zipped file containing scraped information,
+    print it and/or save it to a csv, depending on the user's choice.
+    """
+    df = pd.DataFrame(zipped, columns=COLUMNS)
+    print_row(df, to_print=to_print)
+    print_total_items(df, verbose=verbose)
+    save_to_csv(df, url, save=save, verbose=verbose)
+
+
 def scrap_url(driver, url, to_print=True, save=False, verbose=False):
     """
     Scraps properties' information given the url and either prints it to the screen and/or save it to a csv file
@@ -105,11 +116,7 @@ def scrap_url(driver, url, to_print=True, save=False, verbose=False):
                       else TRIVIAL_NUMBER
                       for parking in driver.find_elements_by_xpath(PARKING_XPATH))
     zipped = zip(prices, prop_types, cities, addresses, nums_rooms, floors, sizes, parking_spaces)
-    df = pd.DataFrame(zipped, columns=COLUMNS)
-
-    print_row(df, to_print=to_print)
-    print_total_items(df, verbose=verbose)
-    save_to_csv(df, url, save=save, verbose=verbose)
+    print_save_df(zipped, to_print=to_print, save=save, verbose=verbose)
 
 
 def main():
@@ -133,7 +140,7 @@ def main():
     driver = create_driver()
 
     for url in urls:
-        scrap_url(driver, url, to_print=configs.print, save=configs.save, verbose=configs.verbose)
+        scrap_url(driver, url, to_print=configs.to_print, save=configs.save, verbose=configs.verbose)
         driver.close()
     driver.quit()
     print_when_program_finishes()

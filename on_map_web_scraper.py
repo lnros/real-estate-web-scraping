@@ -61,6 +61,28 @@ def get_data_from_region(region_url_list, rent_or_sale):
     return regional_data
 
 
+def create_df_row(property_dict):
+    """
+    Given a dictionary with property information, transform it into a dictionary to be used as a dataframe row
+    """
+    df_row = {'Date': [parser.parse(property_dict['created_at']).date()],
+              'City_name': [property_dict['address']['en']['city_name']],
+              'Street_name': [property_dict['address']['en']['street_name']],
+              'House_number': [property_dict['address']['en']['house_number']],
+              'Bathrooms': [property_dict['additional_info']['bathrooms']],
+              'Rooms': [property_dict['additional_info']['rooms']],
+              'Floor': [property_dict['additional_info']['floor']['on_the']],
+              'Area[m^2]': [property_dict['additional_info']['area']['base']],
+              'Parking_spots_aboveground': [
+                  property_dict['additional_info'].get('parking', {}).get('aboveground')],
+              'Parking_spots_underground': [
+                  property_dict['additional_info'].get('parking', {}).get('underground')],
+              'Price[NIS]': [property_dict['price']],
+              'Property_type': [property_dict['property_type']]
+              }
+    return df_row
+
+
 def transform_to_df(regional_data, limit=None):
     """
     Given a list of urls, each url for a different region, returns a pd.DataFrame with the compiled data from the list.
@@ -75,21 +97,7 @@ def transform_to_df(regional_data, limit=None):
         num_of_properties = 0
         for apartment_dict in property_dict_list:
             num_of_properties += 1
-            df_row = {'Date': [parser.parse(apartment_dict['created_at']).date()],
-                      'City_name': [apartment_dict['address']['en']['city_name']],
-                      'Street_name': [apartment_dict['address']['en']['street_name']],
-                      'House_number': [apartment_dict['address']['en']['house_number']],
-                      'Bathrooms': [apartment_dict['additional_info']['bathrooms']],
-                      'Rooms': [apartment_dict['additional_info']['rooms']],
-                      'Floor': [apartment_dict['additional_info']['floor']['on_the']],
-                      'Area[m^2]': [apartment_dict['additional_info']['area']['base']],
-                      'Parking_spots_aboveground': [
-                          apartment_dict['additional_info'].get('parking', {}).get('aboveground')],
-                      'Parking_spots_underground': [
-                          apartment_dict['additional_info'].get('parking', {}).get('underground')],
-                      'Price[NIS]': [apartment_dict['price']],
-                      'Property_type': [apartment_dict['property_type']]
-                      }
+            df_row = create_df_row(apartment_dict)
             df = pd.concat([df, pd.DataFrame(df_row)])
             if limit is not None:
                 if num_of_properties == limit:
@@ -123,10 +131,10 @@ def main():
     if args.property_listing_type not in PROPERTY_LISTING_TYPE:
         print(f'You should choose of one the following: {PROPERTY_LISTING_TYPE},'
               f' but you provided {args.property_listing_type}')
-        return
+        return None
     if not os.path.isdir(args.todir.split('.')[NOT_SELENIUM_PARSING_FILE_IDX]) and args.todir:
         print('The path provided is not a directory.')
-        return
+        return None
 
     if args.limit:
         limit = args.limit
