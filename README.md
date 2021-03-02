@@ -24,7 +24,7 @@ Properties that are on planning or construction phase
 With both versions it is possible to either print the results to the screen or to save them in csv files.
 
 ### The slow (but 100% scraping)
-This version accesses each webpage we want to scrap information from and, with
+This version accesses each webpage we want to scrap information from with
 [Selenium](https://www.selenium.dev/selenium/docs/api/py/index.html#).
 
 New homes not implemented yet.
