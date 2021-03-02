@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup as bs
 from dateutil import parser
 
 from config import *
-
+from pathlib import Path
 
 def define_parser():
     """
@@ -128,13 +128,8 @@ def main():
         'all': ['buy', 'rent']
     }
 
-    if args.property_listing_type not in PROPERTY_LISTING_TYPE:
-        print(f'You should choose of one the following: {PROPERTY_LISTING_TYPE},'
-              f' but you provided {args.property_listing_type}')
-        return None
-    if args.todir and not os.path.isdir(args.todir.split(NOT_SELENIUM_SEPARATOR)[NOT_SELENIUM_PARSING_FILE_IDX]):
-        print('The path provided is not a directory.')
-        return None
+    if args.todir and not Path(args.todir).is_dir():
+        os.makedirs(args.todir)
 
     if args.limit:
         limit = args.limit
@@ -146,7 +141,7 @@ def main():
         region_data = get_data_from_region(region_url_list, rent_or_sale)
         listing_df = transform_to_df(region_data, limit)
         if args.todir:
-            filepath = args.todir.split('.')[NOT_SELENIUM_PARSING_FILE_IDX] + f'{rent_or_sale}' + '.csv'
+            filepath = args.todir + f'/{rent_or_sale}.csv'
             save_to_csv(listing_df, filepath)
         else:
             print(NOT_SELENIUM_PRINTING_HASH_CONSTANT * '#' +
