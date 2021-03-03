@@ -7,6 +7,12 @@ class Configuration:
     Holds the user parameters for the web scraping.
     """
 
+    # class attr
+    args = None
+
+    # SCRAPERS TYPES
+    SCRAPERS_TYPES = ('soup', 'selenium')
+
     # CONSTANTS FOR SCRAPING
     PRINTABLE = set(string.printable)
     SILENCE_DRIVER_LOG = '0'
@@ -78,9 +84,13 @@ class Configuration:
             choices=Configuration.PROPERTY_LISTING_TYPE,
             help="choose which type of properties you would like to scrape",
             type=str)
-        arg_parser.add_argument('--soup', help="uses beautiful soup to scrape the website", action="store_true")
-        arg_parser.add_argument('--selenium', help="uses selenium to scrape the website", action="store_true")
-        arg_parser.add_argument('--limit', '-l', help="limit to n number of properties per region (soup only)", metavar="n",
+        arg_parser.add_argument(
+            "scraper_type",
+            choices=Configuration.SCRAPERS_TYPES,
+            help="choose which type of scraper you would like to use",
+            type=str)
+        arg_parser.add_argument('--limit', '-l',
+                                help="limit to n number of properties per region (soup only)", metavar="n",
                                 type=int,
                                 required=False)
         arg_parser.add_argument("--print", '-p', help="print the results to the screen", action="store_true")
