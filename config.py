@@ -64,7 +64,7 @@ class Configuration:
     PROP_TYPE_XPATH = "//div[@class='_1bluUEiq7lEDSV1yeF9mjl']"
     CITY_XPATH = "//div[@property='address']"
     ADDRESS_XPATH = "//div[@property='address']"
-    NUM_ROOMS_XPATH = "//div[@property='address']"
+    NUM_ROOMS_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
     FLOOR_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
     SIZE_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
     PARKING_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
