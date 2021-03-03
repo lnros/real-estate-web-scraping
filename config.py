@@ -35,6 +35,7 @@ class Configuration:
     TRIVIAL_NUMBER = 0
     INVALID_FLOOR_TEXT_SIZE = 1
     NOT_SELENIUM_PRINTING_HASH_CONSTANT = 20
+    NONE = 'none'
     # INDICES FOR PARSING
     NOT_SELENIUM_PARSING_FILE_IDX = 0
     ELEM_TO_SCROLL_IDX = -1
@@ -48,6 +49,7 @@ class Configuration:
     PARKING_SPACES_IDX = 3
     FILENAME_IDX = -1
     SIZE_TEXT_IDX = 0
+    NOT_SELENIUM_REGION_IDX = -1
     URL_SPLIT_SEPARATOR = '/'
     NOT_SELENIUM_SEPARATOR = '.'
 
@@ -76,6 +78,11 @@ class Configuration:
             choices=Configuration.PROPERTY_LISTING_TYPE,
             help="choose which type of properties you would like to scrape",
             type=str)
+        arg_parser.add_argument('--soup', help="uses beautiful soup to scrape the website", action="store_true")
+        arg_parser.add_argument('--selenium', help="uses selenium to scrape the website", action="store_true")
+        arg_parser.add_argument('--limit', '-l', help="limit to n number of properties per region (soup only)", metavar="n",
+                                type=int,
+                                required=False)
         arg_parser.add_argument("--print", '-p', help="print the results to the screen", action="store_true")
         arg_parser.add_argument("--save", '-s',
                                 help="save the scraped information into a csv file in the same directory",

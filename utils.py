@@ -18,22 +18,26 @@ def create_df_row(property_dict):
     """
     Given a dictionary with property information, transform it into a dictionary to be used as a dataframe row
     """
-    df_row = {'Date': [parser.parse(property_dict['created_at']).date()],
-              'City_name': [property_dict['address']['en']['city_name']],
-              'Street_name': [property_dict['address']['en']['street_name']],
-              'House_number': [property_dict['address']['en']['house_number']],
-              'Bathrooms': [property_dict['additional_info']['bathrooms']],
-              'Rooms': [property_dict['additional_info']['rooms']],
-              'Floor': [property_dict['additional_info']['floor']['on_the']],
-              'Area[m^2]': [property_dict['additional_info']['area']['base']],
-              'Parking_spots_aboveground': [
-                  property_dict['additional_info'].get('parking', {}).get('aboveground')],
-              'Parking_spots_underground': [
-                  property_dict['additional_info'].get('parking', {}).get('underground')],
-              'Price[NIS]': [property_dict['price']],
-              'Property_type': [property_dict['property_type']]
-              }
-    return df_row
+    try:
+        df_row = {'Date': [parser.parse(property_dict['created_at']).date()],
+                  'City_name': [property_dict['address']['en']['city_name']],
+                  'Street_name': [property_dict['address']['en']['street_name']],
+                  'House_number': [property_dict['address']['en']['house_number']],
+                  'Bathrooms': [property_dict['additional_info']['bathrooms']],
+                  'Rooms': [property_dict['additional_info']['rooms']],
+                  'Floor': [property_dict['additional_info']['floor']['on_the']],
+                  'Area[m^2]': [property_dict['additional_info']['area']['base']],
+                  'Parking_spots_aboveground': [
+                      property_dict['additional_info'].get('parking', {}).get('aboveground')],
+                  'Parking_spots_underground': [
+                      property_dict['additional_info'].get('parking', {}).get('underground')],
+                  'Price[NIS]': [property_dict['price']],
+                  'Property_type': [property_dict['property_type']]
+                  }
+        return df_row
+    except KeyError:
+        # TODO Take care of new project in buy
+        pass
 
 
 def print_when_program_finishes():
