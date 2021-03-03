@@ -7,6 +7,7 @@ from utils import print_when_program_finishes
 def main():
     cfg.define_parser()
     urls = [cfg.URLS[key] for key in cfg.LISTING_MAP[cfg.args.property_listing_type]]
+    # if both soup and selenium are chosen, we use soup
     if cfg.args.soup:
         params = {"limit": cfg.args.limit,
                   "to_print": cfg.args.print,
