@@ -84,7 +84,8 @@ class SoupScraper:
         print_transform_df(verbose)
         self.update_df(pd.DataFrame(columns=cfg.COLUMNS_NOT_SELENIUM))
         for region in self.get_regional_data():
-            print(region)
+            if verbose:
+                print(region)
             r = requests.get(region)
             soup = bs(r.content, 'lxml')
             property_dict_list = json.loads(soup.p.get_text())['data']
