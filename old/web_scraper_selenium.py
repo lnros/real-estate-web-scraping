@@ -5,6 +5,7 @@ import time
 import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
 from webdriver_manager.chrome import ChromeDriverManager
 
 from config import *
@@ -53,6 +54,9 @@ def scroll(driver, verbose=False):
             bot_ele = driver.find_element_by_xpath(BOTTOM_PAGE_XPATH)
         except NoSuchElementException:
             scroll_num += 1
+        except StaleElementReferenceException:
+            print("Scrolling forced to end due to unknown error")
+            break
         else:
             time.sleep(SCROLL_PAUSE_TIME)
             driver.execute_script(SCROLL_COMMAND, bot_ele)
