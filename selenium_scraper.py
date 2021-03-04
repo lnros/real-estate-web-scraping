@@ -87,7 +87,7 @@ class SeleniumScraper:
 
     def scrap_url(self, url, **kwargs):
         """
-        Scraps properties' information given the url and either prints it to the screen and/or save it to a csv file
+        Scrapes properties' information given the url and either prints it to the screen and/or save it to a csv file
         ----
         Options available with kwargs:
         to_print: bool
