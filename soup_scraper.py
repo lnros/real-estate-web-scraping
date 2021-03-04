@@ -50,6 +50,7 @@ class SoupScraper:
         """
         Given the main website url and the listing type, returns a list of urls of different regions.
         """
+        self._urls = []
         print_getting_url_for_regions(verbose)
         r = requests.get(main_url)
         soup = bs(r.content, 'lxml')
@@ -67,6 +68,7 @@ class SoupScraper:
         Given a list of urls of different regions and the listing type, updates the regional data list of urls with all
         the properties for this specific listing type, each url for a particular region.
         """
+        self._regional_data = []
         print_getting_regional_data(verbose)
         for url in self.get_urls():
             region_name = url.split(cfg.URL_SPLIT_SEPARATOR)[cfg.NOT_SELENIUM_REGION_IDX]
@@ -82,6 +84,8 @@ class SoupScraper:
         print_transform_df(verbose)
         self.update_df(pd.DataFrame(columns=cfg.COLUMNS_NOT_SELENIUM))
         for region in self.get_regional_data():
+            if verbose:
+                print(region)
             r = requests.get(region)
             soup = bs(r.content, 'lxml')
             property_dict_list = json.loads(soup.p.get_text())['data']
