@@ -1,3 +1,4 @@
+import time
 from config import Configuration as Cfg
 from selenium_scraper import SeleniumScraper
 from soup_scraper import SoupScraper
@@ -21,11 +22,12 @@ def main():
         params = {"to_print": Cfg.args.print,
                   "save": Cfg.args.save,
                   "verbose": Cfg.args.verbose}
-        scraper = SeleniumScraper()
         for url in urls:
+            time.sleep(3)
+            scraper = SeleniumScraper()
             scraper.scrap_url(url, **params)
             scraper.driver.close()
-        scraper.driver.quit()
+            scraper.driver.quit()
 
     print_when_program_finishes()
 

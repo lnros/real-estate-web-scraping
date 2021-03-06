@@ -144,3 +144,8 @@ widgetsnbextension==3.5.1
 xmltodict==0.12.0
 yarg==0.1.9
 zipp @ file:///tmp/build/80754af9/zipp_1604001098328/work
+
+pandas~=1.1.1
+requests~=2.25.1
+beautifulsoup4~=4.9.3
+python-dateutil~=2.8.1
