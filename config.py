@@ -61,7 +61,7 @@ class Configuration:
     # XPATHS AND SELENIUM COMMANDS
     SCROLL_COMMAND = "arguments[0].scrollIntoView();"
     PROPERTIES_XPATH = "//div[@style='position: relative;']"
-
+    BOTTOM_PAGE_XPATH = "//div[@class='G3BoaHW05R4rguvqgn-Oo']"
     @classmethod
     def define_parser(cls):
         """

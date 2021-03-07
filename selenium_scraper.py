@@ -3,6 +3,7 @@ import re
 import os
 import time
 from bs4 import BeautifulSoup as bs
+import numpy as np
 import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -136,12 +137,17 @@ class SeleniumScraper:
             self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
-            new_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
-            if prev_len == new_len:
+            try:
+                # Finds the bottom of the page
+                bot_ele = self.driver.find_element_by_xpath(cfg.BOTTOM_PAGE_XPATH)
+            except NoSuchElementException:
+                scroll_num += 1
+            else:
+                time.sleep(cfg.SCROLL_PAUSE_TIME)
+                self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
                 break
-            prev_len = new_len
-            scroll_num += 1
-            time.sleep(cfg.SCROLL_PAUSE_TIME)
+            if scroll_num == 70:
+                break
 
     def _save_to_csv(self, url, save=True, verbose=True):
         """
@@ -194,16 +200,16 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(property_to_attr_dict(proper))
             df = pd.DataFrame(rows_list)
-            df['Price[NIS]'] = df['Price[NIS]'].astype('int')
+            df['Price[NIS]'] = df['Price[NIS]'].astype(np.int64)
             df['Rooms'] = df['Rooms'].astype('float')
             df['Floor'] = df['Floor'].astype('float')
-            df['Area[m^2]'] = df['Area[m^2]'].astype('int')
-            df['Parking_spots'] = df['Parking_spots'].astype('int')
+            df['Area[m^2]'] = df['Area[m^2]'].astype(np.int64)
+            df['Parking_spots'] = df['Parking_spots'].astype(np.int64)
         else:   # for new home category
             for proper in properties_list:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(new_home_to_attr_dict(proper))
             df = pd.DataFrame(rows_list)
-            df['Price[NIS]'] = df['Price[NIS]'].astype('int')
+            df['Price[NIS]'] = df['Price[NIS]'].astype(np.int64)
 
         self._print_save_df(df, url, to_print=kwargs['to_print'], save=kwargs['save'], verbose=kwargs['verbose'])
