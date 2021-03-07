@@ -146,8 +146,6 @@ class SeleniumScraper:
                 time.sleep(cfg.SCROLL_PAUSE_TIME)
                 self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
                 break
-            if scroll_num == 70:
-                break
 
     def _save_to_csv(self, url, save=True, verbose=True):
         """
