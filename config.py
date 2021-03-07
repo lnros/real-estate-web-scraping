@@ -31,8 +31,7 @@ class Configuration:
             'rent': MAIN_URL + '/homes/rent',
             'commercial': MAIN_URL + '/commercial/rent',
             'new homes': MAIN_URL + '/projects'}
-    COLUMNS = ['Price[NIS]', 'Property_type', 'City', 'Address', 'Rooms', 'Floor', 'Area[m^2]',
-               'Parking_spots']
+
     COLUMNS_NOT_SELENIUM = ['Date', 'City_name', 'Street_name', 'House_number', 'Bathrooms', 'Rooms', 'Floor',
                             'Area[m^2]',
                             'Parking_spots_aboveground', 'Parking_spots_underground', 'Price[NIS]', 'Property_type']
@@ -60,18 +59,9 @@ class Configuration:
     NOT_SELENIUM_SEPARATOR = '.'
 
     # XPATHS AND SELENIUM COMMANDS
-    PRICE_XPATH = "//span[@class='cWr2cxa0k3zKePxbqpw3L']"
-    PROP_TYPE_XPATH = "//div[@class='_1bluUEiq7lEDSV1yeF9mjl']"
-    CITY_XPATH = "//div[@property='address']"
-    ADDRESS_XPATH = "//div[@property='address']"
-    NUM_ROOMS_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
-    FLOOR_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
-    SIZE_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
-    PARKING_XPATH = "//div[@class='yHLZr2apXqwIyhsOGyagJ']"
-    BOTTOM_PAGE_XPATH = "//div[@class='G3BoaHW05R4rguvqgn-Oo']"
     SCROLL_COMMAND = "arguments[0].scrollIntoView();"
-    PROPERTIES_XPATH = "//*[@id='propertiesList']/div[2]/div"
-
+    PROPERTIES_XPATH = "//div[@style='position: relative;']"
+    BOTTOM_PAGE_XPATH = "//div[@class='G3BoaHW05R4rguvqgn-Oo']"
     @classmethod
     def define_parser(cls):
         """

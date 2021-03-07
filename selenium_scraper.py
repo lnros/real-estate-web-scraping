@@ -1,6 +1,9 @@
+import string
+import re
 import os
 import time
-
+from bs4 import BeautifulSoup as bs
+import numpy as np
 import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -16,6 +19,89 @@ def create_driver():
     """
     os.environ['WDM_LOG_LEVEL'] = cfg.SILENCE_DRIVER_LOG
     return webdriver.Chrome(ChromeDriverManager().install())
+
+
+def property_to_attr_dict(bs_ele_property):
+    """
+    getting bs element of single property and returns
+    attributes dictionary of the property"""
+    proper = bs_ele_property.div.div.findChildren('div', recursive=False)
+
+    try:
+        price = proper[0].findChildren('span', recursive=False)[-1].text
+        price = ''.join(re.findall("\d", price)).strip()
+    except:
+        price = None
+
+    attr = proper[1].findChildren('div', recursive=False)
+
+    try:
+        type_ = attr[1].text.strip(string.punctuation)
+    except:
+        type_ = None
+
+    try:
+        street = attr[2].findChildren('div', recursive=False)[-2].text.strip(string.punctuation)
+    except:
+        street = None
+
+    try:
+        city = attr[2].findChildren('div', recursive=False)[-1].text.strip(string.punctuation)
+    except:
+        city = None
+
+    try:
+        rooms = attr[3].find('i', {'title': 'Rooms'}).parent.text.strip()
+    except:
+        rooms = None
+
+    try:
+        floor = attr[3].find('i', {'title': 'Floor'}).parent.text.strip()
+    except:
+        floor = None
+
+    try:
+        floor_area = attr[3].find('i', {'title': 'Floor area in sqm'}).parent.text.strip()
+    except:
+        floor_area = None
+
+    try:
+        parking = attr[3].find('i', {'title': 'Parking'}).parent.text.strip()
+    except:
+        parking = 0
+
+    return {'Price[NIS]': price, 'Property_type': type_, 'City': city, 'Address': street, 'Rooms': rooms,
+            'Floor': floor,
+            'Area[m^2]': floor_area, 'Parking_spots': parking}
+
+
+def new_home_to_attr_dict(buy_property):
+    proper = buy_property.div.div.findChildren('div', recursive=False)
+
+    try:
+        price = proper[0].findChildren('div', recursive=False)[-1].text
+        price = ''.join(re.findall("\d", price)).strip()
+    except:
+        price = None
+
+    attr = proper[1].findChildren('div', recursive=False)
+
+    try:
+        Status = attr[-1].text.strip().split()[-1]
+    except:
+        Status = None
+
+    try:
+        street = attr[-3].text.strip(string.punctuation)
+    except:
+        street = None
+
+    try:
+        city = attr[-2].text.strip(string.punctuation)
+    except:
+        city = None
+
+    return {'Price[NIS]': price, 'Status': Status, 'City': city, 'Address': street}
 
 
 class SeleniumScraper:
@@ -41,8 +127,10 @@ class SeleniumScraper:
         Scrolls down the url to load all the information available
         """
         scroll_num = 1
+        prev_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
         # maximizing the window makes fewer scrolls necessary
         self.driver.set_window_size(cfg.CHROME_WIDTH, cfg.CHROME_HEIGHT)
+        time.sleep(cfg.SCROLL_PAUSE_TIME)
         while True:
             ele_to_scroll = self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH)[
                 cfg.ELEM_TO_SCROLL_IDX]
@@ -57,6 +145,8 @@ class SeleniumScraper:
             else:
                 time.sleep(cfg.SCROLL_PAUSE_TIME)
                 self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
+                break
+            if scroll_num == 70:
                 break
 
     def _save_to_csv(self, url, save=True, verbose=True):
@@ -75,13 +165,14 @@ class SeleniumScraper:
                 print(self.get_df())
             self.get_df().to_csv(filename)
 
-    def _print_save_df(self, zipped, url, to_print=True, save=False, verbose=False):
+    def _print_save_df(self, df, url, to_print=True, save=False, verbose=False):
         """
-        Given a zipped file containing scraped information,
+        Given a df containing scraped information,
         print it and/or save it to a csv, depending on the user's choice.
         """
-        self.update_df(pd.DataFrame(zipped, columns=cfg.COLUMNS))
-        print_row(self.get_df(), to_print=to_print)
+        self.update_df(df)
+        if 'project' not in url:
+            print_row(self.get_df(), to_print=to_print)
         print_total_items(self.get_df(), verbose=verbose)
         self._save_to_csv(url, save=save, verbose=verbose)
 
@@ -94,32 +185,31 @@ class SeleniumScraper:
         save: bool
         verbose: bool
         """
-
         print_access(url, verbose=kwargs['verbose'])
         self.driver.get(url)
         print_scrolling(url, verbose=kwargs['verbose'])
         self._scroll(verbose=kwargs['verbose'])
         print_scraping(url, verbose=kwargs['verbose'])
-        # TODO handle new homes inside buy, because it causes asymmetry when zipping
-        prices = (price.text.split()[cfg.PRICE_IDX] for price in self.driver.find_elements_by_xpath(cfg.PRICE_XPATH))
-        prop_types = (prop_type.text.split('\n')[cfg.PROPERTY_TYPE_IDX] for prop_type in
-                      self.driver.find_elements_by_xpath(cfg.PROP_TYPE_XPATH))
-        cities = (address.text.split('\n')[cfg.CITY_IDX] for address in
-                  self.driver.find_elements_by_xpath(cfg.CITY_XPATH))
-        addresses = (address.text.split('\n')[cfg.ADDRESS_IDX] for address in
-                     self.driver.find_elements_by_xpath(cfg.ADDRESS_XPATH))
-        nums_rooms = (num_rooms.text.split()[cfg.NUM_OF_ROOMS_IDX]
-                      if (len(num_rooms.text.split()) != cfg.SINGLE_ATR_ITEM) else cfg.TRIVIAL_NUMBER
-                      for num_rooms in self.driver.find_elements_by_xpath(cfg.NUM_ROOMS_XPATH))
-        floors = (floor.text.split()[cfg.FLOOR_IDX] if len(floor.text.split()) > cfg.FLOOR_IDX and len(
-            floor.text.split()) > cfg.INVALID_FLOOR_TEXT_SIZE else cfg.TRIVIAL_NUMBER for floor in
-                  self.driver.find_elements_by_xpath(cfg.FLOOR_XPATH))
-        sizes = (size.text.split()[cfg.SIZE_IDX] if (len(size.text.split()) > cfg.SIZE_IDX)
-                 else size.text.split()[cfg.SIZE_TEXT_IDX] if (
-                len(size.text.split()) == cfg.SINGLE_ATR_ITEM) else cfg.TRIVIAL_NUMBER
-                 for size in self.driver.find_elements_by_xpath(cfg.SIZE_XPATH))
-        parking_spaces = (parking.text.split()[cfg.PARKING_SPACES_IDX]
-                          if len(parking.text.split()) > cfg.PARKING_SPACES_IDX else cfg.TRIVIAL_NUMBER
-                          for parking in self.driver.find_elements_by_xpath(cfg.PARKING_XPATH))
-        zipped = zip(prices, prop_types, cities, addresses, nums_rooms, floors, sizes, parking_spaces)
-        self._print_save_df(zipped, url, to_print=kwargs['to_print'], save=kwargs['save'], verbose=kwargs['verbose'])
+        html_doc = self.driver.page_source
+        soup = bs(html_doc, 'html.parser')
+        content = soup.find('div', {'id': 'propertiesList'}).findChildren("div", recursive=False)
+        properties_list = content[1].findChildren('div', recursive=False)
+        rows_list = []
+        if 'project' not in url:  # for buy, rent and commercial categories
+            for proper in properties_list:
+                if len(proper.div.div.findChildren('div', recursive=False)) == 2:
+                    rows_list.append(property_to_attr_dict(proper))
+            df = pd.DataFrame(rows_list)
+            df['Price[NIS]'] = df['Price[NIS]'].astype(np.int64)
+            df['Rooms'] = df['Rooms'].astype('float')
+            df['Floor'] = df['Floor'].astype('float')
+            df['Area[m^2]'] = df['Area[m^2]'].astype(np.int64)
+            df['Parking_spots'] = df['Parking_spots'].astype(np.int64)
+        else:   # for new home category
+            for proper in properties_list:
+                if len(proper.div.div.findChildren('div', recursive=False)) == 2:
+                    rows_list.append(new_home_to_attr_dict(proper))
+            df = pd.DataFrame(rows_list)
+            df['Price[NIS]'] = df['Price[NIS]'].astype(np.int64)
+
+        self._print_save_df(df, url, to_print=kwargs['to_print'], save=kwargs['save'], verbose=kwargs['verbose'])
