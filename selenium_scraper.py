@@ -127,7 +127,6 @@ class SeleniumScraper:
         Scrolls down the url to load all the information available
         """
         scroll_num = 1
-        prev_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
         # maximizing the window makes fewer scrolls necessary
         self.driver.set_window_size(cfg.CHROME_WIDTH, cfg.CHROME_HEIGHT)
         time.sleep(cfg.SCROLL_PAUSE_TIME)
@@ -146,6 +145,27 @@ class SeleniumScraper:
                 time.sleep(cfg.SCROLL_PAUSE_TIME)
                 self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
                 break
+
+    def _scroll_new_homes(self, verbose=False):
+        """
+        Scrolls down the new_homes url to load all the information available
+        """
+        scroll_num = 1
+        prev_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
+        # maximizing the window makes fewer scrolls necessary
+        self.driver.set_window_size(cfg.CHROME_WIDTH, cfg.CHROME_HEIGHT)
+        time.sleep(cfg.SCROLL_PAUSE_TIME)
+        while True:
+            ele_to_scroll = self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH)[
+                cfg.ELEM_TO_SCROLL_IDX]
+            self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
+            print_scroll_num(scroll_num, verbose)
+            time.sleep(cfg.SCROLL_PAUSE_TIME)
+            new_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
+            if new_len == prev_len:
+                break
+            scroll_num += 1
+            prev_len = new_len
 
     def _save_to_csv(self, url, save=True, verbose=True):
         """
@@ -186,7 +206,12 @@ class SeleniumScraper:
         print_access(url, verbose=kwargs['verbose'])
         self.driver.get(url)
         print_scrolling(url, verbose=kwargs['verbose'])
-        self._scroll(verbose=kwargs['verbose'])
+
+        if 'project' not in url:
+            self._scroll(verbose=kwargs['verbose'])
+        else:
+            self._scroll_new_homes(verbose=kwargs['verbose'])
+
         print_scraping(url, verbose=kwargs['verbose'])
         html_doc = self.driver.page_source
         soup = bs(html_doc, 'html.parser')

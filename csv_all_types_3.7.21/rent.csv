@@ -1,0 +1,1103 @@
+,Price[NIS],Property_type,City,Address,Rooms,Floor,Area[m^2],Parking_spots
+0,4500,Apartment,Ramat Gan,Ha-Nakhal St.  7,4.0,3.0,90,1
+1,5400,Apartment,Givat Shmuel,Derech Keren HaYesod  3,5.0,1.0,110,0
+2,4500,Apartment,Ramat Gan,Bialik St. ,3.5,2.0,86,1
+3,4800,Housing unit,Herzliya,El Al St.  14,2.0,1.0,50,0
+4,3800,Apartment,Rishon LeTsiyon,Reuven St.  1,3.0,3.0,65,0
+5,7999,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,10.0,75,2
+6,15000,Villa,Mazkeret Batya,Sderot Rothschild ,9.0,2.0,402,3
+7,3500,Apartment,Rehovot,Palmakh St.  28,3.0,0.0,60,0
+8,3250,Housing unit,Rishon LeTsiyon,HaTut St.  10,2.0,0.0,35,0
+9,3200,Housing unit,Rishon LeTsiyon,HaTut St.  10,2.0,0.0,32,0
+10,3200,Apartment,Petah Tikva,Doctor Fogel Herman St. ,3.5,3.0,80,1
+11,3500,Apartment,Petah Tikva,Yosefsberg St.  9,3.0,1.0,60,0
+12,37000,Penthouse,Tel Aviv-Yafo,Sheinkin St. ,5.0,5.0,250,2
+13,3000,Garden apt,Tel Aviv-Yafo,Matalon St. ,1.0,0.0,40,0
+14,7000,Apartment,Tel Aviv-Yafo,Natan HaHaham St.  10,2.5,3.0,63,0
+15,12000,Apartment,Tel Aviv-Yafo,Antokolski St.  12,5.5,1.0,165,0
+16,16000,Duplex,Tel Aviv-Yafo,Sharabi St.  17,4.0,2.0,170,1
+17,6850,Apartment,Tel Aviv-Yafo,Yehuda HaMakkabbi St.  30,3.0,1.0,75,0
+18,6000,Apartment,Ramat Gan,Bar Kochva St.  22,4.0,2.0,130,1
+19,2500,Apartment,Tel Aviv-Yafo,Israelis St. ,1.0,1.0,30,0
+20,19000,Apartment,Tel Aviv-Yafo,Nitsana St. ,6.0,3.0,200,4
+21,12800,Apartment,Tel Aviv-Yafo,Antokolski St.  12,5.5,1.0,165,0
+22,4000,Apartment,Tel Aviv-Yafo,Shazar St.  61,3.0,3.0,71,0
+23,12000,Apartment,Tel Aviv-Yafo,Vitkin St.  23,4.0,3.0,100,2
+24,7500,Apartment,Tel Aviv-Yafo,Nissenboim St. ,3.0,2.0,67,1
+25,10500,Apartment,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  44,4.0,2.0,115,0
+26,7000,Apartment,Tel Aviv-Yafo,Nechemiah St.  6,2.0,2.0,60,2
+27,7500,Apartment,Tel Aviv-Yafo,Zeev Jabotinsky St.  100,3.0,2.0,75,1
+28,6500,Apartment,Tel Aviv-Yafo,Nissenboim St.  22,3.0,2.0,73,2
+29,7400,Garden apt,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  22,3.0,0.0,75,0
+30,12000,Duplex,Tel Aviv-Yafo,HaKongres St.  14,5.0,5.0,190,2
+31,7200,Garden apt,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  44,3.0,0.0,75,0
+32,7100,Apartment,Tel Aviv-Yafo,Ha-Melits St.  9,3.0,3.0,70,0
+33,3700,Apartment,Petah Tikva,Yehuda ha-Levi St.  32,3.0,3.0,65,0
+34,11500,Apartment,Tel Aviv-Yafo,Ha-Rav Nisim St.  9,3.0,5.0,97,1
+35,7000,Penthouse,Petah Tikva,Etsel St. ,5.0,7.0,130,1
+36,8700,Apartment,Tel Aviv-Yafo,Yirmeyahu St. ,3.0,2.0,80,0
+37,3200,Apartment,Jerusalem,HaTsiyonut St.  9,3.0,1.0,72,0
+38,1500,Apartment,Jerusalem,Shmuel ha-Navi St.  20,4.0,1.0,110,1
+39,2800,Apartment,Bat Yam,Ha-Rishonim St. ,1.0,0.0,30,0
+40,6500,Apartment,Tel Aviv-Yafo,Sderot Nordau ,2.0,2.0,70,0
+41,3900,Apartment,Bat Yam,HaShikma St.  4,3.0,3.0,88,0
+42,2800,Apartment,Rehovot,Rachel Hirshenzon St. ,2.0,4.0,40,0
+43,5900,Apartment,Bat Yam,Arlozorov St.  56,5.0,1.0,120,0
+44,3000,Apartment,Bat Yam,David Raziel St.  37,3.0,3.0,70,0
+45,3700,Apartment,Bat Yam,Kibuts Galuyot St.  14,2.5,0.0,47,0
+46,2700,Apartment,Bat Yam,Derech Ben Gurion  138,1.0,1.0,30,2
+47,30000,Apartment,Tel Aviv-Yafo,Ha-Rav Nisim St.  9,7.0,28.0,290,3
+48,30000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  12,7.0,12.0,290,3
+49,3400,Housing unit,Ramat Gan,Mevo Mendes  1,2.0,0.0,40,0
+50,6500,Apartment,Bat Yam,Rothschild St.  4,3.5,3.0,120,0
+51,3750,Apartment,Bat Yam,Herzl St.  30,3.0,2.0,77,0
+52,4000,Apartment,Holon,Ekhad be-Mai St. ,2.0,1.0,68,0
+53,3000,Apartment,Bat Yam,Rothschild St.  27,1.0,9.0,30,0
+54,7199,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,7.0,75,4
+55,3800,Apartment,Rehovot,Sderot Hen ,3.0,2.0,60,0
+56,4000,Apartment,Rehovot,Zelkind Stolvov St. ,4.0,2.0,100,0
+57,10500,Duplex,Tel Aviv-Yafo,Lili Menakhem St. ,5.0,2.0,160,2
+58,5100,Apartment,Bat Yam,Derech Ben Gurion  99,2.0,19.0,50,1
+59,13000,Mini penthouse,Bat Yam,Ha-Neviim St.  60,5.0,20.0,135,3
+60,11500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  3,3.5,19.0,118,2
+61,4600,Apartment,Bat Yam,Arlozorov St.  40,3.0,1.0,65,0
+62,3600,Apartment,Bat Yam,Balfour St. ,2.0,1.0,35,0
+63,4800,Apartment,Bat Yam,Rothschild St.  16,4.0,3.0,110,0
+64,13000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,5.0,120,2
+65,3200,Apartment,Ramla,Zahal St. ,3.0,3.0,64,1
+66,5200,Apartment,Bat Yam,Ha-Sar Shapira St. ,4.0,3.0,90,0
+67,2500,Housing unit,Ramat Gan,HaEm St.  29,1.0,0.0,16,0
+68,4500,Apartment,Rishon LeTsiyon,HaSadeh St. ,3.5,3.0,80,1
+69,6500,Apartment,Bat Yam,Ha-Rav Nisanbaum St.  39,4.0,30.0,110,1
+70,3900,Apartment,Bat Yam,Jabotinsky St. ,2.0,6.0,60,0
+71,5800,Apartment,Ramla,Yona Volakh St.  4,5.0,2.0,130,2
+72,7000,Apartment,Rishon LeTsiyon,Rabi Yehuda ha-Nasi St.  23,5.0,2.0,129,2
+73,4300,Apartment,Bat Yam,Derech Ben Gurion ,2.0,1.0,30,0
+74,3700,Studio,Bat Yam,Rothschild St. ,2.5,2.0,65,0
+75,5300,Apartment,Givatayim,Kiryat Yosef St. ,4.0,2.0,105,1
+76,5300,Apartment,Yavne,HaSira St. ,5.0,1.0,130,2
+77,3000,Apartment,Bat Yam,Rothschild St. ,2.5,2.0,65,0
+78,4500,Apartment,Rishon LeTsiyon,HaSadeh St. ,3.5,3.0,80,1
+79,4600,Apartment,Rishon LeTsiyon,Rabbi Kook St. ,4.0,2.0,94,1
+80,2100,Apartment,Ramat Gan,Zeev Jabotinsky St. ,1.0,2.0,20,0
+81,5900,Cottage/house,Bat Yam,Mivtsa Sinai St.  5,4.0,2.0,120,0
+82,4700,Apartment,Bat Yam,Khatsor St. ,3.5,1.0,85,0
+83,3600,Garden apt,Bat Yam,Balfour St. ,2.0,0.0,40,0
+84,4400,Apartment,Rishon LeTsiyon,Ahiezer St. ,3.0,1.0,80,0
+85,3800,Apartment,Bat Yam,Etsel St. ,2.0,2.0,45,1
+86,3900,Apartment,Bat Yam,Arlozorov St. ,2.5,2.0,72,0
+87,8100,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,8.0,77,1
+88,5700,Apartment,Ramat Gan,Sderot Yerushalayim ,3.0,6.0,60,1
+89,2600,Apartment,Ramat Gan,Abba Hillel Silver Road ,1.0,1.0,27,0
+90,8500,Cottage/house,Rishon LeTsiyon,HeHatsav St. ,4.0,3.0,220,1
+91,4600,Apartment,Rishon LeTsiyon,Olei HaGardom St. ,4.0,2.0,100,2
+92,4000,Apartment,Rishon LeTsiyon,Ha-Tomer St. ,3.0,1.0,75,1
+93,3800,Apartment,Holon,Eilat St.  10,2.0,3.0,40,0
+94,3900,Housing unit,Rishon LeTsiyon,Martin Buber St. ,3.0,0.0,75,0
+95,2200,Apartment,Petah Tikva,Bar Kochva St. ,1.0,0.0,15,0
+96,4900,Apartment,Bat Yam,Ha-Sar Shapira St. ,3.0,1.0,80,0
+97,3900,Apartment,Bat Yam,Hasar Pinkas St. ,2.5,4.0,75,0
+98,3500,Apartment,Petah Tikva,Ha-Atsmon St. ,3.0,4.0,75,0
+99,5000,Apartment,Bat Yam,Masaryk St. ,3.0,8.0,85,1
+100,3600,Apartment,Rishon LeTsiyon,Frishman St.  4,2.5,3.0,65,0
+101,3100,Garden apt,Petah Tikva,Nahalat Tsvi St. ,2.0,0.0,70,0
+102,3500,Apartment,Petah Tikva,Shalom Ash St. ,2.5,0.0,70,0
+103,4200,Apartment,Tel Aviv-Yafo,Kehilat Riga St.  3,3.0,2.0,55,0
+104,8000,Mini penthouse,Rishon LeTsiyon,Ha-Hityashvut St. ,5.0,8.0,125,2
+105,6500,Apartment,Rishon LeTsiyon,Haim Hefer St.  9,5.5,14.0,140,1
+106,4200,Apartment,Bat Yam,Arlozorov St. ,3.5,2.0,85,1
+107,4100,Apartment,Rishon LeTsiyon,Rabbi Kook St.  3,3.0,1.0,72,1
+108,6000,Apartment,Tel Aviv-Yafo,Kfar Giladi St. ,3.5,2.0,80,0
+109,4900,Apartment,Holon,HaRav Yitshak HaLevi St.  21,4.0,2.0,90,1
+110,5800,Cottage/house,Holon,Tchernikhovski St. ,4.0,1.0,180,0
+111,8500,Apartment,Tel Aviv-Yafo,Basel St.  22,3.0,2.0,90,0
+112,6500,Apartment,Rishon LeTsiyon,Haim Hefer St.  13,5.0,6.0,125,1
+113,4800,Apartment,Rishon LeTsiyon,Itamar Ben Avi St. ,4.0,1.0,110,1
+114,3500,Apartment,Bat Yam,Yerushalayim St.  79,2.0,1.0,65,0
+115,3900,Apartment,Ramat Gan,Zeev Jabotinsky St. ,3.0,1.0,60,0
+116,6930,Villa,Ramat Gan,Ha-Yarden St. ,4.0,1.0,110,0
+117,3800,Apartment,Ramat Gan,Haroe St.  7,2.5,2.0,60,0
+118,3400,Housing unit,Rishon LeTsiyon,Martin Buber St. ,2.0,0.0,35,0
+119,4200,Apartment,Bat Yam,Tchernikhovski St. ,3.0,2.0,72,1
+120,12000,Cottage/house,Jerusalem,Mekor Haim St.  16,2.0,1.0,80,0
+121,5500,Apartment,Bat Yam,Herzl St.  54,3.0,5.0,75,1
+122,4300,Housing unit,Rishon LeTsiyon,Ha-Mifras St. ,2.0,0.0,60,0
+123,3650,Apartment,Holon,Brazaville St.  9,3.0,3.0,62,0
+124,4200,Apartment,Holon,Alufei Tsahal St.  33,2.0,2.0,40,1
+125,4600,Apartment,Ramat Gan,Anne Frank St.  12,3.0,2.0,75,0
+126,3000,Apartment,Holon,Arye Shenkar St.  52,2.0,2.0,55,0
+127,18000,Apartment,Tel Aviv-Yafo,Sderot Nordau ,5.0,1.0,140,1
+128,4000,Apartment,Rishon LeTsiyon,Yalag St. ,2.5,1.0,77,0
+129,6000,Apartment,Tel Aviv-Yafo,HaKongres St. ,3.0,3.0,65,1
+130,3500,Apartment,Rishon LeTsiyon,Dror St.  54,2.0,6.0,55,0
+131,3800,Apartment,Rishon LeTsiyon,Horowitz St. ,3.5,2.0,80,1
+132,4800,Apartment,Tel Aviv-Yafo,Ha-Gilad St. ,2.0,1.0,55,0
+133,12500,Garden apt,Tel Aviv-Yafo,Lili Menakhem St. ,5.0,0.0,160,2
+134,7500,Cottage/house,Tel Aviv-Yafo,Kam St.  31,4.5,1.0,111,0
+135,5650,Apartment,Tel Aviv-Yafo,Meor HaGola St.  3,3.0,3.0,63,1
+136,9500,Apartment,Tel Aviv-Yafo,Ptakhya mi-Regensburg St. ,4.5,1.0,170,1
+137,5700,Apartment,Rishon LeTsiyon,Ha-Akhim Ostashinski St.  13,4.0,4.0,90,1
+138,5200,Apartment,Ness Ziona,Maccabi St. ,4.5,3.0,113,1
+139,4950,Apartment,Ness Ziona,Herzl St. ,4.0,4.0,113,1
+140,3700,Apartment,Rehovot,Hasam St.  11,3.0,5.0,70,0
+141,3200,Apartment,Petah Tikva,Rothschild St. ,3.5,4.0,100,1
+142,2000,Apartment,Petah Tikva,Khayim Ozer St. ,1.0,3.0,27,0
+143,1800,Apartment,Petah Tikva,Mohiliver St. ,1.0,1.0,20,0
+144,3400,Apartment,Petah Tikva,Zvi Hirsch Kalischer St. ,3.5,3.0,100,1
+145,2500,Apartment,Petah Tikva,Hafes Haim St. ,1.0,3.0,34,0
+146,3900,Housing unit,Petah Tikva,Maze St. ,2.0,0.0,40,0
+147,7500,Apartment,Jerusalem,David Alroi St.  3,4.5,3.0,119,1
+148,3950,Apartment,Bat Yam,Berl Katzenelson St.  55,3.0,1.0,68,0
+149,15000,Apartment,Jerusalem,Ha-Bikurim St.  14,5.0,0.0,120,1
+150,18000,Apartment,Jerusalem,Habad St.  42,5.0,0.0,160,1
+151,5600,Apartment,Ramat Gan,Tirzah St. ,4.0,2.0,100,0
+152,4500,Apartment,Ramat Gan,Olei ha-Gardom St.  4,4.0,2.0,85,1
+153,6300,Apartment,Ramat Gan,Ha-Yarden St. ,4.5,7.0,100,1
+154,3400,Apartment,Ramat Gan,Amnon veTamar St. ,2.0,0.0,50,0
+155,3500,Apartment,Ramat Gan,Amnon veTamar St. ,2.0,0.0,50,0
+156,8000,Apartment,Tel Aviv-Yafo,Yehuda Gur St. ,4.0,4.0,90,1
+157,5800,Apartment,Herzliya,Ha-Sharon St.  20,4.0,3.0,130,1
+158,2900,Apartment,Ramat Gan,Amnon veTamar St.  39,1.5,0.0,40,0
+159,4000,Apartment,Ramat Gan,Zeev Jabotinsky St.  75,3.0,2.0,75,0
+160,3700,Apartment,Bat Yam,Herzl St.  72,2.0,4.0,49,0
+161,6300,Apartment,Tel Aviv-Yafo,Dafna St.  38,3.0,1.0,90,0
+162,5200,Apartment,Ramat HaSharon,Sderot Bialik  10,3.0,3.0,85,1
+163,3600,Apartment,Givatayim,Ha-Histadrut St.  32,2.0,0.0,50,0
+164,4300,Apartment,Ramat Gan,Ha-Mavdil St.  21,2.0,1.0,60,0
+165,4000,Apartment,Rishon LeTsiyon,Keren ha-Yesod St.  3,3.0,2.0,80,1
+166,5950,Apartment,Ramat Gan,Pnei HaGiva St.  25,4.0,2.0,90,0
+167,230,Apartment,Rishon LeTsiyon,Ha-Hityashvut St.  47,5.0,2.0,129,1
+168,3500,Apartment,Bat Yam,Derech Ben Gurion  138,2.0,7.0,36,2
+169,5000,Apartment,Bat Yam,Derech Ben Gurion  83,4.5,1.0,120,0
+170,3300,Apartment,Bat Yam,HaHashmonaim St.  24,2.5,1.0,75,0
+171,4500,Apartment,Tel Aviv-Yafo,Haim Barlev Road  203,3.0,5.0,65,1
+172,4400,Apartment,Bat Yam,Livorno St.  5,4.0,2.0,105,0
+173,5500,Housing unit,Tel Aviv-Yafo,Ahavat Tsiyon St.  16,2.0,0.0,42,0
+174,6000,Apartment,Herzliya,Bnei Binyamin St.  14,3.5,2.0,100,1
+175,3500,Apartment,Bat Yam,Yisrael Ben Tsiyon St. ,3.0,1.0,80,0
+176,3300,Apartment,Bat Yam,Ha-Tkhiya St. ,2.5,3.0,60,0
+177,2500,Apartment,Bat Yam,Halper St. ,3.0,1.0,70,0
+178,3600,Garden apt,Holon,Ha-Amoraim St. ,2.5,0.0,60,0
+179,3300,Apartment,Bat Yam,Mivtsa Sinai St. ,3.0,3.0,70,0
+180,4700,Apartment,Bat Yam,David Raziel St. ,4.0,2.0,90,1
+181,3900,Apartment,Bat Yam,Ha-Neviim St. ,3.0,2.0,78,1
+182,3600,Apartment,Bat Yam,Balfour St. ,3.0,2.0,75,0
+183,3400,Apartment,Tel Aviv-Yafo,HaRav Rubinstein St. ,3.0,2.0,70,1
+184,4000,Apartment,Bat Yam,Herzl St. ,2.0,2.0,50,2
+185,5800,Apartment,Bat Yam,Herzl St. ,4.0,1.0,100,1
+186,5000,Apartment,Bat Yam,David Raziel St. ,4.0,1.0,85,1
+187,3700,Apartment,Bat Yam,Nitsana St. ,2.5,1.0,65,0
+188,3700,Apartment,Bat Yam,Ha-Hagana St. ,3.0,1.0,87,0
+189,4900,Apartment,Bat Yam,Balfour St. ,4.0,4.0,100,0
+190,3800,Apartment,Holon,Hatechiya St. ,2.5,4.0,60,0
+191,3600,Apartment,Bat Yam,Yisrael Ben Tsiyon St. ,2.5,1.0,80,0
+192,3500,Apartment,Rehovot,Amoraim St. ,3.0,2.0,70,0
+193,5000,Cottage/house,Ariel,Ha-Dekel St.  53,5.0,2.0,135,0
+194,2200,Room,Petah Tikva,Gad Machnes St. ,1.0,3.0,20,1
+195,3500,Apartment,Ari'el,Derech HaTsiyonut  19,4.0,1.0,100,0
+196,2300,Apartment,Petah Tikva,Bilu St. ,1.0,4.0,20,0
+197,4000,Apartment,Petah Tikva,Salomon St. ,4.0,4.0,120,0
+198,4200,Apartment,Petah Tikva,Hafes Haim St. ,3.5,3.0,90,0
+199,2600,Housing unit,Petah Tikva,Rothschild St.  135,1.0,1.0,25,0
+200,2000,Apartment,Petah Tikva,Yehuda ha-Levi St. ,1.0,0.0,20,0
+201,4200,Apartment,Petah Tikva,Yehiel Chlenov St. ,4.5,2.0,100,0
+202,3200,Apartment,Bat Yam,Ha-Rishonim St. ,2.5,1.0,70,0
+203,3200,Apartment,Petah Tikva,Montefiore St. ,2.0,0.0,40,0
+204,4000,Apartment,Rishon LeTsiyon,Dror St. ,3.5,2.0,80,1
+205,4000,Apartment,Rishon LeTsiyon,Tel Hai St.  21,3.5,2.0,85,0
+206,6500,Apartment,Herzliya,הקרן  7,3.0,4.0,75,1
+207,3800,Apartment,Holon,Ha-Shita St. ,3.0,0.0,70,0
+208,2900,Apartment,Holon,Tartsav St. ,3.5,1.0,85,0
+209,4300,Rooftop apt,Bat Yam,Bar Yehuda St.  39,3.0,4.0,78,1
+210,3750,Apartment,Bat Yam,HaShikma St.  49,2.5,2.0,75,0
+211,4300,Garden apt,Bat Yam,HaMa'apilim St.  26,3.0,0.0,55,0
+212,3800,Apartment,Holon,Ha-Arava St.  31,3.0,4.0,70,0
+213,4400,Apartment,Holon,Yosef Aharonovich St. ,3.0,0.0,80,0
+214,4200,Apartment,Holon,Eilat St.  38,3.0,2.0,70,0
+215,5500,Apartment,Bat Yam,Derech Ben Gurion ,2.0,3.0,45,1
+216,3500,Apartment,Bat Yam,Khatsor St.  4,3.0,3.0,70,0
+217,3500,Apartment,Bat Yam,Bar Ilan St.  43,3.0,1.0,65,0
+218,5500,Apartment,Bat Yam,Yerushalayim St.  22,3.0,3.0,75,1
+219,12500,Mini penthouse,Bat Yam,Ha-Neviim St.  62,4.0,19.0,135,2
+220,8800,Apartment,Bat Yam,Yitshak Sadeh St.  4,5.0,20.0,145,2
+221,9900,Apartment,Bat Yam,Yitshak Sadeh St.  8,3.0,31.0,115,1
+222,7000,Apartment,Bat Yam,Yohanan HaSandlar St.  8,4.0,30.0,120,2
+223,4000,Apartment,Bat Yam,Yoseftal St.  66,2.5,5.0,72,0
+224,8700,Apartment,Bat Yam,Yitshak Sadeh St.  8,4.0,26.0,125,1
+225,4800,Apartment,Rishon LeTsiyon,Mohiliver St. ,4.5,1.0,120,1
+226,4000,Apartment,Rishon LeTsiyon,Weizbard St. ,3.0,1.0,75,1
+227,4600,Apartment,Rishon LeTsiyon,Jerusalem St. ,4.0,1.0,95,1
+228,3500,Apartment,Rishon LeTsiyon,Natan Bernitski St. ,3.0,4.0,70,0
+229,3500,Apartment,Rishon LeTsiyon,Khabad St. ,3.5,4.0,85,0
+230,3700,Apartment,Rishon LeTsiyon,Yalag St. ,3.5,3.0,90,0
+231,8800,Cottage/house,Rishon LeTsiyon,Ha-Oniya St. ,6.0,2.0,170,2
+232,4000,Apartment,Rishon LeTsiyon,Horowitz St. ,3.5,1.0,80,0
+233,3400,Apartment,Rishon LeTsiyon,Jerusalem St. ,3.0,2.0,70,0
+234,4200,Apartment,Rishon LeTsiyon,Karl Netter St. ,3.0,3.0,80,0
+235,3500,Apartment,Rishon LeTsiyon,Yalag St. ,3.5,3.0,90,0
+236,4200,Apartment,Rishon LeTsiyon,Karl Netter St.  1,3.0,3.0,78,0
+237,5000,Apartment,Holon,Bialik St. ,4.0,1.0,115,2
+238,250,Apartment,Jerusalem,Moshe Kol St.  56,4.0,0.0,110,0
+239,3000,Housing unit,Rishon LeTsiyon,HaOgen St. ,2.0,0.0,50,0
+240,16000,Cottage/house,Rishon LeTsiyon,Shaal St. ,6.0,4.0,320,1
+241,20000,Apartment,Tel Aviv-Yafo,Pines St.  39,4.0,23.0,140,2
+242,27000,Apartment,Tel Aviv-Yafo,Rothschild Boulevard  17,4.0,11.0,173,2
+243,16500,Apartment,Tel Aviv-Yafo,Pines St.  41,3.0,22.0,126,2
+244,40000,Apartment,Tel Aviv-Yafo,Sderot Shaul HaMelech  1,4.5,14.0,200,2
+245,17000,Duplex,Tel Aviv-Yafo,Neve Tzedek St. ,3.0,1.0,100,1
+246,29000,Apartment,Tel Aviv-Yafo,J. L. Gordon St. ,4.0,3.0,150,2
+247,14000,Apartment,Tel Aviv-Yafo,Rothschild Boulevard  30,3.0,9.0,85,1
+248,15500,Apartment,Tel Aviv-Yafo,Rothschild Boulevard ,3.5,3.0,113,2
+249,17000,Apartment,Tel Aviv-Yafo,HaYarkon St. ,4.0,2.0,1,1
+250,5500,Apartment,Rishon LeTsiyon,HaKukiya St.  21,4.0,2.0,105,2
+251,4200,Garden apt,Holon,Ussishkin St. ,3.0,0.0,110,0
+252,3200,Apartment,Holon,Sokolov St. ,2.5,1.0,65,0
+253,3900,Apartment,Holon,HaHagana St. ,3.0,1.0,80,0
+254,3900,Apartment,Holon,Bialik St. ,3.0,1.0,80,1
+255,3500,Apartment,Holon,Sderot Kugel ,2.5,2.0,75,1
+256,4200,Apartment,Bat Yam,Yoseftal St. ,3.0,2.0,68,0
+257,3200,Apartment,Bat Yam,Shalom Aleichem St. ,2.5,4.0,73,0
+258,14000,Cottage/house,Rishon LeTsiyon,Neve Ativ St. ,6.0,3.0,370,1
+259,3600,Apartment,Ashdod,Ha-Histadrut St.  11,3.0,1.0,62,0
+260,5500,Penthouse,Ashdod,HaRav Kuk St.  43,4.0,7.0,95,1
+261,9700,Loft,Tel Aviv-Yafo,Akhva St.  12,3.0,3.0,120,0
+262,12300,Apartment,Tel Aviv-Yafo,Neve Tzedek St.  12,5.0,2.0,160,0
+263,4100,Apartment,Ramat Gan,Moshe Dayan St.  32,2.5,3.0,75,3
+264,2500,Housing unit,Jerusalem,HaNurit St.  1,2.0,1.0,25,0
+265,5200,Apartment,Beer Yaakov,HaAlonim Boulevard ,4.0,7.0,107,1
+266,5000,Apartment,Rehovot,Yaakov Tamari ,4.0,8.0,94,2
+267,3550,Apartment,Rishon LeTsiyon,Ariav St. ,3.0,3.0,60,0
+268,5000,Apartment,Rehovot,Moshe Fried St. ,4.0,8.0,94,1
+269,3200,Apartment,Bat Yam,Khatsor St.  8,3.0,4.0,62,0
+270,3000,Apartment,Bat Yam,Mivtsa Sinai St.  15,3.0,3.0,70,0
+271,7500,Apartment,Jerusalem,Beit Yaakov St. ,4.0,1.0,87,0
+272,4700,Duplex,Jerusalem,Rabbi Arye St. ,2.0,0.0,70,0
+273,11000,Garden apt,Jerusalem,Rabbi Akiva St. ,5.0,0.0,150,1
+274,5500,Apartment,Jerusalem,Rivka St. ,3.0,2.0,90,0
+275,2900,Apartment,Jerusalem,Ruth St. ,1.5,1.0,22,0
+276,6500,Apartment,Jerusalem,Sderot HaNassi Hashishi ,3.5,1.0,90,1
+277,5900,Apartment,Jerusalem,Yehuda St. ,3.0,3.0,60,0
+278,2600,Apartment,Jerusalem,Betsalel St. ,1.5,0.0,25,0
+279,16500,Apartment,Jerusalem,Jaffa St. ,6.0,7.0,208,2
+280,3700,Apartment,Jerusalem,Mitspe St. ,1.0,2.0,25,0
+281,7500,Apartment,Tel Aviv-Yafo,Bergson St. ,2.0,3.0,80,0
+282,7000,Apartment,Tel Aviv-Yafo,HaYarkon St. ,2.5,0.0,70,0
+283,9500,Apartment,Ramat Gan,Ha-Matmid St. ,4.0,19.0,114,1
+284,12000,Apartment,Tel Aviv-Yafo,Weissburg St. ,5.0,1.0,130,2
+285,3900,Apartment,Holon,Mifrats Shlomo St. ,3.0,2.0,73,0
+286,3200,Apartment,Holon,Yavne St. ,2.0,4.0,52,0
+287,3900,Apartment,Bat Yam,Balfour St. ,3.0,2.0,76,0
+288,4000,Apartment,Bat Yam,David HaMelech St.  5,2.5,3.0,70,0
+289,3750,Apartment,Bat Yam,Balfour St.  115,2.5,5.0,74,0
+290,3750,Housing unit,Bat Yam,Herzl St.  40,2.0,1.0,38,0
+291,4750,Apartment,Bat Yam,Etsel St.  8,3.0,2.0,74,1
+292,4200,Apartment,Bat Yam,Balfour St. ,3.5,1.0,90,0
+293,4500,Apartment,Bat Yam,Balfour St.  140,3.0,5.0,82,0
+294,3850,Apartment,Bat Yam,Balfour St.  138,2.5,3.0,76,0
+295,3900,Housing unit,Bat Yam,Balfour St. ,2.0,5.0,40,0
+296,3900,Apartment,Holon,HaRav Uziel St. ,3.0,2.0,80,0
+297,4800,Apartment,Holon,Arlozorov St. ,3.5,2.0,80,1
+298,3000,Apartment,Holon,Yotvata St.  7,2.5,3.0,50,1
+299,4900,Apartment,Rishon LeTsiyon,Yehoshua Gibstein St.  1,4.0,6.0,107,1
+300,3500,Apartment,Petah Tikva,Binyamin Minz St.  40,3.0,1.0,65,0
+301,4500,Apartment,Petah Tikva,Ben Yehuda St. ,4.0,2.0,100,1
+302,13000,Cottage/house,Petah Tikva,Lubetkin St. ,5.0,2.0,240,3
+303,3900,Apartment,Petah Tikva,Frishman St.  30,3.5,1.0,85,1
+304,3800,Apartment,Petah Tikva,Bilu St. ,3.0,6.0,100,0
+305,4000,Apartment,Petah Tikva,Pika St.  12,4.0,1.0,100,1
+306,11000,Penthouse,Petah Tikva,Yosef Nakar St. ,5.0,6.0,160,2
+307,4300,Apartment,Tel Aviv-Yafo,Dov mi-Mezerich St.  5,1.0,0.0,80,0
+308,3600,Apartment,Tel Aviv-Yafo,Misgav Am St.  9,3.0,2.0,50,0
+309,6800,Apartment,Tel Aviv-Yafo,Andersen St. ,3.0,3.0,75,0
+310,11000,Apartment,Tel Aviv-Yafo,HaYarkon St. ,3.0,1.0,100,0
+311,4300,Apartment,Tel Aviv-Yafo,Wingate St.  6,2.5,1.0,55,0
+312,5600,Apartment,Tel Aviv-Yafo,Haim Barlev Road  135,4.0,3.0,100,1
+313,8500,Cottage/house,Tel Aviv-Yafo,Sivan St.  6,5.0,2.0,130,0
+314,7300,Apartment,Tel Aviv-Yafo,Shtulim St.  63,5.0,6.0,117,1
+315,3000,Studio,Tel Aviv-Yafo,Matalon St.  60,1.0,0.0,32,0
+316,3200,Studio,Tel Aviv-Yafo,Kish St.  2,1.0,3.0,30,0
+317,4800,Apartment,Tel Aviv-Yafo,La Guardia St.  17,2.0,1.0,48,0
+318,6600,Duplex,Givat Shmuel,Uziel St. ,5.0,1.0,116,1
+319,4700,Apartment,Tel Aviv-Yafo,Sderot Sheshet HaYamim  5,4.0,3.0,80,0
+320,3800,Apartment,Tel Aviv-Yafo,Mor St.  10,3.0,1.0,70,0
+321,7400,Apartment,Tel Aviv-Yafo,Mahal St.  14,5.0,11.0,130,1
+322,7300,Apartment,Tel Aviv-Yafo,Meirber St.  11,4.0,1.0,115,0
+323,5500,Apartment,Tel Aviv-Yafo,Sir John Monash St.  24,4.0,3.0,90,0
+324,6000,Apartment,Tel Aviv-Yafo,Shtulim St.  59,3.0,17.0,82,1
+325,3700,Apartment,Tel Aviv-Yafo,Misgav Am St.  9,3.0,2.0,60,0
+326,4300,Apartment,Tel Aviv-Yafo,Biranit St.  5,4.0,4.0,100,0
+327,7500,Apartment,Tel Aviv-Yafo,Dafna St. ,3.5,2.0,89,0
+328,8200,Apartment,Tel Aviv-Yafo,Shaul Avigur St.  9,4.0,6.0,115,1
+329,7700,Apartment,Tel Aviv-Yafo,Mordechai Namir Road ,3.5,2.0,81,0
+330,8500,Apartment,Tel Aviv-Yafo,HaYarkon St.  36,2.0,2.0,70,0
+331,6300,Apartment,Tel Aviv-Yafo,Zikhron Yaakov St.  6,2.5,3.0,78,0
+332,5500,Apartment,Tel Aviv-Yafo,Hagana Road  136,4.0,2.0,95,0
+333,6600,Apartment,Tel Aviv-Yafo,Shtulim St.  63,4.0,11.0,97,1
+334,4250,Apartment,Rishon LeTsiyon,Kidush HaShem St.  23,4.0,4.0,80,0
+335,2500,Apartment,Ramat Gan,HaEm St.  39,1.0,0.0,18,0
+336,3800,Apartment,Bat Yam,Yisrael Ben Tsiyon St. ,2.5,1.0,75,0
+337,4000,Apartment,Bat Yam,Trumpeldor St. ,3.0,2.0,70,0
+338,4300,Apartment,Bat Yam,Perlstein St. ,3.0,5.0,85,0
+339,3900,Apartment,Bat Yam,Ha-Neviim St. ,4.0,4.0,80,2
+340,3700,Apartment,Bat Yam,Yisrael Ben Tsiyon St. ,2.5,1.0,75,0
+341,3400,Apartment,Bat Yam,Ha-Sar Rabinovich St. ,3.0,2.0,74,1
+342,3800,Apartment,Bat Yam,Bar Yehuda St. ,3.0,4.0,70,1
+343,4100,Apartment,Bat Yam,HaMaapilim St. ,3.0,1.0,75,0
+344,3800,Apartment,Bat Yam,Rambam St. ,2.5,2.0,55,0
+345,4000,Apartment,Bat Yam,Yoseftal St. ,2.5,5.0,70,0
+346,5800,Apartment,Bat Yam,Ha-Reshet St. ,4.0,6.0,110,1
+347,2800,Apartment,Bat Yam,Bar Yehuda St. ,2.0,1.0,40,0
+348,3000,Apartment,Bat Yam,Yisrael Ben Tsiyon St. ,3.0,2.0,80,0
+349,2700,Apartment,Bat Yam,Ha-Rishonim St. ,1.0,3.0,20,0
+350,4200,Apartment,Bat Yam,Bayit Vagan St. ,3.5,2.0,90,0
+351,4000,Apartment,Bat Yam,Sheshet ha-Yamim St. ,2.5,3.0,85,0
+352,5000,Apartment,Bat Yam,Bar Ilan St. ,4.0,1.0,110,1
+353,3500,Apartment,Bat Yam,Balfour St. ,2.5,1.0,63,0
+354,5400,Apartment,Rehovot,Hazon Ish St.  30,4.5,4.0,1104,1
+355,3300,Apartment,Ashdod,Rambam St.  9,2.5,3.0,48,0
+356,6700,Apartment,Tel Aviv-Yafo,Bavli St.  22,3.0,1.0,80,0
+357,2500,Housing unit,Rishon LeTsiyon,Ha-Rav Pinkhas Zekharya St. ,1.0,1.0,20,1
+358,3000,Apartment,Rishon LeTsiyon,HaDagan St. ,2.0,1.0,40,2
+359,2000,Apartment,Jerusalem,HaHavatselet St. ,6.0,1.0,150,0
+360,5200,Apartment,Jerusalem,Shamai St. ,3.0,3.0,70,0
+361,3300,Housing unit,Rishon LeTsiyon,Shimon Peres St. ,2.0,0.0,30,1
+362,4300,Apartment,Jerusalem,Shamai St. ,2.0,3.0,53,1
+363,5500,Apartment,Jerusalem,Even Yisrael St. ,3.0,2.0,60,2
+364,4800,Apartment,Jerusalem,Gesher HaHayim ,3.0,1.0,68,0
+365,6000,Apartment,Jerusalem,Jaffa St. ,2.0,3.0,50,1
+366,4100,Apartment,Rishon LeTsiyon,Betar St. ,3.0,1.0,80,2
+367,4750,Apartment,Rishon LeTsiyon,HaTsfira St. ,4.5,1.0,106,1
+368,5600,Apartment,Jerusalem,Agripas St. ,3.0,7.0,78,1
+369,3700,Housing unit,Rishon LeTsiyon,Ha-Rav Pinkhas Zekharya St. ,1.0,1.0,36,1
+370,1500,Apartment,Jerusalem,HaRav Agan St. ,4.0,6.0,100,3
+371,2500,Apartment,Ramat Gan,Tirzah St.  32,3.0,8.0,76,1
+372,2000,Apartment,Ramat Gan,Ha-Yarden St.  98,3.0,7.0,59,2
+373,4100,Apartment,Petah Tikva,Yehuda ha-Levi St. ,4.0,1.0,88,1
+374,2600,Apartment,Petah Tikva,Ha-Hagana St. ,2.0,0.0,30,0
+375,4000,Apartment,Petah Tikva,Kashani St. ,4.0,2.0,90,1
+376,4500,Apartment,Ramat Gan,Ha-Lapid St.  10,3.5,2.0,80,1
+377,4500,Apartment,Ramat Gan,Ha-Yarden St.  54,4.0,2.0,100,1
+378,3000,Apartment,Ramat Gan,Abba Hillel Silver Road  62,2.0,2.0,40,0
+379,3300,Apartment,Givatayim,Ha-Lamed Hei St.  44,2.0,3.0,35,0
+380,3150,Apartment,Ramat Gan,Aluf David St.  5,2.0,1.0,40,0
+381,5000,Apartment,Ramat Gan,Zeev Jabotinsky St.  107,5.0,2.0,100,2
+382,7000,Apartment,Givatayim,Eilat St.  22,4.0,2.0,90,2
+383,2400,Studio,Jerusalem,Mishol HaDkalim  14,1.0,1.0,18,1
+384,2500,Studio,Petah Tikva,HaAluf David Marcus St.  54,1.0,2.0,30,1
+385,3400,Apartment,Rehovot,Ha-Hagana St. ,3.0,1.0,70,0
+386,2800,Apartment,Rehovot,Ha-Khavura St. ,2.0,0.0,40,0
+387,4200,Apartment,Rehovot,Herzl St.  105,4.0,8.0,100,0
+388,3300,Apartment,Rehovot,Derekh Yavne ,2.0,4.0,40,0
+389,3000,Apartment,Rehovot,Ezra St. ,2.0,1.0,56,0
+390,6000,Apartment,Bat Yam,Ha-Rav Nisanbaum St. ,3.0,25.0,75,1
+391,7500,Apartment,Bat Yam,Ha-Rav Nisanbaum St.  37,5.0,37.0,130,2
+392,8200,Apartment,Bat Yam,Yohanan HaSandlar St.  8,5.0,27.0,130,2
+393,6500,Apartment,Bat Yam,Ha-Rav Nisanbaum St.  37,4.0,25.0,120,1
+394,7000,Apartment,Bat Yam,Ha-Rav Nisanbaum St.  37,4.0,27.0,115,1
+395,10000,Apartment,Bat Yam,Ha-Komemiyut St. ,5.0,20.0,130,2
+396,5300,Apartment,Bat Yam,Ha-Rav Nisanbaum St.  37,2.0,28.0,60,1
+397,6900,Garden apt,Modi'in-Maccabim-Re'ut,Nahal Na'aman St.  9,4.0,0.0,120,1
+398,5900,Apartment,Tel Aviv-Yafo,Sderot Shaul HaMelech  17,3.0,0.0,60,0
+399,2850,Apartment,Ramat Gan,Haroe St.  23,1.0,1.0,25,0
+400,3000,Apartment,Lod,Eliezer Kaplan St.  6,2.5,2.0,60,0
+401,19500,Duplex,Tel Aviv-Yafo,Frishman St. ,6.0,6.0,160,3
+402,4950,Apartment,Tel Aviv-Yafo,Zalman Maisel St. ,4.0,2.0,80,1
+403,8000,Apartment,Tel Aviv-Yafo,Hei be-Iyar St. ,2.0,5.0,88,1
+404,8000,Apartment,Tel Aviv-Yafo,Lipski St. ,2.5,2.0,60,0
+405,3800,Apartment,Holon,Sderot Yoseftal  150,3.5,2.0,80,0
+406,3800,Apartment,Holon,Sderot Yoseftal  150,3.5,2.0,80,0
+407,5900,Apartment,Ramat Gan,Neveh Yehoshua St.  34,4.0,1.0,100,1
+408,3900,Apartment,Ramat Gan,HaBanim St.  11,2.0,2.0,55,0
+409,2700,Apartment,Lod,Arieh Rubin St.  5,2.0,4.0,60,1
+410,2950,Apartment,Bnei Brak,Ha-Rav Avraham Yitskhak ha-Cohen Kook St.  26,2.0,2.0,45,0
+411,3600,Housing unit,Ramat Gan,Uziel St.  91,2.0,2.0,45,0
+412,3650,Apartment,Bat Yam,Bar Ilan St.  85,2.0,2.0,45,1
+413,3100,Apartment,Ramat Gan,Beer Ora St.  8,2.0,1.0,37,3
+414,3200,Apartment,Tel Aviv-Yafo,Shlomo Ibn Gabirol St.  42,1.0,3.0,25,0
+415,3500,Apartment,Holon,Eilat St.  86,3.0,4.0,60,0
+416,6000,Villa,Ramat Gan,Ha-Aliya ha-Rishona St. ,3.0,1.0,90,1
+417,4700,Apartment,Ramat Gan,Ha-Yarden St.  38,4.0,1.0,100,1
+418,4700,Apartment,Bat Yam,Balfour St.  17,3.5,1.0,85,2
+419,100,Apartment,Petah Tikva,Khen St.  5,2.5,2.0,50,0
+420,4000,Apartment,Petah Tikva,Ha-Aliya ha-Shinya St.  10,4.0,4.0,80,0
+421,4500,Apartment,Petah Tikva,Rachel HaMeshoreret St.  11,4.0,4.0,120,0
+422,5100,Apartment,Kefar Sava,HaGra St.  19,4.0,4.0,132,1
+423,3400,Apartment,Bat Yam,Ha-Shlosha St.  13,2.0,0.0,30,0
+424,4000,Apartment,Kiryat Ono,HaShaked St.  36,3.0,2.0,70,0
+425,3100,Apartment,Ramla,Sderot Ben Gurion  3,3.0,3.0,68,0
+426,3500,Apartment,Petah Tikva,Ha-Rishonim St.  1,3.5,1.0,1,1
+427,1650,Apartment,Jerusalem,HaArazim St.  10,3.0,4.0,78,0
+428,4200,Apartment,Holon,Manya ve-Yisrael Shokhat St.  21,3.0,1.0,70,0
+429,3000,Apartment,Ramat Gan,Natan St.  21,1.0,0.0,35,0
+430,3700,Apartment,Ashdod,Shavei Tsiyon St.  28,4.0,2.0,110,0
+431,6500,Apartment,Tel Aviv-Yafo,Tagore St.  60,3.0,3.0,70,1
+432,4550,Apartment,Bat Yam,Ha-Neviim St.  23,3.0,3.0,71,2
+433,5200,Apartment,Tel Aviv-Yafo,Maapilei Egoz St.  8,4.0,3.0,98,0
+434,6000,Apartment,Givatayim,Weizman St.  26,4.0,2.0,110,0
+435,4500,Apartment,Ramat Gan,Bialik St.  61,3.0,1.0,76,0
+436,5500,Apartment,Ramat Gan,Negba Road  23,4.0,1.0,100,0
+437,3000,Apartment,Ramat Gan,Haroe St.  203,3.0,3.0,45,0
+438,3500,Apartment,Ramat Gan,Kareski St.  13,2.5,3.0,70,0
+439,3300,Apartment,Ramat Gan,Gershom St.  4,3.0,1.0,75,0
+440,6000,Apartment,Ramat Gan,Mevo HaTichon  5,4.0,2.0,113,1
+441,3900,Apartment,Ramat Gan,Negba Road  42,2.5,0.0,77,0
+442,5500,Apartment,Ramat Gan,Yosef Tsvi St.  67,4.0,2.0,94,1
+443,3800,Apartment,Ramat Gan,Aluf David St.  1,2.0,1.0,45,0
+444,5950,Apartment,Ramat Gan,Pnei HaGiva St.  25,4.0,2.0,90,0
+445,4300,Apartment,Ramat Gan,Haroe St.  192,3.5,1.0,80,0
+446,3300,Housing unit,Ramat Gan,Mate Aharon St.  12,2.0,0.0,40,1
+447,1650,Apartment,Ramat Gan,Haroe St.  129,1.0,0.0,18,0
+448,4000,Apartment,Ramat Gan,Uziel St.  28,2.5,3.0,90,1
+449,5500,Apartment,Ramat Gan,Arieh Ben Eliezer St.  67,4.0,8.0,110,1
+450,3700,Garden apt,Ramat Gan,Negba Road  62,2.0,0.0,40,0
+451,5700,Apartment,Givatayim,HaRav Herzog St.  26,3.5,3.0,101,1
+452,8200,Apartment,Tel Aviv-Yafo,Fein St.  1,4.0,6.0,85,1
+453,7500,Triplex,Ramat Gan,Pnei HaGiva St.  25,5.0,3.0,125,1
+454,6950,Triplex,Ramat Gan,Pnei HaGiva St.  25,4.0,3.0,125,1
+455,7000,Rooftop apt,Ramat Gan,HaHayil St.  42,5.0,2.0,123,0
+456,5800,Apartment,Ramat Gan,Megadim St.  2,4.0,2.0,100,0
+457,5950,Apartment,Ramat Gan,Mahanayim St.  13,5.0,2.0,128,1
+458,6600,Apartment,Ramat Gan,Haroe St.  6,4.0,5.0,135,1
+459,3100,Garden apt,Ramat Gan,Ha-Mavdil St.  23,1.5,0.0,30,0
+460,4700,Apartment,Ramat Gan,Ha-Nakhal St.  23,3.0,1.0,78,1
+461,8500,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  80,4.0,1.0,100,0
+462,4700,Apartment,Tel Aviv-Yafo,Sderot Sheshet HaYamim  17,3.0,3.0,70,0
+463,4600,Apartment,Ramat Gan,Krinitsi St.  36,3.0,1.0,80,0
+464,4600,Apartment,Ramat Gan,Krinitsi St.  36,3.0,1.0,75,0
+465,4000,Apartment,Holon,Feierberg St. ,3.5,1.0,82,0
+466,3170,Housing unit,Holon,Baal Mahshavot St. ,1.5,0.0,25,0
+467,4400,Apartment,Ramat Gan,Shalem St.  12,3.0,2.0,82,0
+468,2350,Room,Jerusalem,Ha-Ari St.  17,1.0,1.0,18,0
+469,6200,Apartment,Ness Ziona,Nordau St.  4,4.0,5.0,100,1
+470,3800,Apartment,Bat Yam,Henrietta Szold St.  13,3.0,1.0,65,0
+471,4500,Housing unit,Holon,Sokolov St.  74,2.0,1.0,50,0
+472,3000,Apartment,Tel Aviv-Yafo,Nahal HaBsor St.  12,3.0,4.0,65,0
+473,3200,Apartment,Bat Yam,HaRav Luzon St.  12,2.0,1.0,60,0
+474,3000,Apartment,Bat Yam,Trumpeldor St.  4,2.0,0.0,60,0
+475,3000,Apartment,Bat Yam,Nitsana St.  16,2.0,0.0,55,0
+476,4300,Housing unit,Hadid,Ha-Savyon St.  11,3.0,1.0,90,3
+477,2700,Apartment,Rehovot,Max Nordau St.  13,2.0,2.0,45,0
+478,3300,Apartment,Bat Yam,HaShikma St. ,2.0,4.0,47,0
+479,5200,Apartment,Bat Yam,Max Nordau St. ,4.0,4.0,100,0
+480,3500,Apartment,Bat Yam,Halper St. ,2.5,0.0,55,0
+481,3300,Apartment,Bat Yam,Arlozorov St. ,2.0,1.0,40,0
+482,3300,Apartment,Bat Yam,Halper St. ,2.0,0.0,40,0
+483,4500,Apartment,Bat Yam,Perlstein St. ,3.0,5.0,100,0
+484,2850,Apartment,Bat Yam,Rothschild St. ,1.0,2.0,40,0
+485,3500,Apartment,Bat Yam,Ha-Rishonim St. ,2.0,3.0,65,0
+486,3500,Apartment,Bat Yam,Abba Berdichev St. ,3.0,3.0,70,0
+487,2500,Apartment,Bat Yam,Abba Berdichev St. ,2.0,0.0,40,0
+488,3000,Apartment,Bat Yam,Abba Berdichev St. ,2.0,0.0,30,0
+489,2800,Apartment,Bat Yam,Herzl St. ,1.0,0.0,24,0
+490,6150,Apartment,Ramat Gan,Kedma St. ,3.0,5.0,100,1
+491,3000,Apartment,Bat Yam,HaGiborim St. ,1.0,0.0,25,0
+492,3850,Apartment,Bat Yam,Halper St. ,3.5,3.0,77,0
+493,4000,Apartment,Bat Yam,Simha Holtsberg St. ,2.5,3.0,40,0
+494,3800,Apartment,Tel Aviv-Yafo,HaTsorfim St.  12,1.0,0.0,20,0
+495,3200,Apartment,Bat Yam,Balfour St.  81,2.5,3.0,75,0
+496,2950,Apartment,Bat Yam,Arlozorov St.  70,1.0,1.0,35,0
+497,4600,Apartment,Rishon LeTsiyon,Tsvi Herman Shapira St. ,4.0,3.0,110,0
+498,6200,Garden apt,Rehovot,Batya Makov St.  28,3.5,0.0,80,1
+499,5500,Apartment,Bat Yam,Derech Ben Gurion ,2.0,19.0,40,0
+500,6800,Apartment,Bat Yam,Ha-Rav Nisanbaum St. ,4.0,39.0,100,1
+501,3800,Apartment,Bat Yam,HaRav Uziel St. ,2.0,2.0,40,0
+502,4500,Apartment,Bat Yam,Ha-Sar Shapira St. ,2.5,4.0,75,0
+503,4500,Apartment,Bat Yam,Balfour St. ,3.5,3.0,85,0
+504,6500,Apartment,Bat Yam,Yohanan HaSandlar St. ,4.0,12.0,100,2
+505,3200,Apartment,Bat Yam,Yoseftal St. ,2.0,3.0,50,0
+506,3500,Apartment,Bat Yam,Arlozorov St. ,2.0,1.0,50,0
+507,3000,Apartment,Bat Yam,HaAtsmaut Boulevard ,2.0,0.0,30,0
+508,5000,Apartment,Bat Yam,Doctor Nahum Nir St.  3,4.0,5.0,85,1
+509,4500,Apartment,Bat Yam,Balfour St. ,3.5,2.0,80,0
+510,4000,Apartment,Bat Yam,Bar Yehuda St.  24,3.0,3.0,70,0
+511,8000,Apartment,Bat Yam,Derech Ben Gurion  57,4.0,7.0,105,1
+512,4000,Apartment,Bat Yam,Moshe Sneh St. ,3.0,0.0,70,0
+513,4200,Apartment,Bat Yam,Derech Ben Gurion ,2.0,2.0,45,1
+514,3100,Apartment,Bat Yam,Herzl St.  10,2.0,0.0,40,0
+515,4500,Apartment,Bat Yam,Dakar St.  3,3.0,4.0,87,0
+516,25000,Garden apt,Tel Aviv-Yafo,Ha-Ogen St. ,4.0,2.0,220,0
+517,5000,Apartment,Bat Yam,Rothschild St. ,3.0,3.0,70,0
+518,4400,Apartment,Bat Yam,Dakar St.  3,3.0,4.0,85,0
+519,3500,Apartment,Bat Yam,Daniel St. ,2.5,1.0,75,0
+520,4400,Apartment,Herzliya,Tsahal St.  2,2.0,2.0,55,0
+521,4200,Apartment,Petah Tikva,Rothschild St.  144,4.0,3.0,90,0
+522,3700,Apartment,Petah Tikva,Aharon Katsir St. ,3.0,2.0,85,0
+523,2300,Apartment,Petah Tikva,Yosef Sapir St. ,1.0,0.0,25,0
+524,2300,Apartment,Petah Tikva,Ihilov St. ,1.0,0.0,25,0
+525,4000,Apartment,Petah Tikva,Ein Ganim St. ,3.0,1.0,80,1
+526,3700,Apartment,Petah Tikva,Herzl St. ,3.0,1.0,75,0
+527,1900,Apartment,Petah Tikva,Nordau St.  34,4.0,1.0,90,1
+528,2000,Apartment,Petah Tikva,Nordau St.  34,4.0,1.0,90,1
+529,1900,Apartment,Petah Tikva,Nordau St.  34,4.0,1.0,100,1
+530,2000,Room,Petah Tikva,Nordau St.  32,4.0,1.0,110,2
+531,4200,Apartment,Rishon LeTsiyon,Ha-Akhim Suleiman St.  6,3.0,1.0,7,1
+532,6000,Garden apt,Tel Aviv-Yafo,HaGolan St.  124,3.0,0.0,56,0
+533,3000,Apartment,Ramat Gan,Sderot Yerushalayim  86,2.0,0.0,40,0
+534,5500,Apartment,Bat Yam,Yitshak Sadeh St.  33,3.5,6.0,100,1
+535,5500,Apartment,Tel Aviv-Yafo,Shalma Road ,3.0,2.0,70,0
+536,3950,Apartment,Bat Yam,Kinneret St.  11,4.0,3.0,90,0
+537,4000,Apartment,Ramat Gan,Haroe St.  125,2.5,3.0,60,0
+538,2900,Mini penthouse,Bnei Brak,Hertsel St.  75,3.0,4.0,52,0
+539,2800,Apartment,Bnei Brak,Ussishkin St.  23,2.0,2.0,45,0
+540,5000,Apartment,Holon,Khazit Khamesh St. ,3.5,3.0,90,1
+541,5500,Apartment,Givatayim,Kiryat Yosef St.  20,4.0,2.0,120,1
+542,6400,Apartment,Holon,Yehoshua Rabinovich St.  91,5.0,5.0,120,1
+543,7600,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  98,4.0,9.0,96,2
+544,9500,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  97,4.0,9.0,89,2
+545,5200,Apartment,Tel Aviv-Yafo,Weizmann St.  87,2.0,0.0,55,0
+546,6700,Apartment,Tel Aviv-Yafo,Shtulim St.  55,4.0,12.0,100,2
+547,5000,Apartment,Tel Aviv-Yafo,Shalma Road ,2.0,3.0,50,0
+548,2400,Apartment,Jerusalem,Mishol HaDkalim  12,1.0,1.0,16,3
+549,4500,Mini penthouse,Rishon LeTsiyon,Ha-Yekev St. ,2.5,4.0,62,0
+550,3700,Apartment,Rishon LeTsiyon,Rothschild St. ,3.5,6.0,85,0
+551,4800,Apartment,Bat Yam,Livorno St.  3,4.0,4.0,100,1
+552,5000,Apartment,Ramat Gan,Rabbi Yehuda HaNassi St. ,4.0,1.0,104,1
+553,3000,Apartment,Petah Tikva,Yitskhak Sadeh St. ,3.0,1.0,65,0
+554,3500,Apartment,Petah Tikva,Olei Bavel St. ,2.5,1.0,70,0
+555,4200,Apartment,Holon,Zeev Jabotinsky St. ,3.0,3.0,80,0
+556,4500,Apartment,Gedera,Bialik St. ,3.0,2.0,100,1
+557,3000,Apartment,Bat Yam,HaHashmonaim St. ,3.0,3.0,90,0
+558,3500,Apartment,Bat Yam,Kinneret St. ,2.0,3.0,65,0
+559,4000,Apartment,Bat Yam,Khaviva Reik St. ,2.5,3.0,65,0
+560,3650,Apartment,Bat Yam,Bar Ilan St.  25,3.0,1.0,82,0
+561,3100,Apartment,Bat Yam,Herzl St. ,1.0,3.0,40,0
+562,9000,Apartment,Bat Yam,Derech Menachem Begin ,5.0,12.0,130,2
+563,3700,Apartment,Bat Yam,Khaviva Reik St. ,2.0,0.0,60,0
+564,6500,Apartment,Rishon LeTsiyon,Saadiya ve-Yosef Bashari St. ,4.0,4.0,105,2
+565,4500,Apartment,Ramat Gan,Beit Horon St.  16,2.5,1.5,72,0
+566,6000,Apartment,Tel Aviv-Yafo,Ha-Rav Alnekave St.  78,4.0,3.0,100,1
+567,2500,Studio,Jerusalem,Jaffa St.  212,1.0,6.0,30,0
+568,4200,Apartment,Holon,Har ha-Tsofim St. ,3.0,4.0,60,0
+569,9500,Duplex,Ramat Gan,Uziel St. ,4.0,8.0,215,2
+570,4000,Apartment,Ramat Gan,Ha-Aluf Nekhemya Tamari St. ,2.0,1.0,70,0
+571,6600,Apartment,Givatayim,HaMaayan St. ,4.0,2.0,130,0
+572,7000,Apartment,Ramat Gan,Rimalt St. ,4.0,5.0,120,0
+573,3400,Apartment,Ramat Gan,Rabbi Yehuda HaNassi St. ,3.0,3.0,50,0
+574,5800,Apartment,Ramat Gan,Yeshurun St. ,3.0,3.0,75,1
+575,4500,Apartment,Nes Harim,Livne St.  16,3.0,0.0,64,3
+576,2900,Studio,Rishon LeTsiyon,Shivtei Yisrael St. ,1.0,1.0,35,0
+577,3850,Apartment,Bat Yam,Arlozorov St. ,2.5,2.0,70,0
+578,4000,Apartment,Ramat Gan,Negba Road  35,2.5,2.0,55,0
+579,4000,Apartment,Ramla,Sderot Ben Gurion ,4.0,3.0,90,1
+580,2800,Apartment,Ramla,Yitshak Ben Zvi St. ,2.0,3.0,50,0
+581,3500,Apartment,Ramla,Yoseftal St. ,3.0,1.0,70,0
+582,3000,Apartment,Ramla,Alef Samech Levi St. ,3.0,4.0,70,0
+583,2700,Housing unit,Ramla,Ha-Ilanot St. ,2.0,0.0,30,0
+584,3200,Housing unit,Rishon LeTsiyon,Migdalor St. ,1.0,0.0,40,0
+585,2600,Apartment,Ramla,Yitshak Ben Zvi St. ,2.0,2.0,50,0
+586,3200,Housing unit,Rehovot,Rambam St. ,1.0,0.0,40,0
+587,4000,Apartment,Ramla,Meir Bar Ilan St.  43,4.5,2.0,95,0
+588,3400,Apartment,Ramla,Sderot David Razi'el  4,3.0,2.0,70,1
+589,2600,Apartment,Ramla,Amichai St. ,2.0,2.0,50,0
+590,3500,Apartment,Ramla,Vilna St.  4,3.0,1.0,70,0
+591,3000,Housing unit,Ramla,Levi Eshkol St. ,3.0,1.0,50,0
+592,3000,Apartment,Bnei Brak,Dov Gruner St.  55,2.5,2.0,42,0
+593,5190,Apartment,Ramat Gan,Ha-Podim St.  31,3.0,2.0,70,2
+594,3600,Apartment,Bnei Brak,Yigal Alon St.  25,3.0,2.0,65,1
+595,4750,Apartment,Holon,Alufei Tsahal St.  21,4.0,4.0,93,1
+596,3600,Apartment,Bat Yam,Bar Ilan St. ,2.5,1.0,65,0
+597,2800,Apartment,Jerusalem,Shamir St.  36,1.0,0.0,30,0
+598,3400,Apartment,Holon,HaTsfira St.  4,2.5,3.0,65,0
+599,4200,Apartment,Bat Yam,HaGdud Haivri St.  27,3.0,0.0,80,0
+600,3200,Apartment,Rishon LeTsiyon,Rothschild St.  58,2.0,0.0,40,0
+601,4400,Apartment,Jerusalem,Shamai St.  10,2.0,3.0,51,0
+602,3600,Apartment,Ramla,Yoseftal St.  17,4.0,2.0,87,0
+603,3200,Apartment,Ramla,Sderot Ben Gurion  3,3.0,2.0,70,0
+604,5600,Apartment,Jerusalem,Eliyahu Mani St.  5,3.0,1.0,83,1
+605,4000,Apartment,Ramat Gan,Simtat Ayalon  11,2.5,2.0,60,0
+606,3800,Housing unit,Jerusalem,Yosef Avidar St.  22,2.0,1.0,50,1
+607,4950,Apartment,Tel Aviv-Yafo,Ha-Keshet St. ,3.5,2.0,90,0
+608,3390,Apartment,Bat Yam,Kakal St.  20,2.5,2.0,60,0
+609,5900,Apartment,Bat Yam,Derech Ben Gurion  133,4.0,3.0,100,0
+610,4700,Apartment,Petah Tikva,Rothschild St.  136,4.0,8.0,80,1
+611,4000,Apartment,Bat Yam,Halper St.  24,2.0,7.0,50,0
+612,4200,Apartment,Bat Yam,Kaf-Tet BeNovember St. ,3.0,5.0,80,0
+613,5200,Apartment,Holon,Eliyahu Krauze St. ,4.0,2.0,100,0
+614,3150,Housing unit,Rishon LeTsiyon,Leshem St. ,2.0,0.0,35,1
+615,2350,Housing unit,Rishon LeTsiyon,Shlomo Pomborovski St. ,2.0,0.0,35,1
+616,6500,Apartment,Rishon LeTsiyon,HaGat St. ,5.0,8.0,140,2
+617,5300,Apartment,Rishon LeTsiyon,Ha-Khartsit St. ,4.0,7.0,100,1
+618,6300,Apartment,Rishon LeTsiyon,Rival St. ,4.5,7.0,110,1
+619,4300,Apartment,Bat Yam,Balfour St.  115,3.0,2.0,70,1
+620,4500,Apartment,Rishon LeTsiyon,Meir Vinik St. ,3.0,2.0,80,1
+621,4500,Apartment,Rishon LeTsiyon,Ha-Khelmonit St. ,2.0,2.0,55,0
+622,4500,Housing unit,Rishon LeTsiyon,Rekhavya Ofek St. ,2.0,0.0,60,0
+623,4600,Apartment,Rishon LeTsiyon,Asher Levin St.  4,4.0,6.0,110,1
+624,9000,Mini penthouse,Rishon LeTsiyon,Meishar St. ,4.5,16.0,135,1
+625,3000,Apartment,Petah Tikva,David Wolfson St. ,2.0,1.0,55,1
+626,4500,Apartment,Petah Tikva,Ein Ganim St. ,4.5,4.0,110,1
+627,4500,Cottage/house,Petah Tikva,HaPalmach St. ,3.0,2.0,100,0
+628,2800,Apartment,Petah Tikva,Yitskhak Sadeh St. ,3.0,0.0,70,0
+629,5500,Apartment,Rishon LeTsiyon,Mivtsa Kadesh St.  9,4.0,1.0,110,1
+630,5200,Garden apt,Rishon LeTsiyon,Gush Etsyon St.  22,3.0,0.0,100,0
+631,6500,Apartment,Herzliya,הקרן  7,3.0,4.0,75,1
+632,3600,Housing unit,Jerusalem,HaRav Yizhak Hai Taib St.  18,2.0,1.0,40,0
+633,7500,Apartment,Tel Aviv-Yafo,Shlomo HaMelekh St.  8,3.0,1.0,80,0
+634,6200,Apartment,Tel Aviv-Yafo,Haggibbor HaAlmoni St.  2,5.0,4.0,100,1
+635,2500,Housing unit,Tel Aviv-Yafo,HaGdud Haivri St.  58,1.0,1.0,9,0
+636,5000,Apartment,Ramat Gan,Boaz St.  15,4.0,3.0,115,0
+637,12500,Apartment,Tel Aviv-Yafo,Yehezkel Streichman St. ,5.5,3.0,130,1
+638,17000,Penthouse,Tel Aviv-Yafo,Amir Gilboa St. ,5.0,8.0,150,1
+639,3200,Apartment,Rehovot,Haim Yalin St. ,2.0,0.0,50,0
+640,4800,Apartment,Rehovot,Ha-Rav Shauli St. ,4.0,5.0,100,1
+641,6200,Triplex,Petah Tikva,Trumpeldor St.  31,7.0,0.0,131,1
+642,3100,Apartment,Kiryat Ono,Shlomo ha-Melekh St.  6,2.0,1.0,36,0
+643,5900,Apartment,Ramat Gan,Bialik St.  78,3.0,17.0,70,2
+644,2850,Apartment,Rehovot,Ha-Khavura St. ,2.0,0.0,40,0
+645,3000,Apartment,Rehovot,Tzvi Apple St. ,3.0,1.0,65,0
+646,5000,Apartment,Rehovot,Arlozorov St. ,4.0,1.0,90,0
+647,3600,Apartment,Rehovot,Derech Sheshet HaYamim ,3.0,0.0,70,0
+648,3300,Apartment,Rehovot,Yitskhak Mugzakh St. ,2.0,0.0,40,0
+649,1250,Apartment,Ari'el,Ramat HaGolan St.  15,49.0,2.0,92,1
+650,2700,Housing unit,Holon,Mesilat HaOlim St.  18,2.0,3.0,27,0
+651,6900,Garden apt,Jerusalem,Shimshon St.  19,2.0,0.0,60,0
+652,2700,Room,Tel Aviv-Yafo,Netsach Israel St.  22,2.0,1.0,30,0
+653,3000,Apartment,Bat Yam,Berl Katzenelson St.  11,2.0,1.0,60,0
+654,3000,Housing unit,Bat Yam,HaGiborim St.  38,2.0,0.0,40,0
+655,8800,Apartment,Tel Aviv-Yafo,Bograshov St.  6,3.0,2.0,70,1
+656,3600,Apartment,Bat Yam,Balfour St.  50,2.0,2.0,60,0
+657,2800,Apartment,Bat Yam,HaHashmonaim St. ,1.0,1.0,30,0
+658,3800,Apartment,Bat Yam,Trumpeldor St. ,3.0,1.0,65,0
+659,4400,Apartment,Rishon LeTsiyon,Meirovich St.  3,3.5,2.0,90,1
+660,4200,Villa,Bnei Brak,Shlosh HaShaot St.  25,4.0,1.0,75,0
+661,4400,Apartment,Bat Yam,Ha-Neviim St.  48,3.0,3.0,70,1
+662,4400,Apartment,Bat Yam,Ha-Neviim St.  48,3.0,3.0,70,1
+663,2500,Apartment,Petah Tikva,Yehoshua Shtampfer St.  28,2.0,1.0,35,0
+664,3500,Apartment,Tel Aviv-Yafo,Shlomo HaMelekh St.  20,1.0,0.0,24,0
+665,35000,Penthouse,Jerusalem,Avraham Perrera St. ,5.0,9.0,575,3
+666,5800,Apartment,Jerusalem,Avner-Hai Shaki  32,4.0,3.0,107,2
+667,3000,Apartment,Jerusalem,Bar Yokhai St.  3,2.0,3.0,55,0
+668,8500,Penthouse,Jerusalem,Costa Rica St.  2,4.0,3.0,130,1
+669,45000,Apartment,Tel Aviv-Yafo,Sderot Shaul HaMelech ,4.0,13.0,200,2
+670,9650,Apartment,Tel Aviv-Yafo,Zeitlin St. ,4.0,3.0,94,1
+671,16500,Apartment,Tel Aviv-Yafo,Zikhron Yaakov St. ,4.0,4.0,165,2
+672,3100,Apartment,Bat Yam,Eilat St.  11,2.0,2.0,55,0
+673,2800,Apartment,Ramla,Sderot Hayim Weizman  20,3.0,0.0,58,0
+674,2500,Housing unit,Ramla,Yitshak Ben Zvi St. ,2.0,4.0,45,0
+675,3500,Apartment,Tel Aviv-Yafo,Shlomo Buber St.  38,2.0,0.0,30,0
+676,9000,Apartment,Tel Aviv-Yafo,Shlomo Buber St.  38,5.5,1.0,130,2
+677,5800,Apartment,Tel Aviv-Yafo,Tosefta St.  3,3.0,3.0,70,0
+678,21000,Apartment,Tel Aviv-Yafo,Hadassa St.  6,4.0,19.0,170,2
+679,3950,Apartment,Rishon LeTsiyon,HaHadarim St. ,3.0,4.0,80,0
+680,3600,Apartment,Bat Yam,Shaul Hadadi St.  10,3.0,2.0,70,0
+681,3800,Housing unit,Holon,Sokolov St.  74,1.5,1.0,40,0
+682,7500,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,7.0,86,2
+683,2750,Apartment,Tel Aviv-Yafo,Lapin St.  10,1.0,0.0,18,0
+684,4600,Apartment,Bat Yam,Balfour St.  131,4.0,2.0,80,0
+685,2675,Room,Tel Aviv-Yafo,Rosenblatt St.  4,1.0,3.0,110,2
+686,4200,Apartment,Bat Yam,Dolfin St.  8,2.5,6.0,70,0
+687,3600,Apartment,Bat Yam,Balfour St. ,3.0,2.0,75,0
+688,4400,Apartment,Rishon LeTsiyon,Ha-Akhim Suleiman St.  15,3.5,3.0,76,0
+689,4000,Housing unit,Tel Aviv-Yafo,Nadav St.  11,2.0,0.0,80,1
+690,3600,Apartment,Bat Yam,Shaul Hadadi St.  10,3.0,2.0,70,0
+691,4500,Apartment,Rishon LeTsiyon,Tel Hai St.  7,3.5,2.0,106,0
+692,4900,Apartment,Ashdod,Ha-Atsmaut St. ,3.0,13.0,115,1
+693,8500,Apartment,Tel Aviv-Yafo,HaYarkon St.  22,2.5,2.0,68,0
+694,7500,Apartment,Tel Aviv-Yafo,Yesud ha-Maala St.  58,4.0,5.0,90,1
+695,100,Apartment,Herzliya,Rivka Guver St.  1,4.0,4.0,125,2
+696,4800,Apartment,Rishon LeTsiyon,Yoel Drubin St. ,3.5,1.0,91,1
+697,4000,Apartment,Rishon LeTsiyon,Shmuel Shrira St. ,3.5,3.0,90,1
+698,3950,Apartment,Bat Yam,Sheshet ha-Yamim St. ,2.5,3.0,83,0
+699,5500,Apartment,Bat Yam,Ha-Neviim St.  60,3.0,5.0,94,2
+700,2900,Apartment,Bat Yam,HaRav Uziel St.  9,1.0,3.0,16,0
+701,3800,Apartment,Rehovot,Beeri St.  6,3.0,3.0,75,0
+702,6500,Cottage/house,Rehovot,Shimon Eshed St.  2,5.0,2.0,120,0
+703,3500,Rooftop apt,Modiin-Maccabim-Reut,Hartsit St.  44,2.0,4.0,32,2
+704,8500,Apartment,Petah Tikva,Anielewicz St.  4,6.0,4.0,170,1
+705,2800,Apartment,Rishon LeTsiyon,HaGdud Haivri St.  62,1.5,4.0,35,0
+706,3700,Apartment,Tel Aviv-Yafo,Burma St.  40,3.0,3.0,60,2
+707,6200,Apartment,Rishon LeTsiyon,Gluskin St.  23,5.0,1.0,120,2
+708,5400,Apartment,Bat Yam,Arlozorov St.  20,4.0,1.0,112,0
+709,4000,Apartment,Holon,Arye Shenkar St.  70,3.0,4.0,70,0
+710,9000,Penthouse,Bat Yam,Herzl St.  4,6.0,9.0,160,2
+711,4100,Apartment,Bat Yam,Eli Cohen St. ,4.0,3.0,90,0
+712,6800,Apartment,Ramat Gan,Dan Shomron  4,4.0,13.0,110,2
+713,7500,Apartment,Bat Yam,Arlozorov St.  47,5.0,4.0,100,1
+714,3500,Apartment,Holon,Sderot Dov Hoz ,3.0,2.0,80,0
+715,6000,Apartment,Tel Aviv-Yafo,Aba Akhimeir St.  34,3.0,2.0,70,0
+716,3300,Apartment,Tel Aviv-Yafo,Nahal Oz St.  10,3.0,0.0,67,0
+717,5400,Apartment,Rishon LeTsiyon,Jabotinsky St.  3,4.5,1.0,100,1
+718,4350,Apartment,Ramat Gan,Doctor Cohen St. ,3.0,0.0,65,0
+719,3600,Garden apt,Bat Yam,HaHashmonaim St. ,2.0,0.0,50,0
+720,5100,Apartment,Bat Yam,Ha-Neviim St. ,5.0,2.0,90,0
+721,3000,Apartment,Tel Aviv-Yafo,Sderot Nordau  62,2.0,3.0,65,0
+722,5100,Apartment,Ashdod,Exodus St. ,3.0,2.0,95,2
+723,7000,Cottage/house,Oranit,Ha-Oren St. ,5.5,2.0,200,1
+724,3600,Apartment,Bat Yam,Balfour St. ,1.5,3.0,35,0
+725,4000,Apartment,Bat Yam,Balfour St. ,1.5,3.0,35,0
+726,3600,Apartment,Tel Aviv-Yafo,Dganya St. ,1.0,0.0,35,0
+727,4500,Apartment,Holon,Sderot Dov Hoz ,3.0,2.0,75,0
+728,7500,Apartment,Tel Aviv-Yafo,Ha-Kalir St. ,2.0,3.0,55,0
+729,4800,Apartment,Bat Yam,HaGdud Haivri St.  24,3.0,1.0,100,0
+730,6500,Apartment,Givatayim,Keren Kayemet Le-Israel St.  38,4.0,2.0,80,0
+731,4200,Apartment,Holon,Zecharia Harofe St  21,3.0,1.0,60,1
+732,5300,Apartment,Bat Yam,Yerushalayim St.  61,5.0,2.0,101,0
+733,4000,Apartment,Ramat Gan,Negba Road  35,2.5,2.0,55,0
+734,4700,Apartment,Yehud,Derech Moshe Dayan  8,3.0,2.0,84,1
+735,4200,Apartment,Bat Yam,Yoseftal St.  37,3.0,2.0,80,0
+736,4900,Garden apt,Holon,Zeev Jabotinsky St. ,3.0,0.0,75,0
+737,6700,Apartment,Petah Tikva,HaAtsmaut St.  79,5.0,2.0,125,1
+738,2600,Apartment,Bat Yam,Balfour St. ,1.0,2.0,25,0
+739,3500,Apartment,Tel Aviv-Yafo,HaRav Rubinstein St. ,3.0,2.0,75,0
+740,2800,Apartment,Bat Yam,Balfour St. ,1.0,1.0,30,0
+741,2800,Apartment,Bat Yam,Mivtsa Sinai St. ,1.5,2.0,35,0
+742,2600,Apartment,Bat Yam,Berl Katzenelson St. ,1.0,3.0,30,0
+743,4500,Apartment,Bat Yam,Herzl St. ,2.0,1.0,60,0
+744,3300,Apartment,Bat Yam,Arlozorov St.  60,2.0,0.0,65,0
+745,1600,Room,Ramat Gan,Megadim St.  3,4.0,3.0,104,0
+746,5600,Apartment,Petah Tikva,Yaakov Krol St.  18,5.0,5.0,117,1
+747,6000,Apartment,Jerusalem,Eliyahu Beit Tsuri St.  7,4.0,4.0,95,1
+748,3600,Apartment,Jerusalem,Rabi Tsadok St.  11,3.5,2.0,70,0
+749,6200,Penthouse,Tel Aviv-Yafo,Yitzhak Sadeh St.  38,4.0,5.0,100,1
+750,3500,Apartment,Bat Yam,Khatsor St.  8,3.0,2.0,75,1
+751,3400,Apartment,Tel Aviv-Yafo,Mevaser St.  23,2.0,0.0,48,0
+752,2950,Apartment,Jerusalem,Jaffa St.  70,1.5,3.0,30,0
+753,3500,Apartment,Tel Aviv-Yafo,Shlomo HaMelekh St.  20,1.0,0.0,24,0
+754,5200,Apartment,Mevaseret Zion,Mevo Egoz  16,3.5,3.0,90,0
+755,4800,Apartment,Jerusalem,Eliyahu Mani St.  4,3.0,1.0,64,1
+756,4000,Apartment,Rishon LeTsiyon,HaHadarim St.  12,3.0,4.0,70,0
+757,6500,Apartment,Tel Aviv-Yafo,Romema St.  16,4.0,1.0,86,1
+758,3700,Apartment,Bat Yam,Mivtsa Sinai St.  24,3.0,4.0,70,1
+759,2800,Apartment,Ramat Gan,Yaavets St.  6,1.5,2.0,25,0
+760,3500,Apartment,Holon,HaTothanim St.  9,2.0,1.0,55,0
+761,6000,Apartment,Jerusalem,Koresh St.  12,4.0,2.0,72,0
+762,3200,Apartment,Jerusalem,Yaakov Tahon St.  10,1.5,2.0,35,0
+763,3700,Housing unit,Petah Tikva,Yosef Levin St.  12,2.5,0.0,60,0
+764,3300,Apartment,Tel Aviv-Yafo,Kehilat Canada St.  22,2.0,3.0,34,0
+765,4700,Apartment,Givatayim,Shimon Ben Tsvi St.  31,4.0,1.0,120,2
+766,11800,Apartment,Tel Aviv-Yafo,Brandeis St.  11,5.0,0.0,117,2
+767,6200,Apartment,Tel Aviv-Yafo,HaYarkon St.  63,3.0,2.0,75,0
+768,2800,Apartment,Jerusalem,Avraham Stern St.  18,2.0,0.0,40,0
+769,5700,Rooftop apt,Holon,Moshe Hess St.  10,5.0,2.0,120,1
+770,3600,Apartment,Holon,Ha-Histadrut St.  103,3.0,4.0,110,0
+771,3000,Housing unit,Rishon LeTsiyon,Joseph Brodsky St.  12,1.0,0.0,40,1
+772,3950,Apartment,Ramat Gan,Krinitsi St. ,2.0,2.0,60,0
+773,7000,Apartment,Ramat Hasharon,Naomi St.  6,3.0,2.0,88,1
+774,6250,Garden apt,Tel Aviv-Yafo,Herzl St. ,3.0,0.0,65,0
+775,3500,Apartment,Bat Yam,Herzl St. ,2.0,1.0,65,0
+776,2300,Apartment,Petah Tikva,Kaplan St.  32,1.0,1.0,25,0
+777,7500,Garden apt,Jerusalem,Kdoshei Struma St.  36,4.0,0.0,87,3
+778,4300,Apartment,Bat Yam,Ha-Rav Herzog St.  32,3.0,3.0,95,0
+779,3000,Apartment,Rehovot,Ha-Hagana St.  25,2.5,4.0,50,0
+780,5500,Apartment,Bat Yam,Ha-Neviim St.  60,3.0,5.0,94,2
+781,7500,Apartment,Tel Aviv-Yafo,Zalman Shneour St. ,3.0,2.0,65,1
+782,6000,Apartment,Tel Aviv-Yafo,HaKongres St. ,3.0,3.0,70,1
+783,3800,Apartment,Petah Tikva,HaRav Kitroni St.  50,4.0,3.0,75,0
+784,5500,Apartment,Ramat Gan,Rehovot HaNahar  5,2.5,2.0,70,0
+785,4550,Apartment,Ramat Gan,Struma St.  2,3.0,2.0,75,0
+786,4000,Apartment,Bat Yam,Yerushalayim St. ,3.0,3.0,100,0
+787,3300,Apartment,Bat Yam,Givati St. ,2.5,3.0,70,0
+788,4500,Apartment,Tel Aviv-Yafo,Y.L. Perets St.  38,2.5,2.0,50,1
+789,3600,Apartment,Bat Yam,Ha-Sar Rabinovich St.  14,3.0,2.0,75,1
+790,4100,Apartment,Bat Yam,Sheshet ha-Yamim St.  14,2.5,2.0,70,0
+791,5000,Apartment,Rishon LeTsiyon,Ha-Kinor St. ,3.0,4.0,75,1
+792,3500,Apartment,Tel Aviv-Yafo,Pri Megadim St.  33,3.0,3.0,70,0
+793,4600,Apartment,Kiryat Ono,Ha-Rakefet St.  3,3.5,6.0,85,0
+794,2000,Housing unit,Rishon LeTsiyon,Ha-Rakefet St.  79,1.0,0.0,15,0
+795,1900,Housing unit,Jerusalem,King George St.  8,1.0,0.0,22,0
+796,6500,Apartment,Tel Aviv-Yafo,Shalom Ash St.  19,3.0,2.0,70,2
+797,3300,Apartment,Gedera,Shapira St.  7,3.0,1.0,75,1
+798,4400,Apartment,Ramat Gan,Haroe St.  72,3.0,2.0,65,0
+799,1600,Room,Holon,Harokmim St.  47,1.0,2.0,12,0
+800,7500,Apartment,Tel Aviv-Yafo,Yiftakh St.  2,4.0,3.0,100,1
+801,3500,Apartment,Holon,Sderot Kugel  17,2.5,0.0,56,0
+802,3100,Housing unit,Rehovot,Janus Korczak St.  11,2.0,0.0,50,0
+803,9800,Apartment,Tel Aviv-Yafo,Sderot Ben Gurion  100,5.0,2.0,130,0
+804,3500,Apartment,Ramla,Zahal St.  13,3.0,0.0,70,2
+805,2550,Housing unit,Givatayim,Keren Kayemet Le-Israel St.  27,1.0,0.0,15,0
+806,4500,Apartment,Rishon LeTsiyon,Tsvi Herman Shapira St.  13,3.5,4.0,75,1
+807,2800,Housing unit,Rehovot,Rambam St.  16,2.0,0.0,50,1
+808,6000,Apartment,Ramat Gan,Hadar St.  10,4.5,2.0,108,0
+809,6000,Apartment,Tel Aviv-Yafo,Manya ve-Yisrael Shokhat St.  11,3.5,1.0,70,0
+810,5200,Apartment,Rishon LeTsiyon,Shlomo Eliraz St. ,3.0,7.0,86,1
+811,3700,Apartment,Ashdod,Martin Buber St. ,2.0,9.0,62,1
+812,3000,Apartment,Bat Yam,Rothschild St.  30,2.0,1.0,55,0
+813,7250,Apartment,Tel Aviv-Yafo,Meitav St.  1,3.0,18.0,86,2
+814,12000,Apartment,Tel Aviv-Yafo,Ben Yehuda St.  214,4.0,2.0,85,0
+815,2400,Apartment,Kiryat Ono,Shlomo ha-Melekh St.  2,3.0,4.0,65,0
+816,3000,Housing unit,Rishon LeTsiyon,Ha-Oren St.  16,2.0,1.0,45,0
+817,2650,Apartment,Ramat Gan,Negba Road  42,1.0,2.0,30,0
+818,3700,Apartment,Bat Yam,Etsel St. ,2.5,1.0,7,0
+819,4050,Apartment,Jerusalem,Borochov St.  43,3.0,0.0,50,3
+820,4500,Apartment,Rishon LeTsiyon,Kiryat Sefer St. ,3.0,1.0,81,0
+821,3200,Apartment,Petah Tikva,Mohiliver St.  1,2.0,1.0,50,0
+822,6600,Apartment,Ramat Gan,HaMaayan St.  2,3.0,21.0,79,2
+823,800,Apartment,Ashdod,Avraham Ofer St. ,4.0,0.0,100,0
+824,5800,Apartment,Rehovot,Yehuda Leib Yosefson St.  4,5.0,1.0,128,2
+825,3800,Apartment,Holon,Sderot Yoseftal  150,4.0,2.0,85,1
+826,5300,Apartment,Rishon LeTsiyon,HaOrgan St. ,3.0,4.0,85,1
+827,6400,Apartment,Jerusalem,Yaakov Salman St.  14,4.0,1.0,80,2
+828,3700,Apartment,Jerusalem,HaAnafa St.  309,3.0,2.0,75,1
+829,4100,Apartment,Rosh Haayin,Pelakh ha-Limon St.  8,3.5,2.0,75,0
+830,4700,Apartment,Ashdod,Nahal Kishon St. ,4.0,6.0,97,0
+831,4000,Apartment,Petah Tikva,Siegelbaum St.  3,4.0,4.0,100,0
+832,3200,Apartment,Rehovot,Kalman Gavrielov St.  25,3.0,1.0,72,1
+833,5600,Apartment,Tel Aviv-Yafo,Hadassa St.  11,2.0,0.0,62,0
+834,2900,Apartment,Rishon LeTsiyon,David Tidhar St.  13,2.0,3.0,50,1
+835,6000,Apartment,Ashdod,Tsahal St.  5,5.0,9.0,156,2
+836,6000,Apartment,Ashdod,Tsahal St.  5,5.0,9.0,150,2
+837,2400,Apartment,Petah Tikva,Bar Kochva St.  34,1.0,1.0,25,0
+838,4800,Apartment,Herzliya,Shmuel HaNagid St.  22,3.0,1.0,78,1
+839,1900,Room,Tel Aviv-Yafo,Arlozorov St.  190,3.0,3.0,22,0
+840,5500,Apartment,Rehovot,Bnei Moshe St.  24,3.5,1.0,100,0
+841,3700,Apartment,Holon,Ness Tsiyona St.  3,2.5,4.0,70,0
+842,3600,Apartment,Holon,Ha-Arava St.  31,3.0,1.0,60,0
+843,4000,Garden apt,Kefar Sava,Ha-Rishonim St.  1,2.0,0.0,65,0
+844,5800,Apartment,Jerusalem,Levi Eshkol Boulevard  8,3.0,2.0,70,1
+845,2250,Apartment,Jerusalem,Yekhezkel (Yehezkel) Kutscher St.  23,1.0,0.0,25,1
+846,4500,Apartment,Tel Aviv-Yafo,Isaac Harif St.  16,3.0,1.0,75,0
+847,11500,Apartment,Tel Aviv-Yafo,Sderot HaHaskala  17,3.0,18.0,106,1
+848,3500,Housing unit,Bat Yam,Herzl St.  34,1.0,1.0,50,0
+849,4000,Apartment,Bat Yam,HaShikma St.  1,2.5,1.0,65,0
+850,2500,Housing unit,Shoham,Maccabim St.  80,1.0,0.0,25,0
+851,6900,Apartment,Tel Aviv-Yafo,Vitkin St.  7,3.0,1.0,50,0
+852,3200,Apartment,Lod,Admonit St.  13,3.0,6.0,75,1
+853,3800,Apartment,Ashdod,HaMada St.  1,4.0,4.0,100,0
+854,3600,Apartment,Rishon LeTsiyon,Sokolov St.  1,3.0,0.0,70,0
+855,5500,Apartment,Ness Ziona,Bialik St.  5,5.0,2.0,126,1
+856,7200,Apartment,Tel Aviv-Yafo,Dafna St.  34,3.5,2.0,90,0
+857,4300,Apartment,Tel Aviv-Yafo,Harav Reines St.  25,2.0,1.0,48,0
+858,4500,Apartment,Rishon LeTsiyon,Kiryat Sefer St.  4,4.0,2.0,120,1
+859,2500,Room,Tel Aviv-Yafo,Pestalozzi St.  27,3.0,1.0,70,0
+860,3500,Apartment,Ashdod,Jabotinski St.  26,3.0,4.0,70,0
+861,6700,Apartment,Tel Aviv-Yafo,Ha-Keshet St. ,5.0,2.0,130,3
+862,3850,Housing unit,Bat Yam,Herzl St.  48,2.0,1.0,40,0
+863,4900,Apartment,Bat Yam,HaShikma St. ,4.0,2.0,87,0
+864,3400,Apartment,Ramla,Sderot Herzl  124,2.0,0.0,100,2
+865,4400,Apartment,Tel Aviv-Yafo,Haim Barlev Road  170,3.0,4.0,90,0
+866,5300,Apartment,Tel Aviv-Yafo,Kikar Hill  2,2.0,0.0,45,0
+867,2800,Studio,Ramat Gan,Ha-Amal St.  18,1.0,3.0,28,0
+868,3200,Apartment,Rishon LeTsiyon,Alkalai St.  30,2.0,1.0,50,0
+869,3800,Apartment,Bat Yam,HaRav Levi St. ,3.0,8.0,75,1
+870,5000,Apartment,ירושלים,Hazon Ish St.  34,5.0,4.0,120,2
+871,4200,Apartment,Petah Tikva,Yehuda Leib Pinsker St.  73,3.0,2.0,71,1
+872,3200,Apartment,Rishon LeTsiyon,Ha-Tsivoni St.  16,3.0,6.0,90,1
+873,5300,Apartment,Givat Shmuel,HaTsiyonut St.  8,4.0,5.0,90,1
+874,5800,Duplex,Modiin-Maccabim-Reut,Tkhelet St.  49,4.0,1.0,120,2
+875,8500,Apartment,Ramat Gan,HaMaayan St.  4,4.0,7.0,124,2
+876,4500,Apartment,Or Yehuda,Harduf St.  7,3.0,1.0,74,0
+877,6700,Apartment,Tel Aviv-Yafo,Shlomo Ibn Gabirol St.  189,3.0,1.0,70,0
+878,6000,Apartment,Tel Aviv-Yafo,HaYarkon St.  282,3.0,1.0,60,0
+879,9000,Apartment,Tel Aviv-Yafo,Wilson St.  999,3.0,2.0,90,0
+880,4900,Apartment,Jerusalem,Shakhal St.  2,3.0,1.0,75,1
+881,4500,Apartment,Yehud-Monosson,Ashkenazi St.  3,3.5,2.0,80,0
+882,2650,Apartment,Tel Aviv-Yafo,Zalman Shneour St.  19,1.0,0.0,24,0
+883,6300,Apartment,Jerusalem,Berenice St.  2,4.5,1.0,120,1
+884,4850,Apartment,Rishon LeTsiyon,Beit Yosef St.  3,4.5,2.0,120,1
+885,8200,Apartment,Jerusalem,Ha-Haavara St.  34,5.0,0.0,120,1
+886,4600,Apartment,Holon,Kdoshei Kahir St.  9,4.5,3.0,115,1
+887,5000,Apartment,Bat Yam,Sokolov St.  5,3.5,2.0,78,1
+888,4300,Apartment,Petah Tikva,Katz Michal Leib St.  19,3.0,1.0,74,1
+889,3500,Apartment,Tel Aviv-Yafo,HaRav Rubinstein St. ,3.0,2.0,70,0
+890,2900,Apartment,Bat Yam,HaAtsmaut Boulevard  8,2.0,0.0,40,0
+891,3800,Apartment,Tel Aviv-Yafo,Kaminska St.  8,3.0,4.0,75,0
+892,4700,Cottage/house,Ramla,HaRav Haim Shapira St.  12,3.0,1.0,65,0
+893,2450,Apartment,Ramat Gan,Herzl St.  12,1.0,1.0,25,0
+894,3200,Housing unit,Rishon LeTsiyon,Yonatan St.  13,2.0,1.0,50,0
+895,3500,Apartment,Herzliya,HaRav Kook St.  100,2.0,2.0,46,0
+896,5200,Apartment,Jerusalem,Ha-Ilui St.  2,4.0,2.0,100,2
+897,3500,Apartment,Jerusalem,Abba Ahimeir St.  3,3.0,2.0,65,1
+898,3800,Apartment,Bat Yam,HaGdud Haivri St.  14,2.0,0.0,52,0
+899,3300,Apartment,Tel Aviv-Yafo,Galinit St. ,2.5,3.0,50,0
+900,4100,Apartment,Bat Yam,Jabotinsky St.  20,4.0,3.0,100,0
+901,5800,Apartment,Kiryat Ono,Yigal Alon St.  7,4.5,6.0,129,2
+902,4000,Cottage/house,Azor,Remez St.  5,3.0,1.0,90,1
+903,3500,Apartment,Tel Aviv-Yafo,Kehilat Varsha St.  89,2.5,2.0,45,1
+904,3800,Apartment,Bat Yam,Sheshet ha-Yamim St. ,2.5,3.0,75,0
+905,6100,Apartment,Tel Aviv-Yafo,Morits Daniel St.  20,3.0,3.0,50,0
+906,5000,Apartment,Ramat Gan,Ness Alley  6,4.0,1.0,100,1
+907,3800,Apartment,Petah Tikva,Haim Arlozorov St.  2,3.0,0.0,80,0
+908,5850,Apartment,Bat Yam,Ha-Rav Nisanbaum St.  37,2.0,22.0,50,1
+909,6500,Apartment,Bat Yam,Yohanan HaSandlar St.  6,4.0,3.0,100,1
+910,2800,Apartment,Ashdod,Ibn Gvirol St.  13,2.0,2.0,48,0
+911,3800,Apartment,Bat Yam,Berl Katzenelson St.  57,3.0,2.0,70,0
+912,5500,Apartment,Jerusalem,Shaul Avigur St.  24,4.0,2.0,95,1
+913,3400,Garden apt,Ashdod,Ahi Eilat St.  18,2.0,0.0,40,1
+914,5500,Apartment,Tel Aviv-Yafo,HaHashmal St.  5,2.0,4.0,55,1
+915,3500,Apartment,Petah Tikva,Malachi St.  4,3.0,0.0,80,0
+916,3500,Apartment,Petah Tikva,Ihilov St.  7,3.0,3.0,65,1
+917,8500,Apartment,Tel Aviv-Yafo,Shaul Avigur St.  5,4.0,6.0,100,2
+918,4200,Apartment,Tel Aviv-Yafo,Simtat Beit HaBad  2,2.0,1.0,49,0
+919,9100,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,9.0,107,2
+920,3700,Apartment,Yavne,Ha-Rakefet St.  10,3.0,3.0,74,0
+921,4000,Apartment,Bat Yam,HaMaapilim St.  30,3.5,1.0,100,1
+922,6000,Garden apt,Jerusalem,HaHagana St.  10,4.0,0.0,80,2
+923,2700,Apartment,Bat Yam,Ha-Rav Herzog St.  14,1.0,0.0,30,0
+924,8500,Apartment,Jerusalem,HaRav Kuk St.  7,4.0,6.0,120,1
+925,4700,Apartment,Rishon LeTsiyon,Ha-Rotem St.  3,3.0,5.0,80,1
+926,3500,Apartment,Azor,Kaplan St.  4,3.0,2.0,80,1
+927,2200,Apartment,Petah Tikva,Bar Kochva St.  34,1.0,1.0,23,0
+928,3500,Apartment,Petah Tikva,Yehuda ha-Levi St.  15,2.0,2.0,70,0
+929,3900,Apartment,Yehud-Monosson,Kdoshei Mitsrayim St.  19,3.0,2.0,78,0
+930,2700,Apartment,Petah Tikva,Brener St.  9,2.5,2.0,65,0
+931,500,Apartment,Bat Yam,Derech Ben Gurion  138,2.0,6.0,50,0
+932,9500,Apartment,Jerusalem,Heleni ha-Malka St.  24,4.5,2.0,120,0
+933,1700,Apartment,Ramat Gan,Sderot Yerushalayim  11,4.5,1.0,110,5
+934,5000,Apartment,Jerusalem,Mexico St.  14,4.0,2.0,80,0
+935,3600,Apartment,Tel Aviv-Yafo,Malakhi St.  6,1.0,2.0,29,0
+936,3500,Apartment,Tel Aviv-Yafo,Nakhal Sorek St.  16,2.0,4.0,50,0
+937,3800,Apartment,Jerusalem,Jaffa St.  222,2.5,3.0,60,0
+938,5500,Apartment,Givatayim,Ha-Palmakh St.  4,4.0,2.0,100,0
+939,3300,Apartment,Bat Yam,Halper St.  28,3.0,2.0,70,0
+940,3300,Apartment,Ramla,Alef Samech Levi St.  39,3.0,2.0,71,0
+941,3900,Apartment,Yehud-Monosson,Kdoshei Mitsrayim St.  19,3.0,2.0,78,0
+942,320,Apartment,Ashdod,Rambam St.  12,2.5,4.0,48,0
+943,4700,Apartment,Or Yehuda,David Elazar St.  13,4.0,3.0,120,1
+944,3200,Apartment,Bat Yam,Derech Ben Gurion ,1.0,12.0,35,1
+945,8100,Apartment,Herzliya,HaRav Ovadya Yosef St.  1,6.0,5.0,150,2
+946,4500,Apartment,Rishon LeTsiyon,Naaman St. ,3.0,1.0,80,0
+947,6500,Apartment,Rishon LeTsiyon,Shlomo Eliraz St. ,5.0,6.0,140,2
+948,4500,Apartment,Rishon LeTsiyon,Gissin St. ,3.5,1.0,85,1
+949,3400,Apartment,Bat Yam,Ha-Tsipornim St. ,2.0,1.0,50,0
+950,9000,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,8.0,107,2
+951,5900,Apartment,Ramat Hasharon,Henrietta Szold St.  3,3.5,1.0,110,1
+952,9000,Apartment,Tel Aviv-Yafo,Ruppin St.  33,4.0,3.0,90,0
+953,5200,Apartment,Rishon LeTsiyon,Kiryat Sefer St. ,4.0,3.0,97,0
+954,4600,Apartment,Rishon LeTsiyon,Tsvi Frank St.  23,3.5,2.0,87,1
+955,10000,Apartment,Tel Aviv-Yafo,HaYarkon St.  2,3.0,2.0,85,0
+956,4200,Apartment,Holon,Manya ve-Yisrael Shokhat St. ,3.0,1.0,75,0
+957,3500,Housing unit,Rishon LeTsiyon,Betar St. ,2.0,3.0,45,0
+958,4500,Apartment,Holon,Yehoshua Hankin St. ,4.0,2.0,100,0
+959,5900,Apartment,Tel Aviv-Yafo,Y.L. Perets St.  33,3.0,2.0,65,0
+960,10000,Apartment,Tel Aviv-Yafo,Carlebach St. ,4.0,7.0,120,2
+961,8500,Apartment,Tel Aviv-Yafo,HaHashmonaim St. ,4.0,11.0,110,2
+962,8500,Duplex,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,14.0,90,2
+963,12000,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,9.0,118,2
+964,11000,Apartment,Tel Aviv-Yafo,Yitshak Elhanan St.  22,2.5,18.0,64,2
+965,5200,Apartment,Tel Aviv-Yafo,Nahalat Binyamin St.  33,2.0,3.0,50,2
+966,8700,Duplex,Tel Aviv-Yafo,HaHashmonaim St.  94,4.0,24.0,90,2
+967,6600,Apartment,Tel Aviv-Yafo,Shtulim St. ,4.0,4.0,97,2
+968,5500,Apartment,Tel Aviv-Yafo,Simtat Aluf Batslut  3,2.0,0.0,48,1
+969,9200,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  98,4.0,7.0,22,2
+970,8800,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,12.0,97,2
+971,4900,Apartment,Tel Aviv-Yafo,Balaban St.  3,2.5,1.0,55,0
+972,6500,Apartment,Tel Aviv-Yafo,Balaban St. ,4.0,0.0,90,0
+973,8650,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,9.0,107,2
+974,9000,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,11.0,89,2
+975,9500,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,12.0,107,2
+976,9000,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,12.0,90,2
+977,7000,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,3.0,31.0,79,2
+978,8000,Apartment,Tel Aviv-Yafo,HaHashmonaim St.  96,3.0,8.0,75,2
+979,9000,Mini penthouse,Bat Yam,Yohanan HaSandlar St. ,4.0,27.0,120,3
+980,2000,Apartment,Bat Yam,Bar Yehuda St. ,3.0,3.0,85,0
+981,4900,Apartment,Rishon LeTsiyon,Trumpeldor St.  2,4.0,1.0,95,0
+982,3600,Apartment,Rishon LeTsiyon,Rothschild St. ,2.5,2.0,70,0
+983,1850000,Apartment,Tel Aviv-Yafo,Maharozet St. ,3.0,2.0,75,0
+984,8000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,8.0,79,1
+985,3500,Apartment,Kiryat Ono,HaShikma St.  7,4.0,3.0,100,0
+986,2700,Apartment,Holon,Bernstein St. ,4.0,2.0,90,3
+987,3000,Housing unit,Holon,Arye Shenkar St. ,2.0,10.0,40,0
+988,5000,Apartment,Holon,Eilat St. ,4.0,2.0,100,0
+989,2900,Housing unit,Holon,Eliyahu Krauze St. ,1.0,4.0,25,0
+990,9500,Cottage/house,Holon,Bialik St. ,5.0,3.0,120,1
+991,3700,Apartment,Holon,Alufei Tsahal St. ,3.0,3.0,65,0
+992,4100,Apartment,Holon,HaBesht St. ,3.0,2.0,90,0
+993,6500,Duplex,Rishon LeTsiyon,Mordekhai Moteleh Rosenstein St.  8,5.5,2.0,131,1
+994,3500,Apartment,Rishon LeTsiyon,Yehuda Leib Pinsker St.  4,3.0,1.0,100,0
+995,4500,Apartment,Tel Aviv-Yafo,Asherman St. ,3.0,3.0,50,0
+996,5800,Duplex,Rishon LeTsiyon,Lubman St. ,4.0,4.0,105,1
+997,3800,Housing unit,Rishon LeTsiyon,HaHafets Haim St. ,2.5,3.0,54,0
+998,15000,Apartment,Tel Aviv-Yafo,HaYarkon St. ,3.0,3.0,82,0
+999,5500,Apartment,Rehovot,Yehuda Leib Yosefson St.  4,5.0,1.0,140,2
+1000,4000,Apartment,Holon,Eilat St. ,3.0,1.0,70,0
+1001,45000,Mini penthouse,Tel Aviv-Yafo,HaYarkon St. ,5.0,5.0,218,1
+1002,7600,Apartment,Herzliya,Yitzhak Shamir St. ,5.0,1.0,120,2
+1003,4000,Apartment,Bat Yam,Livorno St.  5,4.0,4.0,90,0
+1004,7000,Apartment,Bat Yam,Yohanan HaSandlar St.  8,4.0,30.0,110,2
+1005,3600,Apartment,Bat Yam,Shmuel Yosef Agnon St.  50,2.5,4.0,65,0
+1006,11500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,117,2
+1007,2700,Studio,Bat Yam,HaShikma St. ,1.0,1.0,20,2
+1008,9000,Loft,Tel Aviv-Yafo,Nissim Aloni St.  10,2.0,6.0,70,2
+1009,11000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,14.0,118,2
+1010,4200,Apartment,Holon,Manya ve-Yisrael Shokhat St. ,3.0,1.0,80,0
+1011,3800,Apartment,Holon,Zeev Jabotinsky St. ,2.5,0.0,68,0
+1012,3000,Housing unit,Bat Yam,Rothschild St. ,1.5,3.0,30,0
+1013,4400,Apartment,Bat Yam,Yoseftal St. ,3.0,2.0,100,0
+1014,5000,Apartment,Ramat Gan,Simtat HaShiloah  8,3.0,1.0,72,1
+1015,4900,Apartment,Beit Dagan,Katsanelson St.  19,4.0,1.0,100,1
+1016,4800,Apartment,Rishon LeTsiyon,Ha-Tsofim St. ,3.0,5.0,68,1
+1017,8500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,9.0,80,1
+1018,9500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,24.0,98,3
+1019,25000,Apartment,Tel Aviv-Yafo,Pinkas St.  64,4.0,25.0,200,2
+1020,8900,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,36.0,70,1
+1021,8500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  19,2.5,17.0,70,1
+1022,9800,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,10.0,115,1
+1023,10500,Apartment,Tel Aviv-Yafo,Derech Menachem Begin  144,3.0,29.0,71,1
+1024,12500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,4.5,13.0,150,2
+1025,8800,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,5.0,75,2
+1026,7500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  3,2.5,15.0,77,1
+1027,25000,Apartment,Tel Aviv-Yafo,Pinkas St.  66,3.0,33.0,175,2
+1028,12000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,117,2
+1029,11500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,115,2
+1030,14500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,145,2
+1031,7500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  17,2.5,14.0,67,1
+1032,10000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,8.0,83,3
+1033,10000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,5.0,95,2
+1034,30000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,5.5,30.0,260,3
+1035,8250,Loft,Tel Aviv-Yafo,Stricker St.  13,2.5,0.0,67,0
+1036,7500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  5,2.5,8.0,79,1
+1037,8000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,8.0,67,1
+1038,8000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,7.0,67,1
+1039,7500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,15.0,68,1
+1040,7500,Duplex,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,3.0,82,2
+1041,8000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,12.0,70,1
+1042,35000,Duplex,Tel Aviv-Yafo,Meir Yaari St.  18,7.0,0.0,220,0
+1043,30000,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,5.5,30.0,260,3
+1044,10500,Apartment,Tel Aviv-Yafo,Ha-Rav Nisim St.  9,3.0,20.0,88,1
+1045,9500,Apartment,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,6.0,83,2
+1046,3400,Apartment,Ramat Gan,Bar Kochva St.  15,2.0,3.0,67,0
+1047,3800,Apartment,Holon,Zeev Jabotinsky St. ,2.5,0.0,60,0
+1048,3700,Housing unit,Rishon LeTsiyon,Neve Ativ St. ,2.0,0.0,47,0
+1049,4200,Housing unit,Rishon LeTsiyon,Ha-Palmakh St. ,2.0,0.0,95,0
+1050,3800,Apartment,Rishon LeTsiyon,Kiryat Sefer St. ,3.0,3.0,100,0
+1051,4400,Apartment,Rishon LeTsiyon,Kiryat Sefer St. ,4.0,2.0,100,1
+1052,5700,Apartment,Rishon LeTsiyon,Aharon Kron St. ,4.0,2.0,103,1
+1053,3400,Apartment,Rishon LeTsiyon,Tsadi Gimel Banot St. ,2.5,4.0,50,0
+1054,20000,Apartment,Tel Aviv-Yafo,Mikhael Neeman St. ,6.0,2.0,240,1
+1055,5300,Apartment,Rishon LeTsiyon,Meonot Brakha St. ,4.0,3.0,100,1
+1056,4800,Apartment,Bat Yam,Ha-Hagana St.  40,4.0,1.0,110,1
+1057,3500,Apartment,Bat Yam,Bar Ilan St.  26,2.5,1.0,75,0
+1058,5400,Apartment,Rishon LeTsiyon,David Wolffsohn St.  47,5.0,5.0,100,0
+1059,40000,Penthouse,Tel Aviv-Yafo,Sheinkin St. ,4.0,6.0,269,2
+1060,3100,Apartment,Tel Aviv-Yafo,Florentin St. ,1.0,0.0,22,0
+1061,4000,Apartment,Rishon LeTsiyon,Rokakh St. ,2.5,2.0,65,0
+1062,5700,Apartment,Ramat Gan,Tsel ha-Giva St. ,4.5,2.0,120,0
+1063,7300,Apartment,Ramat Gan,Yakhin St. ,4.0,3.0,110,1
+1064,6800,Apartment,Rishon LeTsiyon,Aharon ha-Cohen St. ,5.0,2.0,121,1
+1065,6000,Apartment,Ramat Gan,Zeev Jabutinsky Road ,3.0,3.0,97,1
+1066,4200,Apartment,Bat Yam,Kaf-Tet BeNovember St. ,3.0,3.0,80,0
+1067,5300,Apartment,Rishon LeTsiyon,Yoel Drubin St. ,4.0,1.0,100,1
+1068,2700,Studio,Bat Yam,HaShikma St. ,1.0,1.0,20,2
+1069,3500,Studio,Bat Yam,Rothschild St.  11,1.0,2.0,28,0
+1070,3800,Apartment,Bat Yam,HaShikma St. ,2.0,3.0,60,0
+1071,3200,Studio,Bat Yam,Rothschild St. ,1.0,2.0,20,0
+1072,6200,Apartment,Rishon LeTsiyon,Maagal HaShalom St. ,4.0,5.0,110,2
+1073,6700,Apartment,Rishon LeTsiyon,Shlomo Eliraz St. ,5.0,18.0,140,2
+1074,4300,Apartment,Rishon LeTsiyon,Mishmar HaYarden St. ,4.0,1.0,90,1
+1075,4600,Apartment,Rishon LeTsiyon,Yitskhak Sadeh St. ,4.0,5.0,110,1
+1076,2900,Apartment,Bat Yam,Yerushalayim St.  72,1.0,3.0,40,0
+1077,5900,Apartment,Bat Yam,Janusz Korczak St.  10,5.0,2.0,140,1
+1078,2150,Apartment,Bat Yam,Berl Katzenelson St.  4,1.0,0.0,15,0
+1079,4100,Apartment,Bat Yam,Balfour St. ,4.0,3.0,85,0
+1080,3700,Apartment,Bat Yam,HaShikma St. ,2.5,1.0,70,0
+1081,2900,Housing unit,Bat Yam,HaAtsmaut Boulevard ,2.0,0.0,40,0
+1082,5500,Rooftop apt,Holon,Shmuel ha-Nagid St. ,4.0,4.0,85,1
+1083,4800,Apartment,Ashdod,Tel-Chay Boulevard  21,4.0,3.0,130,1
+1084,4950,Penthouse,Holon,Sokolov St. ,2.5,4.0,55,0
+1085,1100,Cottage/house,Ramat Gan,Yair St.  120,5.0,2.0,200,1
+1086,800,Apartment,Herzliya,HaOgen St.  4,3.0,2.0,90,2
+1087,35000,Apartment,Tel Aviv-Yafo,Pinkas St.  64,4.0,31.0,205,2
+1088,12000,Apartment,Herzliya,HaOgen St.  4,3.0,3.0,85,1
+1089,2900,Apartment,Petah Tikva,HaAluf David Marcus St.  54,1.0,2.0,20,1
+1090,4500,Apartment,Ramat Gan,Haroe St.  192,3.0,2.0,88,0
+1091,290,Studio,Bat Yam,Shaul Bar St. ,1.0,7.0,20,0
+1092,280,Apartment,Bat Yam,Shaul Bar St.  5,1.0,7.0,23,0
+1093,310,Studio,Bat Yam,Balfour St. ,1.0,9.0,20,1
+1094,360,Apartment,Bat Yam,Shaul Bar St. ,2.0,7.0,50,0
+1095,4000,Apartment,Holon,Yud Alef be-Adar St. ,3.0,2.0,75,1
+1096,300,Studio,Bat Yam,Balfour St. ,1.0,9.0,25,1
+1097,5200,Apartment,Herzliya,Shakhal St.  2,3.0,1.0,75,0
+1098,11000,Penthouse,Holon,Tzvi Tadmor ,5.0,8.0,180,3
+1099,4000,Housing unit,Rishon LeTsiyon,Ha-Enav St. ,2.0,0.0,55,0
+1100,4600,Apartment,Holon,HaTothanim St.  23,4.0,2.0,95,0
+1101,14000,Apartment,Tel Aviv-Yafo,Amos St.  34,5.0,1.0,135,2
