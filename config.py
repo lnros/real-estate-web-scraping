@@ -36,6 +36,7 @@ class Configuration:
                             'Area[m^2]',
                             'Parking_spots_aboveground', 'Parking_spots_underground', 'Price[NIS]', 'Property_type']
     SCROLL_PAUSE_TIME = 1
+    BETWEEN_URL_PAUSE = 3
     SINGLE_ATR_ITEM = 1
     TRIVIAL_NUMBER = 0
     INVALID_FLOOR_TEXT_SIZE = 1
@@ -62,6 +63,7 @@ class Configuration:
     SCROLL_COMMAND = "arguments[0].scrollIntoView();"
     PROPERTIES_XPATH = "//div[@style='position: relative;']"
     BOTTOM_PAGE_XPATH = "//div[@class='G3BoaHW05R4rguvqgn-Oo']"
+
     @classmethod
     def define_parser(cls):
         """

@@ -1,4 +1,21 @@
+import re
+import string
+
 from dateutil import parser
+
+# prop_to_attr_dict indices
+PRICE_PROPER_IDX = 0
+PRICE_CHILDREN_IDX = -1
+ATTR_PROPER_IDX = 1
+TYPE_ATTR_IDX = 1
+STREET_ATTR_IDX = 2
+STREET_CHILDREN_IDX = -2
+CITY_ATTR_IDX = 2
+CITY_CHILDREN_IDX = -1
+ROOMS_ATTR_IDX = 3
+FLOOR_ATTR_IDX = 3
+AREA_ATTR_IDX = 3
+PARKING_ATTR_IDX = 3
 
 
 def return_row_before_print(row):
@@ -38,6 +55,62 @@ def create_df_row(property_dict):
     except KeyError:
         # TODO Take care of new project in buy
         pass
+
+
+def property_to_attr_dict(bs_ele_property):
+    """
+    getting bs element of single property and returns
+    attributes dictionary of the property"""
+    proper = bs_ele_property.div.div.findChildren('div', recursive=False)
+
+    try:
+        price = proper[PRICE_PROPER_IDX].findChildren('span', recursive=False)[PRICE_CHILDREN_IDX].text
+        price = ''.join(re.findall("\d", price)).strip()
+    except AttributeError:
+        price = None
+
+    attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
+
+    try:
+        type_ = attr[TYPE_ATTR_IDX].text.strip(string.punctuation)
+    except AttributeError:
+        type_ = None
+
+    try:
+        street = attr[STREET_ATTR_IDX].findChildren('div', recursive=False)[STREET_CHILDREN_IDX].text.strip(
+            string.punctuation)
+    except AttributeError:
+        street = None
+
+    try:
+        city = attr[CITY_ATTR_IDX].findChildren('div', recursive=False)[CITY_CHILDREN_IDX].text.strip(
+            string.punctuation)
+    except AttributeError:
+        city = None
+
+    try:
+        rooms = attr[ROOMS_ATTR_IDX].find('i', {'title': 'Rooms'}).parent.text.strip()
+    except AttributeError:
+        rooms = None
+
+    try:
+        floor = attr[FLOOR_ATTR_IDX].find('i', {'title': 'Floor'}).parent.text.strip()
+    except AttributeError:
+        floor = None
+
+    try:
+        floor_area = attr[AREA_ATTR_IDX].find('i', {'title': 'Floor area in sqm'}).parent.text.strip()
+    except AttributeError:
+        floor_area = None
+
+    try:
+        parking = attr[PARKING_ATTR_IDX].find('i', {'title': 'Parking'}).parent.text.strip()
+    except AttributeError:
+        parking = 0
+
+    return {'Price[NIS]': price, 'Property_type': type_, 'City': city, 'Address': street, 'Rooms': rooms,
+            'Floor': floor,
+            'Area[m^2]': floor_area, 'Parking_spots': parking}
 
 
 def print_when_program_finishes():

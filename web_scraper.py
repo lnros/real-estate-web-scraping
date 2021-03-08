@@ -23,7 +23,7 @@ def main():
                   "save": Cfg.args.save,
                   "verbose": Cfg.args.verbose}
         for url in urls:
-            time.sleep(3)
+            time.sleep(Cfg.BETWEEN_URL_PAUSE)
             scraper = SeleniumScraper()
             scraper.scrap_url(url, **params)
             scraper.driver.close()
