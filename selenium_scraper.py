@@ -1,5 +1,3 @@
-import string
-import re
 import os
 import time
 from bs4 import BeautifulSoup as bs
@@ -19,60 +17,6 @@ def create_driver():
     """
     os.environ['WDM_LOG_LEVEL'] = cfg.SILENCE_DRIVER_LOG
     return webdriver.Chrome(ChromeDriverManager().install())
-
-
-def property_to_attr_dict(bs_ele_property):
-    """
-    getting bs element of single property and returns
-    attributes dictionary of the property"""
-    proper = bs_ele_property.div.div.findChildren('div', recursive=False)
-
-    try:
-        price = proper[0].findChildren('span', recursive=False)[-1].text
-        price = ''.join(re.findall("\d", price)).strip()
-    except:
-        price = None
-
-    attr = proper[1].findChildren('div', recursive=False)
-
-    try:
-        type_ = attr[1].text.strip(string.punctuation)
-    except:
-        type_ = None
-
-    try:
-        street = attr[2].findChildren('div', recursive=False)[-2].text.strip(string.punctuation)
-    except:
-        street = None
-
-    try:
-        city = attr[2].findChildren('div', recursive=False)[-1].text.strip(string.punctuation)
-    except:
-        city = None
-
-    try:
-        rooms = attr[3].find('i', {'title': 'Rooms'}).parent.text.strip()
-    except:
-        rooms = None
-
-    try:
-        floor = attr[3].find('i', {'title': 'Floor'}).parent.text.strip()
-    except:
-        floor = None
-
-    try:
-        floor_area = attr[3].find('i', {'title': 'Floor area in sqm'}).parent.text.strip()
-    except:
-        floor_area = None
-
-    try:
-        parking = attr[3].find('i', {'title': 'Parking'}).parent.text.strip()
-    except:
-        parking = 0
-
-    return {'Price[NIS]': price, 'Property_type': type_, 'City': city, 'Address': street, 'Rooms': rooms,
-            'Floor': floor,
-            'Area[m^2]': floor_area, 'Parking_spots': parking}
 
 
 def new_home_to_attr_dict(buy_property):
