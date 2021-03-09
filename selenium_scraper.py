@@ -80,8 +80,6 @@ class SeleniumScraper:
             self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
-            if scroll_num == 3:
-                break
             try:
                 # Finds the bottom of the page
                 bot_ele = self.driver.find_element_by_xpath(cfg.BOTTOM_PAGE_XPATH)
