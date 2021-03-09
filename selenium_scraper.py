@@ -134,7 +134,7 @@ class SeleniumScraper:
         df = self.get_df()
         df = df.replace(np.nan, None)
 
-        connection = pymysql.connect("localhost", "root", "password", "on_map")
+        connection = pymysql.connect("brbeky1hybvf32t4ufxz-mysql.services.clever-cloud.com", "uydbyi6qdkmbhd4q", "GXB67Y5tnWYyewKEZ0OW", "brbeky1hybvf32t4ufxz")
         cursor = connection.cursor()
 
         for city in df['City'].unique():
