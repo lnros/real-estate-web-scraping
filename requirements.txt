@@ -83,7 +83,7 @@ nbconvert @ file:///opt/concourse/worker/volumes/live/d4b0787b-b6c8-4d28-5453-33
 nbformat @ file:///tmp/build/80754af9/nbformat_1610738111109/work
 nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1606153767164/work
 notebook @ file:///opt/concourse/worker/volumes/live/918fd277-9373-4d2e-5e16-cbd1adfac363/volume/notebook_1611341013189/work
-numpy==1.18.1
+numpy~=1.19.1
 olefile==0.46
 packaging @ file:///tmp/build/80754af9/packaging_1611952188834/work
 pandocfilters @ file:///opt/concourse/worker/volumes/live/315ac9bb-93fd-4adc-6795-345692fcfaed/volume/pandocfilters_1605120446899/work
@@ -149,3 +149,4 @@ pandas~=1.1.1
 requests~=2.25.1
 beautifulsoup4~=4.9.3
 python-dateutil~=2.8.1
+PyMySQL~=0.10.0

@@ -21,13 +21,13 @@ PARKING_ATTR_IDX = 3
 def return_row_before_print(row):
     # selenium
     try:
-        return f"Price: {row['Price[NIS]']}, Type: {row['Property_type']}, City: {row['City_name']}, " \
-               f"Address: {row['Street_name']}, {row['House_number']}, Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area[m^2]']}," \
+        return f"Price: {row['Price']}, Type: {row['Property_type']}, City: {row['City_name']}, " \
+               f"Address: {row['Street_name']}, {row['House_number']}, Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area']}," \
                f" Parking underground: {row['Parking_spots_underground']}, Parking above ground: {'Parking_spots_aboveground'}"
     except KeyError:
         # soup
-        return f"Price: {row['Price[NIS]']}, Type: {row['Property_type']}, City: {row['City']}, " \
-               f"Address: {row['Address']}, Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area[m^2]']}," \
+        return f"Price: {row['Price']}, Type: {row['Property_type']}, City: {row['City']}, " \
+               f"Address: {row['Address']}, Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area']}," \
                f" Parking: {row['Parking_spots']}"
 
 
@@ -57,7 +57,7 @@ def create_df_row(property_dict):
         pass
 
 
-def property_to_attr_dict(bs_ele_property):
+def property_to_attr_dict(bs_ele_property, listing_type):
     """
     getting bs element of single property and returns
     attributes dictionary of the property"""
@@ -108,9 +108,8 @@ def property_to_attr_dict(bs_ele_property):
     except AttributeError:
         parking = 0
 
-    return {'Price[NIS]': price, 'Property_type': type_, 'City': city, 'Address': street, 'Rooms': rooms,
-            'Floor': floor,
-            'Area[m^2]': floor_area, 'Parking_spots': parking}
+    return {'listing_type': listing_type, 'Property_type': type_, 'Price': price, 'City': city, 'Address': street,
+            'Rooms': rooms, 'Floor': floor, 'Area': floor_area, 'Parking_spots': parking}
 
 
 def print_when_program_finishes():

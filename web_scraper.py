@@ -19,10 +19,11 @@ def main():
             scraper.scrap(listing_type, **params)
 
     elif Cfg.args.scraper_type == 'selenium':
-        params = {"to_print": Cfg.args.print,
-                  "save": Cfg.args.save,
-                  "verbose": Cfg.args.verbose}
-        for url in urls:
+        for i, url in enumerate(urls):
+            params = {"to_print": Cfg.args.print,
+                      "save": Cfg.args.save,
+                      "verbose": Cfg.args.verbose,
+                      "listing_type": Cfg.LISTING_MAP[Cfg.args.property_listing_type][i]}
             time.sleep(Cfg.BETWEEN_URL_PAUSE)
             scraper = SeleniumScraper()
             scraper.scrap_url(url, **params)

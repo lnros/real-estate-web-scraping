@@ -1,0 +1,120 @@
+listing_type,Property_type,Price,City,Address,Rooms,Floor,Area,Parking_spots
+commercial,Office building,6900,Bat Yam,Ha-Rav Nisanbaum St. ,3.0,6.0,61,0
+commercial,Retail,3500,Bat Yam,Sokolov St. ,2.0,0.0,32,0
+commercial,Warehouse,9000,Holon,Ha-Sadna St.  1,1.0,1.0,200,1
+commercial,Office,4900,Tel Aviv-Yafo,HaBarzel St.  31,4.0,0.0,108,0
+commercial,Office,2600,Ramat Gan,Herzl St.  75,2.0,1.0,60,0
+commercial,Office,14900,Bnei Brak,Bar Kochva St.  23,8.0,11.0,207,1
+commercial,Office,3000,Tel Aviv-Yafo,Zeitlin St.  1,1.0,6.0,30,0
+commercial,Retail,22000,Tel Aviv-Yafo,Shlomo Ibn Gabirol St.  64,1.0,0.0,67,0
+commercial,Office,11200,Herzliya,Abba Eban Boulevard ,4.0,4.0,140,6
+commercial,Office,13920,Herzliya,Abba Eban Boulevard ,4.0,1.0,174,3
+commercial,Office,2300,Petah Tikva,Mohiliver St. ,1.5,0.0,30,0
+commercial,Studio,1900,Petah Tikva,Hahistadrut St. ,1.0,0.0,50,0
+commercial,Office,4000,Rishon LeTsiyon,Hahsharat HaYishuv St. ,1.0,3.0,114,1
+commercial,Office,4500,Holon,Ha-Mashbir St. ,5.0,2.0,100,0
+commercial,Office,8300,Holon,Ha-Mashbir St. ,11.0,2.0,212,1
+commercial,Industrial,20000,Holon,Rabbi Akiva St.  33,1.0,0.0,1200,0
+commercial,Retail,1600,Holon,Sokolov St. ,1.0,0.0,18,0
+commercial,Office,3000,Holon,Zeev Jabotinsky St. ,2.0,0.0,35,0
+commercial,Office,6200,Holon,Sokolov St.  130,2.0,0.0,48,0
+commercial,Office,6690,Jerusalem,Shamai St. ,4.0,2.0,100,0
+commercial,Retail,7000,Jerusalem,Yoel Moshe Salomon St. ,2.0,0.0,70,0
+commercial,Office,4500,Bat Yam,Ha-Rav Nisanbaum St.  37,1.0,10.0,50,1
+commercial,Retail,110,Rishon LeTsiyon,Pika St. ,1.0,0.0,103,1
+commercial,Retail,110,Rishon LeTsiyon,Pika St. ,1.0,0.0,309,2
+commercial,Retail,16000,Tel Aviv-Yafo,HaBarzel St. ,1.0,0.0,330,1
+commercial,Retail,3700,Rehovot,Herzl St. ,1.0,0.0,19,0
+commercial,Office building,24000,Tel Aviv-Yafo,HaMasger St.  28,20.0,2.0,464,0
+commercial,Retail,4500,Petah Tikva,Mohiliver St. ,1.0,0.0,40,0
+commercial,Retail,2750,Bat Yam,Herzl St. ,2.0,0.0,40,0
+commercial,Office,21181,Petah Tikva,Zeev Jabutinsky Road  100,10.0,7.0,359,4
+commercial,Retail,4500,Rishon LeTsiyon,Rothschild St. ,1.0,0.0,20,0
+commercial,Office,3900,Rishon LeTsiyon,Moshe Levi St.  11,3.5,6.0,73,4
+commercial,Retail,15000,Rehovot,Yaakov St.  43,8.0,0.0,480,2
+commercial,Office,7000,Ramat Gan,Abba Hillel Silver Road ,7.0,4.0,212,2
+commercial,Office,9020,Petah Tikva,Mota Gur St.  9,8.0,2.0,164,2
+commercial,Studio,2700,Tel Aviv-Yafo,Shlomo Ibn Gabirol St.  105,1.0,0.0,41,0
+commercial,Industrial,70000,Holon,Halahav St.  11,7.0,2.0,1500,3
+commercial,Industrial,10900,Holon,Halahav St.  11,1.0,3.0,220,3
+commercial,Office,2204,Bnei Brak,Bar Kochva St.  4,1.0,3.0,23,2
+commercial,Office,3000,Tel Aviv-Yafo,Sderot Shaul HaMelech  39,2.5,3.0,35,0
+commercial,Office,2000,Holon,Eilat St.  36,1.0,1.0,23,0
+commercial,Retail,4000,Tel Aviv-Yafo,Nahal Ayalon St.  37,1.0,0.0,61,0
+commercial,Office,1700,Tel Aviv-Yafo,Beit Oved St.  13,2.0,2.0,30,0
+commercial,Office,13800,Petah Tikva,Odem St. ,5.0,4.0,230,3
+commercial,Office,2900,Petah Tikva,Herzl St. ,1.0,0.0,40,1
+commercial,Retail,4100,Petah Tikva,Ha-Hagana St. ,1.5,0.0,48,0
+commercial,Office,4100,Petah Tikva,Ha-Hagana St. ,1.5,0.0,48,0
+commercial,Land,5500,Petah Tikva,Hovevei Tsiyon St. ,,,600,0
+commercial,Office,2900,Tel Aviv-Yafo,Derech Menachem Begin  46,2.0,6.0,34,0
+commercial,Office,1900,Jerusalem,Ha-Soreg St.  2,1.0,5.0,16,0
+commercial,Coworking space,2800,Bnei Brak,Bar Kochva St.  4,23.0,3.0,512,3
+commercial,Office,1900,Bnei Brak,Bar Kochva St.  4,1.0,3.0,36,2
+commercial,Office building,10000,Bat Yam,Ha-Rav Nisanbaum St.  61,4.0,13.0,110,0
+commercial,Retail,3700,Tel Aviv-Yafo,HaTsorfim St.  12,1.0,0.0,20,0
+commercial,Office,7100,Rehovot,Moti Kind St.  1,8.0,9.0,158,2
+commercial,Office,5500,Rehovot,Moti Kind St.  1,4.0,6.0,91,1
+commercial,Retail,5400,Petah Tikva,Khayim Ozer St. ,1.0,0.0,30,0
+commercial,Office,1900,Petah Tikva,Magshimim St. ,1.0,2.0,17,0
+commercial,Industrial,8500,Petah Tikva,Zeev Jabotinsky St. ,1.0,0.0,180,0
+commercial,Retail,5000,Tel Aviv-Yafo,Dizengoff St.  50,1.0,2.0,35,0
+commercial,Office,4500,Tel Aviv-Yafo,Ben Saruq St.  20,3.0,0.0,47,0
+commercial,Retail,16000,Jerusalem,Beit Ha-Defus St.  12,1.0,0.0,100,0
+commercial,Office,4400,Bat Yam,HaRav Kokis St.  10,2.0,0.0,60,0
+commercial,Retail,5000,Bat Yam,Rothschild St.  30,1.0,0.0,77,0
+commercial,Office,4700,Tel Aviv-Yafo,Derech Menachem Begin  55,4.0,1.0,80,0
+commercial,Office,3850,Tel Aviv-Yafo,Derech Menachem Begin  55,3.0,1.0,60,0
+commercial,Office,13500,Kefar Sava,HaTaas St.  20,10.0,2.0,309,0
+commercial,Retail,3000,Bat Yam,Balfour St. ,1.0,0.0,25,0
+commercial,Office,4500,Bat Yam,Shimon Habursekai St. ,5.0,1.0,90,0
+commercial,Office,5500,Bat Yam,Ha-Rav Nisanbaum St. ,3.0,7.0,40,0
+commercial,Retail,18000,Bat Yam,Ehud Kinnamon St. ,1.0,0.0,180,3
+commercial,Retail,6500,Bat Yam,Shaul Bar St. ,1.0,0.0,50,0
+commercial,Office,1400,Jerusalem,Jaffa St.  97,2.0,2.0,25,0
+commercial,Retail,4200,Bat Yam,Balfour St. ,1.0,0.0,32,0
+commercial,Retail,4000,Tel Aviv-Yafo,Nahalat Binyamin St. ,1.0,0.0,33,0
+commercial,Retail,6500,Ramla,Sderot Herzl ,1.0,0.0,30,0
+commercial,Office,100,Petah Tikva,Zeev Jabutinsky Road ,2.0,12.0,252,2
+commercial,Retail,4500,Ramla,Sderot Herzl ,1.0,0.0,21,0
+commercial,Retail,10000,Ramla,Sderot Herzl ,1.0,0.0,70,0
+commercial,Retail,1600,Tel Aviv-Yafo,HaKishon St.  42,1.0,0.0,16,0
+commercial,Retail,10000,Tel Aviv-Yafo,Alfasi St.  2,5.0,1.0,200,1
+commercial,Office,3000,Tel Aviv-Yafo,Miconis St.  3,4.0,2.0,55,0
+commercial,Industrial,19000,Bat Yam,Shimon Habursekai St. ,1.0,1.0,500,3
+commercial,Retail,5800,Holon,Sokolov St.  44,1.0,0.0,150,0
+commercial,Retail,8500,Holon,Sokolov St. ,1.0,0.0,200,0
+commercial,Office,6900,Bat Yam,Ha-Rav Nisanbaum St. ,1.0,13.0,107,0
+commercial,Retail,1800,Jerusalem,Ha-Eshkol St.  4,1.0,0.0,8,0
+commercial,Retail,2500,Holon,Doctor Enrico Fabrigat St.  1,1.0,0.0,30,0
+commercial,Retail,6250,Bnei Brak,Rabi Akiva St.  102,1.0,0.0,18,0
+commercial,Retail,8500,Modiin-Maccabim-Reut,Emek Zvulun St.  24,1.0,2.0,63,2
+commercial,Retail,20000,Tel Aviv-Yafo,Hei be-Iyar St. ,6.0,0.0,280,1
+commercial,Retail,1600,Petah Tikva,Salor St.  4,1.0,0.0,15,0
+commercial,Retail,3300,Bat Yam,Balfour St.  147,1.0,0.0,27,0
+commercial,Studio,2900,Rishon LeTsiyon,Sderot Yaakov  24,1.0,0.0,20,0
+commercial,Office,10500,Rishon LeTsiyon,Jabotinsky St.  65,6.0,1.0,182,0
+commercial,Office,4000,Tel Aviv-Yafo,Druyanov St.  5,3.0,0.0,100,0
+commercial,Retail,6500,Holon,Arye Shenkar St.  52,1.0,0.0,25,0
+commercial,Office,6660,Modiin-Maccabim-Reut,HaReches Boulevard  13,5.0,5.0,111,0
+commercial,Warehouse,7500,Rosh Haayin,Ha-Avoda St. ,1.0,1.0,245,0
+commercial,Warehouse,22000,Rosh Haayin,Ha-Taasiya St. ,1.0,0.0,450,1
+commercial,Retail,7700,Tel Aviv-Yafo,Elkalai St.  5,2.0,0.0,35,0
+commercial,Land,1800,Tel Aviv-Yafo,Derekh Ben-Zvi  35,,,120,0
+commercial,Office,6250,Kefar Sava,HaTaas St.  20,7.0,1.0,157,0
+commercial,Retail,4000,Kefar Sava,Avraham Keren St.  36,3.0,0.0,52,1
+commercial,Office,14700,Petah Tikva,Derech Yitshak Rabin  1,7.0,20.0,258,3
+commercial,Office,7950,Bat Yam,Ha-Rav Nisanbaum St.  35,1.0,14.0,110,0
+commercial,Retail,9200,Tel Aviv-Yafo,Toni Halle St.  2,1.0,0.0,117,0
+commercial,Office,5500,Ramat Gan,Zeev Jabutinsky Road  7,5.0,21.0,78,0
+commercial,Retail,5700,Rishon LeTsiyon,David Saharov St.  21,1.0,0.0,40,0
+commercial,Retail,8700,Rishon LeTsiyon,Binyamin Shmotkin St. ,5.0,2.0,480,0
+commercial,Office building,4500,Rehovot,Eli Horovitz St. ,1.0,0.0,1300,0
+commercial,Retail,4400,Rishon LeTsiyon,Rothschild St. ,1.0,0.0,44,1
+commercial,Retail,3000,Bat Yam,Rothschild St.  11,1.0,0.0,35,0
+commercial,Office,2800,Rishon LeTsiyon,Naftali Faltin St.  1,5.0,1.0,90,1
+commercial,Retail,2600,Rishon LeTsiyon,Herzl St. ,2.0,0.0,35,0
+commercial,Retail,2700,Tel Aviv-Yafo,Derech Jaffa  34,1.0,0.0,15,0
+commercial,Office,3950,Tel Aviv-Yafo,Rival St.  7,4.0,4.0,115,0
+commercial,Retail,3800,Rishon LeTsiyon,Herzl St. ,1.0,0.0,33,0
+commercial,Industrial,30000,Barkan,HaShoham  3,10.0,0.0,900,2

@@ -6,7 +6,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
-
+import pymysql
 from config import Configuration as cfg
 from utils import *
 
@@ -19,7 +19,7 @@ def create_driver():
     return webdriver.Chrome(ChromeDriverManager().install())
 
 
-def new_home_to_attr_dict(buy_property):
+def new_home_to_attr_dict(buy_property, listing_type):
     proper = buy_property.div.div.findChildren('div', recursive=False)
 
     try:
@@ -45,7 +45,7 @@ def new_home_to_attr_dict(buy_property):
     except:
         city = None
 
-    return {'Price[NIS]': price, 'Status': Status, 'City': city, 'Address': street}
+    return {'listing_type': listing_type, 'Price': price, 'City': city, 'Address': street, 'Status': Status}
 
 
 class SeleniumScraper:
@@ -125,9 +125,55 @@ class SeleniumScraper:
             if verbose:
                 print(f'\nSaving {filename}\n')
                 print(self.get_df())
-            self.get_df().to_csv(filename)
+            self.get_df().to_csv(filename, index=False)
 
-    def _print_save_df(self, df, url, to_print=True, save=False, verbose=False):
+    def _save_to_data_base(self, listing_type):
+        """
+        Save the dataframe containing the scraped info into a database.
+        """
+        df = self.get_df()
+        df = df.replace(np.nan, None)
+
+        connection = pymysql.connect("localhost", "root", "password", "on_map")
+        cursor = connection.cursor()
+
+        for city in df['City'].unique():
+            sql_query = ("INSERT IGNORE INTO cities(city_name) values (%s)")
+            cursor.execute(sql_query, city)
+
+        for listing in df['listing_type'].unique():
+            sql_query = ("INSERT IGNORE INTO listings(listing_type) values (%s)")
+            cursor.execute(sql_query, listing)
+
+        if listing_type != 'new homes':
+            for Property in df['Property_type'].unique():
+                sql_query = ("INSERT IGNORE INTO property_types(property_type) values (%s)")
+                cursor.execute(sql_query, Property)
+
+        connection.commit()
+
+        cols = ",".join([str(i) for i in df.columns.tolist()])
+
+        if listing_type != 'new homes':
+            sql = f"DELETE FROM properties WHERE listing_type = '{listing_type}'"
+            cursor.execute(sql)
+            sql = f"ALTER TABLE properties AUTO_INCREMENT = 1"
+            cursor.execute(sql)
+            for i, row in df.iterrows():
+                sql = "INSERT INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+                cursor.execute(sql, tuple(row))
+        else:
+            sql = f"DELETE FROM new_homes WHERE listing_type = '{listing_type}'"
+            cursor.execute(sql)
+            sql = f"ALTER TABLE new_homes AUTO_INCREMENT = 1"
+            cursor.execute(sql)
+            for i, row in df.iterrows():
+                sql = "INSERT INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+                cursor.execute(sql, tuple(row))
+
+        connection.commit()
+
+    def _print_save_df(self, df, url, to_print=True, save=False, verbose=False, listing_type=None):
         """
         Given a df containing scraped information,
         print it and/or save it to a csv, depending on the user's choice.
@@ -137,6 +183,7 @@ class SeleniumScraper:
             print_row(self.get_df(), to_print=to_print)
         print_total_items(self.get_df(), verbose=verbose)
         self._save_to_csv(url, save=save, verbose=verbose)
+        self._save_to_data_base(listing_type)
 
     def scrap_url(self, url, **kwargs):
         """
@@ -165,18 +212,19 @@ class SeleniumScraper:
         if 'project' not in url:  # for buy, rent and commercial categories
             for proper in properties_list:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
-                    rows_list.append(property_to_attr_dict(proper))
+                    rows_list.append(property_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
-            df['Price[NIS]'] = df['Price[NIS]'].astype(np.int64)
+            df['Price'] = df['Price'].astype(np.int64)
             df['Rooms'] = df['Rooms'].astype('float')
             df['Floor'] = df['Floor'].astype('float')
-            df['Area[m^2]'] = df['Area[m^2]'].astype(np.int64)
+            df['Area'] = df['Area'].astype(np.int64)
             df['Parking_spots'] = df['Parking_spots'].astype(np.int64)
-        else:   # for new home category
+        else:  # for new home category
             for proper in properties_list:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
-                    rows_list.append(new_home_to_attr_dict(proper))
+                    rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
-            df['Price[NIS]'] = df['Price[NIS]'].astype(np.int64)
+            df['Price'] = df['Price'].astype(np.int64)
 
-        self._print_save_df(df, url, to_print=kwargs['to_print'], save=kwargs['save'], verbose=kwargs['verbose'])
+        self._print_save_df(df, url, to_print=kwargs['to_print'], save=kwargs['save'],
+                            verbose=kwargs['verbose'], listing_type=kwargs['listing_type'])

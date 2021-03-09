@@ -1,0 +1,1108 @@
+listing_type,Property_type,Price,City,Address,Rooms,Floor,Area,Parking_spots
+rent,Apartment,12000,Tel Aviv-Yafo,HaKongres St. ,4.0,6.0,126,1
+rent,Apartment,4500,Ramat Gan,Ha-Nakhal St.  7,4.0,3.0,90,1
+rent,Apartment,4500,Ramat Gan,Bialik St. ,3.5,2.0,86,1
+rent,Housing unit,4800,Herzliya,El Al St.  14,2.0,1.0,50,0
+rent,Apartment,3800,Rishon LeTsiyon,Reuven St.  1,3.0,3.0,65,0
+rent,Apartment,7999,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,10.0,75,2
+rent,Apartment,3200,Jerusalem,HaTsiyonut St.  9,3.0,1.0,72,0
+rent,Apartment,4500,Ramat Gan,Beit Horon St.  16,2.5,1.5,72,0
+rent,Apartment,8000,Tel Aviv-Yafo,Yehuda Gur St. ,4.0,4.0,90,1
+rent,Apartment,3800,Bat Yam,Henrietta Szold St.  13,3.0,1.0,65,0
+rent,Apartment,6000,Herzliya,Bnei Binyamin St.  14,3.5,2.0,100,1
+rent,Apartment,20000,Tel Aviv-Yafo,Pines St.  39,4.0,23.0,140,2
+rent,Apartment,16500,Tel Aviv-Yafo,Pines St.  41,3.0,22.0,126,2
+rent,Apartment,27000,Tel Aviv-Yafo,Rothschild Boulevard  17,4.0,11.0,173,2
+rent,Apartment,29000,Tel Aviv-Yafo,J. L. Gordon St. ,4.0,3.0,150,2
+rent,Apartment,14000,Tel Aviv-Yafo,Rothschild Boulevard  30,3.0,9.0,85,1
+rent,Apartment,15500,Tel Aviv-Yafo,Rothschild Boulevard ,3.5,3.0,113,2
+rent,Apartment,17000,Tel Aviv-Yafo,HaYarkon St. ,4.0,2.0,1,1
+rent,Apartment,13000,Tel Aviv-Yafo,HaYarkon St.  29,2.0,10.0,67,1
+rent,Apartment,5400,Rehovot,Hazon Ish St.  30,4.5,4.0,1104,1
+rent,Apartment,3700,Petah Tikva,Yehuda ha-Levi St.  32,3.0,3.0,65,0
+rent,Garden apt,12500,Tel Aviv-Yafo,Lili Menakhem St. ,5.0,0.0,160,2
+rent,Apartment,9500,Tel Aviv-Yafo,Ptakhya mi-Regensburg St. ,4.5,1.0,170,1
+rent,Apartment,5650,Tel Aviv-Yafo,Meor HaGola St.  3,3.0,3.0,63,1
+rent,Cottage/house,7500,Tel Aviv-Yafo,Kam St.  31,4.5,1.0,111,0
+rent,Apartment,250,Jerusalem,Moshe Kol St.  56,4.0,0.0,110,0
+rent,Apartment,5000,Holon,Bialik St. ,4.0,1.0,115,2
+rent,Garden apt,6900,Modi'in-Maccabim-Re'ut,Nahal Na'aman St.  9,4.0,0.0,120,1
+rent,Apartment,3500,Bat Yam,Kinneret St. ,2.0,3.0,65,0
+rent,Apartment,4000,Bat Yam,Khaviva Reik St. ,2.5,3.0,65,0
+rent,Apartment,3700,Bat Yam,Khaviva Reik St. ,2.0,0.0,60,0
+rent,Apartment,3650,Bat Yam,Bar Ilan St.  25,3.0,1.0,82,0
+rent,Apartment,3100,Bat Yam,Herzl St. ,1.0,3.0,40,0
+rent,Apartment,6500,Rishon LeTsiyon,Saadiya ve-Yosef Bashari St. ,4.0,4.0,105,2
+rent,Apartment,3850,Bat Yam,Arlozorov St. ,2.5,2.0,70,0
+rent,Apartment,5800,Herzliya,Ha-Sharon St.  20,4.0,3.0,130,1
+rent,Apartment,18000,Jerusalem,Habad St.  42,5.0,0.0,160,1
+rent,Apartment,15000,Jerusalem,Ha-Bikurim St.  14,5.0,0.0,120,1
+rent,Housing unit,3000,Rishon LeTsiyon,HaOgen St. ,2.0,0.0,50,0
+rent,Cottage/house,16000,Rishon LeTsiyon,Shaal St. ,6.0,4.0,320,1
+rent,Apartment,4000,Rishon LeTsiyon,Keren ha-Yesod St.  3,3.0,2.0,80,1
+rent,Apartment,3200,Rishon LeTsiyon,Jerusalem St. ,1.5,3.0,28,0
+rent,Apartment,3500,Bat Yam,Derech Ben Gurion  138,2.0,7.0,36,2
+rent,Apartment,5000,Bat Yam,Derech Ben Gurion  83,4.5,1.0,120,0
+rent,Apartment,3300,Bat Yam,HaHashmonaim St.  24,2.5,1.0,75,0
+rent,Apartment,3500,Bat Yam,Yerushalayim St.  79,2.0,1.0,65,0
+rent,Apartment,6200,Ness Ziona,Nordau St.  4,4.0,5.0,100,1
+rent,Apartment,3950,Bat Yam,Berl Katzenelson St.  55,3.0,1.0,68,0
+rent,Apartment,4300,Holon,Yehoshua Hankin St.  1,3.0,2.0,95,0
+rent,Housing unit,3750,Bat Yam,Herzl St.  40,2.0,1.0,38,0
+rent,Apartment,4000,Bat Yam,David HaMelech St.  5,2.5,3.0,70,0
+rent,Apartment,3900,Bat Yam,Balfour St. ,3.0,2.0,76,0
+rent,Apartment,4750,Bat Yam,Etsel St.  8,3.0,2.0,74,1
+rent,Apartment,3850,Bat Yam,Balfour St.  138,2.5,3.0,76,0
+rent,Apartment,4200,Bat Yam,Balfour St. ,3.5,1.0,90,0
+rent,Apartment,4500,Bat Yam,Balfour St.  140,3.0,5.0,82,0
+rent,Apartment,3750,Bat Yam,Balfour St.  115,2.5,5.0,74,0
+rent,Housing unit,3900,Bat Yam,Balfour St. ,2.0,5.0,40,0
+rent,Apartment,3900,Bat Yam,HaHashmonaim St.  65,3.0,4.0,80,1
+rent,Apartment,2200,Rishon LeTsiyon,Tiomkin St. ,2.0,4.0,35,0
+rent,Apartment,5000,Rehovot,Arlozorov St. ,4.0,1.0,90,0
+rent,Apartment,2850,Rehovot,Ha-Khavura St. ,2.0,0.0,40,0
+rent,Apartment,3000,Rehovot,Tzvi Apple St. ,3.0,1.0,65,0
+rent,Apartment,3600,Rehovot,Derech Sheshet HaYamim ,3.0,0.0,70,0
+rent,Apartment,3300,Rehovot,Yitskhak Mugzakh St. ,2.0,0.0,40,0
+rent,Apartment,4800,Rehovot,Ha-Rav Shauli St. ,4.0,5.0,100,1
+rent,Apartment,3200,Rehovot,Haim Yalin St. ,2.0,0.0,50,0
+rent,Apartment,3000,Ramat Gan,Haroe St.  203,3.0,3.0,45,0
+rent,Apartment,6000,Ramat Gan,Mevo HaTichon  5,4.0,2.0,113,1
+rent,Apartment,4500,Ramat Gan,Bialik St.  61,3.0,1.0,76,0
+rent,Apartment,5500,Ramat Gan,Negba Road  23,4.0,1.0,100,0
+rent,Apartment,6000,Givatayim,Weizman St.  26,4.0,2.0,110,0
+rent,Apartment,5700,Givatayim,HaRav Herzog St.  26,3.5,3.0,101,1
+rent,Apartment,4000,Ramat Gan,Zeev Jabotinsky St.  75,3.0,2.0,75,0
+rent,Apartment,3500,Ramat Gan,Kareski St.  13,2.5,3.0,70,0
+rent,Apartment,4000,Ramat Gan,Uziel St.  28,2.5,3.0,90,1
+rent,Apartment,8500,Tel Aviv-Yafo,HaHashmonaim St.  80,4.0,1.0,100,0
+rent,Garden apt,3100,Ramat Gan,Ha-Mavdil St.  23,1.5,0.0,30,0
+rent,Apartment,5950,Ramat Gan,Mahanayim St.  13,5.0,2.0,128,1
+rent,Triplex,7500,Ramat Gan,Pnei HaGiva St.  25,5.0,3.0,125,1
+rent,Apartment,3800,Ramat Gan,Aluf David St.  1,2.0,1.0,45,0
+rent,Apartment,8200,Tel Aviv-Yafo,Fein St.  1,4.0,6.0,85,1
+rent,Apartment,3900,Ramat Gan,Negba Road  42,2.5,0.0,77,0
+rent,Triplex,6950,Ramat Gan,Pnei HaGiva St.  25,4.0,3.0,125,1
+rent,Apartment,5500,Ramat Gan,Yosef Tsvi St.  67,4.0,2.0,94,1
+rent,Apartment,5950,Ramat Gan,Pnei HaGiva St.  25,4.0,2.0,90,0
+rent,Housing unit,3300,Ramat Gan,Mate Aharon St.  12,2.0,0.0,40,1
+rent,Apartment,4300,Ramat Gan,Haroe St.  192,3.5,1.0,80,0
+rent,Apartment,4700,Ramat Gan,Ha-Nakhal St.  23,3.0,1.0,78,1
+rent,Apartment,5000,Tel Aviv-Yafo,Maapilei Egoz St.  8,4.0,3.0,98,0
+rent,Apartment,5950,Ramat Gan,Pnei HaGiva St.  25,4.0,2.0,90,0
+rent,Apartment,3300,Ramat Gan,Gershom St.  4,3.0,1.0,75,0
+rent,Apartment,2900,Ramat Gan,Amnon veTamar St.  39,1.5,0.0,40,0
+rent,Apartment,1650,Ramat Gan,Haroe St.  129,1.0,0.0,18,0
+rent,Apartment,5500,Ramat Gan,Arieh Ben Eliezer St.  67,4.0,8.0,110,1
+rent,Apartment,3000,Ramat Gan,Negba Road  66,1.5,0.0,35,0
+rent,Apartment,4700,Tel Aviv-Yafo,Sderot Sheshet HaYamim  17,3.0,3.0,70,0
+rent,Apartment,6600,Ramat Gan,Haroe St.  6,4.0,5.0,135,1
+rent,Garden apt,3700,Ramat Gan,Negba Road  62,2.0,0.0,40,0
+rent,Apartment,5800,Ramat Gan,Megadim St.  2,4.0,2.0,100,0
+rent,Apartment,5400,Givat Shmuel,Derech Keren HaYesod  3,5.0,1.0,110,0
+rent,Apartment,3000,Lod,Eliezer Kaplan St.  6,2.5,2.0,60,0
+rent,Apartment,4500,Petah Tikva,Ben Yehuda St. ,4.0,2.0,100,1
+rent,Apartment,3500,Petah Tikva,Binyamin Minz St.  40,3.0,1.0,65,0
+rent,Cottage/house,13000,Petah Tikva,Lubetkin St. ,5.0,2.0,240,3
+rent,Apartment,3900,Petah Tikva,Frishman St.  30,3.5,1.0,85,1
+rent,Apartment,3800,Petah Tikva,Bilu St. ,3.0,6.0,100,0
+rent,Apartment,4000,Petah Tikva,Pika St.  12,4.0,1.0,100,1
+rent,Penthouse,11000,Petah Tikva,Yosef Nakar St. ,5.0,6.0,160,2
+rent,Apartment,5200,Ramat HaSharon,Sderot Bialik  10,3.0,3.0,85,1
+rent,Housing unit,2500,Jerusalem,HaNurit St.  1,2.0,1.0,25,0
+rent,Apartment,3000,Bat Yam,Mivtsa Sinai St.  15,3.0,3.0,70,0
+rent,Housing unit,5500,Tel Aviv-Yafo,Ahavat Tsiyon St.  16,2.0,0.0,42,0
+rent,Apartment,6500,Tel Aviv-Yafo,Tagore St.  60,3.0,3.0,70,1
+rent,Apartment,4000,Rishon LeTsiyon,Tel Hai St.  21,3.5,2.0,85,0
+rent,Apartment,3500,Rishon LeTsiyon,Tsvi Hirschfeld St. ,2.5,1.0,65,0
+rent,Apartment,7500,Tel Aviv-Yafo,Bergson St. ,2.0,3.0,80,0
+rent,Apartment,7000,Tel Aviv-Yafo,HaYarkon St. ,2.5,0.0,70,0
+rent,Apartment,9500,Ramat Gan,Ha-Matmid St. ,4.0,19.0,114,1
+rent,Apartment,12000,Tel Aviv-Yafo,Weissburg St. ,5.0,1.0,130,2
+rent,Apartment,3800,Rishon LeTsiyon,Horowitz St. ,3.5,2.0,80,1
+rent,Apartment,3500,Petah Tikva,Shapira St. ,3.0,0.0,60,0
+rent,Apartment,2500,Ramat Gan,HaEm St.  39,1.0,0.0,18,0
+rent,Room,2200,Petah Tikva,Gad Machnes St. ,1.0,3.0,20,1
+rent,Apartment,2300,Petah Tikva,Bilu St. ,1.0,4.0,20,0
+rent,Housing unit,2600,Petah Tikva,Rothschild St.  135,1.0,1.0,25,0
+rent,Apartment,4000,Petah Tikva,Salomon St. ,4.0,4.0,120,0
+rent,Apartment,4200,Petah Tikva,Hafes Haim St. ,3.5,3.0,90,0
+rent,Apartment,3500,Ari'el,Derech HaTsiyonut  19,4.0,1.0,100,0
+rent,Apartment,4200,Petah Tikva,Yehiel Chlenov St. ,4.5,2.0,100,0
+rent,Apartment,3200,Bat Yam,Ha-Rishonim St. ,2.5,1.0,70,0
+rent,Apartment,2000,Petah Tikva,Yehuda ha-Levi St. ,1.0,0.0,20,0
+rent,Apartment,3200,Petah Tikva,Montefiore St. ,2.0,0.0,40,0
+rent,Apartment,5500,Ramat Gan,Tirzah St. ,4.0,2.0,100,0
+rent,Apartment,4500,Ramat Gan,Olei ha-Gardom St.  4,4.0,2.0,85,1
+rent,Apartment,6300,Ramat Gan,Ha-Yarden St. ,4.5,7.0,100,1
+rent,Apartment,3400,Ramat Gan,Amnon veTamar St. ,2.0,0.0,50,0
+rent,Apartment,5600,Ramat Gan,Efrayim St. ,4.0,1.0,100,1
+rent,Apartment,5500,Rishon LeTsiyon,HaKukiya St.  21,4.0,2.0,105,2
+rent,Apartment,3500,Bat Yam,Bar Ilan St.  43,3.0,1.0,65,0
+rent,Apartment,6400,Holon,Yehoshua Rabinovich St.  91,5.0,5.0,120,1
+rent,Loft,9700,Tel Aviv-Yafo,Akhva St.  12,3.0,3.0,120,0
+rent,Apartment,12300,Tel Aviv-Yafo,Neve Tzedek St.  12,5.0,2.0,160,0
+rent,Apartment,5500,Bat Yam,Derech Ben Gurion ,2.0,3.0,45,1
+rent,Cottage/house,14000,Rishon LeTsiyon,Neve Ativ St. ,6.0,3.0,370,1
+rent,Apartment,3200,Holon,Sokolov St. ,2.5,1.0,65,0
+rent,Apartment,3900,Holon,HaHagana St. ,3.0,1.0,80,0
+rent,Garden apt,4200,Holon,Ussishkin St. ,3.0,0.0,110,0
+rent,Apartment,3900,Holon,Bialik St. ,3.0,1.0,80,1
+rent,Apartment,3500,Holon,Sderot Kugel ,2.5,2.0,75,1
+rent,Apartment,6500,Tel Aviv-Yafo,Sderot Nordau ,2.0,2.0,70,0
+rent,Apartment,4200,Holon,Eilat St.  38,3.0,2.0,70,0
+rent,Garden apt,4300,Bat Yam,HaMa'apilim St.  26,3.0,0.0,55,0
+rent,Apartment,3800,Holon,Ha-Arava St.  31,3.0,4.0,70,0
+rent,Apartment,4200,Holon,Yosef Aharonovich St. ,3.0,0.0,85,0
+rent,Apartment,3750,Bat Yam,HaShikma St.  49,2.5,2.0,75,0
+rent,Apartment,3700,Holon,Ha-Shita St. ,3.0,0.0,70,0
+rent,Rooftop apt,4300,Bat Yam,Bar Yehuda St.  39,3.0,4.0,78,1
+rent,Apartment,2900,Holon,Tartsav St. ,3.5,1.0,85,0
+rent,Apartment,3900,Holon,HaRav Uziel St. ,3.0,2.0,80,0
+rent,Apartment,4800,Holon,Arlozorov St. ,3.5,2.0,80,1
+rent,Apartment,3750,Rishon LeTsiyon,Ha-Baal Shem Tov St.  32,3.0,3.0,75,0
+rent,Apartment,3900,Holon,Mifrats Shlomo St. ,3.0,2.0,73,0
+rent,Apartment,3200,Holon,Yavne St. ,2.0,4.0,52,0
+rent,Apartment,3200,Bat Yam,Khatsor St.  8,3.0,4.0,62,0
+rent,Apartment,7300,Rishon LeTsiyon,Ahi Lahav St.  3,4.0,13.0,106,2
+rent,Apartment,7500,Jerusalem,Beit Yaakov St. ,4.0,1.0,87,0
+rent,Duplex,4700,Jerusalem,Rabbi Arye St. ,2.0,0.0,70,0
+rent,Apartment,6500,Jerusalem,Sderot HaNassi Hashishi ,3.5,1.0,90,1
+rent,Apartment,3700,Jerusalem,Mitspe St. ,1.0,2.0,25,0
+rent,Apartment,2600,Jerusalem,Betsalel St. ,1.5,0.0,25,0
+rent,Apartment,2900,Jerusalem,Ruth St. ,1.5,1.0,22,0
+rent,Apartment,16500,Jerusalem,Jaffa St. ,6.0,7.0,208,2
+rent,Garden apt,11000,Jerusalem,Rabbi Akiva St. ,5.0,0.0,150,1
+rent,Apartment,5900,Jerusalem,Yehuda St. ,3.0,3.0,60,0
+rent,Apartment,3750,Rishon LeTsiyon,Ha-Baal Shem Tov St.  32,3.0,3.0,75,0
+rent,Apartment,6000,Bat Yam,Ha-Rav Nisanbaum St. ,3.0,25.0,75,1
+rent,Apartment,5300,Bat Yam,Ha-Rav Nisanbaum St.  37,2.0,28.0,60,1
+rent,Apartment,7500,Bat Yam,Ha-Rav Nisanbaum St.  37,5.0,37.0,130,2
+rent,Apartment,10000,Bat Yam,Ha-Komemiyut St. ,5.0,20.0,130,2
+rent,Apartment,7000,Bat Yam,Ha-Rav Nisanbaum St.  37,4.0,27.0,115,1
+rent,Apartment,6500,Bat Yam,Ha-Rav Nisanbaum St.  37,4.0,25.0,120,1
+rent,Apartment,4000,Holon,Feierberg St. ,3.5,1.0,82,0
+rent,Housing unit,3170,Holon,Baal Mahshavot St. ,1.5,0.0,25,0
+rent,Apartment,5200,Beer Yaakov,HaAlonim Boulevard ,4.0,7.0,107,1
+rent,Apartment,5000,Rehovot,Yaakov Tamari ,4.0,8.0,94,2
+rent,Apartment,3550,Rishon LeTsiyon,Ariav St. ,3.0,3.0,60,0
+rent,Apartment,5000,Rehovot,Moshe Fried St. ,4.0,8.0,94,1
+rent,Apartment,5600,Tel Aviv-Yafo,Haim Barlev Road  135,4.0,3.0,100,1
+rent,Apartment,6500,Tel Aviv-Yafo,Andersen St. ,3.0,3.0,75,0
+rent,Apartment,4300,Tel Aviv-Yafo,Dov mi-Mezerich St.  5,1.0,0.0,80,0
+rent,Apartment,4300,Tel Aviv-Yafo,Wingate St.  6,2.5,1.0,55,0
+rent,Apartment,3600,Tel Aviv-Yafo,Misgav Am St.  9,3.0,2.0,50,0
+rent,Apartment,11000,Tel Aviv-Yafo,HaYarkon St. ,3.0,1.0,100,0
+rent,Apartment,4800,Tel Aviv-Yafo,La Guardia St.  17,2.0,1.0,48,0
+rent,Studio,3200,Tel Aviv-Yafo,Kish St.  2,1.0,3.0,30,0
+rent,Studio,3000,Tel Aviv-Yafo,Matalon St.  60,1.0,0.0,32,0
+rent,Cottage/house,8500,Tel Aviv-Yafo,Sivan St.  6,5.0,2.0,130,0
+rent,Duplex,6600,Givat Shmuel,Uziel St. ,5.0,1.0,116,1
+rent,Apartment,7300,Tel Aviv-Yafo,Shtulim St.  63,5.0,6.0,117,1
+rent,Apartment,3700,Tel Aviv-Yafo,Misgav Am St.  9,3.0,2.0,60,0
+rent,Apartment,4700,Tel Aviv-Yafo,Sderot Sheshet HaYamim  5,4.0,3.0,80,0
+rent,Apartment,8200,Tel Aviv-Yafo,Shaul Avigur St.  9,4.0,6.0,115,1
+rent,Apartment,3800,Tel Aviv-Yafo,Mor St.  10,3.0,1.0,70,0
+rent,Apartment,7400,Tel Aviv-Yafo,Mahal St.  14,5.0,11.0,130,1
+rent,Apartment,5500,Tel Aviv-Yafo,Sir John Monash St.  24,4.0,3.0,90,0
+rent,Apartment,7500,Tel Aviv-Yafo,Dafna St. ,3.5,2.0,89,0
+rent,Apartment,7300,Tel Aviv-Yafo,Meirber St.  11,4.0,1.0,115,0
+rent,Apartment,4300,Tel Aviv-Yafo,Biranit St.  5,4.0,4.0,100,0
+rent,Apartment,6000,Tel Aviv-Yafo,Shtulim St.  59,3.0,17.0,82,1
+rent,Apartment,6300,Tel Aviv-Yafo,Zikhron Yaakov St.  6,2.5,3.0,78,0
+rent,Apartment,8500,Tel Aviv-Yafo,HaYarkon St.  36,2.0,2.0,70,0
+rent,Apartment,5500,Tel Aviv-Yafo,Hagana Road  136,4.0,2.0,95,0
+rent,Apartment,7700,Tel Aviv-Yafo,Mordechai Namir Road ,3.5,2.0,81,0
+rent,Apartment,6600,Tel Aviv-Yafo,Shtulim St.  63,4.0,11.0,97,1
+rent,Apartment,4250,Rishon LeTsiyon,Kidush HaShem St.  23,4.0,4.0,80,0
+rent,Apartment,6400,Tel Aviv-Yafo,Yirmeyahu St.  21,2.0,2.0,55,0
+rent,Apartment,3900,Bat Yam,HaShikma St.  4,3.0,3.0,88,0
+rent,Apartment,2800,Rehovot,Rachel Hirshenzon St. ,2.0,4.0,40,0
+rent,Apartment,5900,Bat Yam,Arlozorov St.  56,5.0,1.0,120,0
+rent,Apartment,3000,Bat Yam,David Raziel St.  37,3.0,3.0,70,0
+rent,Apartment,3700,Bat Yam,Kibuts Galuyot St.  14,2.5,0.0,47,0
+rent,Apartment,3800,Bat Yam,Mivtsa Sinai St. ,3.0,2.0,65,0
+rent,Apartment,2700,Bat Yam,Derech Ben Gurion  138,1.0,1.0,30,2
+rent,Apartment,30000,Tel Aviv-Yafo,Ha-Rav Nisim St.  9,7.0,28.0,290,3
+rent,Apartment,30000,Tel Aviv-Yafo,Nissim Aloni St.  12,7.0,12.0,290,3
+rent,Housing unit,3400,Ramat Gan,Mevo Mendes  1,2.0,0.0,40,0
+rent,Apartment,6500,Bat Yam,Rothschild St.  4,3.5,3.0,120,0
+rent,Apartment,3750,Bat Yam,Herzl St.  30,3.0,2.0,77,0
+rent,Apartment,4000,Holon,Ekhad be-Mai St. ,2.0,1.0,68,0
+rent,Apartment,3000,Bat Yam,Rothschild St.  27,1.0,9.0,30,0
+rent,Apartment,7199,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,7.0,75,4
+rent,Apartment,3800,Rehovot,Sderot Hen ,3.0,2.0,60,0
+rent,Apartment,4000,Rehovot,Zelkind Stolvov St. ,4.0,2.0,100,0
+rent,Duplex,10500,Tel Aviv-Yafo,Lili Menakhem St. ,5.0,2.0,160,2
+rent,Apartment,5100,Bat Yam,Derech Ben Gurion  99,2.0,19.0,50,1
+rent,Mini penthouse,13000,Bat Yam,Ha-Neviim St.  60,5.0,20.0,135,3
+rent,Apartment,11500,Tel Aviv-Yafo,Nissim Aloni St.  3,3.5,19.0,118,2
+rent,Apartment,4600,Bat Yam,Arlozorov St.  40,3.0,1.0,65,0
+rent,Apartment,3600,Bat Yam,Balfour St. ,2.0,1.0,35,0
+rent,Apartment,4500,Bat Yam,Rothschild St.  16,4.0,3.0,110,0
+rent,Apartment,13000,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,5.0,120,2
+rent,Apartment,3200,Ramla,Zahal St. ,3.0,3.0,64,1
+rent,Apartment,5200,Bat Yam,Ha-Sar Shapira St. ,4.0,3.0,90,0
+rent,Housing unit,2500,Ramat Gan,HaEm St.  29,1.0,0.0,16,0
+rent,Duplex,19500,Tel Aviv-Yafo,Frishman St. ,6.0,6.0,160,3
+rent,Apartment,4500,Rishon LeTsiyon,HaSadeh St. ,3.5,3.0,80,1
+rent,Apartment,6500,Bat Yam,Ha-Rav Nisanbaum St.  39,4.0,30.0,110,1
+rent,Apartment,3900,Bat Yam,Jabotinsky St. ,2.0,6.0,60,0
+rent,Apartment,5800,Ramla,Yona Volakh St.  4,5.0,2.0,130,2
+rent,Apartment,7000,Rishon LeTsiyon,Rabi Yehuda ha-Nasi St.  23,5.0,2.0,129,2
+rent,Apartment,4300,Bat Yam,Derech Ben Gurion ,2.0,1.0,30,0
+rent,Studio,3700,Bat Yam,Rothschild St. ,2.5,2.0,65,0
+rent,Apartment,5300,Givatayim,Kiryat Yosef St. ,4.0,2.0,105,1
+rent,Apartment,5300,Yavne,HaSira St. ,5.0,1.0,130,2
+rent,Apartment,3000,Bat Yam,Rothschild St. ,2.5,2.0,65,0
+rent,Apartment,4500,Rishon LeTsiyon,HaSadeh St. ,3.5,3.0,80,1
+rent,Apartment,4600,Rishon LeTsiyon,Rabbi Kook St. ,4.0,2.0,94,1
+rent,Apartment,2100,Ramat Gan,Zeev Jabotinsky St. ,1.0,2.0,20,0
+rent,Cottage/house,5900,Bat Yam,Mivtsa Sinai St.  5,4.0,2.0,120,0
+rent,Apartment,4700,Bat Yam,Khatsor St. ,3.5,1.0,85,0
+rent,Garden apt,3600,Bat Yam,Balfour St. ,2.0,0.0,40,0
+rent,Apartment,4400,Rishon LeTsiyon,Ahiezer St. ,3.0,1.0,80,0
+rent,Apartment,3800,Bat Yam,Etsel St. ,2.0,2.0,45,1
+rent,Apartment,3900,Bat Yam,Arlozorov St. ,2.5,2.0,72,0
+rent,Apartment,8100,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,8.0,77,1
+rent,Apartment,5700,Ramat Gan,Sderot Yerushalayim ,3.0,6.0,60,1
+rent,Apartment,2600,Ramat Gan,Abba Hillel Silver Road ,1.0,1.0,28,0
+rent,Cottage/house,8500,Rishon LeTsiyon,HeHatsav St. ,4.0,3.0,220,1
+rent,Apartment,4000,Ramat Gan,Ha-Aluf Nekhemya Tamari St. ,2.0,1.0,70,0
+rent,Apartment,4400,Rishon LeTsiyon,Olei HaGardom St. ,4.0,2.0,100,2
+rent,Apartment,4000,Rishon LeTsiyon,Ha-Tomer St. ,3.0,1.0,75,1
+rent,Apartment,3800,Holon,Eilat St.  10,2.0,3.0,40,0
+rent,Housing unit,3900,Rishon LeTsiyon,Martin Buber St. ,3.0,0.0,75,0
+rent,Apartment,2200,Petah Tikva,Bar Kochva St. ,1.0,0.0,15,0
+rent,Apartment,4900,Bat Yam,Ha-Sar Shapira St. ,3.0,1.0,80,0
+rent,Apartment,3900,Bat Yam,Hasar Pinkas St. ,2.5,4.0,75,0
+rent,Apartment,3500,Petah Tikva,Ha-Atsmon St. ,3.0,4.0,75,0
+rent,Apartment,5000,Bat Yam,Masaryk St. ,3.0,8.0,85,1
+rent,Apartment,3600,Rishon LeTsiyon,Frishman St.  4,2.5,3.0,65,0
+rent,Garden apt,3100,Petah Tikva,Nahalat Tsvi St. ,2.0,0.0,70,0
+rent,Apartment,3500,Petah Tikva,Shalom Ash St. ,2.5,0.0,70,0
+rent,Apartment,4200,Tel Aviv-Yafo,Kehilat Riga St.  3,3.0,2.0,55,0
+rent,Mini penthouse,8000,Rishon LeTsiyon,Ha-Hityashvut St. ,5.0,8.0,125,2
+rent,Apartment,6500,Rishon LeTsiyon,Haim Hefer St.  9,5.5,14.0,140,1
+rent,Apartment,4200,Bat Yam,Arlozorov St. ,3.5,2.0,85,1
+rent,Apartment,4100,Rishon LeTsiyon,Rabbi Kook St.  3,3.0,1.0,72,1
+rent,Apartment,4900,Holon,HaRav Yitshak HaLevi St.  21,4.0,2.0,90,1
+rent,Cottage/house,5800,Holon,Tchernikhovski St. ,4.0,1.0,180,0
+rent,Apartment,8500,Tel Aviv-Yafo,Basel St.  22,3.0,2.0,90,0
+rent,Apartment,6500,Rishon LeTsiyon,Haim Hefer St.  13,5.0,6.0,125,1
+rent,Apartment,4800,Rishon LeTsiyon,Itamar Ben Avi St. ,4.0,1.0,110,1
+rent,Villa,6930,Ramat Gan,Ha-Yarden St. ,4.0,1.0,110,0
+rent,Apartment,3800,Ramat Gan,Haroe St.  7,2.5,2.0,60,0
+rent,Housing unit,3400,Rishon LeTsiyon,Martin Buber St. ,2.0,0.0,35,0
+rent,Apartment,4200,Bat Yam,Tchernikhovski St. ,3.0,2.0,72,1
+rent,Cottage/house,12000,Jerusalem,Mekor Haim St.  16,2.0,1.0,80,0
+rent,Apartment,5500,Bat Yam,Herzl St.  54,3.0,5.0,75,1
+rent,Apartment,9000,Bat Yam,Derech Menachem Begin ,5.0,12.0,130,2
+rent,Housing unit,4300,Rishon LeTsiyon,Ha-Mifras St. ,2.0,0.0,60,0
+rent,Apartment,3650,Holon,Brazaville St.  9,3.0,3.0,62,0
+rent,Apartment,5000,Bat Yam,Bar Ilan St. ,4.0,1.0,110,1
+rent,Apartment,4200,Holon,Alufei Tsahal St.  33,2.0,2.0,40,1
+rent,Apartment,4600,Ramat Gan,Anne Frank St.  12,3.0,2.0,75,0
+rent,Apartment,3000,Holon,Arye Shenkar St.  52,2.0,2.0,55,0
+rent,Apartment,4000,Rishon LeTsiyon,Yalag St. ,2.5,1.0,77,0
+rent,Apartment,6000,Tel Aviv-Yafo,HaKongres St. ,3.0,3.0,65,1
+rent,Apartment,3500,Rishon LeTsiyon,Dror St.  54,2.0,6.0,55,0
+rent,Apartment,5700,Rishon LeTsiyon,Ha-Sarig St. ,4.0,4.0,116,1
+rent,Apartment,4000,Bat Yam,Balfour St. ,3.0,2.0,80,0
+rent,Apartment,3600,Bat Yam,Kovshei ha-Khermon St. ,3.0,3.0,75,0
+rent,Apartment,4150,Bat Yam,Yoseftal St.  31,3.0,1.0,60,0
+rent,Apartment,6500,Tel Aviv-Yafo,Levinski St.  33,4.0,2.0,100,0
+rent,Apartment,3000,Ramat Gan,Abba Hillel Silver Road  62,2.0,2.0,40,0
+rent,Apartment,4500,Ramat Gan,Ha-Lapid St.  10,3.5,2.0,80,1
+rent,Apartment,3150,Ramat Gan,Aluf David St.  5,2.0,1.0,40,0
+rent,Apartment,3300,Givatayim,Ha-Lamed Hei St.  44,2.0,3.0,35,0
+rent,Apartment,5000,Ramat Gan,Zeev Jabotinsky St.  107,5.0,2.0,100,2
+rent,Apartment,7000,Givatayim,Eilat St.  22,4.0,2.0,90,2
+rent,Apartment,10500,Tel Aviv-Yafo,Feibel St.  13,3.0,2.0,100,1
+rent,Studio,2400,Jerusalem,Mishol HaDkalim  14,1.0,1.0,18,1
+rent,Studio,2500,Petah Tikva,HaAluf David Marcus St.  54,1.0,2.0,30,1
+rent,Apartment,2900,Tel Aviv-Yafo,Nissim Isakov St.  19,1.5,0.0,24,1
+rent,Apartment,2000,Ramat Gan,Ha-Yarden St.  98,3.0,7.0,59,2
+rent,Apartment,3400,Bat Yam,Ha-Sar Rabinovich St. ,3.0,2.0,74,1
+rent,Apartment,5200,Holon,Yehoshua Rabinovich St. ,4.0,5.0,110,1
+rent,Apartment,3900,Bat Yam,Ha-Neviim St. ,4.0,4.0,80,2
+rent,Apartment,3800,Bat Yam,Bar Yehuda St. ,3.0,4.0,70,1
+rent,Apartment,4000,Bat Yam,Trumpeldor St. ,3.0,2.0,70,0
+rent,Apartment,3800,Bat Yam,Rambam St. ,2.5,2.0,55,0
+rent,Apartment,3700,Bat Yam,Yisrael Ben Tsiyon St. ,2.5,1.0,75,0
+rent,Apartment,3800,Bat Yam,Yisrael Ben Tsiyon St. ,2.5,1.0,75,0
+rent,Apartment,4000,Bat Yam,Yoseftal St. ,2.5,5.0,70,0
+rent,Apartment,4100,Bat Yam,HaMaapilim St. ,3.0,1.0,75,0
+rent,Apartment,3000,Bat Yam,Yisrael Ben Tsiyon St. ,3.0,2.0,80,0
+rent,Apartment,4300,Bat Yam,Perlstein St. ,3.0,5.0,85,0
+rent,Apartment,5800,Bat Yam,Ha-Reshet St. ,4.0,6.0,110,1
+rent,Apartment,2800,Bat Yam,Bar Yehuda St. ,2.0,1.0,40,0
+rent,Apartment,2700,Bat Yam,Ha-Rishonim St. ,1.0,3.0,20,0
+rent,Apartment,4200,Bat Yam,Bayit Vagan St. ,3.5,2.0,90,0
+rent,Apartment,4000,Bat Yam,Sheshet ha-Yamim St. ,2.5,3.0,85,0
+rent,Apartment,3500,Bat Yam,Balfour St. ,2.5,1.0,63,0
+rent,Studio,2300,Bat Yam,Balfour St. ,1.0,3.0,22,0
+rent,Apartment,4100,Bat Yam,Balfour St. ,3.0,2.0,75,0
+rent,Apartment,4700,Ramat Gan,Ha-Yarden St.  38,4.0,1.0,100,1
+rent,Villa,6000,Ramat Gan,Ha-Aliya ha-Rishona St. ,3.0,1.0,90,1
+rent,Apartment,3800,Holon,Sderot Yoseftal  150,3.5,2.0,80,0
+rent,Apartment,3800,Holon,Sderot Yoseftal  150,3.5,2.0,80,0
+rent,Apartment,2400,Jerusalem,Mishol HaDkalim  12,1.0,1.0,16,3
+rent,Apartment,3300,Ashdod,Rambam St.  9,2.5,3.0,48,0
+rent,Apartment,5800,Tel Aviv-Yafo,HaKongres St.  14,3.0,3.0,60,1
+rent,Garden apt,3000,Tel Aviv-Yafo,Matalon St. ,1.0,0.0,40,0
+rent,Apartment,12800,Tel Aviv-Yafo,Antokolski St.  12,5.5,1.0,165,0
+rent,Apartment,19000,Tel Aviv-Yafo,Nitsana St. ,6.0,3.0,200,4
+rent,Apartment,7000,Tel Aviv-Yafo,Natan HaHaham St.  10,2.5,3.0,63,0
+rent,Apartment,6000,Ramat Gan,Bar Kochva St.  22,4.0,2.0,130,1
+rent,Duplex,16000,Tel Aviv-Yafo,Sharabi St.  17,4.0,2.0,170,1
+rent,Penthouse,37000,Tel Aviv-Yafo,Sheinkin St. ,5.0,5.0,250,2
+rent,Apartment,7000,Tel Aviv-Yafo,Nechemiah St.  6,2.0,2.0,60,2
+rent,Apartment,7500,Tel Aviv-Yafo,Nissenboim St. ,3.0,2.0,67,1
+rent,Apartment,12000,Tel Aviv-Yafo,Vitkin St.  23,4.0,3.0,100,2
+rent,Apartment,6850,Tel Aviv-Yafo,Yehuda HaMakkabbi St.  30,3.0,1.0,75,0
+rent,Apartment,6500,Tel Aviv-Yafo,Nissenboim St.  22,3.0,2.0,73,2
+rent,Apartment,2500,Tel Aviv-Yafo,Israelis St. ,1.0,1.0,30,0
+rent,Apartment,4000,Tel Aviv-Yafo,Shazar St.  61,3.0,3.0,71,0
+rent,Apartment,12000,Tel Aviv-Yafo,Antokolski St.  12,5.5,1.0,165,0
+rent,Garden apt,7400,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  22,3.0,0.0,75,0
+rent,Apartment,10500,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  44,4.0,2.0,115,0
+rent,Apartment,7500,Tel Aviv-Yafo,Zeev Jabotinsky St.  100,3.0,2.0,75,1
+rent,Garden apt,7200,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  44,3.0,0.0,75,0
+rent,Duplex,11000,Tel Aviv-Yafo,HaKongres St.  14,5.0,5.0,190,2
+rent,Apartment,7100,Tel Aviv-Yafo,Ha-Melits St.  9,3.0,3.0,70,0
+rent,Apartment,3600,Ashdod,Ha-Histadrut St.  11,3.0,1.0,62,0
+rent,Penthouse,5500,Ashdod,HaRav Kuk St.  43,4.0,7.0,95,1
+rent,Apartment,5100,Kefar Sava,HaGra St.  19,4.0,4.0,132,1
+rent,Apartment,2850,Ramat Gan,Haroe St.  23,1.0,1.0,25,0
+rent,Apartment,5900,Ramat Gan,Neveh Yehoshua St.  34,4.0,1.0,100,1
+rent,Apartment,8000,Tel Aviv-Yafo,Lipski St. ,2.5,2.0,60,0
+rent,Apartment,8000,Tel Aviv-Yafo,Hei be-Iyar St. ,2.0,5.0,88,1
+rent,Apartment,18000,Tel Aviv-Yafo,Sderot Nordau ,5.0,1.0,140,1
+rent,Apartment,8700,Tel Aviv-Yafo,Yirmeyahu St. ,3.0,2.0,80,0
+rent,Apartment,4950,Tel Aviv-Yafo,Zalman Maisel St. ,4.0,2.0,80,1
+rent,Apartment,4600,Ramat Gan,Krinitsi St.  36,3.0,1.0,80,0
+rent,Apartment,2700,Tel Aviv-Yafo,Amsterdam St.  7,3.5,2.0,100,0
+rent,Apartment,3800,Petah Tikva,Zeev Jabotinsky St.  23,3.0,1.0,65,0
+rent,Apartment,3000,Bnei Brak,Dov Gruner St.  55,2.5,2.0,42,0
+rent,Apartment,4300,Bat Yam,Ha-Neviim St.  48,3.0,3.0,70,1
+rent,Apartment,4300,Bat Yam,Ha-Neviim St.  48,3.0,3.0,70,1
+rent,Garden apt,6000,Tel Aviv-Yafo,HaGolan St.  124,3.0,0.0,56,0
+rent,Apartment,3300,Petah Tikva,Doctor Fogel Herman St.  8,3.5,4.0,90,0
+rent,Apartment,2950,Bnei Brak,Ha-Rav Avraham Yitskhak ha-Cohen Kook St.  26,2.0,2.0,45,0
+rent,Apartment,4900,Herzliya,Yigal Alon St.  43,3.0,2.0,76,1
+rent,Apartment,4000,Ramat Gan,Haroe St.  125,2.5,3.0,60,0
+rent,Apartment,6450,Tel Aviv-Yafo,Shlomtsiyon HaMalka St.  59,2.5,0.0,62,0
+rent,Apartment,4200,Bat Yam,HaGdud Haivri St.  27,3.0,0.0,80,0
+rent,Apartment,3600,Bat Yam,Tchernikhovski St.  20,3.0,2.0,74,1
+rent,Apartment,4000,Bat Yam,Ha-Tsipornim St.  3,3.0,2.0,70,1
+rent,Apartment,3650,Bat Yam,Bar Ilan St.  85,2.0,2.0,45,1
+rent,Apartment,5900,Ramat Gan,Klausner St. ,3.0,6.0,70,1
+rent,Apartment,4200,Bat Yam,Yerushalayim St.  44,4.0,7.0,95,0
+rent,Duplex,9500,Ramat Gan,Uziel St. ,4.0,8.0,215,2
+rent,Apartment,3900,Ramat Gan,Zeev Jabotinsky St. ,3.0,1.0,60,0
+rent,Apartment,7000,Ramat Gan,Rimalt St. ,4.0,5.0,120,0
+rent,Apartment,3400,Ramat Gan,Rabbi Yehuda HaNassi St. ,3.0,3.0,50,0
+rent,Apartment,5000,Ramat Gan,Rabbi Yehuda HaNassi St. ,4.0,1.0,104,1
+rent,Apartment,5600,Ramat Gan,Yeshurun St. ,3.0,3.0,75,1
+rent,Apartment,5100,Bnei Brak,HaTanaim St. ,3.5,2.0,82,0
+rent,Apartment,3750,Ramat Gan,Haroe St. ,3.0,3.0,75,0
+rent,Apartment,4200,Holon,Manya ve-Yisrael Shokhat St.  21,3.0,1.0,70,0
+rent,Apartment,2700,Holon,Bernstein St. ,4.0,2.0,90,3
+rent,Housing unit,3000,Holon,Arye Shenkar St. ,2.0,10.0,40,0
+rent,Apartment,5000,Holon,Eilat St. ,4.0,2.0,100,0
+rent,Housing unit,2900,Holon,Eliyahu Krauze St. ,1.0,4.0,25,0
+rent,Apartment,3000,Holon,Mivtsa Sinai St. ,2.5,4.0,60,0
+rent,Villa,9000,Holon,Yosef Khaim Brenner St.  3,4.0,1.0,120,0
+rent,Apartment,4000,Kiryat Ono,HaShaked St.  36,3.0,2.0,70,0
+rent,Apartment,4100,Petah Tikva,Yehuda ha-Levi St. ,4.0,1.0,88,1
+rent,Apartment,2600,Petah Tikva,Ha-Hagana St. ,2.0,0.0,30,0
+rent,Apartment,4000,Petah Tikva,Kashani St. ,4.0,2.0,90,1
+rent,Cottage/house,9500,Holon,Bialik St. ,5.0,3.0,120,1
+rent,Apartment,4000,Ramat Gan,Simtat Ayalon  11,2.5,2.0,60,0
+rent,Triplex,6200,Petah Tikva,Trumpeldor St.  31,7.0,0.0,131,1
+rent,Apartment,3100,Ramat Gan,Beer Ora St.  8,2.0,1.0,37,3
+rent,Apartment,4700,Bat Yam,Balfour St.  17,3.5,1.0,85,2
+rent,Apartment,3200,Rishon LeTsiyon,Rothschild St.  50,2.0,1.0,50,1
+rent,Apartment,3200,Tel Aviv-Yafo,Shlomo Ibn Gabirol St.  42,1.0,3.0,25,0
+rent,Mini penthouse,12500,Bat Yam,Ha-Neviim St.  62,4.0,19.0,135,2
+rent,Apartment,5500,Bat Yam,Yerushalayim St.  22,3.0,3.0,75,1
+rent,Apartment,7000,Bat Yam,Yohanan HaSandlar St.  8,4.0,30.0,120,2
+rent,Apartment,9900,Bat Yam,Yitshak Sadeh St.  8,3.0,31.0,115,1
+rent,Apartment,8800,Bat Yam,Yitshak Sadeh St.  4,5.0,20.0,145,2
+rent,Apartment,4000,Bat Yam,Yoseftal St.  66,2.5,5.0,72,0
+rent,Apartment,8700,Bat Yam,Yitshak Sadeh St.  8,4.0,26.0,125,1
+rent,Apartment,4200,Rishon LeTsiyon,Karl Netter St.  1,3.0,3.0,78,0
+rent,Apartment,5500,Bat Yam,Ha-Meyasdim St.  3,4.0,1.0,80,0
+rent,Apartment,3500,Holon,Eilat St.  86,3.0,4.0,60,0
+rent,Apartment,3600,Bat Yam,Bar Ilan St. ,2.5,1.0,65,0
+rent,Apartment,5200,Ness Ziona,Maccabi St. ,4.5,3.0,113,1
+rent,Apartment,4950,Ness Ziona,Herzl St. ,4.0,4.0,113,1
+rent,Apartment,5000,Bat Yam,David Raziel St. ,4.0,1.0,85,1
+rent,Apartment,3900,Bat Yam,Ha-Neviim St. ,3.0,2.0,78,1
+rent,Apartment,3300,Bat Yam,Mivtsa Sinai St. ,3.0,3.0,70,0
+rent,Apartment,3400,Tel Aviv-Yafo,HaRav Rubinstein St. ,3.0,2.0,70,1
+rent,Apartment,2500,Bat Yam,Halper St. ,3.0,1.0,70,0
+rent,Apartment,3600,Bat Yam,Balfour St. ,3.0,2.0,75,0
+rent,Apartment,3500,Bat Yam,Yisrael Ben Tsiyon St. ,3.0,1.0,80,0
+rent,Apartment,3300,Bat Yam,Ha-Tkhiya St. ,2.5,3.0,60,0
+rent,Apartment,4000,Bat Yam,Herzl St. ,2.0,2.0,50,2
+rent,Garden apt,3600,Holon,Ha-Amoraim St. ,2.5,0.0,60,0
+rent,Apartment,3700,Bat Yam,Nitsana St. ,2.5,1.0,65,0
+rent,Apartment,4700,Bat Yam,David Raziel St. ,4.0,2.0,90,1
+rent,Apartment,3700,Bat Yam,Ha-Hagana St. ,3.0,1.0,87,0
+rent,Apartment,3600,Bat Yam,Yisrael Ben Tsiyon St. ,2.5,1.0,80,0
+rent,Apartment,4900,Bat Yam,Balfour St. ,4.0,4.0,100,0
+rent,Apartment,5800,Bat Yam,Herzl St. ,4.0,1.0,100,1
+rent,Apartment,3800,Holon,Hatechiya St. ,2.5,4.0,60,0
+rent,Apartment,3500,Ramla,Eliyahu Golomb St.  4,2.0,0.0,50,1
+rent,Apartment,4000,Petah Tikva,Ha-Aliya ha-Shinya St.  10,4.0,4.0,80,0
+rent,Apartment,4500,Petah Tikva,Rachel HaMeshoreret St.  11,4.0,4.0,120,0
+rent,Apartment,1900,Petah Tikva,Nordau St.  34,4.0,1.0,90,1
+rent,Apartment,2000,Petah Tikva,Nordau St.  34,4.0,1.0,90,1
+rent,Apartment,1900,Petah Tikva,Nordau St.  34,4.0,1.0,100,1
+rent,Room,2000,Petah Tikva,Nordau St.  32,4.0,1.0,110,2
+rent,Apartment,3500,Jerusalem,Iceland St.  22,3.0,2.0,65,0
+rent,Apartment,5500,Jerusalem,Shaul Avigur St.  24,4.0,2.0,95,1
+rent,Apartment,3600,Ramla,Yoseftal St.  17,4.0,2.0,87,0
+rent,Apartment,3200,Ramla,Sderot Ben Gurion  3,3.0,2.0,70,0
+rent,Housing unit,2500,Tel Aviv-Yafo,HaGdud Haivri St.  58,1.0,1.0,9,0
+rent,Apartment,6200,Tel Aviv-Yafo,Haggibbor HaAlmoni St.  2,5.0,4.0,100,1
+rent,Apartment,5000,Ramat Gan,Boaz St.  15,4.0,3.0,115,0
+rent,Apartment,4100,Ramat Gan,Moshe Dayan St.  32,2.5,3.0,75,3
+rent,Apartment,2500,Ramat Gan,Tirzah St.  32,3.0,8.0,76,1
+rent,Apartment,4400,Ramat Gan,Shalem St.  12,3.0,2.0,82,0
+rent,Apartment,2000,Jerusalem,HaHavatselet St. ,6.0,1.0,150,0
+rent,Housing unit,2500,Rishon LeTsiyon,Ha-Rav Pinkhas Zekharya St. ,1.0,1.0,20,1
+rent,Apartment,4100,Rishon LeTsiyon,Betar St. ,3.0,1.0,80,2
+rent,Apartment,3000,Rishon LeTsiyon,HaDagan St. ,2.0,1.0,40,2
+rent,Housing unit,3300,Rishon LeTsiyon,Shimon Peres St. ,2.0,0.0,30,1
+rent,Housing unit,3700,Rishon LeTsiyon,Ha-Rav Pinkhas Zekharya St. ,1.0,1.0,36,1
+rent,Apartment,4800,Jerusalem,Gesher HaHayim ,3.0,1.0,68,0
+rent,Apartment,4750,Rishon LeTsiyon,HaTsfira St. ,4.5,1.0,106,1
+rent,Apartment,4300,Jerusalem,Shamai St. ,2.0,3.0,53,1
+rent,Apartment,5600,Jerusalem,Agripas St. ,3.0,7.0,78,1
+rent,Apartment,1500,Jerusalem,HaRav Agan St. ,4.0,6.0,100,3
+rent,Apartment,3700,Ashdod,Shavei Tsiyon St.  28,4.0,2.0,110,0
+rent,Apartment,3800,Jerusalem,Jaffa St.  222,2.5,3.0,60,0
+rent,Apartment,1500,Jerusalem,Shmuel ha-Navi St.  20,4.0,1.0,110,1
+rent,Apartment,4000,Beer Yaakov,HaTeena St.  5,3.0,1.0,80,1
+rent,Apartment,6600,Tel Aviv-Yafo,Louis Marshall St.  14,3.0,3.0,78,0
+rent,Apartment,7500,Tel Aviv-Yafo,HaYarkon St. ,2.0,8.0,62,0
+rent,Apartment,3550,Holon,Barzilai St.  3,3.5,3.0,87,0
+rent,Apartment,7200,Tel Aviv-Yafo,Levontin St.  5,2.0,1.0,59,0
+rent,Apartment,2800,Jerusalem,Shamir St.  36,1.0,0.0,30,0
+rent,Apartment,4300,Rishon LeTsiyon,Klevitsski St.  3,4.0,4.0,90,0
+rent,Apartment,500,Bat Yam,Derech Ben Gurion  138,2.0,6.0,50,0
+rent,Apartment,4500,Jerusalem,Tsipora St.  9,4.0,3.0,75,1
+rent,Apartment,2500,Givatayim,Derech Yitshak Rabin  49,1.0,4.0,12,1
+rent,Villa,15000,Mazkeret Batya,Sderot Rothschild ,9.0,2.0,402,3
+rent,Apartment,3500,Rehovot,Palmakh St.  28,3.0,0.0,60,0
+rent,Housing unit,3250,Rishon LeTsiyon,HaTut St.  10,2.0,0.0,35,0
+rent,Housing unit,3200,Rishon LeTsiyon,HaTut St.  10,2.0,0.0,32,0
+rent,Apartment,3200,Petah Tikva,Doctor Fogel Herman St. ,3.5,3.0,80,1
+rent,Apartment,3500,Petah Tikva,Yosefsberg St.  9,3.0,1.0,60,0
+rent,Apartment,11500,Tel Aviv-Yafo,Ha-Rav Nisim St.  9,3.0,5.0,97,1
+rent,Apartment,2800,Bat Yam,Ha-Rishonim St. ,1.0,0.0,30,0
+rent,Apartment,4800,Tel Aviv-Yafo,Ha-Gilad St. ,2.0,1.0,55,0
+rent,Apartment,5700,Rishon LeTsiyon,Ha-Akhim Ostashinski St.  13,4.0,4.0,90,1
+rent,Apartment,3700,Rehovot,Hasam St.  11,3.0,5.0,70,0
+rent,Apartment,3200,Petah Tikva,Rothschild St. ,3.5,4.0,100,1
+rent,Apartment,2000,Petah Tikva,Khayim Ozer St. ,1.0,3.0,27,0
+rent,Apartment,1800,Petah Tikva,Mohiliver St. ,1.0,1.0,20,0
+rent,Apartment,3400,Petah Tikva,Zvi Hirsch Kalischer St. ,3.5,3.0,100,1
+rent,Apartment,2500,Petah Tikva,Hafes Haim St. ,1.0,3.0,34,0
+rent,Housing unit,3900,Petah Tikva,Maze St. ,2.0,0.0,40,0
+rent,Apartment,7500,Jerusalem,David Alroi St.  3,4.5,3.0,119,1
+rent,Apartment,3700,Bat Yam,Herzl St.  72,2.0,4.0,49,0
+rent,Apartment,6300,Tel Aviv-Yafo,Dafna St.  38,3.0,1.0,90,0
+rent,Apartment,3600,Givatayim,Ha-Histadrut St.  32,2.0,0.0,50,0
+rent,Apartment,4300,Ramat Gan,Ha-Mavdil St.  21,2.0,1.0,60,0
+rent,Apartment,230,Rishon LeTsiyon,Ha-Hityashvut St.  47,5.0,2.0,129,1
+rent,Apartment,4500,Tel Aviv-Yafo,Haim Barlev Road  203,3.0,5.0,65,1
+rent,Apartment,4400,Bat Yam,Livorno St.  5,4.0,2.0,105,0
+rent,Apartment,3500,Rehovot,Amoraim St. ,3.0,2.0,70,0
+rent,Cottage/house,5000,Ariel,Ha-Dekel St.  53,5.0,2.0,135,0
+rent,Apartment,4000,Rishon LeTsiyon,Dror St. ,3.5,2.0,80,1
+rent,Apartment,6500,Herzliya,הקרן  7,3.0,4.0,75,1
+rent,Apartment,3500,Bat Yam,Khatsor St.  4,3.0,3.0,70,0
+rent,Apartment,4800,Rishon LeTsiyon,Mohiliver St. ,4.5,1.0,120,1
+rent,Apartment,4000,Rishon LeTsiyon,Weizbard St. ,3.0,1.0,75,1
+rent,Apartment,4600,Rishon LeTsiyon,Jerusalem St. ,4.0,1.0,95,1
+rent,Cottage/house,8800,Rishon LeTsiyon,Ha-Oniya St. ,6.0,2.0,170,2
+rent,Apartment,4200,Rishon LeTsiyon,Karl Netter St. ,3.0,3.0,80,0
+rent,Apartment,4200,Bat Yam,Yoseftal St. ,3.0,2.0,68,0
+rent,Apartment,3200,Bat Yam,Shalom Aleichem St. ,2.5,4.0,73,0
+rent,Apartment,3000,Holon,Yotvata St.  7,2.5,3.0,50,1
+rent,Apartment,4900,Rishon LeTsiyon,Yehoshua Gibstein St.  1,4.0,6.0,107,1
+rent,Apartment,3400,Rehovot,Ha-Hagana St. ,3.0,1.0,70,0
+rent,Apartment,2800,Rehovot,Ha-Khavura St. ,2.0,0.0,40,0
+rent,Apartment,4200,Rehovot,Herzl St.  105,4.0,8.0,100,0
+rent,Apartment,3300,Rehovot,Derekh Yavne ,2.0,4.0,40,0
+rent,Apartment,3000,Rehovot,Ezra St. ,2.0,1.0,56,0
+rent,Apartment,5900,Tel Aviv-Yafo,Sderot Shaul HaMelech  17,3.0,0.0,60,0
+rent,Apartment,3900,Ramat Gan,HaBanim St.  11,2.0,2.0,55,0
+rent,Apartment,2700,Lod,Arieh Rubin St.  5,2.0,4.0,60,1
+rent,Housing unit,3600,Ramat Gan,Uziel St.  91,2.0,2.0,45,0
+rent,Apartment,100,Petah Tikva,Khen St.  5,2.5,2.0,50,0
+rent,Apartment,3400,Bat Yam,Ha-Shlosha St.  13,2.0,0.0,30,0
+rent,Apartment,3100,Ramla,Sderot Ben Gurion  3,3.0,3.0,68,0
+rent,Apartment,3500,Petah Tikva,Ha-Rishonim St.  1,3.5,1.0,1,1
+rent,Apartment,1650,Jerusalem,HaArazim St.  10,3.0,4.0,78,0
+rent,Apartment,3000,Ramat Gan,Natan St.  21,1.0,0.0,35,0
+rent,Apartment,4550,Bat Yam,Ha-Neviim St.  23,3.0,3.0,71,2
+rent,Apartment,4600,Ramat Gan,Krinitsi St.  36,3.0,1.0,75,0
+rent,Room,2350,Jerusalem,Ha-Ari St.  17,1.0,1.0,18,0
+rent,Housing unit,4500,Holon,Sokolov St.  74,2.0,1.0,50,0
+rent,Apartment,3000,Tel Aviv-Yafo,Nahal HaBsor St.  12,3.0,4.0,65,0
+rent,Apartment,3200,Bat Yam,HaRav Luzon St.  12,2.0,1.0,60,0
+rent,Apartment,3000,Bat Yam,Trumpeldor St.  4,2.0,0.0,60,0
+rent,Apartment,3000,Bat Yam,Nitsana St.  16,2.0,0.0,55,0
+rent,Housing unit,4300,Hadid,Ha-Savyon St.  11,3.0,1.0,90,3
+rent,Apartment,2700,Rehovot,Max Nordau St.  13,2.0,2.0,45,0
+rent,Apartment,3300,Bat Yam,HaShikma St. ,2.0,4.0,47,0
+rent,Apartment,5200,Bat Yam,Max Nordau St. ,4.0,4.0,100,0
+rent,Apartment,3500,Bat Yam,Halper St. ,2.5,0.0,55,0
+rent,Apartment,3300,Bat Yam,Arlozorov St. ,2.0,1.0,40,0
+rent,Apartment,3300,Bat Yam,Halper St. ,2.0,0.0,40,0
+rent,Apartment,4500,Bat Yam,Perlstein St. ,3.0,5.0,100,0
+rent,Apartment,2850,Bat Yam,Rothschild St. ,1.0,2.0,40,0
+rent,Apartment,3500,Bat Yam,Ha-Rishonim St. ,2.0,3.0,65,0
+rent,Apartment,3500,Bat Yam,Abba Berdichev St. ,3.0,3.0,70,0
+rent,Apartment,2500,Bat Yam,Abba Berdichev St. ,2.0,0.0,40,0
+rent,Apartment,3000,Bat Yam,Abba Berdichev St. ,2.0,0.0,30,0
+rent,Apartment,2800,Bat Yam,Herzl St. ,1.0,0.0,24,0
+rent,Apartment,6150,Ramat Gan,Kedma St. ,3.0,5.0,100,1
+rent,Apartment,3000,Bat Yam,HaGiborim St. ,1.0,0.0,25,0
+rent,Apartment,3850,Bat Yam,Halper St. ,3.5,3.0,77,0
+rent,Apartment,4000,Bat Yam,Simha Holtsberg St. ,2.5,3.0,40,0
+rent,Apartment,3700,Tel Aviv-Yafo,HaTsorfim St.  12,1.0,0.0,20,0
+rent,Apartment,3200,Bat Yam,Balfour St.  81,2.5,3.0,75,0
+rent,Apartment,2950,Bat Yam,Arlozorov St.  70,1.0,1.0,35,0
+rent,Apartment,4600,Rishon LeTsiyon,Tsvi Herman Shapira St. ,4.0,3.0,110,0
+rent,Garden apt,6200,Rehovot,Batya Makov St.  28,3.5,0.0,80,1
+rent,Apartment,5500,Bat Yam,Derech Ben Gurion ,2.0,19.0,40,0
+rent,Apartment,6800,Bat Yam,Ha-Rav Nisanbaum St. ,4.0,39.0,100,1
+rent,Apartment,3800,Bat Yam,HaRav Uziel St. ,2.0,2.0,40,0
+rent,Apartment,4500,Bat Yam,Ha-Sar Shapira St. ,2.5,4.0,75,0
+rent,Apartment,4500,Bat Yam,Balfour St. ,3.5,3.0,85,0
+rent,Apartment,6500,Bat Yam,Yohanan HaSandlar St. ,4.0,12.0,100,2
+rent,Apartment,3200,Bat Yam,Yoseftal St. ,2.0,3.0,50,0
+rent,Apartment,3500,Bat Yam,Arlozorov St. ,2.0,1.0,50,0
+rent,Apartment,3000,Bat Yam,HaAtsmaut Boulevard ,2.0,0.0,30,0
+rent,Apartment,5000,Bat Yam,Doctor Nahum Nir St.  3,4.0,5.0,85,1
+rent,Apartment,4500,Bat Yam,Balfour St. ,3.5,2.0,80,0
+rent,Apartment,4000,Bat Yam,Bar Yehuda St.  24,3.0,3.0,70,0
+rent,Apartment,8000,Bat Yam,Derech Ben Gurion  57,4.0,7.0,105,1
+rent,Apartment,4000,Bat Yam,Moshe Sneh St. ,3.0,0.0,70,0
+rent,Apartment,4200,Bat Yam,Derech Ben Gurion ,2.0,2.0,45,1
+rent,Apartment,3100,Bat Yam,Herzl St.  10,2.0,0.0,40,0
+rent,Apartment,4500,Bat Yam,Dakar St.  3,3.0,4.0,87,0
+rent,Garden apt,25000,Tel Aviv-Yafo,Ha-Ogen St. ,4.0,2.0,220,0
+rent,Apartment,5000,Bat Yam,Rothschild St. ,3.0,3.0,70,0
+rent,Apartment,4400,Bat Yam,Dakar St.  3,3.0,4.0,85,0
+rent,Apartment,3500,Bat Yam,Daniel St. ,2.5,1.0,75,0
+rent,Apartment,4400,Herzliya,Tsahal St.  2,2.0,2.0,55,0
+rent,Apartment,4200,Petah Tikva,Rothschild St.  144,4.0,3.0,90,0
+rent,Apartment,3700,Petah Tikva,Aharon Katsir St. ,3.0,2.0,85,0
+rent,Apartment,2300,Petah Tikva,Yosef Sapir St. ,1.0,0.0,25,0
+rent,Apartment,2300,Petah Tikva,Ihilov St. ,1.0,0.0,25,0
+rent,Apartment,4000,Petah Tikva,Ein Ganim St. ,3.0,1.0,80,1
+rent,Apartment,3700,Petah Tikva,Herzl St. ,3.0,1.0,75,0
+rent,Apartment,4200,Rishon LeTsiyon,Ha-Akhim Suleiman St.  6,3.0,1.0,7,1
+rent,Apartment,3000,Ramat Gan,Sderot Yerushalayim  86,2.0,0.0,40,0
+rent,Apartment,5500,Bat Yam,Yitshak Sadeh St.  33,3.5,6.0,100,1
+rent,Apartment,5500,Tel Aviv-Yafo,Shalma Road ,3.0,2.0,70,0
+rent,Apartment,3950,Bat Yam,Kinneret St.  11,4.0,3.0,90,0
+rent,Mini penthouse,2900,Bnei Brak,Hertsel St.  75,3.0,4.0,52,0
+rent,Apartment,2800,Bnei Brak,Ussishkin St.  23,2.0,2.0,45,0
+rent,Apartment,5000,Holon,Khazit Khamesh St. ,3.5,3.0,90,1
+rent,Apartment,5500,Givatayim,Kiryat Yosef St.  20,4.0,2.0,120,1
+rent,Apartment,7600,Tel Aviv-Yafo,HaHashmonaim St.  98,4.0,9.0,96,2
+rent,Apartment,9500,Tel Aviv-Yafo,HaHashmonaim St.  97,4.0,9.0,89,2
+rent,Apartment,5100,Tel Aviv-Yafo,Weizmann St.  87,2.0,0.0,55,0
+rent,Apartment,6700,Tel Aviv-Yafo,Shtulim St.  55,4.0,12.0,100,2
+rent,Apartment,5000,Tel Aviv-Yafo,Shalma Road ,2.0,3.0,50,0
+rent,Mini penthouse,4500,Rishon LeTsiyon,Ha-Yekev St. ,2.5,4.0,62,0
+rent,Apartment,3700,Rishon LeTsiyon,Rothschild St. ,3.5,6.0,85,0
+rent,Apartment,4800,Bat Yam,Livorno St.  3,4.0,4.0,100,1
+rent,Apartment,3000,Petah Tikva,Yitskhak Sadeh St. ,3.0,1.0,65,0
+rent,Apartment,3500,Petah Tikva,Olei Bavel St. ,2.5,1.0,70,0
+rent,Apartment,4100,Holon,Zeev Jabotinsky St. ,3.0,3.0,80,0
+rent,Apartment,4500,Gedera,Bialik St. ,3.0,2.0,100,1
+rent,Apartment,6000,Tel Aviv-Yafo,Ha-Rav Alnekave St.  78,4.0,3.0,100,1
+rent,Studio,2500,Jerusalem,Jaffa St.  212,1.0,6.0,30,0
+rent,Apartment,4200,Holon,Har ha-Tsofim St. ,3.0,4.0,60,0
+rent,Apartment,4500,Nes Harim,Livne St.  16,3.0,0.0,64,3
+rent,Studio,2900,Rishon LeTsiyon,Shivtei Yisrael St. ,1.0,1.0,35,0
+rent,Apartment,4000,Ramat Gan,Negba Road  35,2.5,2.0,55,0
+rent,Apartment,4000,Ramla,Sderot Ben Gurion ,4.0,3.0,90,1
+rent,Apartment,2800,Ramla,Yitshak Ben Zvi St. ,2.0,3.0,50,0
+rent,Apartment,3500,Ramla,Yoseftal St. ,3.0,1.0,70,0
+rent,Apartment,3000,Ramla,Alef Samech Levi St. ,3.0,4.0,70,0
+rent,Housing unit,2700,Ramla,Ha-Ilanot St. ,2.0,0.0,30,0
+rent,Housing unit,3200,Rishon LeTsiyon,Migdalor St. ,1.0,0.0,40,0
+rent,Apartment,2600,Ramla,Yitshak Ben Zvi St. ,2.0,2.0,50,0
+rent,Housing unit,3200,Rehovot,Rambam St. ,1.0,0.0,40,0
+rent,Apartment,3400,Ramla,Sderot David Razi'el  4,3.0,2.0,70,1
+rent,Apartment,2600,Ramla,Amichai St. ,2.0,2.0,50,0
+rent,Apartment,3500,Ramla,Vilna St.  4,3.0,1.0,70,0
+rent,Housing unit,3000,Ramla,Levi Eshkol St. ,3.0,1.0,50,0
+rent,Apartment,5190,Ramat Gan,Ha-Podim St.  31,3.0,2.0,70,2
+rent,Apartment,3600,Bnei Brak,Yigal Alon St.  25,3.0,2.0,65,1
+rent,Apartment,4750,Holon,Alufei Tsahal St.  21,4.0,4.0,93,1
+rent,Apartment,3400,Holon,HaTsfira St.  4,2.5,3.0,65,0
+rent,Apartment,3200,Rishon LeTsiyon,Rothschild St.  58,2.0,0.0,40,0
+rent,Apartment,4400,Jerusalem,Shamai St.  10,2.0,3.0,51,0
+rent,Housing unit,3800,Jerusalem,Yosef Avidar St.  22,2.0,1.0,50,1
+rent,Apartment,4950,Tel Aviv-Yafo,Ha-Keshet St. ,3.5,2.0,90,0
+rent,Apartment,3390,Bat Yam,Kakal St.  20,2.5,2.0,60,0
+rent,Apartment,5900,Bat Yam,Derech Ben Gurion  133,4.0,3.0,100,0
+rent,Apartment,4700,Petah Tikva,Rothschild St.  136,4.0,8.0,80,1
+rent,Apartment,4000,Bat Yam,Halper St.  24,2.0,7.0,50,0
+rent,Apartment,4200,Bat Yam,Kaf-Tet BeNovember St. ,3.0,5.0,80,0
+rent,Apartment,5200,Holon,Eliyahu Krauze St. ,4.0,2.0,100,0
+rent,Housing unit,3150,Rishon LeTsiyon,Leshem St. ,2.0,0.0,35,1
+rent,Housing unit,2350,Rishon LeTsiyon,Shlomo Pomborovski St. ,2.0,0.0,35,1
+rent,Apartment,6500,Rishon LeTsiyon,HaGat St. ,5.0,8.0,140,2
+rent,Apartment,5300,Rishon LeTsiyon,Ha-Khartsit St. ,4.0,7.0,100,1
+rent,Apartment,6300,Rishon LeTsiyon,Rival St. ,4.5,7.0,110,1
+rent,Apartment,4300,Bat Yam,Balfour St.  115,3.0,2.0,70,1
+rent,Apartment,4500,Rishon LeTsiyon,Meir Vinik St. ,3.0,2.0,80,1
+rent,Apartment,4500,Rishon LeTsiyon,Ha-Khelmonit St. ,2.0,2.0,55,0
+rent,Housing unit,4500,Rishon LeTsiyon,Rekhavya Ofek St. ,2.0,0.0,60,0
+rent,Apartment,4600,Rishon LeTsiyon,Asher Levin St.  4,4.0,6.0,110,1
+rent,Mini penthouse,9000,Rishon LeTsiyon,Meishar St. ,4.5,16.0,135,1
+rent,Apartment,3000,Petah Tikva,David Wolfson St. ,2.0,1.0,55,1
+rent,Apartment,4500,Petah Tikva,Ein Ganim St. ,4.5,4.0,110,1
+rent,Cottage/house,4500,Petah Tikva,HaPalmach St. ,3.0,2.0,100,0
+rent,Apartment,2800,Petah Tikva,Yitskhak Sadeh St. ,3.0,0.0,70,0
+rent,Apartment,5500,Rishon LeTsiyon,Mivtsa Kadesh St.  9,4.0,1.0,110,1
+rent,Garden apt,5200,Rishon LeTsiyon,Gush Etsyon St.  22,3.0,0.0,100,0
+rent,Apartment,6500,Herzliya,הקרן  7,3.0,4.0,75,1
+rent,Housing unit,3600,Jerusalem,HaRav Yizhak Hai Taib St.  18,2.0,1.0,40,0
+rent,Apartment,7500,Tel Aviv-Yafo,Shlomo HaMelekh St.  8,3.0,1.0,80,0
+rent,Apartment,12500,Tel Aviv-Yafo,Yehezkel Streichman St. ,5.5,3.0,130,1
+rent,Penthouse,17000,Tel Aviv-Yafo,Amir Gilboa St. ,5.0,8.0,150,1
+rent,Apartment,3100,Kiryat Ono,Shlomo ha-Melekh St.  6,2.0,1.0,36,0
+rent,Apartment,5900,Ramat Gan,Bialik St.  78,3.0,17.0,70,2
+rent,Apartment,1250,Ari'el,Ramat HaGolan St.  15,49.0,2.0,92,1
+rent,Housing unit,2700,Holon,Mesilat HaOlim St.  18,2.0,3.0,27,0
+rent,Garden apt,6900,Jerusalem,Shimshon St.  19,2.0,0.0,60,0
+rent,Room,2700,Tel Aviv-Yafo,Netsach Israel St.  22,2.0,1.0,30,0
+rent,Apartment,3000,Bat Yam,Berl Katzenelson St.  11,2.0,1.0,60,0
+rent,Housing unit,3000,Bat Yam,HaGiborim St.  38,2.0,0.0,40,0
+rent,Apartment,8800,Tel Aviv-Yafo,Bograshov St.  6,3.0,2.0,70,1
+rent,Apartment,3600,Bat Yam,Balfour St.  50,2.0,2.0,60,0
+rent,Apartment,2800,Bat Yam,HaHashmonaim St. ,1.0,1.0,30,0
+rent,Apartment,3800,Bat Yam,Trumpeldor St. ,3.0,1.0,65,0
+rent,Villa,4200,Bnei Brak,Shlosh HaShaot St.  25,4.0,1.0,75,0
+rent,Apartment,2500,Petah Tikva,Yehoshua Shtampfer St.  28,2.0,1.0,35,0
+rent,Apartment,3500,Tel Aviv-Yafo,Shlomo HaMelekh St.  20,1.0,0.0,24,0
+rent,Penthouse,35000,Jerusalem,Avraham Perrera St. ,5.0,9.0,575,3
+rent,Apartment,5800,Jerusalem,Avner-Hai Shaki  32,4.0,3.0,107,2
+rent,Apartment,3000,Jerusalem,Bar Yokhai St.  3,2.0,3.0,55,0
+rent,Penthouse,8500,Jerusalem,Costa Rica St.  2,4.0,3.0,130,1
+rent,Apartment,45000,Tel Aviv-Yafo,Sderot Shaul HaMelech ,4.0,13.0,200,2
+rent,Apartment,9650,Tel Aviv-Yafo,Zeitlin St. ,4.0,3.0,94,1
+rent,Apartment,16500,Tel Aviv-Yafo,Zikhron Yaakov St. ,4.0,4.0,165,2
+rent,Apartment,3100,Bat Yam,Eilat St.  11,2.0,2.0,55,0
+rent,Apartment,2800,Ramla,Sderot Hayim Weizman  20,3.0,0.0,58,0
+rent,Housing unit,2500,Ramla,Yitshak Ben Zvi St. ,2.0,4.0,45,0
+rent,Apartment,3500,Tel Aviv-Yafo,Shlomo Buber St.  38,2.0,0.0,30,0
+rent,Apartment,9000,Tel Aviv-Yafo,Shlomo Buber St.  38,5.5,1.0,130,2
+rent,Apartment,5800,Tel Aviv-Yafo,Tosefta St.  3,3.0,3.0,70,0
+rent,Apartment,21000,Tel Aviv-Yafo,Hadassa St.  6,4.0,19.0,170,2
+rent,Apartment,3950,Rishon LeTsiyon,HaHadarim St. ,3.0,4.0,80,0
+rent,Apartment,3600,Bat Yam,Shaul Hadadi St.  10,3.0,2.0,70,0
+rent,Housing unit,3800,Holon,Sokolov St.  74,1.5,1.0,40,0
+rent,Apartment,7500,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,7.0,86,2
+rent,Apartment,2750,Tel Aviv-Yafo,Lapin St.  10,1.0,0.0,18,0
+rent,Apartment,4600,Bat Yam,Balfour St.  131,4.0,2.0,80,0
+rent,Room,2675,Tel Aviv-Yafo,Rosenblatt St.  4,1.0,3.0,110,2
+rent,Apartment,4200,Bat Yam,Dolfin St.  8,2.5,6.0,70,0
+rent,Apartment,3600,Bat Yam,Balfour St. ,3.0,2.0,75,0
+rent,Apartment,4400,Rishon LeTsiyon,Ha-Akhim Suleiman St.  15,3.5,3.0,76,0
+rent,Housing unit,4000,Tel Aviv-Yafo,Nadav St.  11,2.0,0.0,80,1
+rent,Apartment,3600,Bat Yam,Shaul Hadadi St.  10,3.0,2.0,70,0
+rent,Apartment,4500,Rishon LeTsiyon,Tel Hai St.  7,3.5,2.0,106,0
+rent,Apartment,4900,Ashdod,Ha-Atsmaut St. ,3.0,13.0,115,1
+rent,Apartment,7500,Tel Aviv-Yafo,Yesud ha-Maala St.  58,4.0,5.0,90,1
+rent,Apartment,100,Herzliya,Rivka Guver St.  1,4.0,4.0,125,2
+rent,Apartment,4800,Rishon LeTsiyon,Yoel Drubin St. ,3.5,1.0,91,1
+rent,Apartment,4000,Rishon LeTsiyon,Shmuel Shrira St. ,3.5,3.0,90,1
+rent,Apartment,3950,Bat Yam,Sheshet ha-Yamim St. ,2.5,3.0,83,0
+rent,Apartment,5500,Bat Yam,Ha-Neviim St.  60,3.0,5.0,94,2
+rent,Apartment,2900,Bat Yam,HaRav Uziel St.  9,1.0,3.0,16,0
+rent,Apartment,3800,Rehovot,Beeri St.  6,3.0,3.0,75,0
+rent,Cottage/house,6500,Rehovot,Shimon Eshed St.  2,5.0,2.0,120,0
+rent,Rooftop apt,3500,Modiin-Maccabim-Reut,Hartsit St.  44,2.0,4.0,32,2
+rent,Apartment,8500,Petah Tikva,Anielewicz St.  4,6.0,4.0,170,1
+rent,Apartment,2800,Rishon LeTsiyon,HaGdud Haivri St.  62,1.5,4.0,35,0
+rent,Apartment,3700,Tel Aviv-Yafo,Burma St.  40,3.0,3.0,60,2
+rent,Apartment,6200,Rishon LeTsiyon,Gluskin St.  23,5.0,1.0,120,2
+rent,Apartment,5400,Bat Yam,Arlozorov St.  20,4.0,1.0,112,0
+rent,Apartment,4000,Holon,Arye Shenkar St.  70,3.0,4.0,70,0
+rent,Penthouse,9000,Bat Yam,Herzl St.  4,6.0,9.0,160,2
+rent,Apartment,4100,Bat Yam,Eli Cohen St. ,4.0,3.0,90,0
+rent,Apartment,7500,Bat Yam,Arlozorov St.  47,5.0,4.0,100,1
+rent,Apartment,3500,Holon,Sderot Dov Hoz ,3.0,2.0,80,0
+rent,Apartment,6000,Tel Aviv-Yafo,Aba Akhimeir St.  34,3.0,2.0,70,0
+rent,Apartment,3300,Tel Aviv-Yafo,Nahal Oz St.  10,3.0,0.0,67,0
+rent,Apartment,5400,Rishon LeTsiyon,Jabotinsky St.  3,4.5,1.0,100,1
+rent,Garden apt,3600,Bat Yam,HaHashmonaim St. ,2.0,0.0,50,0
+rent,Apartment,5100,Bat Yam,Ha-Neviim St. ,5.0,2.0,90,0
+rent,Apartment,3000,Tel Aviv-Yafo,Sderot Nordau  62,2.0,3.0,65,0
+rent,Apartment,5100,Ashdod,Exodus St. ,3.0,2.0,95,2
+rent,Cottage/house,7000,Oranit,Ha-Oren St. ,5.5,2.0,200,1
+rent,Apartment,3600,Bat Yam,Balfour St. ,1.5,3.0,35,0
+rent,Apartment,4000,Bat Yam,Balfour St. ,1.5,3.0,35,0
+rent,Apartment,3600,Tel Aviv-Yafo,Dganya St. ,1.0,0.0,35,0
+rent,Apartment,4500,Holon,Sderot Dov Hoz ,3.0,2.0,75,0
+rent,Apartment,7500,Tel Aviv-Yafo,Ha-Kalir St. ,2.0,3.0,55,0
+rent,Apartment,4800,Bat Yam,HaGdud Haivri St.  24,3.0,1.0,100,0
+rent,Apartment,6500,Givatayim,Keren Kayemet Le-Israel St.  38,4.0,2.0,80,0
+rent,Apartment,4200,Holon,Zecharia Harofe St  21,3.0,1.0,60,1
+rent,Apartment,5300,Bat Yam,Yerushalayim St.  61,5.0,2.0,101,0
+rent,Apartment,4000,Ramat Gan,Negba Road  35,2.5,2.0,55,0
+rent,Apartment,4700,Yehud,Derech Moshe Dayan  8,3.0,2.0,84,1
+rent,Apartment,4200,Bat Yam,Yoseftal St.  37,3.0,2.0,80,0
+rent,Garden apt,4900,Holon,Zeev Jabotinsky St. ,3.0,0.0,75,0
+rent,Apartment,6700,Petah Tikva,HaAtsmaut St.  79,5.0,2.0,125,1
+rent,Apartment,2600,Bat Yam,Balfour St. ,1.0,2.0,25,0
+rent,Apartment,3500,Tel Aviv-Yafo,HaRav Rubinstein St. ,3.0,2.0,75,0
+rent,Apartment,2800,Bat Yam,Balfour St. ,1.0,1.0,30,0
+rent,Apartment,2800,Bat Yam,Mivtsa Sinai St. ,1.5,2.0,35,0
+rent,Apartment,2600,Bat Yam,Berl Katzenelson St. ,1.0,3.0,30,0
+rent,Apartment,4500,Bat Yam,Herzl St. ,2.0,1.0,60,0
+rent,Apartment,3300,Bat Yam,Arlozorov St.  60,2.0,0.0,65,0
+rent,Room,1600,Ramat Gan,Megadim St.  3,4.0,3.0,104,0
+rent,Apartment,5600,Petah Tikva,Yaakov Krol St.  18,5.0,5.0,117,1
+rent,Apartment,6000,Jerusalem,Eliyahu Beit Tsuri St.  7,4.0,4.0,95,1
+rent,Apartment,3600,Jerusalem,Rabi Tsadok St.  11,3.5,2.0,70,0
+rent,Penthouse,6200,Tel Aviv-Yafo,Yitzhak Sadeh St.  38,4.0,5.0,100,1
+rent,Apartment,3500,Bat Yam,Khatsor St.  8,3.0,2.0,75,1
+rent,Apartment,3400,Tel Aviv-Yafo,Mevaser St.  23,2.0,0.0,48,0
+rent,Apartment,2950,Jerusalem,Jaffa St.  70,1.5,3.0,30,0
+rent,Apartment,3500,Tel Aviv-Yafo,Shlomo HaMelekh St.  20,1.0,0.0,24,0
+rent,Apartment,5200,Mevaseret Zion,Mevo Egoz  16,3.5,3.0,90,0
+rent,Apartment,4800,Jerusalem,Eliyahu Mani St.  4,3.0,1.0,64,1
+rent,Apartment,4000,Rishon LeTsiyon,HaHadarim St.  12,3.0,4.0,70,0
+rent,Apartment,6500,Tel Aviv-Yafo,Romema St.  16,4.0,1.0,86,1
+rent,Apartment,3700,Bat Yam,Mivtsa Sinai St.  24,3.0,4.0,70,1
+rent,Apartment,2800,Ramat Gan,Yaavets St.  6,1.5,2.0,25,0
+rent,Apartment,3500,Holon,HaTothanim St.  9,2.0,1.0,55,0
+rent,Apartment,6000,Jerusalem,Koresh St.  12,4.0,2.0,72,0
+rent,Apartment,3200,Jerusalem,Yaakov Tahon St.  10,1.5,2.0,35,0
+rent,Housing unit,3700,Petah Tikva,Yosef Levin St.  12,2.5,0.0,60,0
+rent,Apartment,3300,Tel Aviv-Yafo,Kehilat Canada St.  22,2.0,3.0,34,0
+rent,Apartment,4700,Givatayim,Shimon Ben Tsvi St.  31,4.0,1.0,120,2
+rent,Apartment,11800,Tel Aviv-Yafo,Brandeis St.  11,5.0,0.0,117,2
+rent,Apartment,6200,Tel Aviv-Yafo,HaYarkon St.  63,3.0,2.0,75,0
+rent,Apartment,2800,Jerusalem,Avraham Stern St.  18,2.0,0.0,40,0
+rent,Rooftop apt,5700,Holon,Moshe Hess St.  10,5.0,2.0,120,1
+rent,Apartment,3600,Holon,Ha-Histadrut St.  103,3.0,4.0,110,0
+rent,Housing unit,3000,Rishon LeTsiyon,Joseph Brodsky St.  12,1.0,0.0,40,1
+rent,Apartment,7000,Ramat Hasharon,Naomi St.  6,3.0,2.0,88,1
+rent,Apartment,3500,Bat Yam,Herzl St. ,2.0,1.0,65,0
+rent,Apartment,2300,Petah Tikva,Kaplan St.  32,1.0,1.0,25,0
+rent,Garden apt,7500,Jerusalem,Kdoshei Struma St.  36,4.0,0.0,87,3
+rent,Apartment,4300,Bat Yam,Ha-Rav Herzog St.  32,3.0,3.0,95,0
+rent,Apartment,3000,Rehovot,Ha-Hagana St.  25,2.5,4.0,50,0
+rent,Apartment,5500,Bat Yam,Ha-Neviim St.  60,3.0,5.0,94,2
+rent,Apartment,7500,Tel Aviv-Yafo,Zalman Shneour St. ,3.0,2.0,65,1
+rent,Apartment,6000,Tel Aviv-Yafo,HaKongres St. ,3.0,3.0,70,1
+rent,Apartment,3800,Petah Tikva,HaRav Kitroni St.  50,4.0,3.0,75,0
+rent,Apartment,5500,Ramat Gan,Rehovot HaNahar  5,2.5,2.0,70,0
+rent,Apartment,4550,Ramat Gan,Struma St.  2,3.0,2.0,75,0
+rent,Apartment,4000,Bat Yam,Yerushalayim St. ,3.0,3.0,100,0
+rent,Apartment,3300,Bat Yam,Givati St. ,2.5,3.0,70,0
+rent,Apartment,4500,Tel Aviv-Yafo,Y.L. Perets St.  38,2.5,2.0,50,1
+rent,Apartment,3600,Bat Yam,Ha-Sar Rabinovich St.  14,3.0,2.0,75,1
+rent,Apartment,4100,Bat Yam,Sheshet ha-Yamim St.  14,2.5,2.0,70,0
+rent,Apartment,5000,Rishon LeTsiyon,Ha-Kinor St. ,3.0,4.0,75,1
+rent,Apartment,4600,Kiryat Ono,Ha-Rakefet St.  3,3.5,6.0,85,0
+rent,Housing unit,2000,Rishon LeTsiyon,Ha-Rakefet St.  79,1.0,0.0,15,0
+rent,Housing unit,1900,Jerusalem,King George St.  8,1.0,0.0,22,0
+rent,Apartment,6500,Tel Aviv-Yafo,Shalom Ash St.  19,3.0,2.0,70,2
+rent,Apartment,3300,Gedera,Shapira St.  7,3.0,1.0,75,1
+rent,Apartment,4400,Ramat Gan,Haroe St.  72,3.0,2.0,65,0
+rent,Room,1600,Holon,Harokmim St.  47,1.0,2.0,12,0
+rent,Apartment,7500,Tel Aviv-Yafo,Yiftakh St.  2,4.0,3.0,100,1
+rent,Apartment,3500,Holon,Sderot Kugel  17,2.5,0.0,56,0
+rent,Housing unit,3100,Rehovot,Janus Korczak St.  11,2.0,0.0,50,0
+rent,Apartment,9800,Tel Aviv-Yafo,Sderot Ben Gurion  100,5.0,2.0,130,0
+rent,Apartment,3500,Ramla,Zahal St.  13,3.0,0.0,70,2
+rent,Housing unit,2550,Givatayim,Keren Kayemet Le-Israel St.  27,1.0,0.0,15,0
+rent,Apartment,4500,Rishon LeTsiyon,Tsvi Herman Shapira St.  13,3.5,4.0,75,1
+rent,Housing unit,2800,Rehovot,Rambam St.  16,2.0,0.0,50,1
+rent,Apartment,6000,Ramat Gan,Hadar St.  10,4.5,2.0,108,0
+rent,Apartment,6000,Tel Aviv-Yafo,Manya ve-Yisrael Shokhat St.  11,3.5,1.0,70,0
+rent,Apartment,5200,Rishon LeTsiyon,Shlomo Eliraz St. ,3.0,7.0,86,1
+rent,Apartment,3700,Ashdod,Martin Buber St. ,2.0,9.0,62,1
+rent,Apartment,3000,Bat Yam,Rothschild St.  30,2.0,1.0,55,0
+rent,Apartment,7250,Tel Aviv-Yafo,Meitav St.  1,3.0,18.0,86,2
+rent,Apartment,12000,Tel Aviv-Yafo,Ben Yehuda St.  214,4.0,2.0,85,0
+rent,Apartment,2400,Kiryat Ono,Shlomo ha-Melekh St.  2,3.0,4.0,65,0
+rent,Housing unit,3000,Rishon LeTsiyon,Ha-Oren St.  16,2.0,1.0,45,0
+rent,Apartment,2650,Ramat Gan,Negba Road  42,1.0,2.0,30,0
+rent,Apartment,3700,Bat Yam,Etsel St. ,2.5,1.0,7,0
+rent,Apartment,4050,Jerusalem,Borochov St.  43,3.0,0.0,50,3
+rent,Apartment,4500,Rishon LeTsiyon,Kiryat Sefer St. ,3.0,1.0,81,0
+rent,Apartment,3200,Petah Tikva,Mohiliver St.  1,2.0,1.0,50,0
+rent,Apartment,6600,Ramat Gan,HaMaayan St.  2,3.0,21.0,79,2
+rent,Apartment,5800,Rehovot,Yehuda Leib Yosefson St.  4,5.0,1.0,128,2
+rent,Apartment,3800,Holon,Sderot Yoseftal  150,4.0,2.0,85,1
+rent,Apartment,5300,Rishon LeTsiyon,HaOrgan St. ,3.0,4.0,85,1
+rent,Apartment,6400,Jerusalem,Yaakov Salman St.  14,4.0,1.0,80,2
+rent,Apartment,3700,Jerusalem,HaAnafa St.  309,3.0,2.0,75,1
+rent,Apartment,4100,Rosh Haayin,Pelakh ha-Limon St.  8,3.5,2.0,75,0
+rent,Apartment,4700,Ashdod,Nahal Kishon St. ,4.0,6.0,97,0
+rent,Apartment,4000,Petah Tikva,Siegelbaum St.  3,4.0,4.0,100,0
+rent,Apartment,3200,Rehovot,Kalman Gavrielov St.  25,3.0,1.0,72,1
+rent,Apartment,5600,Tel Aviv-Yafo,Hadassa St.  11,2.0,0.0,62,0
+rent,Apartment,2900,Rishon LeTsiyon,David Tidhar St.  13,2.0,3.0,50,1
+rent,Apartment,8000,Ashdod,Tsahal St.  5,5.0,9.0,150,2
+rent,Apartment,2400,Petah Tikva,Bar Kochva St.  34,1.0,1.0,25,0
+rent,Apartment,4800,Herzliya,Shmuel HaNagid St.  22,3.0,1.0,78,1
+rent,Room,1900,Tel Aviv-Yafo,Arlozorov St.  190,3.0,3.0,22,0
+rent,Apartment,5500,Rehovot,Bnei Moshe St.  24,3.5,1.0,100,0
+rent,Apartment,3700,Holon,Ness Tsiyona St.  3,2.5,4.0,70,0
+rent,Apartment,3600,Holon,Ha-Arava St.  31,3.0,1.0,60,0
+rent,Garden apt,4000,Kefar Sava,Ha-Rishonim St.  1,2.0,0.0,65,0
+rent,Apartment,5800,Jerusalem,Levi Eshkol Boulevard  8,3.0,2.0,70,1
+rent,Apartment,2250,Jerusalem,Yekhezkel (Yehezkel) Kutscher St.  23,1.0,0.0,25,1
+rent,Apartment,4500,Tel Aviv-Yafo,Isaac Harif St.  16,3.0,1.0,75,0
+rent,Apartment,11500,Tel Aviv-Yafo,Sderot HaHaskala  17,3.0,18.0,106,1
+rent,Housing unit,3500,Bat Yam,Herzl St.  34,1.0,1.0,50,0
+rent,Apartment,4000,Bat Yam,HaShikma St.  1,2.5,1.0,65,0
+rent,Housing unit,2500,Shoham,Maccabim St.  80,1.0,0.0,25,0
+rent,Apartment,6900,Tel Aviv-Yafo,Vitkin St.  7,3.0,1.0,50,0
+rent,Apartment,3200,Lod,Admonit St.  13,3.0,6.0,75,1
+rent,Apartment,3800,Ashdod,HaMada St.  1,4.0,4.0,100,0
+rent,Apartment,3600,Rishon LeTsiyon,Sokolov St.  1,3.0,0.0,70,0
+rent,Apartment,5500,Ness Ziona,Bialik St.  5,5.0,2.0,126,1
+rent,Apartment,7200,Tel Aviv-Yafo,Dafna St.  34,3.5,2.0,90,0
+rent,Apartment,4300,Tel Aviv-Yafo,Harav Reines St.  25,2.0,1.0,48,0
+rent,Apartment,4500,Rishon LeTsiyon,Kiryat Sefer St.  4,4.0,2.0,120,1
+rent,Room,2500,Tel Aviv-Yafo,Pestalozzi St.  27,3.0,1.0,70,0
+rent,Apartment,3500,Ashdod,Jabotinski St.  26,3.0,4.0,70,0
+rent,Apartment,6700,Tel Aviv-Yafo,Ha-Keshet St. ,5.0,2.0,130,3
+rent,Housing unit,3850,Bat Yam,Herzl St.  48,2.0,1.0,40,0
+rent,Apartment,4900,Bat Yam,HaShikma St. ,4.0,2.0,87,0
+rent,Apartment,3400,Ramla,Sderot Herzl  124,2.0,0.0,100,2
+rent,Apartment,4400,Tel Aviv-Yafo,Haim Barlev Road  170,3.0,4.0,90,0
+rent,Apartment,5300,Tel Aviv-Yafo,Kikar Hill  2,2.0,0.0,45,0
+rent,Studio,2800,Ramat Gan,Ha-Amal St.  18,1.0,3.0,28,0
+rent,Apartment,3200,Rishon LeTsiyon,Alkalai St.  30,2.0,1.0,50,0
+rent,Apartment,3800,Bat Yam,HaRav Levi St. ,3.0,8.0,75,1
+rent,Apartment,5000,ירושלים,Hazon Ish St.  34,5.0,4.0,120,2
+rent,Apartment,4200,Petah Tikva,Yehuda Leib Pinsker St.  73,3.0,2.0,71,1
+rent,Apartment,3200,Rishon LeTsiyon,Ha-Tsivoni St.  16,3.0,6.0,90,1
+rent,Apartment,5300,Givat Shmuel,HaTsiyonut St.  8,4.0,5.0,90,1
+rent,Duplex,5800,Modiin-Maccabim-Reut,Tkhelet St.  49,4.0,1.0,120,2
+rent,Apartment,8500,Ramat Gan,HaMaayan St.  4,4.0,7.0,124,2
+rent,Apartment,4500,Or Yehuda,Harduf St.  7,3.0,1.0,74,0
+rent,Apartment,6700,Tel Aviv-Yafo,Shlomo Ibn Gabirol St.  189,3.0,1.0,70,0
+rent,Apartment,6000,Tel Aviv-Yafo,HaYarkon St.  282,3.0,1.0,60,0
+rent,Apartment,9000,Tel Aviv-Yafo,Wilson St.  999,3.0,2.0,90,0
+rent,Apartment,4900,Jerusalem,Shakhal St.  2,3.0,1.0,75,1
+rent,Apartment,4500,Yehud-Monosson,Ashkenazi St.  3,3.5,2.0,80,0
+rent,Apartment,2650,Tel Aviv-Yafo,Zalman Shneour St.  19,1.0,0.0,24,0
+rent,Apartment,6300,Jerusalem,Berenice St.  2,4.5,1.0,120,1
+rent,Apartment,4850,Rishon LeTsiyon,Beit Yosef St.  3,4.5,2.0,120,1
+rent,Apartment,8200,Jerusalem,Ha-Haavara St.  34,5.0,0.0,120,1
+rent,Apartment,4600,Holon,Kdoshei Kahir St.  9,4.5,3.0,115,1
+rent,Apartment,5000,Bat Yam,Sokolov St.  5,3.5,2.0,78,1
+rent,Apartment,4300,Petah Tikva,Katz Michal Leib St.  19,3.0,1.0,74,1
+rent,Apartment,3500,Tel Aviv-Yafo,HaRav Rubinstein St. ,3.0,2.0,70,0
+rent,Apartment,2900,Bat Yam,HaAtsmaut Boulevard  8,2.0,0.0,40,0
+rent,Apartment,3800,Tel Aviv-Yafo,Kaminska St.  8,3.0,4.0,75,0
+rent,Cottage/house,4700,Ramla,HaRav Haim Shapira St.  12,3.0,1.0,65,0
+rent,Apartment,2450,Ramat Gan,Herzl St.  12,1.0,1.0,25,0
+rent,Housing unit,3200,Rishon LeTsiyon,Yonatan St.  13,2.0,1.0,50,0
+rent,Apartment,3500,Herzliya,HaRav Kook St.  100,2.0,2.0,46,0
+rent,Apartment,5200,Jerusalem,Ha-Ilui St.  2,4.0,2.0,100,2
+rent,Apartment,3500,Jerusalem,Abba Ahimeir St.  3,3.0,2.0,65,1
+rent,Apartment,3800,Bat Yam,HaGdud Haivri St.  14,2.0,0.0,52,0
+rent,Apartment,3300,Tel Aviv-Yafo,Galinit St. ,2.5,3.0,50,0
+rent,Apartment,4100,Bat Yam,Jabotinsky St.  20,4.0,3.0,100,0
+rent,Apartment,5800,Kiryat Ono,Yigal Alon St.  7,4.5,6.0,129,2
+rent,Cottage/house,4000,Azor,Remez St.  5,3.0,1.0,90,1
+rent,Apartment,3800,Bat Yam,Sheshet ha-Yamim St. ,2.5,3.0,75,0
+rent,Apartment,6100,Tel Aviv-Yafo,Morits Daniel St.  20,3.0,3.0,50,0
+rent,Apartment,5000,Ramat Gan,Ness Alley  6,4.0,1.0,100,1
+rent,Apartment,3800,Petah Tikva,Haim Arlozorov St.  2,3.0,0.0,80,0
+rent,Apartment,5850,Bat Yam,Ha-Rav Nisanbaum St.  37,2.0,22.0,50,1
+rent,Apartment,6500,Bat Yam,Yohanan HaSandlar St.  6,4.0,3.0,100,1
+rent,Apartment,2800,Ashdod,Ibn Gvirol St.  13,2.0,2.0,48,0
+rent,Apartment,3800,Bat Yam,Berl Katzenelson St.  57,3.0,2.0,70,0
+rent,Garden apt,3400,Ashdod,Ahi Eilat St.  18,2.0,0.0,40,1
+rent,Apartment,5500,Tel Aviv-Yafo,HaHashmal St.  5,2.0,4.0,55,1
+rent,Apartment,3500,Petah Tikva,Malachi St.  4,3.0,0.0,80,0
+rent,Apartment,3500,Petah Tikva,Ihilov St.  7,3.0,3.0,65,1
+rent,Apartment,8500,Tel Aviv-Yafo,Shaul Avigur St.  5,4.0,6.0,100,2
+rent,Apartment,4200,Tel Aviv-Yafo,Simtat Beit HaBad  2,2.0,1.0,49,0
+rent,Apartment,9100,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,9.0,107,2
+rent,Apartment,3700,Yavne,Ha-Rakefet St.  10,3.0,3.0,74,0
+rent,Apartment,4000,Bat Yam,HaMaapilim St.  30,3.5,1.0,100,1
+rent,Garden apt,6000,Jerusalem,HaHagana St.  10,4.0,0.0,80,2
+rent,Apartment,2700,Bat Yam,Ha-Rav Herzog St.  14,1.0,0.0,30,0
+rent,Apartment,8500,Jerusalem,HaRav Kuk St.  7,4.0,6.0,120,1
+rent,Apartment,4700,Rishon LeTsiyon,Ha-Rotem St.  3,3.0,5.0,80,1
+rent,Apartment,3500,Azor,Kaplan St.  4,3.0,2.0,80,1
+rent,Apartment,2200,Petah Tikva,Bar Kochva St.  34,1.0,1.0,23,0
+rent,Apartment,3500,Petah Tikva,Yehuda ha-Levi St.  15,2.0,2.0,70,0
+rent,Apartment,3900,Yehud-Monosson,Kdoshei Mitsrayim St.  19,3.0,2.0,78,0
+rent,Apartment,2700,Petah Tikva,Brener St.  9,2.5,2.0,65,0
+rent,Apartment,9500,Jerusalem,Heleni ha-Malka St.  24,4.5,2.0,120,0
+rent,Apartment,1700,Ramat Gan,Sderot Yerushalayim  11,4.5,1.0,110,5
+rent,Apartment,5000,Jerusalem,Mexico St.  14,4.0,2.0,80,0
+rent,Apartment,3600,Tel Aviv-Yafo,Malakhi St.  6,1.0,2.0,29,0
+rent,Apartment,3200,Bat Yam,Derech Ben Gurion ,1.0,12.0,35,1
+rent,Apartment,8100,Herzliya,HaRav Ovadya Yosef St.  1,6.0,5.0,150,2
+rent,Apartment,4500,Rishon LeTsiyon,Naaman St. ,3.0,1.0,80,0
+rent,Apartment,6500,Rishon LeTsiyon,Shlomo Eliraz St. ,5.0,6.0,140,2
+rent,Apartment,4500,Rishon LeTsiyon,Gissin St. ,3.5,1.0,85,1
+rent,Apartment,3400,Bat Yam,Ha-Tsipornim St. ,2.0,1.0,50,0
+rent,Apartment,9000,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,8.0,107,2
+rent,Apartment,5900,Ramat Hasharon,Henrietta Szold St.  3,3.5,1.0,110,1
+rent,Apartment,5200,Rishon LeTsiyon,Kiryat Sefer St. ,4.0,3.0,97,0
+rent,Apartment,4600,Rishon LeTsiyon,Tsvi Frank St.  23,3.5,2.0,87,1
+rent,Apartment,10000,Tel Aviv-Yafo,HaYarkon St.  2,3.0,2.0,85,0
+rent,Apartment,4200,Holon,Manya ve-Yisrael Shokhat St. ,3.0,1.0,75,0
+rent,Housing unit,3500,Rishon LeTsiyon,Betar St. ,2.0,3.0,45,0
+rent,Apartment,4500,Holon,Yehoshua Hankin St. ,4.0,2.0,100,0
+rent,Apartment,5900,Tel Aviv-Yafo,Y.L. Perets St.  33,3.0,2.0,65,0
+rent,Apartment,10000,Tel Aviv-Yafo,Carlebach St. ,4.0,7.0,120,2
+rent,Apartment,8500,Tel Aviv-Yafo,HaHashmonaim St. ,4.0,11.0,110,2
+rent,Duplex,8500,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,14.0,90,2
+rent,Apartment,12000,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,9.0,118,2
+rent,Apartment,11000,Tel Aviv-Yafo,Yitshak Elhanan St.  22,2.5,18.0,64,2
+rent,Apartment,5200,Tel Aviv-Yafo,Nahalat Binyamin St.  33,2.0,3.0,50,2
+rent,Duplex,8700,Tel Aviv-Yafo,HaHashmonaim St.  94,4.0,24.0,90,2
+rent,Apartment,6600,Tel Aviv-Yafo,Shtulim St. ,4.0,4.0,97,2
+rent,Apartment,5500,Tel Aviv-Yafo,Simtat Aluf Batslut  3,2.0,0.0,48,1
+rent,Apartment,9200,Tel Aviv-Yafo,HaHashmonaim St.  98,4.0,7.0,22,2
+rent,Apartment,8800,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,12.0,97,2
+rent,Apartment,4900,Tel Aviv-Yafo,Balaban St.  3,2.5,1.0,55,0
+rent,Apartment,6500,Tel Aviv-Yafo,Balaban St. ,4.0,0.0,90,0
+rent,Apartment,8650,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,9.0,107,2
+rent,Apartment,9000,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,11.0,89,2
+rent,Apartment,9500,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,12.0,107,2
+rent,Apartment,9000,Tel Aviv-Yafo,HaHashmonaim St.  96,4.0,12.0,90,2
+rent,Apartment,7000,Tel Aviv-Yafo,HaHashmonaim St.  96,3.0,31.0,79,2
+rent,Apartment,8000,Tel Aviv-Yafo,HaHashmonaim St.  96,3.0,8.0,75,2
+rent,Mini penthouse,9000,Bat Yam,Yohanan HaSandlar St. ,4.0,27.0,120,3
+rent,Apartment,4900,Rishon LeTsiyon,Trumpeldor St.  2,4.0,1.0,95,0
+rent,Apartment,3600,Rishon LeTsiyon,Rothschild St. ,2.5,2.0,70,0
+rent,Apartment,1850000,Tel Aviv-Yafo,Maharozet St. ,3.0,2.0,75,0
+rent,Apartment,8000,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,8.0,79,1
+rent,Apartment,3500,Kiryat Ono,HaShikma St.  7,4.0,3.0,100,0
+rent,Apartment,4100,Holon,HaBesht St. ,3.0,2.0,90,0
+rent,Duplex,6500,Rishon LeTsiyon,Mordekhai Moteleh Rosenstein St.  8,5.5,2.0,131,1
+rent,Apartment,4500,Tel Aviv-Yafo,Asherman St. ,3.0,3.0,50,0
+rent,Duplex,5800,Rishon LeTsiyon,Lubman St. ,4.0,4.0,105,1
+rent,Housing unit,3800,Rishon LeTsiyon,HaHafets Haim St. ,2.5,3.0,54,0
+rent,Apartment,15000,Tel Aviv-Yafo,HaYarkon St. ,3.0,3.0,82,0
+rent,Apartment,5500,Rehovot,Yehuda Leib Yosefson St.  4,5.0,1.0,140,2
+rent,Apartment,4000,Holon,Eilat St. ,3.0,1.0,70,0
+rent,Mini penthouse,45000,Tel Aviv-Yafo,HaYarkon St. ,5.0,5.0,218,1
+rent,Apartment,7600,Herzliya,Yitzhak Shamir St. ,5.0,1.0,120,2
+rent,Apartment,4000,Bat Yam,Livorno St.  5,4.0,4.0,90,0
+rent,Apartment,7000,Bat Yam,Yohanan HaSandlar St.  8,4.0,30.0,110,2
+rent,Apartment,3600,Bat Yam,Shmuel Yosef Agnon St.  50,2.5,4.0,65,0
+rent,Apartment,11500,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,117,2
+rent,Studio,2700,Bat Yam,HaShikma St. ,1.0,1.0,20,2
+rent,Loft,9000,Tel Aviv-Yafo,Nissim Aloni St.  10,2.0,6.0,70,2
+rent,Apartment,11000,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,14.0,118,2
+rent,Apartment,4200,Holon,Manya ve-Yisrael Shokhat St. ,3.0,1.0,80,0
+rent,Apartment,3800,Holon,Zeev Jabotinsky St. ,2.5,0.0,68,0
+rent,Housing unit,3000,Bat Yam,Rothschild St. ,1.5,3.0,30,0
+rent,Apartment,4400,Bat Yam,Yoseftal St. ,3.0,2.0,100,0
+rent,Apartment,5000,Ramat Gan,Simtat HaShiloah  8,3.0,1.0,72,1
+rent,Apartment,4900,Beit Dagan,Katsanelson St.  19,4.0,1.0,100,1
+rent,Apartment,4800,Rishon LeTsiyon,Ha-Tsofim St. ,3.0,5.0,68,1
+rent,Apartment,8500,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,9.0,80,1
+rent,Apartment,9500,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,24.0,98,3
+rent,Apartment,25000,Tel Aviv-Yafo,Pinkas St.  64,4.0,25.0,200,2
+rent,Apartment,8900,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,36.0,70,1
+rent,Apartment,8500,Tel Aviv-Yafo,Nissim Aloni St.  19,2.5,17.0,70,1
+rent,Apartment,9800,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,10.0,115,1
+rent,Apartment,10500,Tel Aviv-Yafo,Derech Menachem Begin  144,3.0,29.0,71,1
+rent,Apartment,12500,Tel Aviv-Yafo,Nissim Aloni St.  10,4.5,13.0,150,2
+rent,Apartment,8800,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,5.0,75,2
+rent,Apartment,7500,Tel Aviv-Yafo,Nissim Aloni St.  3,2.5,15.0,77,1
+rent,Apartment,25000,Tel Aviv-Yafo,Pinkas St.  66,3.0,33.0,175,2
+rent,Apartment,12000,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,117,2
+rent,Apartment,11500,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,115,2
+rent,Apartment,14500,Tel Aviv-Yafo,Nissim Aloni St.  10,3.5,18.0,145,2
+rent,Apartment,7500,Tel Aviv-Yafo,Nissim Aloni St.  17,2.5,14.0,67,1
+rent,Apartment,10000,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,8.0,83,3
+rent,Apartment,10000,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,5.0,95,2
+rent,Apartment,30000,Tel Aviv-Yafo,Nissim Aloni St.  10,5.5,30.0,260,3
+rent,Loft,8250,Tel Aviv-Yafo,Stricker St.  13,2.5,0.0,67,0
+rent,Apartment,7500,Tel Aviv-Yafo,Nissim Aloni St.  5,2.5,8.0,79,1
+rent,Apartment,8000,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,8.0,67,1
+rent,Apartment,8000,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,7.0,67,1
+rent,Apartment,7500,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,15.0,68,1
+rent,Duplex,7500,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,3.0,82,2
+rent,Apartment,8000,Tel Aviv-Yafo,Nissim Aloni St.  10,2.5,12.0,70,1
+rent,Duplex,35000,Tel Aviv-Yafo,Meir Yaari St.  18,7.0,0.0,220,0
+rent,Apartment,30000,Tel Aviv-Yafo,Nissim Aloni St.  10,5.5,30.0,260,3
+rent,Apartment,10500,Tel Aviv-Yafo,Ha-Rav Nisim St.  9,3.0,20.0,88,1
+rent,Apartment,9500,Tel Aviv-Yafo,Nissim Aloni St.  10,3.0,6.0,83,2
+rent,Apartment,3400,Ramat Gan,Bar Kochva St.  15,2.0,3.0,67,0
+rent,Housing unit,3700,Rishon LeTsiyon,Neve Ativ St. ,2.0,0.0,47,0
+rent,Housing unit,4200,Rishon LeTsiyon,Ha-Palmakh St. ,2.0,0.0,95,0
+rent,Apartment,3800,Rishon LeTsiyon,Kiryat Sefer St. ,3.0,3.0,100,0
+rent,Apartment,4400,Rishon LeTsiyon,Kiryat Sefer St. ,4.0,2.0,100,1
+rent,Apartment,5700,Rishon LeTsiyon,Aharon Kron St. ,4.0,2.0,103,1
+rent,Apartment,3400,Rishon LeTsiyon,Tsadi Gimel Banot St. ,2.5,4.0,50,0
+rent,Apartment,20000,Tel Aviv-Yafo,Mikhael Neeman St. ,6.0,2.0,240,1
+rent,Apartment,5300,Rishon LeTsiyon,Meonot Brakha St. ,4.0,3.0,100,1
+rent,Apartment,4800,Bat Yam,Ha-Hagana St.  40,4.0,1.0,110,1
+rent,Apartment,3500,Bat Yam,Bar Ilan St.  26,2.5,1.0,75,0
+rent,Apartment,5400,Rishon LeTsiyon,David Wolffsohn St.  47,5.0,5.0,100,0
+rent,Penthouse,40000,Tel Aviv-Yafo,Sheinkin St. ,4.0,6.0,269,2
+rent,Apartment,3100,Tel Aviv-Yafo,Florentin St. ,1.0,0.0,22,0
+rent,Apartment,4000,Rishon LeTsiyon,Rokakh St. ,2.5,2.0,65,0
+rent,Apartment,5700,Ramat Gan,Tsel ha-Giva St. ,4.5,2.0,120,0
+rent,Apartment,7300,Ramat Gan,Yakhin St. ,4.0,3.0,110,1
+rent,Apartment,6800,Rishon LeTsiyon,Aharon ha-Cohen St. ,5.0,2.0,121,1
+rent,Apartment,6000,Ramat Gan,Zeev Jabutinsky Road ,3.0,3.0,97,1
+rent,Apartment,4200,Bat Yam,Kaf-Tet BeNovember St. ,3.0,3.0,80,0
+rent,Studio,2700,Bat Yam,HaShikma St. ,1.0,1.0,20,2
+rent,Studio,3500,Bat Yam,Rothschild St.  11,1.0,2.0,28,0
+rent,Apartment,3800,Bat Yam,HaShikma St. ,2.0,3.0,60,0
+rent,Studio,3200,Bat Yam,Rothschild St. ,1.0,2.0,20,0
+rent,Apartment,6200,Rishon LeTsiyon,Maagal HaShalom St. ,4.0,5.0,110,2
+rent,Apartment,6700,Rishon LeTsiyon,Shlomo Eliraz St. ,5.0,18.0,140,2
+rent,Apartment,4300,Rishon LeTsiyon,Mishmar HaYarden St. ,4.0,1.0,90,1
+rent,Apartment,4600,Rishon LeTsiyon,Yitskhak Sadeh St. ,4.0,5.0,110,1
+rent,Apartment,4500,Ramat Gan,Haroe St.  192,3.0,2.0,88,0
+rent,Housing unit,2900,Bat Yam,HaAtsmaut Boulevard ,2.0,0.0,40,0
+rent,Rooftop apt,5500,Holon,Shmuel ha-Nagid St. ,4.0,4.0,85,1
+rent,Penthouse,4950,Holon,Sokolov St. ,2.5,4.0,55,0
+rent,Apartment,2900,Bat Yam,Yerushalayim St.  72,1.0,3.0,40,0
+rent,Apartment,5900,Bat Yam,Janusz Korczak St.  10,5.0,2.0,140,1
+rent,Apartment,2150,Bat Yam,Berl Katzenelson St.  4,1.0,0.0,15,0
+rent,Cottage/house,1100,Ramat Gan,Yair St.  120,5.0,2.0,200,1
+rent,Apartment,2900,Petah Tikva,HaAluf David Marcus St.  54,1.0,2.0,20,1
+rent,Apartment,4800,Ashdod,Tel-Chay Boulevard  21,4.0,3.0,130,1
+rent,Apartment,3700,Bat Yam,HaShikma St. ,2.5,1.0,70,0
+rent,Apartment,4100,Bat Yam,Balfour St. ,4.0,3.0,85,0
+rent,Apartment,800,Herzliya,HaOgen St.  4,3.0,2.0,90,2
+rent,Apartment,35000,Tel Aviv-Yafo,Pinkas St.  64,4.0,31.0,205,2
+rent,Apartment,12000,Herzliya,HaOgen St.  4,3.0,3.0,85,1
+rent,Studio,290,Bat Yam,Shaul Bar St. ,1.0,7.0,20,0
+rent,Apartment,280,Bat Yam,Shaul Bar St.  5,1.0,7.0,23,0
+rent,Studio,310,Bat Yam,Balfour St. ,1.0,9.0,20,1
+rent,Apartment,360,Bat Yam,Shaul Bar St. ,2.0,7.0,50,0
+rent,Apartment,4000,Holon,Yud Alef be-Adar St. ,3.0,2.0,75,1
+rent,Studio,300,Bat Yam,Balfour St. ,1.0,9.0,25,1
+rent,Apartment,5200,Herzliya,Shakhal St.  2,3.0,1.0,75,0
+rent,Penthouse,11000,Holon,Tzvi Tadmor ,5.0,8.0,180,3
+rent,Housing unit,4000,Rishon LeTsiyon,Ha-Enav St. ,2.0,0.0,55,0
+rent,Apartment,4600,Holon,HaTothanim St.  23,4.0,2.0,95,0
+rent,Apartment,14000,Tel Aviv-Yafo,Amos St.  34,5.0,1.0,135,2
