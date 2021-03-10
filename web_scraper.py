@@ -1,34 +1,24 @@
 import time
 from config import Configuration as Cfg
 from selenium_scraper import SeleniumScraper
-from soup_scraper import SoupScraper
 from utils import print_when_program_finishes
 
 
 def main():
     Cfg.define_parser()
     urls = [Cfg.URLS[key] for key in Cfg.LISTING_MAP[Cfg.args.property_listing_type]]
-    # if both soup and selenium are chosen, we use soup
-    if Cfg.args.scraper_type == 'soup':
+    for i, url in enumerate(urls):
         params = {"limit": Cfg.args.limit,
                   "to_print": Cfg.args.print,
                   "save": Cfg.args.save,
-                  "verbose": Cfg.args.verbose}
-        scraper = SoupScraper()
-        for listing_type in Cfg.LISTING_MAP[Cfg.args.property_listing_type]:
-            scraper.scrap(listing_type, **params)
-
-    elif Cfg.args.scraper_type == 'selenium':
-        for i, url in enumerate(urls):
-            params = {"to_print": Cfg.args.print,
-                      "save": Cfg.args.save,
-                      "verbose": Cfg.args.verbose,
-                      "listing_type": Cfg.LISTING_MAP[Cfg.args.property_listing_type][i]}
-            time.sleep(Cfg.BETWEEN_URL_PAUSE)
-            scraper = SeleniumScraper()
-            scraper.scrap_url(url, **params)
-            scraper.driver.close()
-            scraper.driver.quit()
+                  "verbose": Cfg.args.verbose,
+                  "to_database": Cfg.args.database,
+                  "listing_type": Cfg.LISTING_MAP[Cfg.args.property_listing_type][i]}
+        time.sleep(Cfg.BETWEEN_URL_PAUSE)
+        scraper = SeleniumScraper()
+        scraper.scrap_url(url, **params)
+        scraper.driver.close()
+        scraper.driver.quit()
 
     print_when_program_finishes()
 

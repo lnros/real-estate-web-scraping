@@ -1,58 +1,32 @@
 import os
 import time
-from bs4 import BeautifulSoup as bs
+
 import numpy as np
 import pandas as pd
+import pymysql
+from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
-import pymysql
+
 from config import Configuration as cfg
+from config import DBConfig
 from utils import *
-
-
-def create_driver():
-    """
-    Creates a driver that runs in Google Chrome.
-    """
-    os.environ['WDM_LOG_LEVEL'] = cfg.SILENCE_DRIVER_LOG
-    return webdriver.Chrome(ChromeDriverManager().install())
-
-
-def new_home_to_attr_dict(buy_property, listing_type):
-    proper = buy_property.div.div.findChildren('div', recursive=False)
-
-    try:
-        price = proper[0].findChildren('div', recursive=False)[-1].text
-        price = ''.join(re.findall("\d", price)).strip()
-    except:
-        price = None
-
-    attr = proper[1].findChildren('div', recursive=False)
-
-    try:
-        Status = attr[-1].text.strip().split()[-1]
-    except:
-        Status = None
-
-    try:
-        street = attr[-3].text.strip(string.punctuation)
-    except:
-        street = None
-
-    try:
-        city = attr[-2].text.strip(string.punctuation)
-    except:
-        city = None
-
-    return {'listing_type': listing_type, 'Price': price, 'City': city, 'Address': street, 'Status': Status}
 
 
 class SeleniumScraper:
 
     def __init__(self):
-        self.driver = create_driver()
+        self.driver = self._create_driver()
         self._df = None
+
+    @staticmethod
+    def _create_driver():
+        """
+        Creates a driver that runs in Google Chrome.
+        """
+        os.environ['WDM_LOG_LEVEL'] = cfg.SILENCE_DRIVER_LOG
+        return webdriver.Chrome(ChromeDriverManager().install())
 
     def update_df(self, df):
         """
@@ -66,7 +40,7 @@ class SeleniumScraper:
         """
         return self._df
 
-    def _scroll(self, verbose=False):
+    def _scroll(self, limit=None, verbose=False):
         """
         Scrolls down the url to load all the information available
         """
@@ -81,6 +55,8 @@ class SeleniumScraper:
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
             try:
+                if limit and scroll_num == limit:
+                    break
                 # Finds the bottom of the page
                 bot_ele = self.driver.find_element_by_xpath(cfg.BOTTOM_PAGE_XPATH)
             except NoSuchElementException:
@@ -90,7 +66,7 @@ class SeleniumScraper:
                 self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
                 break
 
-    def _scroll_new_homes(self, verbose=False):
+    def _scroll_new_homes(self, limit=None, verbose=False):
         """
         Scrolls down the new_homes url to load all the information available
         """
@@ -106,7 +82,7 @@ class SeleniumScraper:
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
             new_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
-            if new_len == prev_len:
+            if new_len == prev_len or (limit and scroll_num == limit):
                 break
             scroll_num += 1
             prev_len = new_len
@@ -127,63 +103,65 @@ class SeleniumScraper:
                 print(self.get_df())
             self.get_df().to_csv(filename, index=False)
 
-    def _save_to_data_base(self, listing_type):
+    def _save_to_data_base(self, listing_type, to_database=True, verbose=False):
         """
         Save the dataframe containing the scraped info into a database.
         """
-        df = self.get_df()
-        df = df.replace(np.nan, None)
+        if to_database:
+            print_database(verbose=verbose)
+            df = self.get_df()
+            df = df.replace(np.nan, None)
 
-        connection = pymysql.connect("brbeky1hybvf32t4ufxz-mysql.services.clever-cloud.com", "uydbyi6qdkmbhd4q", "GXB67Y5tnWYyewKEZ0OW", "brbeky1hybvf32t4ufxz")
-        cursor = connection.cursor()
+            connection = pymysql.connect(DBConfig.HOST, DBConfig.USER, DBConfig.PASSWORD, DBConfig.DATABASE)
+            cursor = connection.cursor()
 
-        for city in df['City'].unique():
-            sql_query = ("INSERT IGNORE INTO cities(city_name) values (%s)")
-            cursor.execute(sql_query, city)
+            for city in df['City'].unique():
+                sql_query = ("INSERT IGNORE INTO cities(city_name) values (%s)")
+                cursor.execute(sql_query, city)
 
-        for listing in df['listing_type'].unique():
-            sql_query = ("INSERT IGNORE INTO listings(listing_type) values (%s)")
-            cursor.execute(sql_query, listing)
+            for listing in df['listing_type'].unique():
+                sql_query = ("INSERT IGNORE INTO listings(listing_type) values (%s)")
+                cursor.execute(sql_query, listing)
 
-        if listing_type != 'new homes':
-            for Property in df['Property_type'].unique():
-                sql_query = ("INSERT IGNORE INTO property_types(property_type) values (%s)")
-                cursor.execute(sql_query, Property)
+            if listing_type != 'new homes':
+                for Property in df['Property_type'].unique():
+                    sql_query = ("INSERT IGNORE INTO property_types(property_type) values (%s)")
+                    cursor.execute(sql_query, Property)
 
-        connection.commit()
+            connection.commit()
 
-        cols = ",".join([str(i) for i in df.columns.tolist()])
+            cols = ",".join([str(i) for i in df.columns.tolist()])
 
-        if listing_type != 'new homes':
-            sql = f"DELETE FROM properties WHERE listing_type = '{listing_type}'"
-            cursor.execute(sql)
-            for i, row in df.iterrows():
-                sql = "INSERT INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                cursor.execute(sql, tuple(row))
-            # sql = f"ALTER TABLE properties AUTO_INCREMENT = 1"
-            # sql = "SET @num := 0; UPDATE properties id = @num := (@num+1);"
-            sql = "SELECT id FROM properties ORDER BY id LIMIT 1"
-            cursor.execute(sql)
-            curr_lowest_id = cursor.fetchone()[0]
-            sql = f"UPDATE properties SET id = id - {curr_lowest_id} + 1;"
-            cursor.execute(sql)
-        else:
-            sql = f"DELETE FROM new_homes WHERE listing_type = '{listing_type}'"
-            cursor.execute(sql)
-            for i, row in df.iterrows():
-                sql = "INSERT INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                cursor.execute(sql, tuple(row))
-            # sql = f"ALTER TABLE new_homes AUTO_INCREMENT = 1"
-            # sql = "SET @num := 0; UPDATE new_homes SET id = @num := (@num+1);"
-            sql = "SELECT id FROM new_homes ORDER BY id LIMIT 1"
-            cursor.execute(sql)
-            curr_lowest_id = cursor.fetchone()[0]
-            sql = f"UPDATE new_homes SET id = id - {curr_lowest_id} + 1;"
-            cursor.execute(sql)
+            if listing_type != 'new homes':
+                sql = f"DELETE FROM properties WHERE listing_type = '{listing_type}'"
+                cursor.execute(sql)
+                for i, row in df.iterrows():
+                    sql = "INSERT INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+                    cursor.execute(sql, tuple(row))
+                # sql = f"ALTER TABLE properties AUTO_INCREMENT = 1"
+                # sql = "SET @num := 0; UPDATE properties id = @num := (@num+1);"
+                sql = "SELECT id FROM properties ORDER BY id LIMIT 1"
+                cursor.execute(sql)
+                curr_lowest_id = cursor.fetchone()[0]
+                sql = f"UPDATE properties SET id = id - {curr_lowest_id} + 1;"
+                cursor.execute(sql)
+            else:
+                sql = f"DELETE FROM new_homes WHERE listing_type = '{listing_type}'"
+                cursor.execute(sql)
+                for i, row in df.iterrows():
+                    sql = "INSERT INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+                    cursor.execute(sql, tuple(row))
+                # sql = f"ALTER TABLE new_homes AUTO_INCREMENT = 1"
+                # sql = "SET @num := 0; UPDATE new_homes SET id = @num := (@num+1);"
+                sql = "SELECT id FROM new_homes ORDER BY id LIMIT 1"
+                cursor.execute(sql)
+                curr_lowest_id = cursor.fetchone()[0]
+                sql = f"UPDATE new_homes SET id = id - {curr_lowest_id} + 1;"
+                cursor.execute(sql)
 
-        connection.commit()
+            connection.commit()
 
-    def _print_save_df(self, df, url, to_print=True, save=False, verbose=False, listing_type=None):
+    def _print_save_df(self, df, url, to_print=True, save=False, to_database=False, verbose=False, listing_type=None):
         """
         Given a df containing scraped information,
         print it and/or save it to a csv, depending on the user's choice.
@@ -193,7 +171,7 @@ class SeleniumScraper:
             print_row(self.get_df(), to_print=to_print)
         print_total_items(self.get_df(), verbose=verbose)
         self._save_to_csv(url, save=save, verbose=verbose)
-        self._save_to_data_base(listing_type)
+        self._save_to_data_base(listing_type, to_database=to_database, verbose=verbose)
 
     def scrap_url(self, url, **kwargs):
         """
@@ -209,9 +187,9 @@ class SeleniumScraper:
         print_scrolling(url, verbose=kwargs['verbose'])
 
         if 'project' not in url:
-            self._scroll(verbose=kwargs['verbose'])
+            self._scroll(limit=kwargs['limit'], verbose=kwargs['verbose'])
         else:
-            self._scroll_new_homes(verbose=kwargs['verbose'])
+            self._scroll_new_homes(limit=kwargs['limit'], verbose=kwargs['verbose'])
 
         print_scraping(url, verbose=kwargs['verbose'])
         html_doc = self.driver.page_source
@@ -236,5 +214,10 @@ class SeleniumScraper:
             df = pd.DataFrame(rows_list)
             df['Price'] = df['Price'].astype(np.int64)
 
-        self._print_save_df(df, url, to_print=kwargs['to_print'], save=kwargs['save'],
-                            verbose=kwargs['verbose'], listing_type=kwargs['listing_type'])
+        self._print_save_df(df=df,
+                            url=url,
+                            to_print=kwargs['to_print'],
+                            save=kwargs['save'],
+                            verbose=kwargs['verbose'],
+                            to_database=kwargs['to_database'],
+                            listing_type=kwargs['listing_type'])

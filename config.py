@@ -2,6 +2,17 @@ import argparse
 import string
 
 
+class DBConfig:
+    """
+    Holds the DB parameters for the web scraping.
+    """
+
+    HOST = "brbeky1hybvf32t4ufxz-mysql.services.clever-cloud.com"
+    USER = "uydbyi6qdkmbhd4q"
+    PASSWORD = "GXB67Y5tnWYyewKEZ0OW"
+    DATABASE = "brbeky1hybvf32t4ufxz"
+
+
 class Configuration:
     """
     Holds the user parameters for the web scraping.
@@ -9,9 +20,6 @@ class Configuration:
 
     # class attr
     args = None
-
-    # SCRAPERS TYPES
-    SCRAPERS_TYPES = ('soup', 'selenium')
 
     # CONSTANTS FOR SCRAPING
     PRINTABLE = set(string.printable)
@@ -76,18 +84,16 @@ class Configuration:
             choices=Configuration.PROPERTY_LISTING_TYPE,
             help="choose which type of properties you would like to scrape",
             type=str)
-        arg_parser.add_argument(
-            "scraper_type",
-            choices=Configuration.SCRAPERS_TYPES,
-            help="choose which type of scraper you would like to use",
-            type=str)
         arg_parser.add_argument('--limit', '-l',
-                                help="limit to n number of properties per region (soup only)", metavar="n",
+                                help="limit to n number of scrolls per page", metavar="n",
                                 type=int,
                                 required=False)
         arg_parser.add_argument("--print", '-p', help="print the results to the screen", action="store_true")
         arg_parser.add_argument("--save", '-s',
                                 help="save the scraped information into a csv file in the same directory",
+                                action="store_true")
+        arg_parser.add_argument("--database", '-d',
+                                help="inserts new information found into the on_map database",
                                 action="store_true")
         arg_parser.add_argument("--verbose", '-v', help="prints messages during the scraper execution",
                                 action="store_true")

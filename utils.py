@@ -16,6 +16,8 @@ ROOMS_ATTR_IDX = 3
 FLOOR_ATTR_IDX = 3
 AREA_ATTR_IDX = 3
 PARKING_ATTR_IDX = 3
+STATUS_ATTR_IDX = -1
+STATUS_SPLIT_IDX = -1
 
 
 def return_row_before_print(row):
@@ -55,6 +57,35 @@ def create_df_row(property_dict):
     except KeyError:
         # TODO Take care of new project in buy
         pass
+
+
+def new_home_to_attr_dict(buy_property, listing_type):
+    proper = buy_property.div.div.findChildren('div', recursive=False)
+
+    try:
+        price = proper[PRICE_PROPER_IDX].findChildren('div', recursive=False)[PRICE_CHILDREN_IDX].text
+        price = ''.join(re.findall("\d", price)).strip()
+    except:
+        price = None
+
+    attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
+
+    try:
+        Status = attr[STATUS_ATTR_IDX].text.strip().split()[STATUS_SPLIT_IDX]
+    except:
+        Status = None
+
+    try:
+        street = attr[STREET_ATTR_IDX].text.strip(string.punctuation)
+    except:
+        street = None
+
+    try:
+        city = attr[CITY_ATTR_IDX].text.strip(string.punctuation)
+    except:
+        city = None
+
+    return {'listing_type': listing_type, 'Price': price, 'City': city, 'Address': street, 'Status': Status}
 
 
 def property_to_attr_dict(bs_ele_property, listing_type):
@@ -161,3 +192,8 @@ def print_getting_regional_data(verbose=True):
 def print_transform_df(verbose=True):
     if verbose:
         print("Transforming the data to dataframe...")
+
+
+def print_database(verbose=True):
+    if verbose:
+        print("Saving new info into the database...")
