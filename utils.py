@@ -1,5 +1,6 @@
 import re
 import string
+from hashlib import sha1
 
 from dateutil import parser
 
@@ -18,6 +19,13 @@ AREA_ATTR_IDX = 3
 PARKING_ATTR_IDX = 3
 STATUS_ATTR_IDX = -1
 STATUS_SPLIT_IDX = -1
+
+
+def generate_id(text):
+    """
+    Generates an id for the text based on its hash
+    """
+    return sha1(str.encode(text)).hexdigest()
 
 
 def return_row_before_print(row):
@@ -61,31 +69,35 @@ def create_df_row(property_dict):
 
 def new_home_to_attr_dict(buy_property, listing_type):
     proper = buy_property.div.div.findChildren('div', recursive=False)
-
+    string_to_id = []
     try:
         price = proper[PRICE_PROPER_IDX].findChildren('div', recursive=False)[PRICE_CHILDREN_IDX].text
         price = ''.join(re.findall("\d", price)).strip()
     except:
         price = None
 
+    string_to_id.append(price)
     attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
 
     try:
         Status = attr[STATUS_ATTR_IDX].text.strip().split()[STATUS_SPLIT_IDX]
     except:
         Status = None
+    string_to_id.append(Status)
 
     try:
         street = attr[STREET_ATTR_IDX].text.strip(string.punctuation)
     except:
         street = None
-
+    string_to_id.append(street)
     try:
         city = attr[CITY_ATTR_IDX].text.strip(string.punctuation)
     except:
         city = None
-
-    return {'listing_type': listing_type, 'Price': price, 'City': city, 'Address': street, 'Status': Status}
+    string_to_id.append(city)
+    string_to_id = "".join(string_to_id)
+    id_ = generate_id(string_to_id)
+    return {'id': id_, 'listing_type': listing_type, 'Price': price, 'City': city, 'Address': street, 'Status': Status}
 
 
 def property_to_attr_dict(bs_ele_property, listing_type):
@@ -93,53 +105,56 @@ def property_to_attr_dict(bs_ele_property, listing_type):
     getting bs element of single property and returns
     attributes dictionary of the property"""
     proper = bs_ele_property.div.div.findChildren('div', recursive=False)
-
+    string_to_id = []
     try:
         price = proper[PRICE_PROPER_IDX].findChildren('span', recursive=False)[PRICE_CHILDREN_IDX].text
         price = ''.join(re.findall("\d", price)).strip()
     except AttributeError:
         price = None
-
+    string_to_id.append(str(price))
     attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
 
     try:
         type_ = attr[TYPE_ATTR_IDX].text.strip(string.punctuation)
     except AttributeError:
         type_ = None
-
+    string_to_id.append(str(type_))
     try:
         street = attr[STREET_ATTR_IDX].findChildren('div', recursive=False)[STREET_CHILDREN_IDX].text.strip(
             string.punctuation)
     except AttributeError:
         street = None
-
+    string_to_id.append(str(street))
     try:
         city = attr[CITY_ATTR_IDX].findChildren('div', recursive=False)[CITY_CHILDREN_IDX].text.strip(
             string.punctuation)
     except AttributeError:
         city = None
-
+    string_to_id.append(str(city))
     try:
         rooms = attr[ROOMS_ATTR_IDX].find('i', {'title': 'Rooms'}).parent.text.strip()
     except AttributeError:
         rooms = None
-
+    string_to_id.append(str(rooms))
     try:
         floor = attr[FLOOR_ATTR_IDX].find('i', {'title': 'Floor'}).parent.text.strip()
     except AttributeError:
         floor = None
-
+    string_to_id.append(str(floor))
     try:
         floor_area = attr[AREA_ATTR_IDX].find('i', {'title': 'Floor area in sqm'}).parent.text.strip()
     except AttributeError:
         floor_area = None
-
+    string_to_id.append(str(floor_area))
     try:
         parking = attr[PARKING_ATTR_IDX].find('i', {'title': 'Parking'}).parent.text.strip()
     except AttributeError:
         parking = 0
-
-    return {'listing_type': listing_type, 'Property_type': type_, 'Price': price, 'City': city, 'Address': street,
+    string_to_id.append(str(parking))
+    string_to_id = "".join(string_to_id)
+    id_ = generate_id(string_to_id)
+    return {'id': id_, 'listing_type': listing_type, 'Property_type': type_, 'Price': price, 'City': city,
+            'Address': street,
             'Rooms': rooms, 'Floor': floor, 'Area': floor_area, 'Parking_spots': parking}
 
 
