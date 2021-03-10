@@ -5,18 +5,12 @@ This web scraper get the data from properties for sale and rent from  the Israel
 
 The website has four main data sources: buy, rent, new homes and commercial data.
 
-
-#### Buy:
-Properties for sale
-
-#### Rent:
-Properties for rent
-
-#### Commercial:
-Commercial properties for rent
-
-#### New homes:
-Properties that are on planning or construction phase
+| **Listing type** | **Description**|
+| :-------------|:---------------|
+| Buy | Properties for sale |
+| Rent | Properties for rent |
+| Commercial | Commercial properties for rent|
+| New homes| Properties that are on planning or construction phase|
 
 
 ## The scraper
