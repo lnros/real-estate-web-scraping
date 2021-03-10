@@ -116,48 +116,43 @@ class SeleniumScraper:
             cursor = connection.cursor()
 
             for city in df['City'].unique():
-                sql_query = ("INSERT IGNORE INTO cities(city_name) values (%s)")
-                cursor.execute(sql_query, city)
+                sql_query = "INSERT IGNORE INTO cities(city_name) values (%s)"
+                try:
+                    cursor.execute(sql_query, city)
+
+                except pymysql.err.IntegrityError:
+                    print(f"{city} is already in cities. ")
 
             for listing in df['listing_type'].unique():
-                sql_query = ("INSERT IGNORE INTO listings(listing_type) values (%s)")
-                cursor.execute(sql_query, listing)
+                sql_query = "INSERT IGNORE INTO listings(listing_type) values (%s)"
+                try:
+                    cursor.execute(sql_query, listing)
+                except pymysql.err.IntegrityError:
+                    print(f"{listing} is already in listing_types. ")
 
             if listing_type != 'new homes':
                 for Property in df['Property_type'].unique():
-                    sql_query = ("INSERT IGNORE INTO property_types(property_type) values (%s)")
-                    cursor.execute(sql_query, Property)
+                    sql_query = "INSERT IGNORE INTO property_types(property_type) values (%s)"
+                    try:
+                        cursor.execute(sql_query, Property)
+                    except pymysql.err.IntegrityError:
+                        print(f"{Property} is already in property_types. ")
 
             connection.commit()
 
             cols = ",".join([str(i) for i in df.columns.tolist()])
 
             if listing_type != 'new homes':
-                sql = f"DELETE FROM properties WHERE listing_type = '{listing_type}'"
-                cursor.execute(sql)
                 for i, row in df.iterrows():
-                    sql = "INSERT INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                    cursor.execute(sql, tuple(row))
-                # sql = f"ALTER TABLE properties AUTO_INCREMENT = 1"
-                # sql = "SET @num := 0; UPDATE properties id = @num := (@num+1);"
-                sql = "SELECT id FROM properties ORDER BY id LIMIT 1"
-                cursor.execute(sql)
-                curr_lowest_id = cursor.fetchone()[0]
-                sql = f"UPDATE properties SET id = id - {curr_lowest_id} + 1;"
-                cursor.execute(sql)
+                    sql = "REPLACE INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+                    try:
+                        cursor.execute(sql, tuple(row))
+                    except pymysql.err.IntegrityError:
+                        print(f"{row} is already in properties. ")
             else:
-                sql = f"DELETE FROM new_homes WHERE listing_type = '{listing_type}'"
-                cursor.execute(sql)
                 for i, row in df.iterrows():
-                    sql = "INSERT INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
+                    sql = "REPLACE INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
                     cursor.execute(sql, tuple(row))
-                # sql = f"ALTER TABLE new_homes AUTO_INCREMENT = 1"
-                # sql = "SET @num := 0; UPDATE new_homes SET id = @num := (@num+1);"
-                sql = "SELECT id FROM new_homes ORDER BY id LIMIT 1"
-                cursor.execute(sql)
-                curr_lowest_id = cursor.fetchone()[0]
-                sql = f"UPDATE new_homes SET id = id - {curr_lowest_id} + 1;"
-                cursor.execute(sql)
 
             connection.commit()
 
