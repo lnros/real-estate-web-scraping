@@ -44,7 +44,7 @@ optional arguments:
 
 ## The database
 
-The intended ERD for the final of this project is:
+The intended ERD for the end of this project is:
 ![](db/ERD.png)
 
 - In `property_types`, we have whether the property is an apartment, penthouse, cottage, and so on.
