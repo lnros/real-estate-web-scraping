@@ -44,8 +44,8 @@ optional arguments:
 
 ## The database
 
-The intended ERD for the end of this project is:
-![](db/ERD.png)
+The current ERD for the of this project is:
+![](db/temp_ERD.png)
 
 - In `property_types`, we have whether the property is an apartment, penthouse, cottage, and so on.
 
@@ -55,17 +55,20 @@ The intended ERD for the end of this project is:
 
 - In `properties`, each record is a different property in the website, providing address, price, number of rooms, in which floor it is located, the area and the number of parking spots available.
 
+- In `new_homes`, for the time being, we have only brand-new properties.
+
+> OBS: The `id`s in `properties` and `new_homes` are hashes generated from the information of each property. 
+
 ### Known issues:
 
-- **Foreign Keys:** For now, to make our visualization of the database clearer, in `properties` the link to foreign keys was done to their names rather than their id.
+- **Foreign Keys:** For now, to make our visualization of the database clearer, in `properties, new_homes` the link to foreign keys was done to their names rather than their id.
 
 - **Temp table:** Also, for the sake of visualization, for now we created a new table `new_homes` to see that everything is working as it should. 
 Later on, `new_homes` will be merged into `properties`.
-Fow now, `new_homes` has fewer columns since these properties provide less information and have a new column called `status`.
+For now, `new_homes` has fewer columns since these properties provide less information and have a new column called `status`.
 
-- **Unique property id:** At this point, whenever we want to add information into the database, we are actually creating the database from scratch every time.
-Since each property doesn't have a unique identifier, the next phase is for us to generate a unique
-identifier per property so that will make us able to search an earlier record and see if it matches the new one we are checking whether to insert.
+The idea is that in the next checkpoints, the database will look similar to this:
+![](db/ERD.png)
 
 #### Authors
 @lnros - Leonardo Rosenberg <br>
