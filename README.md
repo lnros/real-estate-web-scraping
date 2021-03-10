@@ -70,7 +70,7 @@ Later on, `new_homes` will be merged into `properties`.
 Fow now, `new_homes` has fewer columns since these properties provide less information and have a new column called `status`.
 
 - **Unique property id:** At this point, whenever we want to add information into the database, we are actually creating the database from scratch every time.
-Since each property doesn't have a unique identifier on the website, the next phase is for us to generate a unique
+Since each property doesn't have a unique identifier, the next phase is for us to generate a unique
 identifier per property so that will make us able to search an earlier record and see if it matches the new one we are checking whether to insert.
 
 #### Authors
