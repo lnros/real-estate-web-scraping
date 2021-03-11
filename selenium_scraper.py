@@ -11,6 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from config import Configuration as cfg
 from config import DBConfig
+from config import Logger as Log
 from utils import *
 
 
@@ -51,11 +52,14 @@ class SeleniumScraper:
         while True:
             ele_to_scroll = self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH)[
                 cfg.ELEM_TO_SCROLL_IDX]
+            if ele_to_scroll is None:
+                Log.logger.error(f"_scroll: ele_to_scroll should have a content but it is {ele_to_scroll}")
             self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
             try:
                 if limit and scroll_num == limit:
+                    Log.logger.debug(f"_scroll: finished scrolling")
                     break
                 # Finds the bottom of the page
                 bot_ele = self.driver.find_element_by_xpath(cfg.BOTTOM_PAGE_XPATH)
@@ -64,7 +68,9 @@ class SeleniumScraper:
             else:
                 time.sleep(cfg.SCROLL_PAUSE_TIME)
                 self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
+                Log.logger.debug(f"_scroll: finished scrolling")
                 break
+        Log.logger.info(f"_scroll: finished")
 
     def _scroll_new_homes(self, limit=None, verbose=False):
         """
@@ -72,20 +78,25 @@ class SeleniumScraper:
         """
         scroll_num = 1
         prev_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
+        Log.logger.debug(f"_scroll_new_homes:prev_len {prev_len}")
         # maximizing the window makes fewer scrolls necessary
         self.driver.set_window_size(cfg.CHROME_WIDTH, cfg.CHROME_HEIGHT)
         time.sleep(cfg.SCROLL_PAUSE_TIME)
         while True:
             ele_to_scroll = self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH)[
                 cfg.ELEM_TO_SCROLL_IDX]
+            if ele_to_scroll is None:
+                Log.logger.error(f"_scroll_new_homes: ele_to_scroll should have a content but it is {ele_to_scroll}")
             self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
             new_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
             if new_len == prev_len or (limit and scroll_num == limit):
+                Log.logger.debug(f"_scroll_new_homes: finished scrolling")
                 break
             scroll_num += 1
             prev_len = new_len
+        Log.logger.info(f"_scroll_new_homes: finished")
 
     def _save_to_csv(self, url, save=True, verbose=True):
         """
@@ -102,6 +113,7 @@ class SeleniumScraper:
                 print(f'\nSaving {filename}\n')
                 print(self.get_df())
             self.get_df().to_csv(filename, index=False)
+            Log.logger.info(f"_save_to_csv: finished {url}")
 
     def _save_to_data_base(self, listing_type, to_database=True, verbose=False):
         """
@@ -112,8 +124,11 @@ class SeleniumScraper:
             df = self.get_df()
             df = df.replace(np.nan, None)
 
+            Log.logger.debug(f"_save_to_data_base: Connecting to the db"
+                             f" listing_type={listing_type}, to_database={to_database}, verbose={verbose}")
             connection = pymysql.connect(DBConfig.HOST, DBConfig.USER, DBConfig.PASSWORD, DBConfig.DATABASE)
             cursor = connection.cursor()
+            Log.logger.info("f_save_to_data_base: Connection to the db successful")
 
             for city in df['City'].unique():
                 sql_query = "INSERT IGNORE INTO cities(city_name) values (%s)"
@@ -121,14 +136,14 @@ class SeleniumScraper:
                     cursor.execute(sql_query, city)
 
                 except pymysql.err.IntegrityError:
-                    print(f"{city} is already in cities. ")
+                    Log.logger.error(f"{city} is already in cities. ")
 
             for listing in df['listing_type'].unique():
                 sql_query = "INSERT IGNORE INTO listings(listing_type) values (%s)"
                 try:
                     cursor.execute(sql_query, listing)
                 except pymysql.err.IntegrityError:
-                    print(f"{listing} is already in listing_types. ")
+                    Log.logger.error(f"_save_to_data_base: {listing} is already in listing_types. ")
 
             if listing_type != 'new homes':
                 for Property in df['Property_type'].unique():
@@ -136,9 +151,10 @@ class SeleniumScraper:
                     try:
                         cursor.execute(sql_query, Property)
                     except pymysql.err.IntegrityError:
-                        print(f"{Property} is already in property_types. ")
+                        Log.logger.error(f"_save_to_data_base: {Property} is already in property_types. ")
 
             connection.commit()
+            Log.logger.info("_save_to_data_base: Commit to db")
 
             cols = ",".join([str(i) for i in df.columns.tolist()])
 
@@ -148,13 +164,14 @@ class SeleniumScraper:
                     try:
                         cursor.execute(sql, tuple(row))
                     except pymysql.err.IntegrityError:
-                        print(f"{row} is already in properties. ")
+                        Log.logger.error(f"_save_to_data_base: {row} is already in properties. ")
             else:
                 for i, row in df.iterrows():
                     sql = "REPLACE INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
                     cursor.execute(sql, tuple(row))
 
             connection.commit()
+            Log.logger.info("_save_to_data_base: Commit to db successful")
 
     def _print_save_df(self, df, url, to_print=True, save=False, to_database=False, verbose=False, listing_type=None):
         """
@@ -162,11 +179,21 @@ class SeleniumScraper:
         print it and/or save it to a csv, depending on the user's choice.
         """
         self.update_df(df)
+        Log.logger.debug(f"_print_save_df: Checking if print {url},"
+                         f" to_print={to_print}, save={save}, to_database={to_database},"
+                         f" verbose={verbose}, listing_type={listing_type}")
         if 'project' not in url:
             print_row(self.get_df(), to_print=to_print)
         print_total_items(self.get_df(), verbose=verbose)
+        Log.logger.debug(f"_print_to_save: Saving into csv {url},"
+                         f" to_print={to_print}, save={save}, to_database={to_database},"
+                         f" verbose={verbose}, listing_type={listing_type}")
         self._save_to_csv(url, save=save, verbose=verbose)
+        Log.logger.debug(f"_print_to_save: Saving into db {url},"
+                         f" to_print={to_print}, save={save}, to_database={to_database},"
+                         f" verbose={verbose}, listing_type={listing_type}")
         self._save_to_data_base(listing_type, to_database=to_database, verbose=verbose)
+        Log.logger.info(f"_print_to_save: finished {url}")
 
     def scrap_url(self, url, **kwargs):
         """
@@ -179,19 +206,24 @@ class SeleniumScraper:
         """
         print_access(url, verbose=kwargs['verbose'])
         self.driver.get(url)
+        Log.logger.debug(f"scrap_url: Scrolling {url}")
         print_scrolling(url, verbose=kwargs['verbose'])
 
         if 'project' not in url:
+            Log.logger.info(f"scrap_url: Scrolling {url} - not new_homes")
             self._scroll(limit=kwargs['limit'], verbose=kwargs['verbose'])
         else:
+            Log.logger.info(f"scrap_url: Scrolling {url} - new_homes")
             self._scroll_new_homes(limit=kwargs['limit'], verbose=kwargs['verbose'])
 
         print_scraping(url, verbose=kwargs['verbose'])
+        Log.logger.debug(f"scrap_url: Scraping {url}")
         html_doc = self.driver.page_source
         soup = bs(html_doc, 'html.parser')
         content = soup.find('div', {'id': 'propertiesList'}).findChildren("div", recursive=False)
         properties_list = content[1].findChildren('div', recursive=False)
         rows_list = []
+        Log.logger.debug(f"scrap_url: Creating dataframe from {url}")
         if 'project' not in url:  # for buy, rent and commercial categories
             for proper in properties_list:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
@@ -216,3 +248,4 @@ class SeleniumScraper:
                             verbose=kwargs['verbose'],
                             to_database=kwargs['to_database'],
                             listing_type=kwargs['listing_type'])
+        Log.logger.info(f"scrap_url: finished {url}")
