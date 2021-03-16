@@ -103,6 +103,7 @@ class Configuration:
 
 
 class Logger:
+    logger = None
 
     @classmethod
     def start_logging(cls):
