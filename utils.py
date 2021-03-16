@@ -19,6 +19,7 @@ AREA_ATTR_IDX = 3
 PARKING_ATTR_IDX = 3
 STATUS_ATTR_IDX = -1
 STATUS_SPLIT_IDX = -1
+NEW_HOME_CITY_ATTR_IDX = -2
 
 
 def generate_id(text):
@@ -91,7 +92,7 @@ def new_home_to_attr_dict(buy_property, listing_type):
         street = None
     string_to_id.append(street)
     try:
-        city = attr[CITY_ATTR_IDX].text.strip(string.punctuation)
+        city = attr[NEW_HOME_CITY_ATTR_IDX].text.strip(string.punctuation)
     except:
         city = None
     string_to_id.append(city)
