@@ -128,12 +128,14 @@ class SeleniumScraper:
                              f" listing_type={listing_type}, to_database={to_database}, verbose={verbose}")
             connection = pymysql.connect(DBConfig.HOST, DBConfig.USER, DBConfig.PASSWORD, DBConfig.DATABASE)
             cursor = connection.cursor()
+            connection.commit()
             Log.logger.info("f_save_to_data_base: Connection to the db successful")
 
             for city in df['City'].unique():
                 sql_query = "INSERT IGNORE INTO cities(city_name) values (%s)"
                 try:
                     cursor.execute(sql_query, city)
+                    connection.commit()
 
                 except pymysql.err.IntegrityError:
                     Log.logger.error(f"{city} is already in cities. ")
@@ -142,6 +144,7 @@ class SeleniumScraper:
                 sql_query = "INSERT IGNORE INTO listings(listing_type) values (%s)"
                 try:
                     cursor.execute(sql_query, listing)
+                    connection.commit()
                 except pymysql.err.IntegrityError:
                     Log.logger.error(f"_save_to_data_base: {listing} is already in listing_types. ")
 
@@ -150,10 +153,10 @@ class SeleniumScraper:
                     sql_query = "INSERT IGNORE INTO property_types(property_type) values (%s)"
                     try:
                         cursor.execute(sql_query, Property)
+                        connection.commit()
                     except pymysql.err.IntegrityError:
                         Log.logger.error(f"_save_to_data_base: {Property} is already in property_types. ")
 
-            connection.commit()
             Log.logger.info("_save_to_data_base: Commit to db")
 
             cols = ",".join([str(i) for i in df.columns.tolist()])
@@ -163,14 +166,15 @@ class SeleniumScraper:
                     sql = "REPLACE INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
                     try:
                         cursor.execute(sql, tuple(row))
+                        connection.commit()
                     except pymysql.err.IntegrityError:
                         Log.logger.error(f"_save_to_data_base: {row} is already in properties. ")
             else:
                 for i, row in df.iterrows():
                     sql = "REPLACE INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
                     cursor.execute(sql, tuple(row))
+                    connection.commit()
 
-            connection.commit()
             Log.logger.info("_save_to_data_base: Commit to db successful")
 
     def _print_save_df(self, df, url, to_print=True, save=False, to_database=False, verbose=False, listing_type=None):
