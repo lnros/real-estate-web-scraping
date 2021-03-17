@@ -229,6 +229,7 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(property_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
+            df['City'] = df['City'].str.replace("'", "")
             df['Price'] = df['Price'].astype(np.int64)
             df['Rooms'] = df['Rooms'].astype('float')
             df['Floor'] = df['Floor'].astype('float')
@@ -239,6 +240,7 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
+            df['City'] = df['City'].str.replace("'", "")
             df['Price'] = df['Price'].astype(np.int64)
 
         self._print_save_df(df=df,
