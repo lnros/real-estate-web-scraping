@@ -21,6 +21,8 @@ STATUS_ATTR_IDX = -1
 STATUS_SPLIT_IDX = -1
 NEW_HOME_CITY_ATTR_IDX = -2
 
+# ALL PROPERTIES IN NEW_HOMES LISTING ARE APARTMENTS
+NEW_HOMES_PROPERTY_TYPE = 'Apartment'
 
 def generate_id(text):
     """
@@ -98,7 +100,11 @@ def new_home_to_attr_dict(buy_property, listing_type):
     string_to_id.append(city)
     string_to_id = "".join(string_to_id)
     id_ = generate_id(string_to_id)
-    return {'id': id_, 'listing_type': listing_type, 'Price': price, 'City': city, 'Address': street, 'Status': Status}
+
+    type_ = NEW_HOMES_PROPERTY_TYPE
+
+    return {'listing_type': listing_type, 'Property_type': type_, 'City': city,
+            'Price': price, 'Address': street, 'ConStatus': Status}
 
 
 def property_to_attr_dict(bs_ele_property, listing_type):
@@ -154,7 +160,8 @@ def property_to_attr_dict(bs_ele_property, listing_type):
     string_to_id.append(str(parking))
     string_to_id = "".join(string_to_id)
     id_ = generate_id(string_to_id)
-    return {'id': id_, 'listing_type': listing_type, 'Property_type': type_, 'Price': price, 'City': city,
+
+    return {'listing_type': listing_type, 'Property_type': type_, 'City': city, 'Price': price,
             'Address': street,
             'Rooms': rooms, 'Floor': floor, 'Area': floor_area, 'Parking_spots': parking}
 

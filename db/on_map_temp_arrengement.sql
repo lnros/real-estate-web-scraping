@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS on_map;
-CREATE DATABASE IF NOT EXISTS on_map;
+DROP DATABASE IF EXISTS brbeky1hybvf32t4ufxz;
+CREATE DATABASE IF NOT EXISTS brbeky1hybvf32t4ufxz;
 
-USE on_map;
+use brbeky1hybvf32t4ufxz;
 
 CREATE TABLE cities
 (
@@ -21,31 +21,6 @@ CREATE TABLE listings
 		UNIQUE (listing_type)
 );
 
-CREATE TABLE new_homes
-(
-	id VARCHAR(40) NOT NULL,
-	listing_type VARCHAR(100) NULL,
-	price FLOAT NULL,
-	city VARCHAR(50) NULL,
-	address VARCHAR(50) NULL,
-	Status VARCHAR(50) NULL,
-	CONSTRAINT new_homes_id_uindex
-		UNIQUE (id),
-	CONSTRAINT new_homes_ibfk_1
-		FOREIGN KEY (listing_type) REFERENCES listings (listing_type),
-	CONSTRAINT new_homes_ibfk_2
-		FOREIGN KEY (city) REFERENCES cities (city_name)
-);
-
-CREATE INDEX city
-	ON new_homes (city);
-
-CREATE INDEX listing_type
-	ON new_homes (listing_type);
-
-ALTER TABLE new_homes
-	ADD PRIMARY KEY (id);
-
 CREATE TABLE property_types
 (
 	id INT AUTO_INCREMENT
@@ -57,35 +32,43 @@ CREATE TABLE property_types
 
 CREATE TABLE properties
 (
-	id VARCHAR(40) NOT NULL,
-	listing_type VARCHAR(100) NULL ,
-	property_type VARCHAR(100) NULL ,
+	id INT AUTO_INCREMENT
+		PRIMARY KEY,
+	listing_id int,
+	property_type_id int,
 	Price FLOAT NULL,
-	City VARCHAR(50) NULL ,
-	Address VARCHAR(50) NULL ,
+	city_id INT,
+	Address VARCHAR(50) NULL,
 	Rooms INT NULL,
 	Floor INT NULL,
 	Area INT NULL,
 	Parking_spots SMALLINT NULL,
-	CONSTRAINT properties_id_uindex
-		UNIQUE (id),
+	ConStatus VARCHAR(50) NULL,
+    latitude INT NULL,
+    longitude INT NULL,
+    city_hebrew VARCHAR(50) NULL,
+    address_hebrew VARCHAR(50) NULL,
+    state_hebrew VARCHAR(50) NULL,
+
 	CONSTRAINT properties_ibfk_1
-		FOREIGN KEY (property_type) REFERENCES property_types (property_type),
+		FOREIGN KEY (city_id) REFERENCES cities (id),
+
 	CONSTRAINT properties_ibfk_2
-		FOREIGN KEY (listing_type) REFERENCES listings (listing_type),
+	FOREIGN KEY (listing_id) REFERENCES listings (id),
+
 	CONSTRAINT properties_ibfk_3
-		FOREIGN KEY (City) REFERENCES cities (city_name)
+	FOREIGN KEY (property_type_id) REFERENCES property_types (id)
 );
 
+ALTER TABLE properties ADD UNIQUE unique_property (listing_id, property_type_id, Price, city_id , Address, Rooms, Floor, Area, Parking_spots);
+ALTER TABLE properties ADD UNIQUE unique_new_home (listing_id, property_type_id, Price, city_id , Address, ConStatus);
+
+
 CREATE INDEX City
-	ON properties (City);
+	ON properties city_id);
 
 CREATE INDEX listing_type
-	ON properties (listing_type);
+	ON properties (listing_id);
 
 CREATE INDEX property_type
-	ON properties (property_type);
-
-ALTER TABLE properties
-	ADD PRIMARY KEY (id);
-
+	ON properties (property_type_id);

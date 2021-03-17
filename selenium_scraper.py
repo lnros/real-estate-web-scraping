@@ -57,6 +57,8 @@ class SeleniumScraper:
             self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
             time.sleep(cfg.SCROLL_PAUSE_TIME)
+            if scroll_num == 2:
+                break
             try:
                 if limit and scroll_num == limit:
                     Log.logger.debug(f"_scroll: finished scrolling")
@@ -159,21 +161,30 @@ class SeleniumScraper:
 
             Log.logger.info("_save_to_data_base: Commit to db")
 
-            cols = ",".join([str(i) for i in df.columns.tolist()])
+            columns = [str(i) for i in df.columns.tolist()]
 
-            if listing_type != 'new homes':
-                for i, row in df.iterrows():
-                    sql = "REPLACE INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                    try:
-                        cursor.execute(sql, tuple(row))
-                        connection.commit()
-                    except pymysql.err.IntegrityError:
-                        Log.logger.error(f"_save_to_data_base: {row} is already in properties. ")
-            else:
-                for i, row in df.iterrows():
-                    sql = "REPLACE INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                    cursor.execute(sql, tuple(row))
+            for i, row in df.iterrows():
+                print(type(row))
+                cursor.execute("SELECT id FROM listings WHERE listing_type = %s", tuple(row)[0])
+                listings_id = cursor.fetchone()[0]
+                cursor.execute("SELECT id FROM property_types WHERE property_type = %s", tuple(row)[1])
+                property_type_id = cursor.fetchone()[0]
+                cursor.execute("SELECT id FROM cities WHERE city_name = %s", tuple(row)[2])
+                city_id = cursor.fetchone()[0]
+
+                cols_list = ['listing_id', 'property_type_id', 'city_id'] + columns[3:-5]
+                cols = ",".join(cols_list)
+                print(cols_list)
+                sql = "INSERT IGNORE INTO properties (" + cols + ") VALUES (" + "%s, "*(len(cols_list)-1) + "%s)"
+
+                try:
+                    print(sql)
+                    values = tuple([listings_id, property_type_id, city_id]+row.values[3:-5].tolist())
+                    print(values)
+                    cursor.execute(sql, values)
                     connection.commit()
+                except pymysql.err.IntegrityError:
+                    Log.logger.error(f"_save_to_data_base: {row} is already in properties. ")
 
             Log.logger.info("_save_to_data_base: Commit to db successful")
 
@@ -233,8 +244,6 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(property_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
-            df['City'] = df['City'].str.replace("'", "")
-            df['Price'] = df['Price'].astype(np.int64)
             df['Rooms'] = df['Rooms'].astype('float')
             df['Floor'] = df['Floor'].astype('float')
             df['Area'] = df['Area'].astype(np.int64)
@@ -244,8 +253,14 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
-            df['City'] = df['City'].str.replace("'", "")
-            df['Price'] = df['Price'].astype(np.int64)
+
+        df['City'] = df['City'].str.replace("'", "")
+        df['Price'] = df['Price'].astype(np.int64)
+        df['latitude'] = None
+        df['longitude'] = None
+        df['city_hebrew'] = None
+        df['address_hebrew'] = None
+        df['state_hebrew'] = None
 
         self._print_save_df(df=df,
                             url=url,
