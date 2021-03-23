@@ -4,6 +4,25 @@ import string
 import sys
 
 
+class GeoFetcherConfig:
+    SEPARATOR = ", "
+    ADDRESS_KEY = 'address'
+    CITY_KEY = 'city'
+    STATE_KEY = 'state'
+    LAT_KEY = 'latitude'
+    LON_KEY = 'longitude'
+    ROAD_KEY = 'road'
+    CITY_HEBREW_KEY = 'city_hebrew'
+    ADDRESS_HEBREW_KEY = 'address_hebrew'
+    STATE_HEBREW_KEY = 'state_hebrew'
+    ADDRESS_ERR_MSG = "address should be str"
+    ROW_ADDRESS_KEY = 'Address'
+    ROW_CITY_KEY = 'City'
+    DELAY_TIME = 1
+    USER_AGENT = "on_map"
+    WHITESPACE = " "
+
+
 class DBConfig:
     """
     Holds the DB parameters for the web scraping.
@@ -68,6 +87,7 @@ class Configuration:
     NOT_SELENIUM_REGION_IDX = -1
     URL_SPLIT_SEPARATOR = '/'
     NOT_SELENIUM_SEPARATOR = '.'
+    SEPARATOR = ", "
 
     # XPATHS AND SELENIUM COMMANDS
     SCROLL_COMMAND = "arguments[0].scrollIntoView();"
@@ -97,6 +117,9 @@ class Configuration:
         arg_parser.add_argument("--database", '-d',
                                 help="inserts new information found into the on_map database",
                                 action="store_true")
+        arg_parser.add_argument("--fetch", '-f',
+                                help="fetches more information for each property using Nominatim API",
+                                action="store_true")
         arg_parser.add_argument("--verbose", '-v', help="prints messages during the scraper execution",
                                 action="store_true")
         cls.args = arg_parser.parse_args()
@@ -113,7 +136,7 @@ class Logger:
         formatter = logging.Formatter("'%(asctime)s - %(threadName)s - %(name)s - %(levelname)s - %(message)s'")
 
         # create a file handler and add it to logger
-        file_handler = logging.FileHandler('web_scraper.log')
+        file_handler = logging.FileHandler('web_scraper.log', mode='a')
         file_handler.setLevel(logging.DEBUG)
         file_handler.setFormatter(formatter)
         cls.logger.addHandler(file_handler)

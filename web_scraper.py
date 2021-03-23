@@ -8,7 +8,7 @@ from utils import print_when_program_finishes
 def main():
     Log.start_logging()
     Cfg.define_parser()
-    Log.logger.info('main: CLI parser was successfull.')
+    Log.logger.info('main: CLI parser was successful.')
     urls = [Cfg.URLS[key] for key in Cfg.LISTING_MAP[Cfg.args.property_listing_type]]
     if len(urls) == 0:
         Log.logger.error('main: No urls found to scrape.')
@@ -18,6 +18,7 @@ def main():
                   "save": Cfg.args.save,
                   "verbose": Cfg.args.verbose,
                   "to_database": Cfg.args.database,
+                  "fetch_info": Cfg.args.fetch,
                   "listing_type": Cfg.LISTING_MAP[Cfg.args.property_listing_type][i]}
         time.sleep(Cfg.BETWEEN_URL_PAUSE)
         Log.logger.debug("main: Creating the scraper object")

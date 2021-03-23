@@ -1,7 +1,7 @@
 import re
 import string
 from hashlib import sha1
-
+from config import Configuration as Cfg
 from dateutil import parser
 
 # prop_to_attr_dict indices
@@ -32,16 +32,16 @@ def generate_id(text):
 
 
 def return_row_before_print(row):
-    # selenium
-    try:
-        return f"Price: {row['Price']}, Type: {row['Property_type']}, City: {row['City_name']}, " \
-               f"Address: {row['Street_name']}, {row['House_number']}, Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area']}," \
-               f" Parking underground: {row['Parking_spots_underground']}, Parking above ground: {'Parking_spots_aboveground'}"
-    except KeyError:
-        # soup
-        return f"Price: {row['Price']}, Type: {row['Property_type']}, City: {row['City']}, " \
-               f"Address: {row['Address']}, Nº Rooms: {row['Rooms']}, Floor: {row['Floor']}, Size {row['Area']}," \
-               f" Parking: {row['Parking_spots']}"
+    """
+    :param row: a row from the properties dataframe
+    :type row: pd.Series
+    :return: a string with all the values of the row
+    :rtype: str
+    """
+    s = []
+    for i in range(len(row)):
+        s.append(f"{row.index[i]}: {row[i]}")
+    return Cfg.SEPARATOR.join(s)
 
 
 def create_df_row(property_dict):
@@ -169,6 +169,8 @@ def property_to_attr_dict(bs_ele_property, listing_type):
 def print_when_program_finishes():
     print('\nDone!\n')
 
+def print_fetch():
+    print('\nFetching more info!\n')
 
 def print_access(url, verbose=True):
     if verbose:
