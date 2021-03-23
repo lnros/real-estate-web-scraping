@@ -13,6 +13,8 @@ from config import Configuration as cfg
 from config import DBConfig
 from config import Logger as Log
 from utils import *
+import data_base_feeder
+from data_base_feeder import DataBaeFeeder
 
 
 class SeleniumScraper:
@@ -115,67 +117,13 @@ class SeleniumScraper:
             self.get_df().to_csv(filename, index=False)
             Log.logger.info(f"_save_to_csv: finished {url}")
 
-    def _save_to_data_base(self, listing_type, to_database=True, verbose=False):
+    def _save_to_data_base(self, listing_type, verbose=False):
         """
         Save the dataframe containing the scraped info into a database.
         """
-        if to_database:
-            print_database(verbose=verbose)
-            df = self.get_df()
-            df = df.replace(np.nan, None)
-
-            Log.logger.debug(f"_save_to_data_base: Connecting to the db"
-                             f" listing_type={listing_type}, to_database={to_database}, verbose={verbose}")
-            connection = pymysql.connect(DBConfig.HOST, DBConfig.USER, DBConfig.PASSWORD, DBConfig.DATABASE)
-            cursor = connection.cursor()
-            connection.commit()
-            Log.logger.info("f_save_to_data_base: Connection to the db successful")
-
-            for city in df['City'].unique():
-                sql_query = "INSERT IGNORE INTO cities(city_name) values (%s)"
-                try:
-                    cursor.execute(sql_query, city)
-                    connection.commit()
-
-                except pymysql.err.IntegrityError:
-                    Log.logger.error(f"{city} is already in cities. ")
-
-            for listing in df['listing_type'].unique():
-                sql_query = "INSERT IGNORE INTO listings(listing_type) values (%s)"
-                try:
-                    cursor.execute(sql_query, listing)
-                    connection.commit()
-                except pymysql.err.IntegrityError:
-                    Log.logger.error(f"_save_to_data_base: {listing} is already in listing_types. ")
-
-            if listing_type != 'new homes':
-                for Property in df['Property_type'].unique():
-                    sql_query = "INSERT IGNORE INTO property_types(property_type) values (%s)"
-                    try:
-                        cursor.execute(sql_query, Property)
-                        connection.commit()
-                    except pymysql.err.IntegrityError:
-                        Log.logger.error(f"_save_to_data_base: {Property} is already in property_types. ")
-
-            Log.logger.info("_save_to_data_base: Commit to db")
-
-            cols = ",".join([str(i) for i in df.columns.tolist()])
-
-            if listing_type != 'new homes':
-                for i, row in df.iterrows():
-                    sql = "REPLACE INTO properties (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                    try:
-                        cursor.execute(sql, tuple(row))
-                        connection.commit()
-                    except pymysql.err.IntegrityError:
-                        Log.logger.error(f"_save_to_data_base: {row} is already in properties. ")
-            else:
-                for i, row in df.iterrows():
-                    sql = "REPLACE INTO new_homes (" + cols + ") VALUES (" + "%s," * (len(row) - 1) + "%s)"
-                    cursor.execute(sql, tuple(row))
-                    connection.commit()
-
-            Log.logger.info("_save_to_data_base: Commit to db successful")
+        df = self.get_df()
+        db_feeder = DataBaeFeeder(df, listing_type, verbose)
+        db_feeder.update_db()
 
     def _print_save_df(self, df, url, to_print=True, save=False, to_database=False, verbose=False, listing_type=None):
         """
@@ -196,7 +144,9 @@ class SeleniumScraper:
         Log.logger.debug(f"_print_to_save: Saving into db {url},"
                          f" to_print={to_print}, save={save}, to_database={to_database},"
                          f" verbose={verbose}, listing_type={listing_type}")
-        self._save_to_data_base(listing_type, to_database=to_database, verbose=verbose)
+        if to_database:
+            self._save_to_data_base(listing_type, verbose=verbose)
+
         Log.logger.info(f"_print_to_save: finished {url}")
 
     def scrap_url(self, url, **kwargs):
@@ -233,8 +183,6 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(property_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
-            df['City'] = df['City'].str.replace("'", "")
-            df['Price'] = df['Price'].astype(np.int64)
             df['Rooms'] = df['Rooms'].astype('float')
             df['Floor'] = df['Floor'].astype('float')
             df['Area'] = df['Area'].astype(np.int64)
@@ -244,8 +192,14 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == 2:
                     rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs['listing_type']))
             df = pd.DataFrame(rows_list)
-            df['City'] = df['City'].str.replace("'", "")
-            df['Price'] = df['Price'].astype(np.int64)
+
+        df['City'] = df['City'].str.replace("'", "")
+        df['Price'] = df['Price'].astype(np.int64)
+        df['latitude'] = None
+        df['longitude'] = None
+        df['city_hebrew'] = None
+        df['address_hebrew'] = None
+        df['state_hebrew'] = None
 
         self._print_save_df(df=df,
                             url=url,
