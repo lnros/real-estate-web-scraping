@@ -23,29 +23,34 @@ The scraper is built using a mixture of [*Selenium*][selenium-site] and [*Beauti
 Run `web_scraper.py` from the Command Line.
 
 ```
-usage: web_scraper.py [-h] [--limit n] [--print] [--save] [--database] [--verbose] {buy,rent,commercial,new_homes,all}
+usage: web_scraper.py [-h] [--limit n] [--print] [--save] [--database]
+                      [--fetch] [--verbose]
+                      {buy,rent,commercial,new_homes,all}
 
 Scraping OnMap website | Checkout https://www.onmap.co.il/en/
 
 positional arguments:
   {buy,rent,commercial,new_homes,all}
-                        choose which type of properties you would like to scrape
+                        choose which type of properties you would like to
+                        scrape
 
 optional arguments:
   -h, --help            show this help message and exit
   --limit n, -l n       limit to n number of scrolls per page
   --print, -p           print the results to the screen
-  --save, -s            save the scraped information into a csv file in the same directory
+  --save, -s            save the scraped information into a csv file in the
+                        same directory
   --database, -d        inserts new information found into the on_map database
+  --fetch, -f           fetches more information for each property using
+                        Nominatim API
   --verbose, -v         prints messages during the scraper execution
-
 ```
 
 
 ## The database
 
 The current ERD for the of this project is:
-![](db/temp_ERD.png)
+![](db/on_map_cloud.png)
 
 - In `property_types`, we have whether the property is an apartment, penthouse, cottage, and so on.
 
@@ -54,21 +59,8 @@ The current ERD for the of this project is:
 - In `listings`, we have the listing types offered on the website: `buy, rent, commercial, new homes`.
 
 - In `properties`, each record is a different property in the website, providing address, price, number of rooms, in which floor it is located, the area and the number of parking spots available.
+If the property is under constructions, the `ConStatus` tells what the construction status is. Latitude, longitude, and details in Hebrew are obtaibed using GeoPy with Nominatim service and might not be available for all properties due to request limitations since Nominatim is a free and limited API.
 
-- In `new_homes`, for the time being, we have only brand-new properties.
-
-> OBS: The `id`s in `properties` and `new_homes` are hashes generated from the information of each property. 
-
-### Known issues:
-
-- **Foreign Keys:** For now, to make our visualization of the database clearer, in `properties, new_homes` the link to foreign keys was done to their names rather than their id.
-
-- **Temp table:** Also, for the sake of visualization, for now we created a new table `new_homes` to see that everything is working as it should. 
-Later on, `new_homes` will be merged into `properties`.
-For now, `new_homes` has fewer columns since these properties provide less information and have a new column called `status`.
-
-The idea is that in the next checkpoints, the database will look similar to this:
-![](db/ERD.png)
 
 #### Authors
 @lnros - Leonardo Rosenberg <br>
