@@ -2,6 +2,7 @@ import sys
 import numpy as np
 import pymysql
 from config import DBConfig
+from config import Configuration as Cfg
 from config import Logger as Log
 from utils import *
 
@@ -36,17 +37,17 @@ class DataBaeFeeder:
         connecting to the data base host server.
         """
         print_database(verbose=self.verbose)
-        Log.logger.debug(f"_save_to_data_base: Connecting to the db"
+        Log.logger.debug(f"_connect_to_server: Connecting to the db"
                          f" listing_type={self.listing_type}, verbose={self.verbose}")
         try:
             self.connection = pymysql.connect(DBConfig.HOST, DBConfig.USER, DBConfig.PASSWORD, DBConfig.DATABASE)
             self.cursor = self.connection.cursor()
             self.connection.commit()
         except pymysql.err.OperationalError:
-            Log.logger.error(f"failed to connect to the server: {DBConfig.HOST}. ")
+            Log.logger.error(f"_connect_to_server: failed to connect to the server: {DBConfig.HOST}. ")
             sys.exit(1)
         else:
-            Log.logger.info("f_save_to_data_base: Connection to the db successful")
+            Log.logger.info("f_connect_to_server: Connection to the db successful")
 
     def _city_table_feeder(self):
         """
@@ -57,7 +58,7 @@ class DataBaeFeeder:
                 self.cursor.execute(INSERT_CITY_QUERY, city)
                 self.connection.commit()
             except pymysql.err.IntegrityError:
-                Log.logger.error(f"_save_to_data_base: {city} is already in cities. ")
+                Log.logger.error(f"_city_table_feeder: {city} is already in cities. ")
 
     def _listing_type_table_feeder(self):
         """
@@ -68,7 +69,7 @@ class DataBaeFeeder:
                 self.cursor.execute(INSERT_LISTINGS_QUERY, listing)
                 self.connection.commit()
             except pymysql.err.IntegrityError:
-                Log.logger.error(f"_save_to_data_base: {listing} is already in listings. ")
+                Log.logger.error(f"_listing_type_table_feeder: {listing} is already in listings. ")
 
     def _property_type_table_feeder(self):
         """
@@ -79,15 +80,15 @@ class DataBaeFeeder:
                 self.cursor.execute(INSERT_PROPERTY_TYPES_QUERY, prop)
                 self.connection.commit()
             except pymysql.err.IntegrityError:
-                Log.logger.error(f"_save_to_data_base: {prop} is already in property_types. ")
+                Log.logger.error(f"_property_type_table_feeder: {prop} is already in property_types. ")
 
     def _get_columns_list(self):
         """
         returns relevant columns, in both list and string formats, to feed the properties table.
         """
         columns = [str(i) for i in self.df.columns.tolist()]
-        columns_list = FK_IDS_LIST + columns[PRICE_COLUMN_IDX:LATITUDE_COLUMN_IDX]
-        columns_list_string = ",".join(columns_list)
+        columns_list = FK_IDS_LIST + columns[PRICE_COLUMN_IDX:]
+        columns_list_string = Cfg.SEPARATOR.join(columns_list)
         return columns_list, columns_list_string
 
     def _get_ids_values(self, row):
@@ -113,19 +114,19 @@ class DataBaeFeeder:
             listings_id, property_type_id, city_id = self._get_ids_values(row)
             columns_list, columns_list_string = self._get_columns_list()
             values = tuple([listings_id, property_type_id, city_id] +
-                           row.values[PRICE_COLUMN_IDX:LATITUDE_COLUMN_IDX].tolist())
+                           row.values[PRICE_COLUMN_IDX:].tolist())
 
             sql = "INSERT IGNORE INTO properties" \
                   " (" + columns_list_string + ") VALUES (" + "%s, " * (len(columns_list) - 1) + "%s)"
 
             try:
-                values = tuple([listings_id, property_type_id, city_id] + row.values[3:-5].tolist())
+                values = tuple([listings_id, property_type_id, city_id] + row.values[PRICE_COLUMN_IDX:].tolist())
                 self.cursor.execute(sql, values)
                 self.connection.commit()
             except pymysql.err.IntegrityError:
-                Log.logger.error(f"_save_to_data_base: {row} is already in properties. ")
+                Log.logger.error(f"_properties_table_feeder: {row} is already in properties. ")
             else:
-                Log.logger.info("_save_to_data_base: Commit to db successful")
+                Log.logger.info("_properties_table_feeder: Commit to db successful")
 
     def _data_base_feeder(self):
         """

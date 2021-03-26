@@ -1,8 +1,9 @@
 import re
 import string
-from hashlib import sha1
 from config import Configuration as Cfg
+from config import Logger as Log
 from dateutil import parser
+from hashlib import sha1
 
 # prop_to_attr_dict indices
 PRICE_PROPER_IDX = 0
@@ -20,9 +21,14 @@ PARKING_ATTR_IDX = 3
 STATUS_ATTR_IDX = -1
 STATUS_SPLIT_IDX = -1
 NEW_HOME_CITY_ATTR_IDX = -2
-
+EMPTY_STR = ""
+DIGIT_REGEX = r"\d"
 # ALL PROPERTIES IN NEW_HOMES LISTING ARE APARTMENTS
 NEW_HOMES_PROPERTY_TYPE = 'Apartment'
+
+# logger decorator
+KWARGS_KEY_IDX = 0
+KWARGS_VALUE_IDX = 1
 
 def generate_id(text):
     """
@@ -44,59 +50,20 @@ def return_row_before_print(row):
     return Cfg.SEPARATOR.join(s)
 
 
-def create_df_row(property_dict):
-    """
-    Given a dictionary with property information, transform it into a dictionary to be used as a dataframe row
-    """
-    try:
-        df_row = {'Date': [parser.parse(property_dict['created_at']).date()],
-                  'City_name': [property_dict['address']['en']['city_name']],
-                  'Street_name': [property_dict['address']['en']['street_name']],
-                  'House_number': [property_dict['address']['en']['house_number']],
-                  'Bathrooms': [property_dict['additional_info']['bathrooms']],
-                  'Rooms': [property_dict['additional_info']['rooms']],
-                  'Floor': [property_dict['additional_info']['floor']['on_the']],
-                  'Area[m^2]': [property_dict['additional_info']['area']['base']],
-                  'Parking_spots_aboveground': [
-                      property_dict['additional_info'].get('parking', {}).get('aboveground')],
-                  'Parking_spots_underground': [
-                      property_dict['additional_info'].get('parking', {}).get('underground')],
-                  'Price[NIS]': [property_dict['price']],
-                  'Property_type': [property_dict['property_type']]
-                  }
-        return df_row
-    except KeyError:
-        # TODO Take care of new project in buy
-        pass
-
-
 def new_home_to_attr_dict(buy_property, listing_type):
     proper = buy_property.div.div.findChildren('div', recursive=False)
     string_to_id = []
-    try:
-        price = proper[PRICE_PROPER_IDX].findChildren('div', recursive=False)[PRICE_CHILDREN_IDX].text
-        price = ''.join(re.findall("\d", price)).strip()
-    except:
-        price = None
+    price = _return_price(proper)
 
     string_to_id.append(price)
     attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
 
-    try:
-        Status = attr[STATUS_ATTR_IDX].text.strip().split()[STATUS_SPLIT_IDX]
-    except:
-        Status = None
+    status = _return_status(attr)
     string_to_id.append(Status)
 
-    try:
-        street = attr[STREET_ATTR_IDX].text.strip(string.punctuation)
-    except:
-        street = None
+    street = _return_street(attr)
     string_to_id.append(street)
-    try:
-        city = attr[NEW_HOME_CITY_ATTR_IDX].text.strip(string.punctuation)
-    except:
-        city = None
+    city = _return_city(attr)
     string_to_id.append(city)
     string_to_id = "".join(string_to_id)
     id_ = generate_id(string_to_id)
@@ -104,7 +71,7 @@ def new_home_to_attr_dict(buy_property, listing_type):
     type_ = NEW_HOMES_PROPERTY_TYPE
 
     return {'listing_type': listing_type, 'Property_type': type_, 'City': city,
-            'Price': price, 'Address': street, 'ConStatus': Status}
+            'Price': price, 'Address': street, 'ConStatus': status}
 
 
 def property_to_attr_dict(bs_ele_property, listing_type):
@@ -113,50 +80,23 @@ def property_to_attr_dict(bs_ele_property, listing_type):
     attributes dictionary of the property"""
     proper = bs_ele_property.div.div.findChildren('div', recursive=False)
     string_to_id = []
-    try:
-        price = proper[PRICE_PROPER_IDX].findChildren('span', recursive=False)[PRICE_CHILDREN_IDX].text
-        price = ''.join(re.findall("\d", price)).strip()
-    except AttributeError:
-        price = None
+    price = _return_price(proper)
     string_to_id.append(str(price))
     attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
 
-    try:
-        type_ = attr[TYPE_ATTR_IDX].text.strip(string.punctuation)
-    except AttributeError:
-        type_ = None
+    type_ = _return_type(attr)
     string_to_id.append(str(type_))
-    try:
-        street = attr[STREET_ATTR_IDX].findChildren('div', recursive=False)[STREET_CHILDREN_IDX].text.strip(
-            string.punctuation)
-    except AttributeError:
-        street = None
+    street = _return_street(attr)
     string_to_id.append(str(street))
-    try:
-        city = attr[CITY_ATTR_IDX].findChildren('div', recursive=False)[CITY_CHILDREN_IDX].text.strip(
-            string.punctuation)
-    except AttributeError:
-        city = None
+    city = _return_city(attr)
     string_to_id.append(str(city))
-    try:
-        rooms = attr[ROOMS_ATTR_IDX].find('i', {'title': 'Rooms'}).parent.text.strip()
-    except AttributeError:
-        rooms = None
+    rooms = _return_room(attr)
     string_to_id.append(str(rooms))
-    try:
-        floor = attr[FLOOR_ATTR_IDX].find('i', {'title': 'Floor'}).parent.text.strip()
-    except AttributeError:
-        floor = None
+    floor = _return_floor(attr)
     string_to_id.append(str(floor))
-    try:
-        floor_area = attr[AREA_ATTR_IDX].find('i', {'title': 'Floor area in sqm'}).parent.text.strip()
-    except AttributeError:
-        floor_area = None
+    floor_area = _return_floor_area(attr)
     string_to_id.append(str(floor_area))
-    try:
-        parking = attr[PARKING_ATTR_IDX].find('i', {'title': 'Parking'}).parent.text.strip()
-    except AttributeError:
-        parking = 0
+    parking = _return_parking(attr)
     string_to_id.append(str(parking))
     string_to_id = "".join(string_to_id)
     id_ = generate_id(string_to_id)
@@ -166,11 +106,121 @@ def property_to_attr_dict(bs_ele_property, listing_type):
             'Rooms': rooms, 'Floor': floor, 'Area': floor_area, 'Parking_spots': parking}
 
 
+def _return_price(property):
+    """
+    TODO
+    """
+    try:
+        price = property[PRICE_PROPER_IDX].findChildren('div', recursive=False)[PRICE_CHILDREN_IDX].text
+        price = EMPTY_STR.join(re.findall(DIGIT_REGEX, price)).strip()
+    except AttributeError:
+        price = None
+    except KeyError:
+        price = None
+    except IndexError as exc:
+        price = property[PRICE_PROPER_IDX].findChildren('span', recursive=False)[PRICE_CHILDREN_IDX].text
+        price = EMPTY_STR.join(re.findall(DIGIT_REGEX, price)).strip()
+    return price
+
+
+def _return_status(attribute):
+    """
+    TODO
+    """
+    try:
+        status = attribute[STATUS_ATTR_IDX].text.strip().split()[STATUS_SPLIT_IDX]
+    except AttributeError:
+        status = None
+    except KeyError:
+        status = None
+    return status
+
+
+def _return_street(attribute):
+    """
+    TODO
+    """
+    try:
+        street = attribute[STREET_ATTR_IDX].text.strip(string.punctuation)
+    except AttributeError:
+        street = None
+    except KeyError:
+        street = None
+    return street
+
+
+def _return_city(attribute):
+    """
+    TODO
+    """
+    try:
+        city = attribute[NEW_HOME_CITY_ATTR_IDX].text.strip(string.punctuation)
+    except AttributeError:
+        city = None
+    except KeyError:
+        city = None
+    return city
+
+
+def _return_type(attribute):
+    """
+    TODO
+    """
+    try:
+        type_ = attribute[TYPE_ATTR_IDX].text.strip(string.punctuation)
+    except AttributeError:
+        type_ = None
+    return type_
+
+
+def _return_room(attribute):
+    """
+    TODO
+    """
+    try:
+        room = attribute[ROOMS_ATTR_IDX].find('i', {'title': 'Rooms'}).parent.text.strip()
+    except AttributeError:
+        room = None
+    return room
+
+
+def _return_floor(attribute):
+    """
+    TODO
+    """
+    try:
+        floor = attribute[FLOOR_ATTR_IDX].find('i', {'title': 'Floor'}).parent.text.strip()
+    except AttributeError:
+        floor = None
+    return floor
+
+
+def _return_floor_area(attribute):
+    """
+    TODO
+    """
+    try:
+        floor_area = attribute[AREA_ATTR_IDX].find('i', {'title': 'Floor area in sqm'}).parent.text.strip()
+    except AttributeError:
+        floor_area = None
+    return floor_area
+
+
+def _return_parking(attribute):
+    try:
+        parking = attribute[PARKING_ATTR_IDX].find('i', {'title': 'Parking'}).parent.text.strip()
+    except AttributeError:
+        parking = 0
+    return parking
+
+
 def print_when_program_finishes():
     print('\nDone!\n')
 
+
 def print_fetch():
     print('\nFetching more info!\n')
+
 
 def print_access(url, verbose=True):
     if verbose:
@@ -222,3 +272,26 @@ def print_transform_df(verbose=True):
 def print_database(verbose=True):
     if verbose:
         print("Saving new info into the database...")
+
+
+def easy_logging(func):
+    def wrapper(*args, **kwargs):
+        Log.logger.debug(f"{func.__name__}: starting")
+        for i, arg in enumerate(args):
+            Log.logger.debug(f"{func.__name__}: arg {i}: {arg}")
+        for i, kwarg in enumerate(kwargs.items()):
+            Log.logger.debug(f"{func.__name__}: kwarg {kwarg[KWARGS_KEY_IDX]}: {kwarg[KWARGS_VALUE_IDX]}")
+        try:
+            if args and kwargs:
+                func(*args, **kwargs)
+            elif args:
+                func(*args)
+            elif kwargs:
+                func(**kwargs)
+            else:
+                func()
+        except TypeError as err:
+            Log.logger.error(f"{func.__name__}: {err}")
+        else:
+            Log.logger.info(f"{func.__name__}: finished successfully")
+    return wrapper
