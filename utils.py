@@ -1,8 +1,8 @@
 import re
 import string
-from hashlib import sha1
 from config import Configuration as Cfg
 from dateutil import parser
+from hashlib import sha1
 
 # prop_to_attr_dict indices
 PRICE_PROPER_IDX = 0
@@ -23,6 +23,7 @@ NEW_HOME_CITY_ATTR_IDX = -2
 
 # ALL PROPERTIES IN NEW_HOMES LISTING ARE APARTMENTS
 NEW_HOMES_PROPERTY_TYPE = 'Apartment'
+
 
 def generate_id(text):
     """
@@ -169,8 +170,10 @@ def property_to_attr_dict(bs_ele_property, listing_type):
 def print_when_program_finishes():
     print('\nDone!\n')
 
+
 def print_fetch():
     print('\nFetching more info!\n')
+
 
 def print_access(url, verbose=True):
     if verbose:
@@ -222,3 +225,7 @@ def print_transform_df(verbose=True):
 def print_database(verbose=True):
     if verbose:
         print("Saving new info into the database...")
+
+
+def saving_file(filename):
+    return f'\nSaving {filename}\n'

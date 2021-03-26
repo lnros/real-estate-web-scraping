@@ -13,16 +13,24 @@ from geopy.exc import GeocoderUnavailable
 from urllib3.exceptions import MaxRetryError, ReadTimeoutError
 from requests.exceptions import ConnectionError
 from socket import timeout
-from config import Configuration as cfg
+from config import Configuration as Cfg
 from config import DBConfig
+from config import GeoFetcherConfig
 from config import Logger as Log
 from geofetcher import GeoFetcher
 from utils import *
-import data_base_feeder
-from data_base_feeder import DataBaeFeeder
+from data_base_feeder import DataBaseFeeder
+
 
 class SeleniumScraper:
-
+    """
+    This class scrapes the website "On Map", fetches more information available,
+    and with the information scraped it can:
+    - Print it to the user
+    - Save it to csv
+    - Save into a database
+    Notice that we also use BeautifulSoup after we use Selenium to scroll the url
+    """
     def __init__(self):
         self.driver = self._create_driver()
         self._df = None
@@ -32,12 +40,14 @@ class SeleniumScraper:
         """
         Creates a driver that runs in Google Chrome.
         """
-        os.environ['WDM_LOG_LEVEL'] = cfg.SILENCE_DRIVER_LOG
+        os.environ['WDM_LOG_LEVEL'] = Cfg.SILENCE_DRIVER_LOG
         return webdriver.Chrome(ChromeDriverManager().install())
 
     def update_df(self, df):
         """
         Updates the dataframe containing the scraped info
+        ----
+        :type df: pd.Dataframe
         """
         self._df = df
 
@@ -50,106 +60,136 @@ class SeleniumScraper:
     def _scroll(self, limit=None, verbose=False):
         """
         Scrolls down the url to load all the information available
+        ----
+        :param limit: limits the number of scrolling per page
+        :type limit: int
+        :param verbose: if true, it prints relevant information to the user
+        :type verbose: bool
         """
         scroll_num = 1
         # maximizing the window makes fewer scrolls necessary
-        self.driver.set_window_size(cfg.CHROME_WIDTH, cfg.CHROME_HEIGHT)
-        time.sleep(cfg.SCROLL_PAUSE_TIME)
+        self.driver.set_window_size(Cfg.CHROME_WIDTH, Cfg.CHROME_HEIGHT)
+        time.sleep(Cfg.SCROLL_PAUSE_TIME)
         while True:
-            ele_to_scroll = self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH)[
-                cfg.ELEM_TO_SCROLL_IDX]
+            ele_to_scroll = self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH)[
+                Cfg.ELEM_TO_SCROLL_IDX]
             if ele_to_scroll is None:
-                Log.logger.error(f"_scroll: ele_to_scroll should have a content but it is {ele_to_scroll}")
-            self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
+                Log.logger.error(Log.scroll_error(ele_to_scroll))
+            self.driver.execute_script(Cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
-            time.sleep(cfg.SCROLL_PAUSE_TIME)
+            time.sleep(Cfg.SCROLL_PAUSE_TIME)
             try:
                 if limit and scroll_num == limit:
-                    Log.logger.debug(f"_scroll: finished scrolling")
+                    Log.logger.debug(Log.scroll_finished)
                     break
                 # Finds the bottom of the page
-                bot_ele = self.driver.find_element_by_xpath(cfg.BOTTOM_PAGE_XPATH)
+                bot_ele = self.driver.find_element_by_xpath(Cfg.BOTTOM_PAGE_XPATH)
             except NoSuchElementException:
                 scroll_num += 1
             else:
-                time.sleep(cfg.SCROLL_PAUSE_TIME)
-                self.driver.execute_script(cfg.SCROLL_COMMAND, bot_ele)
-                Log.logger.debug(f"_scroll: finished scrolling")
+                time.sleep(Cfg.SCROLL_PAUSE_TIME)
+                self.driver.execute_script(Cfg.SCROLL_COMMAND, bot_ele)
+                Log.logger.debug(Log.scroll_finished)
                 break
-        Log.logger.info(f"_scroll: finished")
+        Log.logger.info(Log.end_scroll_function)
 
     def _scroll_new_homes(self, limit=None, verbose=False):
         """
         Scrolls down the new_homes url to load all the information available
+        ----
+        :param limit: limits the number of scrolling per page
+        :type limit: int
+        :param verbose: if true, it prints relevant information to the user
+        :type verbose: bool
         """
         scroll_num = 1
-        prev_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
-        Log.logger.debug(f"_scroll_new_homes:prev_len {prev_len}")
+        prev_len = len(self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH))
+        Log.logger.debug(Log.scroll_new_homes(prev_len))
         # maximizing the window makes fewer scrolls necessary
-        self.driver.set_window_size(cfg.CHROME_WIDTH, cfg.CHROME_HEIGHT)
-        time.sleep(cfg.SCROLL_PAUSE_TIME)
+        self.driver.set_window_size(Cfg.CHROME_WIDTH, Cfg.CHROME_HEIGHT)
+        time.sleep(Cfg.SCROLL_PAUSE_TIME)
         while True:
-            ele_to_scroll = self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH)[
-                cfg.ELEM_TO_SCROLL_IDX]
+            ele_to_scroll = self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH)[
+                Cfg.ELEM_TO_SCROLL_IDX]
             if ele_to_scroll is None:
-                Log.logger.error(f"_scroll_new_homes: ele_to_scroll should have a content but it is {ele_to_scroll}")
-            self.driver.execute_script(cfg.SCROLL_COMMAND, ele_to_scroll)
+                Log.logger.error(Log.scroll_error(ele_to_scroll))
+            self.driver.execute_script(Cfg.SCROLL_COMMAND, ele_to_scroll)
             print_scroll_num(scroll_num, verbose)
-            time.sleep(cfg.SCROLL_PAUSE_TIME)
-            new_len = len(self.driver.find_elements_by_xpath(cfg.PROPERTIES_XPATH))
+            time.sleep(Cfg.SCROLL_PAUSE_TIME)
+            new_len = len(self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH))
             if new_len == prev_len or (limit and scroll_num == limit):
-                Log.logger.debug(f"_scroll_new_homes: finished scrolling")
+                Log.logger.debug(Log.scroll_finished_new_home)
                 break
             scroll_num += 1
             prev_len = new_len
-        Log.logger.info(f"_scroll_new_homes: finished")
+        Log.logger.info(Log.end_scroll_new_home)
 
     def _save_to_csv(self, url, save=True, verbose=True):
         """
         Save the dataframe containing the scraped info into a csv file
+        ----
+        :param url: url address
+        :type url: str
+        :param save: if true, it saves the dataframe into a csv file
+        :type save: bool
+        :param verbose: if true, it prints relevant information to the user
+        :type verbose: bool
         """
         if save:
-            if 'commercial' in url:
-                filename = "commercial.csv"
-            elif 'projects' in url:
-                filename = "new_homes.csv"
+            if Cfg.COMMERCIAL in url:
+                filename = Cfg.COMMERCIAL_FILENAME
+            elif Cfg.PROJECT in url:
+                filename = Cfg.NEW_HOMES_FILENAME
             else:
-                filename = f"{url.split(cfg.URL_SPLIT_SEPARATOR)[cfg.FILENAME_IDX]}.csv"
+                filename = f"{url.split(Cfg.URL_SPLIT_SEPARATOR)[Cfg.FILENAME_IDX]}.csv"
             if verbose:
-                print(f'\nSaving {filename}\n')
-                print(self.get_df())
-            self.get_df().to_csv(filename, index=False)
-            Log.logger.info(f"_save_to_csv: finished {url}")
+                print(saving_file(filename))
+            self.get_df().to_csv(filename, index=False, encoding=Cfg.ENCODING)
+            Log.logger.info(Log.end_save_csv(url))
 
     def _save_to_data_base(self, listing_type, to_database=True, verbose=False):
         """
         Save the dataframe containing the scraped info into a database.
+        ----
+        :param listing_type: type of listing: buy, rent, commercial, new_home
+        :type listing_type: str
+        :param to_database: if true, it saves the new information from the dataframe to the database
+        :type to_database: bool
+        :param verbose: if true, it prints relevant information to the user
+        :type verbose: bool
         """
         if to_database:
             df = self.get_df()
-            db_feeder = DataBaeFeeder(df, listing_type, verbose)
+            db_feeder = DataBaseFeeder(df, listing_type, verbose)
             db_feeder.update_db()
 
     def _print_save_df(self, url, to_print=True, save=False, to_database=False, verbose=False, listing_type=None):
         """
         Given a df containing scraped information,
         print it and/or save it to a csv, depending on the user's choice.
+        ----
+        :param url: url address
+        :type url: str
+        :param listing_type: type of listing: buy, rent, commercial, new_home
+        :type listing_type: str
+        :param to_print: if true, it prints the dataframe to the screen
+        :type to_print: bool
+        :param save: if true, it saves the dataframe into a csv file
+        :type save: bool
+        :param to_database: if true, it saves the new information from the dataframe to the database
+        :type to_database: bool
+        :param verbose: if true, it prints relevant information to the user
+        :type verbose: bool
         """
-        Log.logger.debug(f"_print_save_df: Checking if print {url},"
-                         f" to_print={to_print}, save={save}, to_database={to_database},"
-                         f" verbose={verbose}, listing_type={listing_type}")
-        if 'project' not in url:
+        Log.logger.debug(Log.init_print_save_df(url, to_print, save, to_database, verbose, listing_type))
+        if Cfg.PROJECT not in url:
             print_row(self.get_df(), to_print=to_print)
         print_total_items(self.get_df(), verbose=verbose)
-        Log.logger.debug(f"_print_to_save: Saving into csv {url},"
-                         f" to_print={to_print}, save={save}, to_database={to_database},"
-                         f" verbose={verbose}, listing_type={listing_type}")
+        Log.logger.debug(Log.saving_print_save_df(url, to_print, save, to_database, verbose, listing_type))
         self._save_to_csv(url, save=save, verbose=verbose)
-        Log.logger.debug(f"_print_to_save: Saving into db {url},"
-                         f" to_print={to_print}, save={save}, to_database={to_database},"
-                         f" verbose={verbose}, listing_type={listing_type}")
+        Log.logger.debug(Log.db_print_save_df(url, to_print, save, to_database, verbose, listing_type))
         self._save_to_data_base(listing_type, to_database=to_database, verbose=verbose)
-        Log.logger.info(f"_print_to_save: finished {url}")
+        Log.logger.info(Log.end_print_save(url))
 
     def _fetch_more_attributes(self, fetch_info=True, verbose=False):
         """
@@ -163,38 +203,37 @@ class SeleniumScraper:
         :rtype: Dataframe
         """
         if fetch_info:
-            Log.logger.debug("fetch_more_attributes: starting")
+            Log.logger.debug(Log.fetch_more_init)
             df_new = self.get_df().copy()
-
             gf = GeoFetcher()
-            Log.logger.info("fetch_more_attributes: geofetcher initialized")
+            Log.logger.info(Log.geofetcher_init)
             if verbose:
                 print_fetch()
             for i, row in tqdm(df_new.iterrows(), total=len(df_new), disable=(not verbose)):
-                Log.logger.debug(f"fetch_more_attributes: Pulling info for row {i}")
+                Log.logger.debug(Log.pulling_row_info(i))
                 try:
                     df_new.iloc[i] = gf.pull_row_info(row)
                 # Nominatim is a free API that doesn't allow multiple requests without errors
                 # Using RateLimiter may not be enough in some cases
                 except GeocoderUnavailable as err:
-                    Log.logger.error(f"fetch_more_attributes: row {i}, {err}")
+                    Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
                     df_new.iloc[i] = self.get_df().iloc[i]
                 except MaxRetryError as err:
-                    Log.logger.error(f"fetch_more_attributes: row {i}, {err}")
+                    Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
                     df_new.iloc[i] = self.get_df().iloc[i]
                 except ConnectionError as err:
-                    Log.logger.error(f"fetch_more_attributes: row {i}, {err}")
+                    Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
                     df_new.iloc[i] = self.get_df().iloc[i]
                 except ReadTimeoutError as err:
-                    Log.logger.error(f"fetch_more_attributes: row {i}, {err}")
+                    Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
                     df_new.iloc[i] = self.get_df().iloc[i]
                 except timeout as err:
-                    Log.logger.error(f"fetch_more_attributes: row {i}, {err}")
+                    Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
                     df_new.iloc[i] = self.get_df().iloc[i]
-            Log.logger.info("fetch_more_attributes: finished successfully")
+            Log.logger.info(Log.end_fetch_more_att)
             return df_new
         else:
-            Log.logger.debug(f"fetch_more_attributes: fetch info == {fetch_info}")
+            Log.logger.debug(Log.not_fetched(fetch_info))
 
     @staticmethod
     def _create_df(url, properties_list, **kwargs):
@@ -204,40 +243,38 @@ class SeleniumScraper:
         :param url: url from which we scraped
         :type url: string
         :param properties_list:
-        :type properties_list:
+        :type properties_list: list
         :param kwargs: hyperparameters chosen by the user
         :type kwargs: dict
         :return: The properties' dataframe
         :rtype: Dataframe
         """
-        Log.logger.debug(f"create_df: Creating dataframe from {url}")
+        Log.logger.debug(Log.creating_df(url))
         rows_list = []
-        if 'project' not in url:  # for buy, rent and commercial categories
+        if Cfg.PROJECT not in url:  # for buy, rent and commercial categories
             for proper in properties_list:
-                if len(proper.div.div.findChildren('div', recursive=False)) == 2:
-                    rows_list.append(property_to_attr_dict(proper, listing_type=kwargs['listing_type']))
+                if len(proper.div.div.findChildren('div', recursive=False)) == Cfg.LEN_PROPER:
+                    rows_list.append(property_to_attr_dict(proper, listing_type=kwargs[Cfg.LISTING_TYPE_KEY]))
             df = pd.DataFrame(rows_list)
-            df['Price'] = df['Price'].astype(np.int64)
-            df['Rooms'] = df['Rooms'].astype('float')
-            df['Floor'] = df['Floor'].astype('float')
-            df['Area'] = df['Area'].astype(np.int64)
-            df['Parking_spots'] = df['Parking_spots'].astype(np.int64)
+            df[Cfg.PRICE_COL] = df[Cfg.PRICE_COL].astype(np.int64)
+            df[Cfg.ROOM_COL] = df[Cfg.ROOM_COL].astype('float')
+            df[Cfg.FLOOR_COL] = df[Cfg.FLOOR_COL].astype('float')
+            df[Cfg.AREA_COL] = df[Cfg.AREA_COL].astype(np.int64)
+            df[Cfg.PARKING_COL] = df[Cfg.PARKING_COL].astype(np.int64)
 
         else:  # for new home category
             for proper in properties_list:
-                if len(proper.div.div.findChildren('div', recursive=False)) == 2:
-                    rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs['listing_type']))
+                if len(proper.div.div.findChildren('div', recursive=False)) == Cfg.LEN_PROPER:
+                    rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs[Cfg.LISTING_TYPE_KEY]))
             df = pd.DataFrame(rows_list)
 
-        df['Price'] = df['Price'].astype(np.int64)
-        # df['City'] = df['City'].str.replace("'", "")
-        df['Price'] = df['Price'].astype(np.int64)
-        df['latitude'] = None
-        df['longitude'] = None
-        df['city_hebrew'] = None
-        df['address_hebrew'] = None
-        df['state_hebrew'] = None
-        Log.logger.info(f"create_df: Created dataframe from {url} successfully")
+        df[Cfg.PRICE_COL] = df[Cfg.PRICE_COL].astype(np.int64)
+        df[GeoFetcherConfig.LAT_KEY] = None
+        df[GeoFetcherConfig.LON_KEY] = None
+        df[GeoFetcherConfig.CITY_HEBREW_KEY] = None
+        df[GeoFetcherConfig.ADDRESS_HEBREW_KEY] = None
+        df[GeoFetcherConfig.STATE_HEBREW_KEY] = None
+        Log.logger.info(Log.created_df(url))
 
         return df
 
@@ -254,30 +291,32 @@ class SeleniumScraper:
         fetch_info: bool
         listing_type: a list containing at least one of the following: 'buy', 'rent', 'commercial', 'new homes'
         """
-        print_access(url, verbose=kwargs['verbose'])
+        print_access(url, verbose=kwargs[Cfg.VERBOSE_KEY])
         self.driver.get(url)
-        Log.logger.debug(f"scrap_url: Scrolling {url}")
-        print_scrolling(url, verbose=kwargs['verbose'])
+        Log.logger.debug(Log.scraping(url))
+        print_scrolling(url, verbose=kwargs[Cfg.VERBOSE_KEY])
 
-        if 'project' not in url:
-            Log.logger.info(f"scrap_url: Scrolling {url} - not new_homes")
-            self._scroll(limit=kwargs['limit'], verbose=kwargs['verbose'])
+        if Cfg.PROJECT not in url:
+            Log.logger.info(Log.before_scroll)
+            self._scroll(limit=kwargs[Cfg.LIMIT_KEY], verbose=kwargs[Cfg.VERBOSE_KEY])
         else:
-            Log.logger.info(f"scrap_url: Scrolling {url} - new_homes")
-            self._scroll_new_homes(limit=kwargs['limit'], verbose=kwargs['verbose'])
+            Log.logger.info(Log.before_scroll_new_home(url))
+            self._scroll_new_homes(limit=kwargs[Cfg.LIMIT_KEY], verbose=kwargs[Cfg.VERBOSE_KEY])
 
-        print_scraping(url, verbose=kwargs['verbose'])
-        Log.logger.debug(f"scrap_url: Scraping {url}")
+        print_scraping(url, verbose=kwargs[Cfg.VERBOSE_KEY])
+        Log.logger.debug(Log.before_scraping(url))
         html_doc = self.driver.page_source
         soup = bs(html_doc, 'html.parser')
-        content = soup.find('div', {'id': 'propertiesList'}).findChildren("div", recursive=False)
-        properties_list = content[1].findChildren('div', recursive=False)
+        content = soup.find('div', Cfg.DICT_PROPERTY_ID).findChildren("div", recursive=False)
+        properties_list = content[Cfg.PROPERTIES_LIST_IDX].findChildren('div', recursive=False)
         self.update_df(self._create_df(url, properties_list, **kwargs))
-        self.update_df(self._fetch_more_attributes(fetch_info=kwargs['fetch_info'], verbose=kwargs['verbose']))
+        if kwargs[Cfg.FETCH_KEY]:
+            self.update_df(self._fetch_more_attributes(fetch_info=kwargs[Cfg.FETCH_KEY],
+                                                       verbose=kwargs[Cfg.VERBOSE_KEY]))
         self._print_save_df(url=url,
-                            to_print=kwargs['to_print'],
-                            save=kwargs['save'],
-                            verbose=kwargs['verbose'],
-                            to_database=kwargs['to_database'],
-                            listing_type=kwargs['listing_type'])
-        Log.logger.info(f"scrap_url: finished {url}")
+                            to_print=kwargs[Cfg.PRINT_KEY],
+                            save=kwargs[Cfg.SAVE_KEY],
+                            verbose=kwargs[Cfg.VERBOSE_KEY],
+                            to_database=kwargs[Cfg.DB_KEY],
+                            listing_type=kwargs[Cfg.LISTING_TYPE_KEY])
+        Log.logger.info(Log.finished_scraping(url))
