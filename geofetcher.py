@@ -35,7 +35,7 @@ class GeoFetcher:
     @staticmethod
     def _fetch_latitude(location):
         """
-        TODO
+        Based on the address previously retrieved, it fetches its latitude
         ----
         :param location: information retrieved from Nominatim using geopy
         :type location: a geopy geocode object
@@ -50,7 +50,7 @@ class GeoFetcher:
     @staticmethod
     def _fetch_longitude(location):
         """
-        TODO
+        Based on the address previously retrieved, it fetches its longitude
         ----
         :param location: information retrieved from Nominatim using geopy
         :type location: a geopy geocode object
@@ -65,7 +65,7 @@ class GeoFetcher:
     @staticmethod
     def _fetch_city_hebrew(location):
         """
-        TODO
+        Based on the address previously retrieved, it fetches the Hebrew name from the city
         ----
         :param location: information retrieved from Nominatim using geopy
         :type location: a geopy geocode object
@@ -82,7 +82,8 @@ class GeoFetcher:
     @staticmethod
     def _fetch_road_hebrew(location):
         """
-        TODO
+        Based on the address previously retrieved, it fetches the road name in Hebrew
+        ----
         :param location: information retrieved from Nominatim using geopy
         :type location: a geopy geocode object
         :return: road name in Hebrew
@@ -98,7 +99,7 @@ class GeoFetcher:
     @staticmethod
     def _fetch_state_hebrew(location):
         """
-        TODO
+        Based on the address previously retrieved, it fetches the state (מחוז) name in Hebrew
         ----
         :param location: information retrieved from Nominatim using geopy
         :type location: a geopy geocode object

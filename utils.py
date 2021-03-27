@@ -30,6 +30,7 @@ NEW_HOMES_PROPERTY_TYPE = 'Apartment'
 KWARGS_KEY_IDX = 0
 KWARGS_VALUE_IDX = 1
 
+
 def generate_id(text):
     """
     Generates an id for the text based on its hash
@@ -189,10 +190,10 @@ def _return_floor(attribute):
     TODO
     """
     try:
-        floor = attribute[FLOOR_ATTR_IDX].find('i', {'title': 'Floor'}).parent.text.strip()
+        room = attribute[ROOMS_ATTR_IDX].find('i', {'title': 'Rooms'}).parent.text.strip()
     except AttributeError:
-        floor = None
-    return floor
+        room = None
+    return room
 
 
 def _return_floor_area(attribute):
@@ -298,3 +299,7 @@ def easy_logging(func):
         else:
             Log.logger.info(f"{func.__name__}: finished successfully")
     return wrapper
+
+
+def saving_file(filename):
+    return f'\nSaving {filename}\n'
