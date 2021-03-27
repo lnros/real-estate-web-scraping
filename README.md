@@ -46,6 +46,11 @@ optional arguments:
   --verbose, -v         prints messages during the scraper execution
 ```
 
+## Fetching additional information
+
+Using the `GeoFetcher` class, we are able to add more geolocation information to each property.
+This class is based on [*Geopy*][geopy] and uses [*Nominatim*][nominatim] as the geolocation service. 
+Since Nominatim provides a free service, its request limit is low. Thus, some properties may appear with `None` features after fetching additional information.
 
 ## The database
 
@@ -70,3 +75,7 @@ If the property is under constructions, the `ConStatus` tells what the construct
 [selenium-site]: https://selenium-python.readthedocs.io/
 
 [bs4-site]: https://readthedocs.org/projects/beautiful-soup-4/
+
+[geopy]: https://geopy.readthedocs.io/en/stable/#module-geopy.geocoders
+
+[nominatim]: https://nominatim.org/release-docs/develop/
