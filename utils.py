@@ -275,6 +275,9 @@ def print_database(verbose=True):
 
 
 def easy_logging(func):
+    """
+    NOT WORKING, TODO
+    """
     def wrapper(*args, **kwargs):
         Log.logger.debug(f"{func.__name__}: starting")
         for i, arg in enumerate(args):
