@@ -1,3 +1,5 @@
+aiohttp==3.7.4.post0
+async-timeout==3.0.1
 attrs==20.3.0
 beautifulsoup4==4.9.3
 bs4==0.0.1
@@ -8,12 +10,12 @@ configparser==5.0.1
 crayons==0.4.0
 geographiclib==1.50
 geopy==2.1.0
-gevent==21.1.2
 greenlet==1.0.0
 grequests==0.6.0
 idna==2.5
 iniconfig==1.1.1
 lxml==4.6.2
+multidict==5.1.0
 numpy==1.20.1
 packaging==20.9
 pandas==1.2.2
@@ -30,8 +32,10 @@ six==1.15.0
 soupsieve==2.2
 toml==0.10.2
 tqdm==4.57.0
+typing-extensions==3.7.4.3
 urllib3==1.26.3
 uuid==1.30
 webdriver-manager==3.3.0
+yarl==1.6.3
 zope.event==4.5.0
 zope.interface==5.2.0
