@@ -18,11 +18,17 @@ The website has four main data sources: buy, rent, new homes and commercial data
 The scraper is built using a mixture of [*Selenium*][selenium-site] and [*BeautifulSoup*][bs4-site].
 *Selenium* is in charge of scrolling each webpage to the bottom so that *BeautifulSoup* can read the entire HTML.
 
+### Installation
+Make sure to install all the required packages for the scraper to work:
+```console
+$ pip install -r requirements.txt
+```
+
 ### Usage
 
 Run `web_scraper.py` from the Command Line.
 
-```
+```console
 usage: web_scraper.py [-h] [--limit n] [--print] [--save] [--database]
                       [--fetch] [--verbose]
                       {buy,rent,commercial,new_homes,all}
@@ -49,8 +55,10 @@ optional arguments:
 ## Fetching additional information
 
 Using the `GeoFetcher` class, we are able to add more geolocation information to each property.
-This class is based on [*Geopy*][geopy] and uses [*Nominatim*][nominatim] as the geolocation service. 
-Since Nominatim provides a free service, its request limit is low. Thus, some properties may appear with `None` features after fetching additional information.
+This class is based on [*Geopy*][geopy] and uses [*Nominatim*][nominatim] as the geolocation service.
+Even though we are fetching the information asynchronously with [*asyncio*][asyncio-docs] and [*AioHTTPAdapter*][adapter], since Nominatim provides a free service, its request limit is low. 
+Thus, some properties may appear with `None` features after fetching additional information.
+If you wish, you can increase the `DELAY_TIME` in `conf.py` as a way to obtain all the information.
 
 ## The database
 
@@ -79,3 +87,7 @@ If the property is under constructions, the `ConStatus` tells what the construct
 [geopy]: https://geopy.readthedocs.io/en/stable/#module-geopy.geocoders
 
 [nominatim]: https://nominatim.org/release-docs/develop/
+
+[asyncio-docs]: https://docs.python.org/3/library/asyncio.html
+
+[adapter]: https://docs.aiohttp.org/en/stable/ 

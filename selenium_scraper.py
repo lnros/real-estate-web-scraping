@@ -1,25 +1,24 @@
+import asyncio
 import os
 import time
+from socket import timeout
 
 import numpy as np
 import pandas as pd
-import pymysql
 from bs4 import BeautifulSoup as bs
+from geopy.exc import GeocoderUnavailable, GeocoderTimedOut
+from requests.exceptions import ConnectionError
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from tqdm import tqdm
-from webdriver_manager.chrome import ChromeDriverManager
-from geopy.exc import GeocoderUnavailable
 from urllib3.exceptions import MaxRetryError, ReadTimeoutError
-from requests.exceptions import ConnectionError
-from socket import timeout
-from config import Configuration as Cfg
-from config import DBConfig
+from webdriver_manager.chrome import ChromeDriverManager
+
 from config import GeoFetcherConfig
 from config import Logger as Log
+from data_base_feeder import DataBaseFeeder
 from geofetcher import GeoFetcher
 from utils import *
-from data_base_feeder import DataBaseFeeder
 
 
 class SeleniumScraper:
@@ -31,6 +30,7 @@ class SeleniumScraper:
     - Save into a database
     Notice that we also use BeautifulSoup after we use Selenium to scroll the url
     """
+
     def __init__(self):
         self.driver = self._create_driver()
         self._df = None
@@ -193,7 +193,7 @@ class SeleniumScraper:
 
     def _fetch_more_attributes(self, fetch_info=True, verbose=False):
         """
-        Uses Geopy with Nominatim service to fetch more information on the property location
+        Uses Geopy with Nominatim service to fetch more information on the property location asynchronously.
         ----
         :param fetch_info: Whether or not we want to fetch more information
         :type fetch_info: bool
@@ -212,9 +212,12 @@ class SeleniumScraper:
             for i, row in tqdm(df_new.iterrows(), total=len(df_new), disable=(not verbose)):
                 Log.logger.debug(Log.pulling_row_info(i))
                 try:
-                    df_new.iloc[i] = gf.pull_row_info(row)
+                    df_new.iloc[i] = asyncio.run(gf.pull_row_info(row))
                 # Nominatim is a free API that doesn't allow multiple requests without errors
-                # Using RateLimiter may not be enough in some cases
+                # Using delay may not be enough in some cases
+                except GeocoderTimedOut as err:
+                    Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
+                    df_new.iloc[i] = self.get_df().iloc[i]
                 except GeocoderUnavailable as err:
                     Log.logger.error(Log.exception_fetch_more_attributes(row_number=i, exception=err))
                     df_new.iloc[i] = self.get_df().iloc[i]
