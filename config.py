@@ -150,6 +150,8 @@ class Configuration:
     SEPARATOR = ", "
     PROPERTIES_LIST_IDX = 1
     LEN_PROPER = 2
+    EMPTY = ""
+    DUMMY_REPLACER = 0
 
     # XPATHS AND SELENIUM COMMANDS
     SCROLL_COMMAND = "arguments[0].scrollIntoView();"
@@ -239,7 +241,7 @@ class Logger:
         cls.logger.addHandler(file_handler)
 
         stream_handler = logging.StreamHandler(sys.stdout)
-        stream_handler.setLevel(logging.ERROR)
+        stream_handler.setLevel(logging.CRITICAL)
         stream_handler.setFormatter(formatter)
         cls.logger.addHandler(stream_handler)
 

@@ -60,7 +60,7 @@ def new_home_to_attr_dict(buy_property, listing_type):
     attr = proper[ATTR_PROPER_IDX].findChildren('div', recursive=False)
 
     status = _return_status(attr)
-    string_to_id.append(Status)
+    string_to_id.append(status)
 
     street = _return_street(attr)
     string_to_id.append(street)
