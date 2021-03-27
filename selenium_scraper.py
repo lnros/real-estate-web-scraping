@@ -1,6 +1,6 @@
 import os
 import time
-
+import asyncio
 import numpy as np
 import pandas as pd
 import pymysql
@@ -212,7 +212,7 @@ class SeleniumScraper:
             for i, row in tqdm(df_new.iterrows(), total=len(df_new), disable=(not verbose)):
                 Log.logger.debug(Log.pulling_row_info(i))
                 try:
-                    df_new.iloc[i] = gf.pull_row_info(row)
+                    df_new.iloc[i] = asyncio.run(gf.pull_row_info(row))
                 # Nominatim is a free API that doesn't allow multiple requests without errors
                 # Using RateLimiter may not be enough in some cases
                 except GeocoderUnavailable as err:

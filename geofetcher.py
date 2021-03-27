@@ -1,5 +1,6 @@
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
+from geopy.adapters import AioHTTPAdapter
 
 from config import GeoFetcherConfig as Cfg
 
@@ -13,7 +14,7 @@ class GeoFetcher:
         self._geolocator = Nominatim(user_agent=Cfg.USER_AGENT)
         self.geocode = RateLimiter(self._geolocator.geocode, min_delay_seconds=Cfg.DELAY_TIME)
 
-    def pull_row_info(self, row):
+    async def pull_row_info(self, row):
         """
         Pulls from Nominatim the additional information wanted and add it to the property row from a dataframe
         ----
@@ -24,7 +25,12 @@ class GeoFetcher:
         """
 
         full_address = row[Cfg.ROW_ADDRESS_KEY] + Cfg.WHITESPACE + row[Cfg.ROW_CITY_KEY]
-        location = self.geocode(full_address, addressdetails=True)
+        async with Nominatim(
+                user_agent=Cfg.USER_AGENT,
+                adapter_factory=AioHTTPAdapter,
+        ) as geolocator:
+            location = await geolocator.geocode(full_address, addressdetails=True)
+            # await asyncio.sleep(Cfg.DELAY_TIME)
         row[Cfg.LAT_KEY] = self._fetch_latitude(location)
         row[Cfg.LON_KEY] = self._fetch_longitude(location)
         row[Cfg.CITY_HEBREW_KEY] = self._fetch_city_hebrew(location)
