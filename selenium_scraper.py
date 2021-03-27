@@ -259,6 +259,9 @@ class SeleniumScraper:
                 if len(proper.div.div.findChildren('div', recursive=False)) == Cfg.LEN_PROPER:
                     rows_list.append(property_to_attr_dict(proper, listing_type=kwargs[Cfg.LISTING_TYPE_KEY]))
             df = pd.DataFrame(rows_list)
+            # Replacing empty strings so we can convert columns to correct type
+            for col in df.columns:
+                df[col] = df[col].replace(Cfg.EMPTY, Cfg.DUMMY_REPLACER)
             df[Cfg.PRICE_COL] = df[Cfg.PRICE_COL].astype(np.int64)
             df[Cfg.ROOM_COL] = df[Cfg.ROOM_COL].astype('float')
             df[Cfg.FLOOR_COL] = df[Cfg.FLOOR_COL].astype('float')
@@ -271,7 +274,6 @@ class SeleniumScraper:
                     rows_list.append(new_home_to_attr_dict(proper, listing_type=kwargs[Cfg.LISTING_TYPE_KEY]))
             df = pd.DataFrame(rows_list)
 
-        df[Cfg.PRICE_COL] = df[Cfg.PRICE_COL].astype(np.int64)
         df[GeoFetcherConfig.LAT_KEY] = None
         df[GeoFetcherConfig.LON_KEY] = None
         df[GeoFetcherConfig.CITY_HEBREW_KEY] = None
