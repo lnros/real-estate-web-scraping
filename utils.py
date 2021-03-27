@@ -190,10 +190,10 @@ def _return_floor(attribute):
     TODO
     """
     try:
-        floor = attribute[FLOOR_ATTR_IDX].find('i', {'title': 'Floor'}).parent.text.strip()
+        room = attribute[ROOMS_ATTR_IDX].find('i', {'title': 'Rooms'}).parent.text.strip()
     except AttributeError:
-        floor = None
-    return floor
+        room = None
+    return room
 
 
 def _return_floor_area(attribute):
@@ -279,7 +279,6 @@ def easy_logging(func):
     """
     NOT WORKING, TODO
     """
-
     def wrapper(*args, **kwargs):
         Log.logger.debug(f"{func.__name__}: starting")
         for i, arg in enumerate(args):
@@ -299,7 +298,6 @@ def easy_logging(func):
             Log.logger.error(f"{func.__name__}: {err}")
         else:
             Log.logger.info(f"{func.__name__}: finished successfully")
-
     return wrapper
 
 
