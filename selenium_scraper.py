@@ -245,7 +245,7 @@ class SeleniumScraper:
         ----
         :param url: url from which we scraped
         :type url: string
-        :param properties_list:
+        :param properties_list: list of bs4.elements with information scraped from the web
         :type properties_list: list
         :param kwargs: hyperparameters chosen by the user
         :type kwargs: dict
