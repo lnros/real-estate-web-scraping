@@ -207,7 +207,7 @@ def _return_city(attribute):
     :rtype: str
     """
     try:
-        city = attribute[CITY_ATTR_IDX].text.strip(string.punctuation)
+        city = attribute[CITY_ATTR_IDX].contents[ATTR_PROPER_IDX].text.strip(string.punctuation) #.contents[0]
     except AttributeError:
         city = None
     except KeyError:
