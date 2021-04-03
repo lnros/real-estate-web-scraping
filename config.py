@@ -104,8 +104,8 @@ class Configuration:
     # CONSTANTS FOR SCRAPING
     PRINTABLE = set(string.printable)
     SILENCE_DRIVER_LOG = '0'
-    CHROME_WIDTH = 1919
-    CHROME_HEIGHT = 1079
+    BROWSER_WIDTH = 1919
+    BROWSER_HEIGHT = 1079
     PROPERTY_LISTING_TYPE = ('buy', 'rent', 'commercial', 'new_homes', 'all')
     LISTING_MAP = {
         'buy': ['buy'],
