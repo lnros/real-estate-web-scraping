@@ -58,9 +58,9 @@ class DBConfig:
     Holds the DB parameters for the web scraping.
     """
 
-    HOST = "brbeky1hybvf32t4ufxz-mysql.services.clever-cloud.com"
-    USER = "uydbyi6qdkmbhd4q"
-    PASSWORD = "GXB67Y5tnWYyewKEZ0OW"
+    HOST = "localhost"
+    USER = "root"
+    PASSWORD = "ec2-root-1"
     DATABASE = "brbeky1hybvf32t4ufxz"
     INSERT_CITY_QUERY = "INSERT IGNORE INTO cities(city_name) values (%s)"
     INSERT_LISTINGS_QUERY = "INSERT IGNORE INTO listings(listing_type) values (%s)"
@@ -104,8 +104,8 @@ class Configuration:
     # CONSTANTS FOR SCRAPING
     PRINTABLE = set(string.printable)
     SILENCE_DRIVER_LOG = '0'
-    CHROME_WIDTH = 1919
-    CHROME_HEIGHT = 1079
+    BROWSER_WIDTH = 1919
+    BROWSER_HEIGHT = 1079
     PROPERTY_LISTING_TYPE = ('buy', 'rent', 'commercial', 'new_homes', 'all')
     LISTING_MAP = {
         'buy': ['buy'],

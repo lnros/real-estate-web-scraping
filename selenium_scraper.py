@@ -9,10 +9,11 @@ from bs4 import BeautifulSoup as bs
 from geopy.exc import GeocoderUnavailable, GeocoderTimedOut
 from requests.exceptions import ConnectionError
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException
 from tqdm import tqdm
 from urllib3.exceptions import MaxRetryError, ReadTimeoutError
-from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 
 from config import GeoFetcherConfig
 from config import Logger as Log
@@ -38,10 +39,12 @@ class SeleniumScraper:
     @staticmethod
     def _create_driver():
         """
-        Creates a driver that runs in Google Chrome.
+        Creates a driver that runs in Mozilla Firefox.
         """
         os.environ['WDM_LOG_LEVEL'] = Cfg.SILENCE_DRIVER_LOG
-        return webdriver.Chrome(ChromeDriverManager().install())
+        firefox_options = Options()
+        firefox_options.headless = True
+        return webdriver.Firefox(executable_path=GeckoDriverManager().install(), options=firefox_options)
 
     def update_df(self, df):
         """
@@ -68,7 +71,7 @@ class SeleniumScraper:
         """
         scroll_num = 1
         # maximizing the window makes fewer scrolls necessary
-        self.driver.set_window_size(Cfg.CHROME_WIDTH, Cfg.CHROME_HEIGHT)
+        self.driver.set_window_size(Cfg.BROWSER_WIDTH, Cfg.BROWSER_HEIGHT)
         time.sleep(Cfg.SCROLL_PAUSE_TIME)
         while True:
             ele_to_scroll = self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH)[
@@ -106,7 +109,7 @@ class SeleniumScraper:
         prev_len = len(self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH))
         Log.logger.debug(Log.scroll_new_homes(prev_len))
         # maximizing the window makes fewer scrolls necessary
-        self.driver.set_window_size(Cfg.CHROME_WIDTH, Cfg.CHROME_HEIGHT)
+        self.driver.set_window_size(Cfg.BROWSER_WIDTH, Cfg.BROWSER_HEIGHT)
         time.sleep(Cfg.SCROLL_PAUSE_TIME)
         while True:
             ele_to_scroll = self.driver.find_elements_by_xpath(Cfg.PROPERTIES_XPATH)[
