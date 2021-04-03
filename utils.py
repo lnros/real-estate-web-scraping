@@ -77,7 +77,7 @@ def new_home_to_attr_dict(buy_property, listing_type):
 
     street = _return_street(attr)
     string_to_id.append(street)
-    city = _return_city(attr)
+    city = _return_city_new_home(attr)
     string_to_id.append(city)
     string_to_id = EMPTY_STR.join(string_to_id)
     # decided not to use the id for now, handling directly with SQL
@@ -183,7 +183,7 @@ def _return_street(attribute):
     return street
 
 
-def _return_city(attribute):
+def _return_city_new_home(attribute):
     """
     :param attribute: property attributes
     :type attribute: bs4.element
@@ -192,6 +192,22 @@ def _return_city(attribute):
     """
     try:
         city = attribute[NEW_HOME_CITY_ATTR_IDX].text.strip(string.punctuation)
+    except AttributeError:
+        city = None
+    except KeyError:
+        city = None
+    return city
+
+
+def _return_city(attribute):
+    """
+    :param attribute: property attributes
+    :type attribute: bs4.element
+    :return: property's city
+    :rtype: str
+    """
+    try:
+        city = attribute[CITY_ATTR_IDX].text.strip(string.punctuation)
     except AttributeError:
         city = None
     except KeyError:
