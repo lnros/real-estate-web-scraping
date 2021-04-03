@@ -58,9 +58,9 @@ class DBConfig:
     Holds the DB parameters for the web scraping.
     """
 
-    HOST = "brbeky1hybvf32t4ufxz-mysql.services.clever-cloud.com"
-    USER = "uydbyi6qdkmbhd4q"
-    PASSWORD = "GXB67Y5tnWYyewKEZ0OW"
+    HOST = "localhost"
+    USER = "root"
+    PASSWORD = "ec2-root-1"
     DATABASE = "brbeky1hybvf32t4ufxz"
     INSERT_CITY_QUERY = "INSERT IGNORE INTO cities(city_name) values (%s)"
     INSERT_LISTINGS_QUERY = "INSERT IGNORE INTO listings(listing_type) values (%s)"
