@@ -60,7 +60,7 @@ class DBConfig:
 
     HOST = "localhost"
     USER = "root"
-    PASSWORD = "ec2-root-1"
+    PASSWORD = "password" # not real password, change after pulling this file
     DATABASE = "brbeky1hybvf32t4ufxz"
     INSERT_CITY_QUERY = "INSERT IGNORE INTO cities(city_name) values (%s)"
     INSERT_LISTINGS_QUERY = "INSERT IGNORE INTO listings(listing_type) values (%s)"
