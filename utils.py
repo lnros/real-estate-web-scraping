@@ -139,14 +139,14 @@ def _return_price(prop):
     """
 
     try:
-        price = prop[PRICE_PROPER_IDX].findChildren('div', recursive=False)[PRICE_CHILDREN_IDX].text
+        price = prop[PRICE_PROPER_IDX].findChildren('span', recursive=False)[PRICE_CHILDREN_IDX].text
         price = EMPTY_STR.join(re.findall(DIGIT_REGEX, price)).strip()
     except AttributeError:
         price = None
     except KeyError:
         price = None
     except IndexError:
-        price = prop[PRICE_PROPER_IDX].findChildren('span', recursive=False)[PRICE_CHILDREN_IDX].text
+        price = prop[PRICE_PROPER_IDX].findChildren('div', recursive=False)[PRICE_CHILDREN_IDX].text
         price = EMPTY_STR.join(re.findall(DIGIT_REGEX, price)).strip()
     return price
 
