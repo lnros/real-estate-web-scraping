@@ -1,5 +1,4 @@
 # Web scraping OnMap
-https://github.com/lnros/real-estate-web-scraping
 
 This web scraper get the data from properties for sale and rent from  the Israeli [OnMap](https://www.onmap.co.il/en/)  website.
 
@@ -23,6 +22,17 @@ Make sure to install all the required packages for the scraper to work:
 ```console
 $ pip install -r requirements.txt
 ```
+
+If you are planning on storing the scraped information in a database, please install [*MySQL*][mysql].
+
+Then to create the database structure:
+```console
+$ mysql -u <username> -p < db/on_map.sql
+```
+
+Make sure to change the values in the `DBConfig` class in `config.py` in order to match your database configuration.
+
+
 
 ### Usage
 
@@ -73,7 +83,12 @@ The current ERD for the of this project is:
 
 - In `properties`, each record is a different property in the website, providing address, price, number of rooms, in which floor it is located, the area and the number of parking spots available.
 If the property is under constructions, the `ConStatus` tells what the construction status is. Latitude, longitude, and details in Hebrew are obtaibed using GeoPy with Nominatim service and might not be available for all properties due to request limitations since Nominatim is a free and limited API.
+  
 
+#### Known issues
+- The database currently is not 100% in accordance with 3NF standards. The additional data fetched from the API is not normalized.
+
+- The API performance can be furthered enhanced.
 
 #### Authors
 @lnros - Leonardo Rosenberg <br>
@@ -91,3 +106,5 @@ If the property is under constructions, the `ConStatus` tells what the construct
 [asyncio-docs]: https://docs.python.org/3/library/asyncio.html
 
 [adapter]: https://docs.aiohttp.org/en/stable/ 
+
+[mysql]: https://www.mysql.com/downloads/
