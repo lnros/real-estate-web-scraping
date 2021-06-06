@@ -90,6 +90,10 @@ If the property is under constructions, the `ConStatus` tells what the construct
 
 - The API performance can be furthered enhanced.
 
+#### Short presentation
+
+For a short presentation with some data on rent in Israel and specifically in Tel Aviv, click [here](https://www.canva.com/design/DAEa5HJiTGw/cIl7ypjc_B-VEne24IHwQA/view).
+
 #### Authors
 @lnros - Leonardo Rosenberg <br>
 @Shahar9772 - Shahar Shoshany
