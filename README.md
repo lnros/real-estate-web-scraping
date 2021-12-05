@@ -90,6 +90,25 @@ If the property is under constructions, the `ConStatus` tells what the construct
 
 - The API performance can be furthered enhanced.
 
+- For macOS users, there is a [known error](https://github.com/SergeyPirogov/webdriver_manager/issues/258) when using geckodriver. The error is:
+
+```
+OSError: [Errno 86] Bad CPU type in executable: '/Users/username/.wdm/drivers/geckodriver/macos/v0.30.0/geckodriver'
+```
+
+And the fix is:
+
+```shell
+$ cd ~/.wdm/drivers/geckodriver/macos/v0.30.0
+$ curl -Lsk -O https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-macos.tar.gz
+$ ls 
+geckodriver
+geckodriver-v0.30.0-macos-aarch64.tar.gz
+geckodriver-v0.30.0-macos.tar.gz
+$ rm geckodriver
+$ tar zxvf geckodriver-v0.30.0-macos.tar.gz 
+```
+
 #### Short presentation
 
 For a short presentation with some data on rent in Israel and specifically in Tel Aviv, click [here](https://www.canva.com/design/DAEa5HJiTGw/cIl7ypjc_B-VEne24IHwQA/view).
